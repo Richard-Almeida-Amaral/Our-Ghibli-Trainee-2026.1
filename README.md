@@ -21,7 +21,7 @@
 
 #### Scrum Master:
 
-* [Richard Amaral]([coloque o link do github](https://github.com/Richard-Almeida-Amaral)).
+* [Richard Amaral](https://github.com/Richard-Almeida-Amaral).
 
 #### Links Úteis:
 
