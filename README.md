@@ -1,6 +1,6 @@
 # **Trainee 2025.1**
 
-# **Nome do seu blog**
+# **Our Ghibli**
 
 ## **Projeto Trainee, Code Jr, 2025.1**
 
@@ -13,19 +13,19 @@
 
 #### Desenvolvedores:
 
-* [Trainee 1](coloque o link do github)
-* [Trainee 2](coloque o link do github)
-* [Trainee 3](coloque o link do github)
-* [Trainee 4](coloque o link do github)
+* [Danrley](coloque o link do github)
+* [Heitor Bittencourt](coloque o link do github)
+* [Maria Clara](coloque o link do github)
+* [Pedro Andrade](coloque o link do github)
 
 
 #### Scrum Master:
 
-* [Nome do Scrum](coloque o link do github).
+* [Richard Amaral](https://github.com/Richard-Almeida-Amaral).
 
 #### Links Úteis:
 
-* [Trello]()
+* [Trello](https://trello.com/b/VkA6p3TR/261-our-ghibli)
 
 
 
