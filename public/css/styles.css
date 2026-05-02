@@ -1,7 +1,7 @@
 :root
 {
     --color-bege1-100: #f2f1e6;
-    --color-bege2-50: #EFBD7C;
+    --color-bege2-50: #efbd7ca1;
     --color-verde1-100: #4F6F52;
 
 }
@@ -12,6 +12,9 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
+}
+body{
+    background-color: var(--color-bege2-50);
 }
 
 .topo{
@@ -46,4 +49,37 @@
     margin-left: auto;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+
+.container{
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 0 100px;
+    
+}
+.card{
+    display: grid;
+    width: 360px;
+    height: 580px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--color-bege1-100);
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card h1{
+    height: 50px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }
