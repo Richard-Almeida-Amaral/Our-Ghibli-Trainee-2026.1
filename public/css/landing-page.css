@@ -1,0 +1,33 @@
+body{
+
+
+    /* fonte da página */
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #121212;
+
+    /* formatação da página */
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+
+}
+
+.hero{
+    /* frase filme */
+    
+    /* fonte */
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #4F6F52;
+    text-align: center;
+    font-size: 68px;
+    text-decora
+
+    /* background */
+    background-image: url(/Our-Ghibli-Trainee-2026.1/public/assets/aviagemdechihiro.webp);
+
+}
