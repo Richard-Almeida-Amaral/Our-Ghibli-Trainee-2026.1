@@ -2,6 +2,7 @@
 {
     --color-bege1-100: #f2f1e6;
     --color-bege2-50: #EFBD7C;
+    --color-verde1-100: #4F6F52;
 
 }
 
@@ -11,4 +12,38 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
+}
+
+.topo{
+    background-image: url(../Imagens/TotoroTopo+.png);
+    background-size: cover;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:400px;
+    display: flex;
+    align-items: end;
+    padding: 0 100px;
+
+}
+
+.topo h1{
+    font-family: "Alice", serif;
+    font-size: 50px;
+    color: var(--color-verde1-100);
+    padding: 20px;
+}
+
+#pesquisa{
+    width: 300px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
