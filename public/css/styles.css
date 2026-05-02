@@ -1,0 +1,14 @@
+:root
+{
+    --color-bege1-100: #f2f1e6;
+    --color-bege2-50: #EFBD7C;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
