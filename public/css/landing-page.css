@@ -1,33 +1,130 @@
+:root {
+
+    /* cores */
+    --azul-claro-ourghibli: #5A78A6;
+    --azul-escuro-ourghibli: #20315A;
+    --bege-ourghibli: #E8D8C3;
+    --branco-ourghibli:#F2F1E6;
+    --preto-ourghibli: #121212;
+    --verde-claro-ourghibli: #7A9478;
+    --verde-escuro-ourghibli: #4F6F52;
+
+    /* fontes */
+    /* nunito */
+    --fonte-nunito: "Nunito", sans-serif;
+    /* alice */
+    --fonte-alice: "Alice", serif;
+
+    /* quicksand */
+    --fonte-quicksand: "Quicksand", serif;
+
+}
+
+
+
+
 body{
 
 
     /* fonte da página */
-    font-family: "Nunito", sans-serif;
+    font-family: var(--fonte-nunito);
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    color: #121212;
+    color: var(--preto-ourghibli);
 
     /* formatação da página */
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: var(--preto-ourghibli);
 
 }
 
 .hero{
-    /* frase filme */
     
-    /* fonte */
-    font-family: "Alice", serif;
-    font-weight: 400;
+    /* display */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    /* frase filme */
+    font-family: var(--fonte-alice);
+    font-weight: 200;
     font-style: normal;
-    color: #4F6F52;
+    color: var(--verde-escuro-ourghibli);
     text-align: center;
-    font-size: 68px;
-    text-decora
+    font-size: 3.385vw;
+
 
     /* background */
-    background-image: url(/Our-Ghibli-Trainee-2026.1/public/assets/aviagemdechihiro.webp);
+    background-color: var(--bege-ourghibli);
+    background-image: url(/Our-Ghibli-Trainee-2026.1/public/assets/viagemdechihiro1920certo.png);
+    background-repeat: no-repeat;
+    width: 99.2vw;
+    height:90vh;
+    background-position: center;
+
+}
+
+
+.frametextofilme{
+
+    /* frame de posicionamento da logo e da frase impactante */
+
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-block-end: 0px;
+    padding-left: 2vw;
+    /* ! preciso de ajuda para fazer o gradiente da imagem */
+    background: linear-gradient(to bottom #e8d8c3 #e8d8c300);
+
+}
+
+
+h2 {
+     /* texto impactante filme */
+    margin: 0px;
+}
+
+
+.home{
+
+    /* tudo no site com exceção do herocard */
+    width: 99.2vw;
+    height: 1045px;
+    background-color: #E8D8C3;
+
+}
+
+
+.seta{
+
+    /* frame horizontal onde se posiciona a seta */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 99.2vw;
+    height: 10vh;
+    background-color: var(--bege-ourghibli);
+
+
+}
+
+.setapracima{
+
+    /* container da seta */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.06vw;
+    height: 4.658vh;
+    border-top-left-radius: 1200px;
+    border-top-right-radius:1200px;
+    background-color: var(--verde-claro-ourghibli);
+    padding-top: 0,46vh;    
+
+
+    /* ! preciso de ajuda para fazer o stroke da setinha */
 
 }
