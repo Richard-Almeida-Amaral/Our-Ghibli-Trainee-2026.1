@@ -75,6 +75,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: auto;
 }
 
 .p1{
@@ -84,6 +85,9 @@ body{
     width: 50%;
     padding-left: 2rem;
     padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
 }
 
 .imgcont{
@@ -99,13 +103,14 @@ body{
     padding: 1rem;
     border-radius: 1rem;
     height: auto;
+    margin-bottom: 1.5rem;
     
 }
 .contdaimgpost{
     border: 3px solid firebrick;
 }
 
-.cabcont{
+.cabcontimg{
     display: flex;
     flex-direction: column;
     border: 2px solid black;
@@ -114,7 +119,7 @@ body{
     
 }
 
-.titulodocab{
+.titulodocabimg{
     display: flex;
     flex-direction: row;
     background-color: #E8D8C3;
@@ -126,7 +131,7 @@ body{
     padding-left: 2rem;
     padding-right: 2rem;
 }
-.titdocabcont{
+.titdocabcontimg{
     display: flex;
     border: 2px solid rgb(8, 0, 255);
     flex-direction: row;
@@ -136,7 +141,7 @@ body{
     text-align: center;
 }
 
-.botoes{
+.botoesimg{
     display: flex;
     flex-direction: row;
     justify-content:end;
@@ -155,6 +160,89 @@ body{
     overflow: hidden;
     width: fit-content;
     border-radius: 1rem;
+}
+
+.descricao{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(246, 59, 59);
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    height: auto;
+}
+
+.desccont{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    border: 2px solid gold;
+    background-color: #398774;
+    justify-content:end;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: auto;
+    width: 50%;
+}
+
+.contdadesc{
+    border: 3px solid firebrick;
+    
+}
+
+.cabcontdesc{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 100%;
+    margin-bottom: 1rem;
+    
+}
+
+.titulodocabdesc{
+    display: flex;
+    flex-direction: row;
+    background-color: #E8D8C3;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 1rem;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.titdocabcontdesc{
+    display: flex;
+    border: 2px solid rgb(8, 0, 255);
+    flex-direction: row;
+    width: 60%;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+
+.botoesdesc{
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    align-items: center;
+    text-align: center;
+}
+
+.totorogalho{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    border: 2px solid rgb(0, 0, 0);
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    height: auto;
+    width: 50%;
 }
 
 .p2{
