@@ -43,7 +43,7 @@ body {
 
 #pesquisa {
   display: flex;
-  width: 300px;
+  width: 600px;
   height: 40px;
   align-items: center;
   justify-content: center;
@@ -56,6 +56,17 @@ body {
   margin-bottom: 20px;
 }
 
+#pesquisa::placeholder {
+  color: var(--color-azul1-100);
+  font-family: "Nunito";
+  font-weight: bold;
+  background-image: url(https://cdn-icons-png.flaticon.com/128/2319/2319177.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+
 .container {
   margin-top: 40px;
   display: grid;
@@ -65,6 +76,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   padding: 0 100px;
+  row-gap: 20px;
 }
 .card {
   display: grid;
@@ -105,7 +117,7 @@ body {
 .paginação {
   display: flex;
   justify-content: center;
-  margin: 100px 0;
+  margin: 80px 0;
 }
 .paginação button {
   background-color: var(--color-bege1-100);
@@ -115,6 +127,8 @@ body {
   margin: 0 5px;
   border-radius: 50px;
   cursor: pointer;
+  font-family: "Nunito";
+  font-weight: bold;
 }
 .paginação button:hover {
   background-color: var(--color-azul1-100);
