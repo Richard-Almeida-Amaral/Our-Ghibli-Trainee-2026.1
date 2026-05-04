@@ -16,7 +16,11 @@ body {
 }
 
 .topo {
-  background-image: url(../Imagens/TotoroTopo+.png);
+  background: linear-gradient(
+    to bottom,
+    rgba(235, 215, 185, 0) 50%,
+    rgb(255, 237, 211) 100%),
+    url(../Imagens/TotoroTopo+.png);
   background-size: cover;
   background-position: 50% 25%;
   background-repeat: no-repeat;
@@ -25,6 +29,8 @@ body {
   display: flex;
   align-items: end;
   padding: 0 150px;
+  
+  ;
 }
 
 .topo h1 {
@@ -33,10 +39,10 @@ body {
   font-weight: normal;
   color: var(--color-verde1-100);
   padding: 20px 0px;
-  
 }
 
 #pesquisa {
+  display: flex;
   width: 300px;
   height: 40px;
   align-items: center;
@@ -59,18 +65,17 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   padding: 0 100px;
-  
 }
 .card {
   display: grid;
-  grid-template-rows: auto min-content 1fr;
+  grid-template-rows: 1fr 50px 100px;
   width: 80%;
-  height: 400px;
+  height: 500px;
   margin-bottom: 20px;
   text-align: center;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow : 0 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
   background-color: var(--color-bege1-100);
   align-items: start;
   justify-items: center;
@@ -78,7 +83,7 @@ body {
 }
 
 .card img {
-  grid-row: 1;
+  height: 100%;
   width: 100%;
   display: block;
   object-fit: cover;
@@ -97,21 +102,21 @@ body {
   max-width: 300px;
   margin: 0;
 }
-.paginação{
-    display: flex;
-    justify-content: center;
-    margin: 100px 0;
+.paginação {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
 }
 .paginação button {
-    background-color: var(--color-bege1-100);
-    color: var(--color-azul1-100);
-    border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    border-radius: 50px;
-    cursor: pointer;
+  background-color: var(--color-bege1-100);
+  color: var(--color-azul1-100);
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 50px;
+  cursor: pointer;
 }
 .paginação button:hover {
-    background-color: var(--color-azul1-100);
-    color: var(--color-bege1-100);
+  background-color: var(--color-azul1-100);
+  color: var(--color-bege1-100);
 }
