@@ -70,7 +70,7 @@ body{
 .frametextofilme{
 
     /* frame de posicionamento da logo e da frase impactante */
-
+    height: fit-content;
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -92,8 +92,12 @@ h2 {
 
     /* tudo no site com exceção do herocard */
     width: 99.2vw;
-    height: 1045px;
+    height: fit-content;
     background-color: #E8D8C3;
+    padding-bottom: 8.68vw;
+    background-image: url(/Our-Ghibli-Trainee-2026.1/public/assets/horizontecompleto1920.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
 
 }
 
@@ -127,4 +131,160 @@ h2 {
 
     /* ! preciso de ajuda para fazer o stroke da setinha */
 
+}
+
+.bemvindo{
+
+    /* container de espaçamento entre seta e posts */
+    width: 100vw;
+    height: 10.65vh;
+}
+
+.postsrecentes{
+
+     /* Container post e scroll 1 */
+
+     width: 100vw;
+     height: fit-content;
+     
+     display: flex;
+     align-items: baseline;
+     justify-content: center;
+
+}
+
+.post{
+
+    width: 74.3056vw;
+    height: fit-content;
+    display:flex;
+
+}
+
+.postescroll{
+
+    display: flex;
+    flex-direction: row;
+    width: 74.3056vw;
+    height: fit-content;
+
+}
+
+.imagemetexto{
+
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.imagem{
+
+    display:flex;
+    flex-direction: column;
+
+    background-image: url(/Our-Ghibli-Trainee-2026.1/public/assets/viagemdechihiro1920certo.png);
+    background-position: center;
+    width: 71.25vw;
+    height: 37.5vw;
+    gap: 23vw;
+    background-repeat: no-repeat;
+    border-top-left-radius: 1.3889vw;
+    border-top-right-radius: 1.3889vw;
+
+}
+
+.usuario{
+
+    align-self: baseline;
+    justify-self: baseline;
+    padding: 1.389vw;
+    gap: 0.65vw;
+
+    display: flex;
+    align-items: center;
+}
+
+.foto{
+
+    width: 6.95vw;
+    height: 6.95vw;
+    border-radius: 5vw;
+    background-image: url(/Our-Ghibli-Trainee-2026.1/public/assets/viagemdechihiro1920certo.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.nome{
+
+    padding: 0.7vw;
+    font-family: var(--fonte-quicksand);
+    font-size: 2.75vw;
+    font-weight: 800 ;
+    color: var(--branco-ourghibli)
+}
+
+.tituloecurtidas{
+    width: 71.25vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 0.7vw;
+    padding-right: 1.4vw;
+    align-items: end;
+}
+
+.textoemdestaque{
+
+    padding-left: 0.7vw;
+    padding-right: 0.7vw;
+    font-family: var(--fonte-quicksand);
+    font-weight: 400;
+    color: var(--branco-ourghibli);
+    font-size: 2.75vw;
+
+}
+
+.texto{
+
+    height:fit-content;
+    width:68.45vw;
+    background-color: var(--verde-escuro-ourghibli);
+    padding-left: 1.4vw;
+    padding-right: 1.4vw;
+    padding-top: 1.05vw;
+    padding-bottom: 1.05vw;
+    font-family: var(--fonte-nunito);
+    font-size: 2.2vw;
+    color: var(--branco-ourghibli);
+    border-bottom-left-radius: 1.3889vw;
+    border-bottom-right-radius: 1.3889vw;
+
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundo{
+    background-color: #2E4230;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 0,34vw;
+    padding-right: 0,41vw;
+    padding-top: 0,7vw;
+    padding-bottom: 0,7vw;
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
 }
