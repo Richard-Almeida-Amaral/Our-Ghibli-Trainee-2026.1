@@ -8,10 +8,10 @@ body{
 
 .contpip{
     border: 2px solid yellow;
-    background-color: #1E84AA;
     height: fit-content;
 }
 .Topocont{
+    background-color: #1E84AA;
     display: flex;
     flex-direction: row;
     height: fit-content;
@@ -30,6 +30,7 @@ body{
     flex-direction: row;
     height: fit-content;
     align-items: center;
+    border: 2px solid orange;
 }
 
 .fotoscont{
@@ -41,28 +42,98 @@ body{
 .conttitulo{
     border: 2px solid orange;
     width: 100%;
-    justify-content:center;
+    justify-content:left;
     align-items: center;
     text-align: center;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    /*padding-left: 4rem;
+    padding-right: 2rem;*/
 }
 
 .cxtitulo{
     border-radius: 1rem;
     background-color: #F2F1E6;
     display: flex;
-    width: 100%;
+    width: 60%;
     flex-direction: row;
     justify-content:center;
     align-items: center;
-    text-align: center;
 }
 
-.titulo{
+.titulodopost{
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.titulo p{
+    font-size: 2rem;
+    color: #030850;
+    font-family: Georgia;
+}
+.conteudocont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.p1{
+    border: 2px solid rgb(0, 255, 8);
+    background-color: #4F6F52;
+    height: 30rem;
+    width: 50%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.imgcont{
+    border: 2px solid gold;
+    background-color: #398774;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.cabcont{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.titulodocab{
+    display: flex;
+    flex-direction: row;
+    background-color: #E8D8C3;
+    border-radius: 1rem;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.titdocabcont{
+    display: flex;
+    border: 2px solid gold;
+    flex-direction: row;
+    width: 60%;
     justify-content:center;
     align-items: center;
     text-align: center;
 }
 
+.botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    align-items: center;
+    text-align: center;
+}
 
+.p2{
+    border: 2px solid rgb(212, 0, 255);
+    background-color: #4F6F52;
+    height: 30rem;
+    width: 50%;
+}
