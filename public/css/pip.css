@@ -1,0 +1,68 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+
+.contpip{
+    border: 2px solid yellow;
+    background-color: #1E84AA;
+    height: fit-content;
+}
+.Topocont{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+.topnuvens{
+    display: flex;
+    flex-direction:column;
+    height: fit-content;
+}
+
+.gatito{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    align-items: center;
+}
+
+.fotoscont{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+
+.conttitulo{
+    border: 2px solid orange;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.cxtitulo{
+    border-radius: 1rem;
+    background-color: #F2F1E6;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo{
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+
+
