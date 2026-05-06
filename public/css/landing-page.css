@@ -76,7 +76,7 @@ body{
     width: 99.2vw;
     height:90vh;
     background-position: center;
-
+    background-size: cover;
 }
 
 
@@ -110,7 +110,7 @@ h2 {
     padding-bottom: 8.68vw;
     background-position: bottom;
     background-repeat: no-repeat;
-
+    background-size: cover;
 
 }
 
