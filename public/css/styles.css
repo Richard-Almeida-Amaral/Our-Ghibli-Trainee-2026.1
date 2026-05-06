@@ -1,12 +1,14 @@
-html{
+body{
     display: flex;
-    justify-content: center;
     align-items: start;
+    justify-content: start;
+    width: 100%;
+
 }
 
 nav{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     background-color: #e7d5be;
     width: 100%;
@@ -41,6 +43,7 @@ input:hover{
     padding-left: 2rem;
     padding-right: 2rem;
     gap: 1rem;
+    border: 1px black;
 }
 
 #right{
