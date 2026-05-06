@@ -116,17 +116,17 @@ input::placeholder{
 
 #mail{
     position: absolute;
-    padding-right: 17rem;
+    margin-right: 17rem;
 }
 
 #lock{
     position: absolute;
-    padding-right: 18rem;
+    margin-right: 18rem;
 }
 
 #eye{
     position: absolute;
-    padding-left: 17rem;
+    margin-left: 17rem;
 }
 
 #logo{
