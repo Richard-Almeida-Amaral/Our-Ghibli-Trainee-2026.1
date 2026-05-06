@@ -19,6 +19,7 @@ body{
     display: flex;
     flex-direction: row;
     height: fit-content;
+    width: 100%;
     justify-content:center;
     align-items: center;
     text-align: center;
@@ -37,8 +38,11 @@ body{
 
 .pipjijicont{
     display: flex;
-    height: 13.4rem;
+    height: auto;
     align-items: flex-end;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
     /*border: 2px solid rgb(255, 0, 0);*/
 }
 
@@ -48,6 +52,10 @@ body{
     margin-bottom: 0;
     align-items: flex-end;
     /*border: 2px solid rgb(0, 255, 17);*/
+}
+.gatito img{
+    height: auto;
+    display: block;
 }
 
 .fotoscont{
@@ -69,7 +77,7 @@ body{
     border-radius: 1rem;
     background-color: rgba(242, 241, 230, 0.65);
     display: flex;
-    width: 60%;
+    width: 70%;
     flex-direction: row;
     justify-content:center;
     align-items: center;
@@ -122,9 +130,7 @@ body{
     width: fit-content;
     
 }
-/*.contdaimgpost{
-    border: 3px solid firebrick;
-}*/
+
 
 .cabcontimg{
     display: flex;
@@ -194,7 +200,7 @@ body{
     text-align: center;
     border-radius: 1rem;
     height: auto;
-    width: 60%;
+    width: 60vw;
 }
 
 .contdadesc{
@@ -252,7 +258,7 @@ body{
     border-radius: 1rem;
     height: auto;
     width: 40%;
-    border: 3px solid rgb(0, 0, 0);
+    /*border: 3px solid rgb(0, 0, 0);*/
 }
 
 .totoroimgdesc{
@@ -264,7 +270,7 @@ body{
     height: 50vh;
     justify-content:left;
     align-items: left;
-    border: 3px solid blue;
+    /*border: 3px solid blue;*/
 
 }
 
@@ -284,19 +290,21 @@ body{
 
 
 .p2{
-    border: 2px solid rgb(212, 0, 255);
-    height: fit-content;
+    /*border: 2px solid rgb(212, 0, 255);*/
+    height: auto;
     width: 50%;
     padding-left: 2rem;
     padding-right: 2rem;
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     overflow: hidden;
 }
 
 .pipposts{
-    border: 2px solid rgb(67, 0, 81);
+    /*border: 2px solid rgb(67, 0, 81);*/
     background-color: #E8D8C3;
     border-radius: 1rem;
     padding-left: 2rem;
@@ -314,25 +322,122 @@ body{
     text-align: center;
 }
 
-/*.totoroarvorepip{
+.totoroarvorepip{
     display: flex;
     flex-direction: column;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    border-radius: 1rem;
     height: fit-content;
     width: 100%;
-    border: 3px solid rgb(0, 0, 0);
-}*/
+    height: -2vh;
+    border: 3px solid rgb(255, 0, 0);
+}
 
 .piptextoimgdototoro{
     position: relative;
-    bottom: 23vw;
+    bottom: 20vw;
     display: flex;
     max-width: 100%;
     height: 100%;
     justify-content:center;
-    align-items:flex-end;
-    border: 3px solid blue;
+}
+
+/*@media (max-height: 600px){
+    .conteudocont{
+        flex-direction: column;
+    }
+}*/
+@media (max-width: 1000px) {
+    /* aq muda pra empilhar*/
+    .conteudocont {
+        flex-direction: column; 
+    }
+    .gatito{
+        width: 40%;
+    }
+    /* aq faz as colunas ocuparem a tela toda */
+    .p1, .p2 {
+        background-color: #398774;
+        width: 100%; 
+        padding-left: 1rem; /* nesses 2 paddings vc vai testando até ver o q te agrada, coloquei 1 só como base */
+        padding-right: 1rem;
+        overflow: hidden;
+        align-items: center;
+        
+    }
+
+    .titulodocabimg{
+    display: flex;
+    flex-direction: row;
+    background-color: #8D8D8D;
+    border-radius: 1rem;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    }
+    .imgcont{
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #E0D5BF;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: auto;
+    margin-bottom: 1.5rem;
+    width: fit-content;
+    }
+
+    .titulodocabdesc{
+    display: flex;
+    flex-direction: row;
+    background-color: #8D8D8D;
+    border-radius: 1rem;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    }
+
+    .pipposts{
+    background-color: #E8D8C3;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 80vw;
+    
+    }
+    .piptextopost{
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7rem;
+    text-align: center;
+}
+    .totorogalho{
+        display: none;
+    }
+    .totoroimgdesc{
+        display: none;
+    }
+    .piptextoimgdototoro{
+        display: none;
+    }
+    .totoroarvorepip{
+        display: none;
+    }
+    .topnuvens{
+        display: none;
+    }
+    .N1{
+        display: none;
+    }
 }
