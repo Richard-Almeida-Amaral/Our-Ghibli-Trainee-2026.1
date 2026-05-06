@@ -36,10 +36,13 @@ body{
     /* formatação da página */
     margin: 0;
     padding: 0;
-    background-color: var(--preto-ourghibli);
+
 
 }
 
+.main{
+    background-image: linear-gradient(to bottom, #E8D8C3, #5A78A6); 
+}
 .hero{
     
     /* display */
@@ -54,6 +57,16 @@ body{
     color: var(--verde-escuro-ourghibli);
     text-align: center;
     font-size: 3.385vw;
+    text-shadow: 
+        -2px -2px 0 #E8D8C3,  
+         2px -2px 0 #E8D8C3,
+        -2px  2px 0 #E8D8C3,  
+         2px  2px 0 #E8D8C3,
+         0px -2px 0 #E8D8C3,
+         0px  2px 0 #E8D8C3,
+        -2px  0px 0 #E8D8C3,
+         2px  0px 0 #E8D8C3;
+
 
 
     /* background */
@@ -77,7 +90,7 @@ body{
     margin-block-end: 0px;
     padding-left: 2vw;
     /* ! preciso de ajuda para fazer o gradiente da imagem */
-    background: linear-gradient(to bottom #e8d8c3 #e8d8c300);
+    background-image: linear-gradient( to top, #E8D8C3, #E8D8C300)
 
 }
 
@@ -88,30 +101,33 @@ h2 {
 }
 
 
-.home{
+.homelanding{
 
     /* tudo no site com exceção do herocard */
     width: 99.2vw;
     height: fit-content;
-    background-color: #E8D8C3;
+    background-image: url(/Our-Ghibli-Trainee-2026.1/public/assets/horizontecompleto1920.png), linear-gradient(to bottom, #E8D8C3, #5A78A6);
     padding-bottom: 8.68vw;
-    background-image: url(/Our-Ghibli-Trainee-2026.1/public/assets/horizontecompleto1920.png);
     background-position: bottom;
     background-repeat: no-repeat;
+
 
 }
 
 
-.seta{
+
+.framesetahero{
 
     /* frame horizontal onde se posiciona a seta */
     display: flex;
-    justify-content: center;
-    align-items: end;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     width: 99.2vw;
     height: 10vh;
     background-color: var(--bege-ourghibli);
 
+    background-image: linear-gradient(to top, #00000030, #00000000);
 
 }
 
@@ -125,26 +141,31 @@ h2 {
     height: 2.62vw;
     border-top-left-radius: 1200px;
     border-top-right-radius:1200px;
-    background-color: var(--verde-claro-ourghibli);
+    background-color: #E8D8C3;
     padding-top: 0,46vh;    
+    border-top: 0.3vw solid #4F6F52;
+    border-right: 0.3vw solid #4F6F52;
+    border-left: 0.3vw solid #4F6F52;
 
 
     /* ! preciso de ajuda para fazer o stroke da setinha */
 
 }
 
-.bemvindo{
+.framepaddingposts{
 
     /* container de espaçamento entre seta e posts */
-    width: 100vw;
+    width: 99.2vw;
     height: 10.65vh;
+    border-top:0.3vw solid #4F6F52
+
 }
 
 .postsrecentes{
 
      /* Container post e scroll 1 */
 
-     width: 100vw;
+     width: 99.2vw;
      height: fit-content;
      
      display: flex;
@@ -153,7 +174,7 @@ h2 {
 
 }
 
-.post{
+.containerpost{
 
     width: 74.3056vw;
     height: fit-content;
@@ -170,7 +191,7 @@ h2 {
 
 }
 
-.imagemetexto{
+.imagemetextopost{
 
     display: flex;
     flex-direction: column;
@@ -179,13 +200,14 @@ h2 {
 
 }
 
-.imagem{
+.imagempost{
 
     display:flex;
     flex-direction: column;
 
-    background-image: url(/Our-Ghibli-Trainee-2026.1/public/assets/viagemdechihiro1920certo.png);
+    background-image: url(/Our-Ghibli-Trainee-2026.1/public/assets/dragao.jpg);
     background-position: center;
+    background-size: cover;
     width: 71.25vw;
     height: 37.5vw;
     gap: 23vw;
@@ -195,7 +217,7 @@ h2 {
 
 }
 
-.usuario{
+.usuariopost{
 
     align-self: baseline;
     justify-self: baseline;
@@ -206,19 +228,19 @@ h2 {
     align-items: center;
 }
 
-.foto{
+.fotousuariopost{
 
     width: 6.95vw;
     height: 6.95vw;
     border-radius: 5vw;
-    background-image: url(/Our-Ghibli-Trainee-2026.1/public/assets/viagemdechihiro1920certo.png);
+    background-image: url(/Our-Ghibli-Trainee-2026.1/public/assets/graveofthefireflies.png);
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
 
-.nome{
+.nomeusuariopost{
 
     padding: 0.7vw;
     font-family: var(--fonte-quicksand);
@@ -227,20 +249,21 @@ h2 {
     color: var(--branco-ourghibli)
 }
 
-.tituloecurtidas{
-    width: 71.25vw;
+.tituloecurtidaspost{
     height: fit-content;
     display: flex;
     flex-direction: row;
     padding: 0.7vw;
     padding-right: 1.4vw;
     align-items: end;
+    background-image: linear-gradient(to top, #2E4230, #4F6F5200);
+    gap: 47.5vw;
 }
 
 .textoemdestaque{
 
-    padding-left: 0.7vw;
-    padding-right: 0.7vw;
+    margin-left: 0.7vw;
+    margin-right: 0.7vw;
     font-family: var(--fonte-quicksand);
     font-weight: 400;
     color: var(--branco-ourghibli);
@@ -248,7 +271,7 @@ h2 {
 
 }
 
-.texto{
+.textodescricaopost{
 
     height:fit-content;
     width:68.45vw;
@@ -265,18 +288,18 @@ h2 {
 
 }
 
-.scroll{
+.scrollpost{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 3vw;
 }
 
-.fundo{
+.fundoscrollpost{
     background-color: #2E4230;
     width: fit-content;
     height: fit-content;
-    padding-left: 0,34vw;
     padding-right: 0,41vw;
     padding-top: 0,7vw;
     padding-bottom: 0,7vw;
@@ -287,4 +310,16 @@ h2 {
     align-items: center;
     border-top-right-radius: 1vw;
     border-bottom-right-radius: 1vw;
+}
+
+.botaovermaispost{
+
+background-color: #2E4230;
+width: fit-content;
+padding-right: 0.3vw;
+padding-bottom: 0.533vh;
+padding-top: 1.067vh;
+border-bottom-right-radius: 1vw;
+border-top-right-radius: 1vw;
+
 }
