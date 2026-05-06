@@ -12,7 +12,7 @@ body{
     justify-content: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url(FotoFundo2.png);
+    background-image: url(../assets/FotoFundo2.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
