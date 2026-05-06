@@ -1,0 +1,66 @@
+
+div{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(FotoFundo2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: whitesmoke;
+  font-size: 5rem;
+}
+
+form{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:rgb(186, 177, 166,0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 50px;
+    width: 28rem;
+    height: 35rem;
+}
+
+label{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    color: black;
+    padding-top: 2rem;
+    padding-bottom: 0.3rem;
+    font-size: 1.5rem;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px;
+    width: 20rem;
+    height: 2.1rem;
+    text-align:center;
+}
+
+input::placeholder{
+    display: flex;
+    font-family: inter;
+    color: rgb(89, 89, 89);
+    font-size: larger;
+}
