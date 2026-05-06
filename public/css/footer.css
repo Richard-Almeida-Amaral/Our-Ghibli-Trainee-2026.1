@@ -4,9 +4,7 @@ body{
     padding: 0;
     color: #000000;
 }
-.espaco{
-    height: 80vh;
-}
+
 
 .contvertical{
     /*border: 1px solid orange;*/
@@ -140,4 +138,67 @@ footer{
     border: 1px solid orange;
     display: flex;
     flex-direction: column;
+}
+
+
+@media (max-width: 700px) {
+    .contvertical {
+        flex-direction: column;
+        padding-top: 3vw;
+        .Contatoscont {order: 3;};
+        .Logo {order: 1;};
+        .redessociaiseloc { order: 3;}
+        .emailcont {
+            justify-content: center;
+        }
+        .Telefonecont{
+            justify-content: center;
+            gap: 9vw;
+        }
+
+        .Contatoscont{
+            justify-content: center;
+            align-items: center;
+        }
+        .Contatos{
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .Tipodeinfofooter{
+            display: none;
+        }
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    .contvertical {
+        flex-direction: column;
+        padding-top: 3vw;
+        .Contatoscont {order: 3;};
+        .Logo {order: 1;};
+        .redessociaiseloc { order: 3;}
+        .emailcont {
+            justify-content: center;
+        }
+        .Telefonecont{
+            justify-content: center;
+            gap: 5vw;
+        }
+
+        .Contatoscont{
+            justify-content: center;
+            align-items: center;
+        }
+        .Contatos{
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .Tipodeinfofooter{
+            display: none;
+        }
+    }
 }
