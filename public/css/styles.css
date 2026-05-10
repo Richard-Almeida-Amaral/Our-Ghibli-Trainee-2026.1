@@ -1,53 +1,112 @@
-
-div{
-    display: flex;  
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#heitor{
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-body{
+.all{
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: center;
     flex-direction: column;
     background-image: url(../assets/FotoFundo2.png);
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
-  font-family: "Alice", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: whitesmoke;
-  font-size: 5rem;
-}
-
-form{
-    display: flex;  
+.extra{
+    display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+
+.up{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#tittle{
+    display: flex;
+    font-family: "Alice", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: whitesmoke;
+    font-size: 5.5rem;
+    margin: 0.8rem;
+}
+
+.down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+.modal-login{
+    display: flex;  
+    align-items: center;
+    justify-content: start;
     flex-direction: column;
     background-color:rgb(186, 177, 166,0.5);
     backdrop-filter: blur(2px);
     border-radius: 50px;
-    width: 28rem;
-    height: 35rem;
+    width: fit-content;
+    height: fit-content;
+    gap: 2rem;
+    padding: 2rem;
 }
 
-label{
+
+
+.modal-up{
     display: flex;
-    justify-content: start;
-    align-items: start;
-    color: black;
-    padding-top: 2rem;
-    padding-bottom: 0.3rem;
-    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
 }
 
-input{
+#logo{
+    height: 12rem;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-mid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-fill{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0.5rem;
+}
+
+.subtittle{
+    display: flex;
+    height: 1rem;
+    width: fit-content;
+    font-family: "Alice",sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.input-login{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,40 +117,21 @@ input{
     text-align:center;
 }
 
-input::placeholder{
+.input-login::placeholder{
     display: flex;
     font-family: inter;
     color: rgb(89, 89, 89);
     font-size: larger;
 }
 
-
-.tittle-login{
-    display: flex;
-    height: 0.1rem;
-    width: fit-content;
-}
-
-
-.top{
+.modal-down{    
     display: flex;
     align-items: center;
     justify-content: center;
-    height: fit-content;
-    width: fit-content;
 }
-
-
-
-.box{
-    display: flex;
-    position: relative;
-    flex-direction: row;
-}
-
 
 #botaologin{
-    background-color:rgb(0, 0, 0,0);
+    background-color:rgba(61, 123, 204, 0.623);
     color: black;
     border: 1px solid #000000;
     border-radius: 10px;
@@ -102,17 +142,22 @@ input::placeholder{
     padding-bottom: 2.5px;
     font-size: 1.5rem;
     font-family: Quicksand;
-    margin-top: 2.8rem;
     display: flex;
 }
 
 #botaologin:hover{
-    background-color: #0c2909;
+    background-color:rgba(14, 108, 231, 0.623);
     color: rgb(255, 255, 255);
     transition: ease-in-out 200ms;
+    box-shadow: 0 0 40px rgba(120, 158, 209, 0.699); 
+    
 }
 
-
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #mail{
     position: absolute;
@@ -121,7 +166,7 @@ input::placeholder{
 
 #lock{
     position: absolute;
-    margin-right: 18rem;
+    margin-right: 17rem;
 }
 
 #eye{
@@ -129,25 +174,3 @@ input::placeholder{
     margin-left: 17rem;
 }
 
-#logo{
-    height: 12rem;
-    width: 12rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2.5rem;
-}
-
-#mid{
-    display: flex;
-    align-items: start;
-    justify-content: start;
-}
-
-#bottom{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2.5rem;
-    align-self: center;
-}
