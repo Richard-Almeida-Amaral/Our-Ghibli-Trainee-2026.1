@@ -15,12 +15,12 @@ body {
   background-color: var(--color-bege2-50);
 }
 
-.topo {
+.topoPaginaDePosts {
   background: linear-gradient(
     to bottom,
     rgba(235, 215, 185, 0) 50%,
     rgb(255, 237, 211) 100%),
-    url(../Imagens/TotoroTopo+.png);
+    url(../assets/TotoroTopo+.png);
   background-size: cover;
   background-position: 50% 25%;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@ body {
   ;
 }
 
-.topo h1 {
+.topoPaginaDePosts h1 {
   font-family: "Alice";
   font-size: 50px;
   font-weight: normal;
@@ -134,3 +134,56 @@ body {
   background-color: var(--color-azul1-100);
   color: var(--color-bege1-100);
 }
+
+
+/* Tablet e telas médias */
+@media (max-width: 1024px) {
+  .topoPaginaDePosts {
+    padding: 0 50px;
+    height: 300px;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 0 40px;
+  }
+
+  #pesquisa {
+    width: 80%; 
+    margin: 0 auto 20px auto; 
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .topoPaginaDePosts {
+    padding: 0 20px;
+    height: 200px;
+    justify-content: center;
+  }
+
+  .topoPaginaDePosts h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  #pesquisa {
+    width: 90%;
+  }
+
+  /* Celular não tem paginação */
+  .paginação {
+    display: none;
+  }
+}
+
