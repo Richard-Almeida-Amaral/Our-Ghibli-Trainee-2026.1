@@ -7,7 +7,7 @@
 .all{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     flex-direction: column;
     background-image: url(../assets/FotoFundo2.png);
     background-size: cover;
@@ -74,8 +74,8 @@
 }
 
 #logo{
-    height: 12rem;
-    width: 12rem;
+    height: 16rem;
+    width: 16rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,6 +104,9 @@
     font-family: "Alice",sans-serif;
     font-weight: 300;
     font-style: normal;
+    font-size: 1.2rem;
+    font-style: bold;
+
 }
 
 .input-login{
