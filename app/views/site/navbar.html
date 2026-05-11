@@ -1,32 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" id="navbar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
     <link rel="stylesheet" href="../../../public/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <nav>
-        <div id="left">
-            <img src="../../../public/assets/Logo-SemFundo.png" alt="">
+<body class="nav-all">
+    <nav class="nav-container">
+        <div class="nav-left">
+            <img src="../../../public/assets/Logo-SemFundo.png" alt="" id="nav-logo">
         </div>
 
-        <ul>
-            <div id="mid">
-                <input type="button" value="HOME">
-                <div class="hovermid">
-                <input type="button" value="PUBLICAÇÕES">
-                </div>
-            </div>
-        </ul>
+        <div class="nav-mid">
+            <input type="button" value="Home" class="nav-link">
+            <input type="button" value="Publicações" class="nav-link">
+        </div>
 
-        <ul>
-            <div id="right">
-                <input type="button" value="LOGIN" id="login">
-            </div>
-        </ul>    
-        
+        <div class="nav-right">
+            <input type="button" value="Login" id="nav-login">
+        </div>
     </nav>
 </body>
 </html>
