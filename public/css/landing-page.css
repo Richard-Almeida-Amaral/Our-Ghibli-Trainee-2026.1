@@ -250,6 +250,7 @@ h2 {
 }
 
 .tituloecurtidaspost{
+    
     height: fit-content;
     display: flex;
     flex-direction: row;
