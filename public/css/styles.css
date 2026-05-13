@@ -20,6 +20,7 @@
   height: 80px;
   border-radius: 200%;
   padding-right: 10px ;
+  cursor: pointer;
 }
 .perfilSidebar {
   display: flex;
@@ -46,6 +47,7 @@
   margin-bottom: 50px;
   height: 100%;
   min-height: 90px;
+
 }
 
 .active {
@@ -71,6 +73,7 @@
   margin-top: 10px;
   margin-left: 0;
   margin-right: 0;
+  padding: 10px;
 }
 
 .icone-sidebar img {
@@ -98,7 +101,6 @@ ul {
 .logoutSidebar button .itemDescricao {
   color: #fff;
   margin-left: 10px;
-  margin-top: 50px;
 }
 
 .logoutSidebar button:hover {
@@ -115,4 +117,53 @@ ul {
   height: 100%;
   padding: 10px;
   margin-bottom: 50px;
+}
+
+.closed-sidebar{
+  width: 90px;
+  min-width: 90px;
+  max-width: 90px;
+}
+
+.closed-sidebar .itemSidebar {
+  min-height: auto;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.closed-sidebar .itemSidebar span {
+  display: none;
+}
+
+.closed-sidebar .perfilSidebar span {
+  display: none;
+}
+
+.closed-sidebar .logoutSidebar .itemDescricao {
+  display: none;
+}
+
+.closed-sidebar .perfilSidebar img {
+  width: 80px;
+  height: 100%;
+  padding-right: 0;
+}
+
+.closed-sidebar .perfilSidebar {
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.closed-sidebar .itemSidebar a {
+  justify-content: center;
+}
+
+.closed-sidebar .logoutSidebar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.closed-sidebar .imagemSidebar {
+  display: none;
 }
