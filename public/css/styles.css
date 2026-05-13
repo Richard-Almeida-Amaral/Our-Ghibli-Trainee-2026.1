@@ -1,6 +1,6 @@
 :root {
-  --color-bege1-100: #f2f1e6;
-  --color-bege2-50: #efbd7ca1;
+  --color-bege1-100: #F2F1E6;
+  --color-bege2-50: #ffedd3;
   --color-verde1-100: #4f6f52;
   --color-azul1-100: #20315a;
 }
@@ -27,10 +27,10 @@ body {
   width: 100%;
   height: 400px;
   display: flex;
-  align-items: end;
   padding: 0 150px;
-  
-  ;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .topoPaginaDePosts h1 {
@@ -40,11 +40,17 @@ body {
   color: var(--color-verde1-100);
   padding: 20px 0px;
   margin: 0 20px 0 0;
+  align-items: center;
+  position: absolute;
+  left: 18%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
 #pesquisa {
   display: flex;
-  width: 600px;
+  width: 60%;
   height: 40px;
   align-items: center;
   justify-content: center;
@@ -52,9 +58,10 @@ body {
   border: none;
   padding: 20px;
   font-size: 16px;
-  margin-left: auto;
-  margin-right: 0;
-  margin-bottom: 20px;
+
+  position: absolute;
+  right: 20%;
+  bottom: 30px;  
 }
 
 #pesquisa::placeholder {
@@ -69,7 +76,7 @@ body {
 
 
 .container {
-  margin-top: 40px;
+  margin-top: 100px;
   display: grid;
   justify-content: center;
   justify-items: center;
@@ -140,13 +147,20 @@ body {
 /* Tablet e telas médias */
 @media (max-width: 1024px) {
   .topoPaginaDePosts {
-    padding: 0 50px;
+    padding: 20px 50px;
     height: 300px;
+    flex-direction: column; /* Força o alinhamento vertical dos elementos */
+    justify-content: space-between; /* Mantém o h1 no topo/centro e o input na base */
+    align-items: center;
   }
+  
   .topoPaginaDePosts h1 {
+    position: static; 
+    transform: none;
     font-size: 40px;
     text-align: center;
-    margin: 0 20px;
+    margin: auto 0;
+    margin-right: 65%; 
   }
 
   .container {
@@ -155,22 +169,30 @@ body {
   }
 
   #pesquisa {
+    position: static; /* Remove o absoluto para o input respeitar o fluxo */
     width: 80%; 
-    margin: 0 auto 20px auto; 
+    margin: 0 auto 10px auto; /* Centraliza horizontalmente */
   }
 }
 
 /* Mobile */
 @media (max-width: 600px) {
   .topoPaginaDePosts {
-    padding: 0 20px;
-    height: 200px; 
+    padding: 15px 20px;
+    height: 220px; /* Leve aumento para comportar os dois elementos com folga */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .topoPaginaDePosts h1 {
+    position: static; /* Remove o absoluto */
+    transform: none;
     font-size: 32px;
     text-align: center;
-    margin: 0 20px;
+    margin: auto 0;
+    margin-right: 50%; 
+    padding-left: 20px; /* Ajusta o padding para evitar que o texto fique muito próximo da borda direita */
   }
 
   .container {
@@ -184,7 +206,9 @@ body {
   }
 
   #pesquisa {
-    width: 90%;
+    position: static; /* Remove o absoluto */
+    width: 75%;
+    margin: 0 auto 5px auto;
   }
 
   /* Celular não tem paginação */
