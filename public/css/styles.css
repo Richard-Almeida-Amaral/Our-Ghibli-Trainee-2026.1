@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #20315A;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+
+.perfilSidebar img{
+  width: 106px;
+  height: 106px;
+}
+
+.icone-sidebar img {
+  width: 50px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+button#buttonLogout {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  
+}
+ul {
+  list-style: none;
+}
