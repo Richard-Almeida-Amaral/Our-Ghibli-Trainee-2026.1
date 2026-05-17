@@ -10,6 +10,17 @@ body{
   font-weight: 400;
   font-style: normal;
 }
+.anonymous-pro-regular {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oleo-script-swash-caps-regular {
+  font-family: "Oleo Script Swash Caps", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .contpip{
     height: fit-content;
@@ -23,7 +34,6 @@ body{
     justify-content:center;
     align-items: center;
     text-align: center;
-    border-bottom: 0.1rem solid #196985; 
 }
 .topnuvens{
     display: flex;
@@ -92,26 +102,42 @@ body{
 
 .titulo p{
     font-size: 2rem;
+    font-family: "Oleo Script Swash Caps", system-ui;
+    font-weight: 400;
+    font-style: normal;
     color: #030850;
-    font-family: Georgia;
 }
 .conteudocont{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: auto;
-    background-image: linear-gradient(to bottom, #1E84AA, #4F6F52);
+    background-image: linear-gradient(to bottom, #1E84AA, #E8D8C3);
 }
 
 .p1{
     height: auto;
     width: 50%;
-    padding-left: 2rem;
-    padding-right: 2rem;
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
     overflow: hidden;
+   /* border: 3px solid rgb(0, 0, 0);*/
+    padding-bottom: 2%;
+}
+
+.contdaimgpost{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    background-color: #398774;
+    padding: 1rem;
+    border-radius: 1rem;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: fit-content;
+    /*border: 3px solid rgb(0, 0, 0);*/
 }
 
 .imgcont{
@@ -119,7 +145,6 @@ body{
     display: flex;
     flex-direction: column;
     flex-direction: column;
-    background-color: #398774;
     justify-content:center;
     align-items: center;
     text-align: center;
@@ -127,45 +152,9 @@ body{
     border-radius: 1rem;
     height: auto;
     margin-bottom: 1.5rem;
-    width: fit-content;
+    width: 90%;
+    /*border: 3px solid rgb(0, 0, 0);*/
     
-}
-
-
-.cabcontimg{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 1rem;
-    
-}
-
-.titulodocabimg{
-    display: flex;
-    flex-direction: row;
-    background-color: #E8D8C3;
-    border-radius: 1rem;
-    justify-content:space-between;
-    align-items: center;
-    text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-.titdocabcontimg{
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    justify-content:center;
-    align-items: center;
-    text-align: center;
-}
-
-.botoesimg{
-    display: flex;
-    flex-direction: row;
-    justify-content:end;
-    align-items: center;
-    text-align: center;
 }
 
 .ftpostscont{
@@ -182,12 +171,13 @@ body{
 
 .descricao{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content:space-between;
     align-items: center;
     text-align: center;
     border-radius: 1rem;
     height: auto;
+   /* border: 3px solid rgb(255, 0, 0);*/
 }
 
 .desccont{
@@ -195,12 +185,12 @@ body{
     flex-direction: column;
     flex-direction: column;
     background-color: #E8D8C3;
-    justify-content:end;
+    justify-content:center;
     align-items: center;
     text-align: center;
     border-radius: 1rem;
     height: auto;
-    width: 60vw;
+    width: 40vw;
 }
 
 .contdadesc{
@@ -257,14 +247,14 @@ body{
     align-items: left;
     border-radius: 1rem;
     height: auto;
-    width: 40%;
+    width: 100%;
     /*border: 3px solid rgb(0, 0, 0);*/
 }
 
 .totoroimgdesc{
-    position: relative;
+    /*position: relative;
     bottom: -90px;
-    left: -65px;
+    left: -65px;*/
     display: flex;
     max-width: 50vh;
     height: 50vh;
@@ -297,10 +287,9 @@ body{
     padding-right: 2rem;
     display: flex;
     flex-direction: column;
-    padding-top: 1.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-top: 3rem;
     overflow: hidden;
+    justify-content: space-between;
 }
 
 .pipposts{
@@ -310,7 +299,6 @@ body{
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 2rem;
-    padding-bottom: 10rem;
     
 }
 
@@ -322,7 +310,7 @@ body{
     text-align: center;
 }
 
-.totoroarvorepip{
+/*.totoroarvorepip{
     display: flex;
     flex-direction: column;
     flex-direction: column;
@@ -332,15 +320,19 @@ body{
     width: 100%;
     height: -2vh;
     border: 3px solid rgb(255, 0, 0);
+}*/
+
+.piptototroarvore{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /*border: 3px solid rgb(0, 81, 255);*/
 }
 
 .piptextoimgdototoro{
-    position: relative;
-    bottom: 20vw;
-    display: flex;
     max-width: 100%;
-    height: 100%;
-    justify-content:center;
+    max-height: 100%;
+    /*border: 3px solid rgb(255, 0, 0);*/
 }
 
 /*@media (max-height: 600px){
