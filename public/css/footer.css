@@ -5,6 +5,25 @@ body{
     color: #000000;
 }
 
+.oleo-script-swash-caps-regular {
+  font-family: "Oleo Script Swash Caps", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nunito-uniquifier {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.quicksand-uniquifier {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .contvertical{
     /*border: 1px solid orange;*/
@@ -21,13 +40,26 @@ body{
     justify-content: center;
     text-align: center;
 }
+
+.ContatsContainer{
+    border-radius: 1rem;
+    background-color: #F2F1E6;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+}
 .emailcont{
     display: flex;
     flex-direction: row;
     width: 100%;
     /*border: 1px solid orange;*/
     column-gap: 2rem;
-    margin-bottom: 1rem;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -47,7 +79,6 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1rem;
     /*border: 1px solid green;*/
 }
 .telefone{
@@ -60,7 +91,8 @@ body{
 .Logo{
     display: flex;
     flex-direction: row;
-    /*border: 1px solid yellow;*/
+    margin-top: 5rem;
+    /*   border: 1px solid yellow;*/
 }
 
 .rstitulo{
@@ -101,8 +133,9 @@ body{
     align-items: center;
     text-align: center;
     height: fit-content;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 2rem;
     border-bottom: 0.1rem solid #000000;
 }
 .copyrigth{
@@ -148,12 +181,14 @@ footer{
         .Contatoscont {order: 3;};
         .Logo {order: 1;};
         .redessociaiseloc { order: 3;}
+        .Logo{
+            margin-top: 0rem;
+        }
         .emailcont {
-            justify-content: center;
+            justify-content: space-between;
         }
         .Telefonecont{
-            justify-content: center;
-            gap: 9vw;
+            justify-content: space-between;
         }
 
         .Contatoscont{
@@ -169,17 +204,31 @@ footer{
             display: none;
         }
     }
+    .sobrenos{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    }
 }
 
 
 
-@media (max-width: 1000px) {
+@media (min-width: 701px) and (max-width: 1000px) {
     .contvertical {
         flex-direction: column;
         padding-top: 3vw;
         .Contatoscont {order: 3;};
         .Logo {order: 1;};
         .redessociaiseloc { order: 3;}
+        .Logo{
+            margin-top: 0rem;
+        }
+        .ContatsContainer{
+        padding-left: 0.5rem;
+        padding-right: 0,5rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        }
         .emailcont {
             justify-content: center;
         }
