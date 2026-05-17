@@ -10,11 +10,6 @@ body{
   font-weight: 400;
   font-style: normal;
 }
-.anonymous-pro-regular {
-  font-family: "Anonymous Pro", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
 
 .oleo-script-swash-caps-regular {
   font-family: "Oleo Script Swash Caps", system-ui;
@@ -85,7 +80,7 @@ body{
 
 .cxtitulo{
     border-radius: 1rem;
-    background-color: rgba(242, 241, 230, 0.65);
+    /*background-color: rgba(242, 241, 230, 0.65);*/
     display: flex;
     width: 70%;
     flex-direction: row;
@@ -97,11 +92,14 @@ body{
     justify-content:center;
     align-items: center;
     text-align: center;
-    
+    font-family: "Oleo Script Swash Caps", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw;
 }
 
 .titulo p{
-    font-size: 2rem;
+    
     font-family: "Oleo Script Swash Caps", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -122,7 +120,7 @@ body{
     flex-direction: column;
     overflow: hidden;
    /* border: 3px solid rgb(0, 0, 0);*/
-    padding-bottom: 2%;
+    padding-bottom: 1%;
 }
 
 .contdaimgpost{
@@ -153,6 +151,7 @@ body{
     height: auto;
     margin-bottom: 1.5rem;
     width: 90%;
+    display: block
     /*border: 3px solid rgb(0, 0, 0);*/
     
 }
@@ -167,6 +166,7 @@ body{
     overflow: hidden;
     width: fit-content;
     border-radius: 1rem;
+    display: block
 }
 
 .descricao{
@@ -216,6 +216,10 @@ body{
     text-align: center;
     padding-left: 2rem;
     padding-right: 2rem;
+    font-family: "Oleo Script Swash Caps", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.9vw;
 }
 .titdocabcontdesc{
     display: flex;
@@ -283,15 +287,16 @@ body{
     /*border: 2px solid rgb(212, 0, 255);*/
     height: auto;
     width: 50%;
-    padding-left: 2rem;
-    padding-right: 2rem;
     display: flex;
     flex-direction: column;
     padding-top: 3rem;
     overflow: hidden;
     justify-content: space-between;
 }
-
+.pippostscont{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 .pipposts{
     /*border: 2px solid rgb(67, 0, 81);*/
     background-color: #E8D8C3;
@@ -326,7 +331,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
-    /*border: 3px solid rgb(0, 81, 255);*/
+    border: 3px solid rgb(0, 81, 255);
 }
 
 .piptextoimgdototoro{
@@ -334,19 +339,23 @@ body{
     max-height: 100%;
     /*border: 3px solid rgb(255, 0, 0);*/
 }
+.totorop2img{
+    /*border: 3px solid rgb(68, 255, 0);*/
+    width: 100%;
+}
 
 /*@media (max-height: 600px){
     .conteudocont{
         flex-direction: column;
     }
 }*/
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
     /* aq muda pra empilhar*/
     .conteudocont {
         flex-direction: column; 
     }
-    .gatito{
-        width: 40%;
+    .gatito img{
+        max-width: 9rem;
     }
     /* aq faz as colunas ocuparem a tela toda */
     .p1, .p2 {
@@ -359,19 +368,7 @@ body{
         
     }
 
-    .titulodocabimg{
-    display: flex;
-    flex-direction: row;
-    background-color: #8D8D8D;
-    border-radius: 1rem;
-    justify-content:space-between;
-    align-items: center;
-    text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    }
     .imgcont{
-    
     display: flex;
     flex-direction: column;
     background-color: #E0D5BF;
@@ -382,9 +379,14 @@ body{
     border-radius: 1rem;
     height: auto;
     margin-bottom: 1.5rem;
-    width: fit-content;
+    max-width: 100%;
     }
-
+    .fotopsts{
+        max-width: 100%;
+    }
+    .desccont{
+    width: 100%;
+    }
     .titulodocabdesc{
     display: flex;
     flex-direction: row;
@@ -395,16 +397,114 @@ body{
     text-align: center;
     padding-left: 2rem;
     padding-right: 2rem;
+     font-size: 7vw;
     }
-
+    .pippostscont{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 100%;
+    
+    }
     .pipposts{
     background-color: #E8D8C3;
     border-radius: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    width: 80vw;
+    
+    }
+    .piptextopost{
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7rem;
+    text-align: center;
+}
+    .totorogalho{
+        display: none;
+    }
+    .totoroimgdesc{
+        display: none;
+    }
+    .piptextoimgdototoro{
+        display: none;
+    }
+    .totoroarvorepip{
+        display: none;
+    }
+    .topnuvens{
+        display: none;
+    }
+    .N1{
+        display: none;
+    }
+}
+
+
+@media (min-width: 701px) and (max-width: 1000px) {
+    /* aq muda pra empilhar*/
+    .conteudocont {
+        flex-direction: column; 
+    }
+    .gatito img{
+        max-width: 9rem;
+    }
+    /* aq faz as colunas ocuparem a tela toda */
+    .p1, .p2 {
+        background-color: #398774;
+        width: 100%; 
+        padding-left: 1rem; /* nesses 2 paddings vc vai testando até ver o q te agrada, coloquei 1 só como base */
+        padding-right: 1rem;
+        overflow: hidden;
+        align-items: center;
+        
+    }
+
+    .imgcont{
+    display: flex;
+    flex-direction: column;
+    background-color: #E0D5BF;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: auto;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    }
+    .fotopsts{
+        max-width: 100%;
+    }
+    .desccont{
+    width: 100%;
+    }
+    .titulodocabdesc{
+    display: flex;
+    flex-direction: row;
+    background-color: #8D8D8D;
+    border-radius: 1rem;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+     font-size: 4vw;
+    }
+    .pippostscont{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 100%;
+    
+    }
+    .pipposts{
+    background-color: #E8D8C3;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     
     }
     .piptextopost{
