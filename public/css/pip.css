@@ -6,15 +6,15 @@ body{
    
 }
 .anonymous-pro-regular {
-  font-family: "Anonymous Pro", monospace;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .oleo-script-swash-caps-regular {
-  font-family: "Oleo Script Swash Caps", system-ui;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Oleo Script Swash Caps", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .contpip{
@@ -74,13 +74,11 @@ body{
     justify-content:left;
     align-items: center;
     text-align: center;
-    /*padding-left: 4rem;
-    padding-right: 2rem;*/
+    height: fit-content;
 }
 
 .cxtitulo{
     border-radius: 1rem;
-    /*background-color: rgba(242, 241, 230, 0.65);*/
     display: flex;
     width: 70%;
     flex-direction: row;
@@ -95,11 +93,11 @@ body{
     font-family: "Oleo Script Swash Caps", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 4vw;
+    font-size: 8vh;
+    color: #030850;
 }
 
 .titulo p{
-    
     font-family: "Oleo Script Swash Caps", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -110,7 +108,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     height: auto;
-    background-image: linear-gradient(to bottom, #1E84AA, #E8D8C3);
+    background-image: linear-gradient(to bottom, #EFE6DA 65%, #1E84AA );
 }
 
 .p1{
@@ -119,7 +117,7 @@ body{
     display: flex;
     flex-direction: column;
     overflow: hidden;
-   /* border: 3px solid rgb(0, 0, 0);*/
+    /* border: 3px solid rgb(0, 0, 0);*/
     padding-bottom: 1%;
 }
 
@@ -134,14 +132,12 @@ body{
     align-items: center;
     text-align: center;
     height: auto;
-    width: fit-content;
-    /*border: 3px solid rgb(0, 0, 0);*/
+    width: auto;
+    /* border: 3px solid rgb(0, 0, 0); */
 }
 
 .imgcont{
-    
     display: flex;
-    flex-direction: column;
     flex-direction: column;
     justify-content:center;
     align-items: center;
@@ -150,23 +146,21 @@ body{
     border-radius: 1rem;
     height: auto;
     margin-bottom: 1.5rem;
-    width: 90%;
-    display: block
-    /*border: 3px solid rgb(0, 0, 0);*/
+    width: auto;
+    /* border: 3px solid rgb(255, 0, 0); */
     
 }
 
 .ftpostscont{
-    height: fit-content;
+    height: 100%;
     width: 100%;
     max-width: 500px;
     justify-content:center;
     align-items: center;
     text-align: center;
     overflow: hidden;
-    width: fit-content;
     border-radius: 1rem;
-    display: block
+    /* border: 3px solid rgb(0, 8, 255); */
 }
 
 .descricao{
@@ -177,20 +171,21 @@ body{
     text-align: center;
     border-radius: 1rem;
     height: auto;
-   /* border: 3px solid rgb(255, 0, 0);*/
+    /* border: 3px solid rgb(255, 0, 0);*/
 }
 
 .desccont{
     display: flex;
     flex-direction: column;
     flex-direction: column;
-    background-color: #E8D8C3;
+    background-color: #DACBB7;
     justify-content:center;
     align-items: center;
     text-align: center;
     border-radius: 1rem;
     height: auto;
     width: 40vw;
+    box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .contdadesc{
@@ -219,7 +214,7 @@ body{
     font-family: "Oleo Script Swash Caps", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.9vw;
+    font-size: 5vh;
 }
 .titdocabcontdesc{
     display: flex;
@@ -279,7 +274,9 @@ body{
     display: flex;
     flex-direction: row;
     gap: 10px;
-    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    padding: 0 1rem;
+    
 }
 
 
@@ -299,12 +296,10 @@ body{
 }
 .pipposts{
     /*border: 2px solid rgb(67, 0, 81);*/
-    background-color: #E8D8C3;
+    background-color: #DACBB7;
     border-radius: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-    
+    padding: 2rem 2rem;
+    box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .piptextopost{
@@ -314,18 +309,6 @@ body{
     font-size: 1.7rem;
     text-align: center;
 }
-
-/*.totoroarvorepip{
-    display: flex;
-    flex-direction: column;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    height: fit-content;
-    width: 100%;
-    height: -2vh;
-    border: 3px solid rgb(255, 0, 0);
-}*/
 
 .piptototroarvore{
     display: flex;
@@ -357,6 +340,17 @@ body{
     .gatito img{
         max-width: 9rem;
     }
+
+    .titulodopost{
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    font-family: "Oleo Script Swash Caps", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.7vh;
+    color: #030850;
+}
     /* aq faz as colunas ocuparem a tela toda */
     .p1, .p2 {
         background-color: #398774;
@@ -381,9 +375,10 @@ body{
     margin-bottom: 1.5rem;
     max-width: 100%;
     }
-    .fotopsts{
-        max-width: 100%;
+    .ftpostscont{
+        background-image: url('../assets/Imagem.svg');
     }
+
     .desccont{
     width: 100%;
     }
@@ -397,7 +392,7 @@ body{
     text-align: center;
     padding-left: 2rem;
     padding-right: 2rem;
-     font-size: 7vw;
+    font-size: 7vw;
     }
     .pippostscont{
     padding-left: 0.5rem;
@@ -462,7 +457,7 @@ body{
     }
 
     .imgcont{
-    display: flex;
+    display: hidden;
     flex-direction: column;
     background-color: #E0D5BF;
     justify-content:center;
