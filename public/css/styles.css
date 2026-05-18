@@ -15,6 +15,7 @@
   align-items: center;
   font-family: "Nunito", sans-serif;
   font-weight: bolder;
+  transition: width 0.4s ease-in-out, padding 0.4s ease-in-out;
 }
 
 .perfilSidebar img{
@@ -23,6 +24,7 @@
   border-radius: 200%;
   padding-right: 10px ;
   cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 .perfilSidebar {
   display: flex;
@@ -31,7 +33,6 @@
   padding: 20px;
   color: #fff;
   font-size: 18px;
-  
 }
 
 .icone-sidebar {
@@ -77,11 +78,12 @@
   margin-left: 0;
   margin-right: 0;
   padding: 10px;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .icone-sidebar img {
-  width: 50px;
-  height: 50px;
+  width: 4vw;
+  height: 8vh;
   
 }
 
@@ -89,6 +91,7 @@ button#buttonLogout {
   background-color: transparent;
   border: none;
   cursor: pointer;
+
   
 }
 ul {
@@ -107,7 +110,7 @@ ul {
   margin-left: 10px;
   font-family: "Nunito", sans-serif;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .logoutSidebar button:hover {
@@ -126,10 +129,10 @@ ul {
   margin-bottom: 50px;
 }
 
+/* sidebarFechada */
+
 .closed-sidebar{
-  width: 90px;
-  min-width: 90px;
-  max-width: 90px;
+  width: 8vw;
 }
 
 .closed-sidebar .itemSidebar {
@@ -151,7 +154,7 @@ ul {
 }
 
 .closed-sidebar .perfilSidebar img {
-  width: 80px;
+  width: 6vw;
   height: 100%;
   padding-right: 0;
 }
