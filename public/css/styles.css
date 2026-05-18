@@ -178,3 +178,39 @@
     margin-left: 20rem;
 }
 
+@media (max-width: 414px){
+    #logo{
+        height: 10rem;
+        width: 10rem;
+    }
+    .input-login{
+        width: 16rem;
+        height: 2.5rem;
+    }
+    #tittle{
+        font-size: 4rem;
+    }
+    .all{
+        background-image:url(../assets/login-cell.png);
+    }
+    #mail{
+    position: absolute;
+    margin-right: 13rem;
+    }
+    #lock{
+        position: absolute;
+        margin-right: 13rem;
+    }
+
+    #eye{
+        position: absolute;
+        margin-left: 13rem;
+    }
+    .modal-mid{
+        gap: 0.5rem;
+    }
+    .modal-login{
+        gap:1rem;
+        padding-block: 2rem;
+    }
+}
