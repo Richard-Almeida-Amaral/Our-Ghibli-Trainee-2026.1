@@ -121,6 +121,11 @@
     text-align:center;
 }
 
+.input-login:focus{
+    outline: none;
+}
+
+
 .input-login::placeholder{
     display: flex;
     font-family: inter;
