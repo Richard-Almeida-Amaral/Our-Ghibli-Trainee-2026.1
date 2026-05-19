@@ -106,6 +106,7 @@
         justify-content: space-between;
         flex-direction: row-reverse;
         padding-right: 7.5rem;
+        padding-left: 1rem;
     }
 
     .list{
