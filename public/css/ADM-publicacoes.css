@@ -10,28 +10,56 @@
     height: 100%;
 }
 
+.ADMP-body{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
 .ADMP-top{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: start;
+    width: 100%;
+    margin-left: 3rem;
 }
 
 .ADMP-tittle{
-
+    font-weight: 150;
 }
 
 .ADMP-mid{
     display: flex;
+    flex-direction: row;
     justify-content: start;
-    flex-direction: column;
-}
-
-.ADMP-up{
-
-}
-
-.ADMP-down{
-    display: flex;
     align-items: center;
-    gap: 1rem;
+    flex-direction: row;
+    background-color: #8d8a80;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border-radius: 1.2rem;
+    gap:1rem;
+    width: fit-content;
+}
+
+.ADMP-box{
+    display: flex;
+    border-radius: 2rem;
+    padding-inline: 1rem;
+    padding-block: 0.4rem;
+    border: 0.5px solid black;
+    width: 45rem;
+    padding-block: 0.8rem;
+    justify-content: start;
+}
+
+.ADMP-butom{
+    display: flex;
+    border-radius: 1rem;
+    padding-inline: 1rem;
+    padding-block: 0.4rem;
+    background-color: #6997D3;
+    border: none;
+    color: white;
 }
