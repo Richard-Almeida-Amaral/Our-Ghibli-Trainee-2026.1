@@ -195,3 +195,30 @@ td:nth-child(odd) {
     position: absolute;
     margin: 0.8rem;
 }
+
+.ADMP-pag {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.ADMP-pag button {
+    background-color: #F4F4F4;
+    color: #20315A;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.ADMP-pag button:hover {
+    background-color: #8cb1e2;
+    color: #EBE3D7;
+}
+.ADMP-sec{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: fit-content;
+}
