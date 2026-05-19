@@ -9,7 +9,7 @@
     align-items: center;
     justify-content:center;
     flex-direction: column;
-    background-image: url(../assets/FotoFundo2.png);
+    background-image: url(../assets/telas-desk/4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -196,7 +196,7 @@
         font-size: 4rem;
     }
     .all{
-        background-image:url(../assets/login-cell.png);
+        background-image:url(../assets/telas-mobile/15.jpg);
     }
     #mail{
     position: absolute;
