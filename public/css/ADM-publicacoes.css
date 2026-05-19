@@ -3,3 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.ADMP-html{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.ADMP-top{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.ADMP-tittle{
+
+}
+
+.ADMP-mid{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.ADMP-up{
+
+}
+
+.ADMP-down{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
