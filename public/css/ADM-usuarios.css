@@ -40,7 +40,33 @@
     border-radius: 1rem;
 }
 
-.pesqusuario{
+#pesquisa {
+    display: flex;
+    width: 60%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+
+    /* position: absolute;
+    right: 20%;
+    bottom: 30px;   */
+}
+
+#pesquisa::placeholder {
+    color: var(--color-azul1-100);
+    font-family: "Nunito";
+    font-weight: bold;
+    background-image: url(https://cdn-icons-png.flaticon.com/128/2319/2319177.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+/* .pesqusuario{
     display: flex;
     flex-direction: row;
     font-size: 1.2rem;
@@ -53,14 +79,14 @@
     gap: 10px;
     border: 2px solid #000000;
     border-color: #000000;
-}
+} */
 
-.iconpesq{
+/* .iconpesq{
     align-items: center;
     text-align: center;
     height: fit-content;
     width: fit-content;
-}
+} */
 
 /* .tablecont, td, th{
     border: 1px solid blue;
@@ -118,4 +144,26 @@
 
 .usuarioTbody tr:nth-child(even) {
     background-color: #DCEFF5;
-} 
+}
+
+.paginação {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.paginação button {
+    background-color: #EBE3D7;
+    color: #20315A;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Nunito";
+    font-weight: bold;
+}
+.paginação button:hover {
+    background-color: #20315A;
+    color: #EBE3D7;
+}
