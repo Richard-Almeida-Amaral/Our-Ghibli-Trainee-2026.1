@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ADMU-body{
+    background-color: #C7D2DE;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0rem 30px;
+}
+.Topo{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    width: 100%;
+    height: 10rem;
+    justify-content: space-between;
+    border: 2px solid rgb(0, 255, 17);
+}
+
+.Titulo{
+    font-size: 2rem;
+    font-style: normal;
+}
+
+.acoestopo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.adcusuario button{
+    font-size: 1.2rem;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    background-color: #20315A;
+    border-radius: 1rem;
+}
+
+.pesqusuario{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    color: #b1b1b1;
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    border: 2px solid #000000;
+    border-color: #000000;
+}
+
+.iconpesq{
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+.tablecont, td, th{
+    border: 1px solid blue;
+}
+
+.tablecont{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #F2F1E6;
+}
+
+.usuarioTd, .usuarioTh{
+    padding: 10px;
+}
+
+.usuarioTr{
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.usuarioTbody tr:nth-child(odd) {
+    background-color: #E9E9E9;
+    border: 1px solid #DEDBDB;
+}
+
+.usuarioTbody tr:nth-child(even) {
+    background-color: #DCEFF5;
+    border: 1px solid #DEDBDB;
+} 
