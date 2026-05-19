@@ -36,7 +36,7 @@
 
 .dashboard{
 
-background-image: url(/Our-Ghibli-Trainee-2026.1/public/assets/ghiblicompleto2.png);
+background-image: url(../assets/ghiblicompleto2.png);
 width: 100vw;
 height: 100vh;
 background-position: center;
@@ -75,7 +75,7 @@ align-items: center;
 
 .dashboard-logo{
 
-    background-image: url(/Our-Ghibli-Trainee-2026.1/public/assets/logoEscuraAzulEscrito.png);
+    background-image: url(../assets/logoEscuraAzulEscrito.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
