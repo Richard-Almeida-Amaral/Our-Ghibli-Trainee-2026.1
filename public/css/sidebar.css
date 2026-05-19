@@ -20,13 +20,15 @@
     padding 0.4s ease-in-out;
 }
 
-.perfilSidebar img {
-  width: 50%;
-  height: 80px;
-  border-radius: 200%;
-  padding-right: 10px;
-  cursor: pointer;
-  transition: all 0.4s ease-in-out;
+.imagemPerfil {
+  width: 70%;
+  height: 100%;
+}
+
+.iconeMenu img {
+  width: 80%;
+  height: 100%;
+  align-items: center;
 }
 .perfilSidebar {
   display: flex;
@@ -54,9 +56,10 @@
   height: 100%;
   min-height: 90px;
 }
-
 .active {
   background-color: #10192d;
+  width: 100%;
+  height: 100%;
 }
 
 .itemSidebar a {
@@ -85,6 +88,7 @@
 .icone-sidebar img {
   width: 4vw;
   height: 8vh;
+  align-items: center;
 }
 
 button#buttonLogout {
@@ -131,18 +135,64 @@ ul {
   width: 8vw;
 }
 
+.closed-sidebar .active{
+  width: 100% !important;
+  height: 100% !important;
+}
+
 .closed-sidebar .itemSidebar {
   min-height: auto;
-  width: 100%;
+  width: 100px;
   margin-bottom: 50px;
+} 
+
+
+.closed-sidebar .perfilSidebar .iconeMenu img{
+  width: 50px;
+  height: 50px;
+  align-items: center;
+}
+
+.closed-sidebar .itemSidebar .icone-sidebar {
+  width: 60%;
+  height: 80%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 0.5rem;
+  align-items: center;
+}
+
+
+.closed-sidebar .itemSidebar .icone-sidebar img {
+  width: 50px;
+  height: 50px;
+}
+
+.logoutSidebar img{
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+
+.logoutSidebar .icone-sidebar{
+  align-items: center;
+  justify-items: center;
+  width: 50%;
+  height: 50%;
 }
 
 .closed-sidebar .itemSidebar span {
   display: none;
 }
 
-.closed-sidebar .perfilSidebar span {
+.closed-sidebar .imagemPerfil {
   display: none;
+}
+
+.closed-sidebar .iconeMenu img{
+  width: 50%;
+  height: 30%;
 }
 
 .closed-sidebar .logoutSidebar .itemDescricao {
