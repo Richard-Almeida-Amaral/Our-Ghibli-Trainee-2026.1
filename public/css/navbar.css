@@ -84,3 +84,37 @@
     box-shadow: 0 0 40px rgba(120, 158, 209, 0.699); 
 }
 
+.list{
+    display: none;
+}
+
+@media (max-width: 414px){
+    #nav-logo{
+        height: 3.4rem;
+        width: 10rem;
+    }
+    .nav-mid{
+        display: none;
+    }
+    
+    #nav-login{
+        display: none;
+    }
+    .nav-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding-right: 7.5rem;
+    }
+
+    .list{
+        display: flex;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .nav-right{
+        display: flex;
+    }
+}
