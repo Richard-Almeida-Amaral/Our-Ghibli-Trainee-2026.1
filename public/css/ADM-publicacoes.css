@@ -30,6 +30,7 @@
 
 .ADMP-tittle{
     font-weight: 150;
+    font-family:"Alice","sans-serif";
 }
 
 .ADMP-mid{
@@ -110,8 +111,9 @@
     width: 15rem;
     align-items: center;
     justify-content: center;
-    font-weight: 1000;
+    font-weight: 800;
     font-size: larger;
+    font-family: "inter", "sans-serif";
 }
 
 .TP-header-conteiner{
@@ -131,7 +133,7 @@
     display: flex;
     border-top-left-radius: 0.6rem;
     border-top-right-radius: 0.6rem;
-    background-color: #e5ecf3;
+    background-color: #F4F4F4;
     justify-content: space-between;
     gap: 4rem;
     padding-inline: 3rem;
@@ -143,7 +145,7 @@
     display: flex;
     border-bottom-left-radius: 0.6rem;
     border-bottom-right-radius: 0.6rem;
-    background-color: #e5ecf3;
+    background-color: #F4F4F4;
     padding-inline: 1rem;
     padding-block:0.4rem;
     height: 3rem;
@@ -167,7 +169,7 @@
 
 
 td:nth-child(odd) {
-  background-color: #e5ecf3;
+  background-color: #F4F4F4;
 }
 
 .ADMP-bottom{
