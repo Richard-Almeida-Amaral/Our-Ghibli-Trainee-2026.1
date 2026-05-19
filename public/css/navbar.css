@@ -17,6 +17,7 @@
     justify-content: space-between;
     flex-direction: row;
     background-color: #E8D8C3;
+    padding-right: 1rem;
 }
 
 #nav-logo{
@@ -34,12 +35,12 @@
     display: flex;
     flex-direction: row;
     border: 1px solid black;
-    border-radius: 2rem;
+    border-radius: 3rem;
     gap: 1rem;
     height: fit-content;
     width: fit-content;
     align-items: center;
-    padding-inline: 2rem;
+    padding-inline: 3rem;
     padding-block: 1rem;
 }
 
@@ -48,13 +49,19 @@
     padding: 0;
     font-family: "Alice", sans-serif;
     font-weight: 200;
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     border: 0px;
     background-color: #E8D8C3;
 }
 
-.nav-right{
+.nav-link:hover{
+    background-color:#ada295;
+    border-radius: 3rem;
+    padding-block: 0.2rem;
+    padding-inline: 0.8rem;
+}
 
+.nav-right{
 }
 
 #nav-login{
@@ -62,8 +69,15 @@
     padding: 0;
     font-family: "Alice", sans-serif;
     font-weight: 200;
-    font-size: 1.8rem;
-    border: 1px solid rgb(255, 255, 255);
-    background-color: #0051ff;
+    font-size: 1.1rem;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #7098ec;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    padding-inline: 1.5rem;
+    padding-block: 0.5rem;
 }
 
+#nav-login:hover{
+    
+}
