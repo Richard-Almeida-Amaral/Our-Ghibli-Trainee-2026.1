@@ -68,6 +68,7 @@ body {
   color: var(--color-azul1-100);
   font-family: "Nunito";
   font-weight: bold;
+  font-size: large;
   background-image: url(https://cdn-icons-png.flaticon.com/128/2319/2319177.png);
   background-repeat: no-repeat;
   background-position: right center;
@@ -90,7 +91,7 @@ body {
   display: grid;
   grid-template-rows: 1fr 50px 100px;
   width: 80%;
-  height: 500px;
+  height: 70vh;
   margin-bottom: 20px;
   text-align: center;
   overflow: hidden;
@@ -136,6 +137,7 @@ body {
   border-radius: 50px;
   cursor: pointer;
   font-family: "Nunito";
+  font-size: large;
   font-weight: bold;
 }
 .paginação button:hover {
