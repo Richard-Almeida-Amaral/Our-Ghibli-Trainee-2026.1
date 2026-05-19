@@ -8,15 +8,18 @@
     background-color: #C7D2DE;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 0rem 30px;
+    gap: 3rem;
+    padding: 0rem 9rem;
+    height: 100%;
+    width: 100%;
 }
 .Topo{
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
     width: 100%;
-    height: 10rem;
+    height: auto;
+    gap: 2rem;
     justify-content: space-between;
     /* border: 2px solid rgb(0, 255, 17); */
 }
@@ -30,6 +33,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-radius: 1rem;
+    background-color: #EBE3D7;
+    padding: 1rem;
+    gap: 1.2rem;
 }
 
 .adcusuario button{
@@ -42,7 +49,7 @@
 
 #pesquisa {
     display: flex;
-    width: 60%;
+    width: 100%;
     height: 40px;
     align-items: center;
     justify-content: center;
@@ -57,7 +64,6 @@
 }
 
 #pesquisa::placeholder {
-    color: var(--color-azul1-100);
     font-family: "Nunito";
     font-weight: bold;
     background-image: url(https://cdn-icons-png.flaticon.com/128/2319/2319177.png);
@@ -66,12 +72,13 @@
     background-size: contain;
 }
 
-/* .pesqusuario{
+.pesqusuario{
     display: flex;
     flex-direction: row;
     font-size: 1.2rem;
     color: #b1b1b1;
-    padding: 0.5rem 1rem;
+    width: 70%;
+    /* padding: 0.5rem 1rem; */
     background-color: #ffffff;
     border-radius: 1rem;
     align-items: center;
@@ -79,25 +86,23 @@
     gap: 10px;
     border: 2px solid #000000;
     border-color: #000000;
-} */
+} 
 
-/* .iconpesq{
-    align-items: center;
-    text-align: center;
-    height: fit-content;
-    width: fit-content;
-} */
 
-/* .tablecont, td, th{
-    border: 1px solid blue;
-} */
+.tablecont, th{
+    /* border: 1px solid blue; */
+    padding: 1rem;
+} 
 
 .tablecont{
     border-collapse: collapse;
     width: 100%;
-    background-color: #F2F1E6;
+    background-color: #EBE3D7;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     border-radius: 1rem;
+    align-content: space-around;
+    justify-content: space-between;
+    height: fit-content;
     /* border: 1px solid rgb(255, 0, 0); */
 }
 
@@ -109,21 +114,13 @@
     /* border-radius: 1rem; */
 }
 
-/* .usuarioThead{
-    border-radius: 1rem;
-} */
-
-/* .usuarioTbody{
-    border-radius: 1rem;
-} */
-
-.usuarioTd, .usuarioTh{
-    padding: 10px;
-    /* border: 1px solid rgb(255, 0, 0); */
+.usuarioTdAc{
+    gap: 2rem;
 }
 
-.usuarioTd8{
-    border-bottom-left-radius: 1rem;
+.usuarioTd, .usuarioTh, .usuarioTr{
+    padding: 1rem;
+    /* border: 1px solid rgb(255, 0, 0); */
 }
 
 .usuarioTr{
@@ -137,19 +134,29 @@
     background-color: #E9E9E9;
 }
 
+.usuarioTbody tr:nth-child(even) {
+    background-color: #DEDBDB;
+}
+
 .usuarioTh:first-child { text-align: center;}
 .usuarioTd:first-child { text-align: center;}
 .usuarioTh:last-child { text-align: center;}
 .usuarioTd:last-child { text-align: center;}
 
-.usuarioTbody tr:nth-child(even) {
-    background-color: #DCEFF5;
+.downpart{
+    display: flex;
+    background-color: #EBE3D7;
+    height: 3.1rem;
+    width: 100%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .paginação {
     display: flex;
     justify-content: center;
-    margin: 80px 0;
+    margin-bottom: 1rem;
 }
 
 .paginação button {
