@@ -41,7 +41,7 @@
     width: fit-content;
     align-items: center;
     padding-inline: 3rem;
-    padding-block: 1rem;
+    padding-block: 0.8rem;
 }
 
 .nav-link{
@@ -52,16 +52,15 @@
     font-size: 1.1rem;
     border: 0px;
     background-color: #E8D8C3;
+    padding-block: 0.1rem;
+    padding-inline: 0.8rem;
 }
 
 .nav-link:hover{
     background-color:#ada295;
     border-radius: 3rem;
-    padding-block: 0.2rem;
+    padding-block: 0.1rem;
     padding-inline: 0.8rem;
-}
-
-.nav-right{
 }
 
 #nav-login{
@@ -84,3 +83,4 @@
     transition: ease-in-out 200ms;
     box-shadow: 0 0 40px rgba(120, 158, 209, 0.699); 
 }
+
