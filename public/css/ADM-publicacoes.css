@@ -41,9 +41,9 @@
     background-color: #FAF9F6;
     padding-inline: 2rem;
     padding-block: 1rem;
-    border-radius: 1.2rem;
+    border-radius: 1.5rem;
     gap:1rem;
-    width: fit-content;
+    width: 75rem;
 }
 
 .ADMP-box{
@@ -52,50 +52,47 @@
     padding-inline: 1rem;
     padding-block: 0.4rem;
     border: 0.5px solid black;
-    width: 45rem;
+    width: 55rem;
     padding-block: 0.8rem;
     justify-content: start;
 }
 
+
+
 .ADMP-butom{
     display: flex;
-    border-radius: 1rem;
-    padding-inline: 1rem;
-    padding-block: 0.4rem;
+    border-radius: 2rem;
+    padding-inline: 3rem;
+    padding-block: 0.8rem;
     background-color: #6997D3;
     border: none;
     color: white;
+    font-size: 1rem;
 }
 
 .ADMP-table{
     display: flex;
     background-color: #FAF9F6;
     align-content: space-around;
-    justify-content: space-around;
-    width: fit-content;
+    justify-content: space-between;
+    width: 100%;
     height: fit-content;
     flex-direction: column;
-    border-radius: 0.4rem;
-    padding: 1rem;
-    gap: 0.5rem;
-    border:1px solid black;
 }
 
 .ADMP-tbody{
     display: flex;
     flex-direction: row;
-    gap: 4rem;
-    width: fit-content;
-    height: fit-content;
+    justify-content: center;
 }
 
 
 .ADMP-theader{
     display: flex;
     align-content: center;
-    justify-content: space-between;
     flex-direction:row;
-    padding-inline: 1.5rem;
+    background-color: #ffffff;
+    justify-content: center;
 }
 
 .TP-col{
@@ -103,17 +100,24 @@
     align-items: center;
     justify-content: center;
     gap: 0.8rem;
+    height: 3rem;
+    width: 15rem;
 }
 
 .TP-header{
     display: flex;
+    height: 3rem;
+    width: 15rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: 1000;
+    font-size: larger;
 }
 
 .TP-header-conteiner{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 6.1rem;
 }
 
 .TP-body-conteiner{
@@ -121,5 +125,53 @@
     flex-direction: column;
     align-content: space-between;
     justify-content: space-between;
-    gap: 0.5rem;
+}
+
+.ADMP-uptable{
+    display: flex;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    background-color: #e5ecf3;
+    justify-content: space-between;
+    gap: 4rem;
+    padding-inline: 3rem;
+    padding-block:0.4rem;
+    height: 3rem;
+    width: 75rem;
+}
+.ADMP-downtable{
+    display: flex;
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+    background-color: #e5ecf3;
+    padding-inline: 1rem;
+    padding-block:0.4rem;
+    height: 3rem;
+    width: 75rem;
+}
+
+.ADMP-select{
+    display: flex;
+    padding-left: 0.5rem;
+}
+
+
+
+.ADMP-tname{
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+
+td:nth-child(odd) {
+  background-color: #e5ecf3;
+}
+
+.ADMP-bottom{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
 }
