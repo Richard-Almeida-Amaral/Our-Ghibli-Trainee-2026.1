@@ -1,3 +1,5 @@
+/*   235 227  216      233 233 233     221   220  218   */ 
+
 *{
     margin: 0;
     padding: 0;
@@ -41,7 +43,7 @@
     justify-content: start;
     align-items: center;
     flex-direction: row;
-    background-color: #FAF9F6;
+    background-color: rgb(235, 227, 216);
     padding-inline: 2rem;
     padding-block: 1rem;
     border-radius: 1.5rem;
@@ -78,7 +80,7 @@
     padding-block: 0.8rem;
     background-color: #8cb1e2;
     transition: ease-in-out 200ms;
-    box-shadow: 0 0 40px rgba   (120, 158, 209, 0.699);
+    box-shadow: 0 0 40px rgba(120, 158, 209, 0.699);
     border: none;
     color: white;
     font-size: 1rem;
@@ -86,7 +88,7 @@
 
 .ADMP-table{
     display: flex;
-    background-color: #FAF9F6;
+    background-color: rgb(233,233,233);
     align-content: space-around;
     justify-content: space-between;
     width: 100%;
@@ -105,7 +107,7 @@
     display: flex;
     align-content: center;
     flex-direction:row;
-    background-color: #ffffff;
+    background-color: rgb(235, 227, 216);
     justify-content: center;
 }
 
@@ -146,7 +148,7 @@
     display: flex;
     border-top-left-radius: 0.6rem;
     border-top-right-radius: 0.6rem;
-    background-color: #F4F4F4;
+    background-color: rgb(235, 227, 216);
     justify-content: space-between;
     gap: 4rem;
     padding-inline: 3rem;
@@ -158,7 +160,7 @@
     display: flex;
     border-bottom-left-radius: 0.6rem;
     border-bottom-right-radius: 0.6rem;
-    background-color: #F4F4F4;
+    background-color: rgb(235, 227, 216);
     padding-inline: 1rem;
     padding-block:0.4rem;
     height: 3rem;
@@ -182,7 +184,7 @@
 
 
 td:nth-child(odd) {
-  background-color: #F4F4F4;
+  background-color: rgb(221,220,218);
 }
 
 .ADMP-bottom{
@@ -213,8 +215,8 @@ td:nth-child(odd) {
     font-weight: bold;
 }
 .ADMP-pag button:hover {
-    background-color: #8cb1e2;
-    color: #EBE3D7;
+    background-color: rgb(235, 227, 216);
+    color: #000000;
 }
 .ADMP-sec{
     display: flex;
