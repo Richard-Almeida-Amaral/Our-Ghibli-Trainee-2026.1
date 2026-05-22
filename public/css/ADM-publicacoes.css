@@ -19,7 +19,8 @@
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    background-color: #C7D2DE;
+    background: linear-gradient(to top,#E8D8C3,#e2c6a2);
+    background: linear-gradient(to bottom,#E8D8C3,#e2c6a2);
 }
 
 .ADMP-top{
@@ -219,7 +220,7 @@ td:nth-child(odd) {
     font-weight: bold;
 }
 .ADMP-pag button:hover {
-    background-color: rgb(235, 227, 216);
+    background-color: #ebc186;
     color: #000000;
     transition: ease-in-out 200ms;
     cursor: pointer;
