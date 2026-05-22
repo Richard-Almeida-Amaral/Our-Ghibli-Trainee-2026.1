@@ -479,3 +479,68 @@ h2 {
     cursor: pointer;
 
 }
+
+
+@media (max-width: 768px){
+
+    .framesetahero{
+
+        opacity: 0%;
+
+    }
+
+    .framepaddingposts {
+
+        height: 2vw;
+
+    }
+
+    .textodescricaopost{
+
+        padding-right: 2vw;
+        padding-left: 2vw;
+        padding-bottom: 2vw;
+        font-size: 4vw;
+        width: 82.67vw;
+    }
+
+    .imagempost{
+
+        width: 86.6vw;
+        height: 56vw;
+        gap: 39vw;
+
+    }
+
+    .tituloecurtidaspost{
+
+        gap: 57vw;
+
+    }
+
+    .textoemdestaque{
+
+        font-size: 3.5vw;
+        
+    }
+
+    .vetor-favoritar-carrossel{
+
+        width: 4vw;
+        height: 4vw;
+
+    }
+
+    .fotousuariopost{
+
+        width: 12vw;
+        height: 12vw;
+        border-radius: 60vw;
+    }
+
+    .nomeusuariopost{
+
+        font-size: 4vw;
+
+    }
+}
