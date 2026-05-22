@@ -1,0 +1,200 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.modalContainer {
+  width: 960px; 
+  height: fit-content;
+  background-color: #ebdcd0; 
+  border-radius: 24px;     
+  overflow: hidden;          
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.modalHeader {
+  width: 100%;
+  background-color: #20315a; 
+  padding: 18px 0;
+  text-align: center;
+}
+
+.modalHeader h2 {
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;                 
+  padding: 32px;
+  background-color: #E8D8C3;  
+}
+
+
+.arquivo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 440px;              
+  height: 485px;
+  background-color: #ebdcd0;
+  border: 1px dashed #b5a494; 
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+  padding: 20px;
+  margin-top: 45px;
+}
+
+.arquivo input[type="file"] {
+  display: none;             
+}
+
+.arquivo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: #4a3f35;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.upload-icon {
+  width: 42px;
+  height: 42px;
+  stroke: #4a3f35;
+}
+
+
+.containerTextos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;                 
+}
+
+.topoDescricao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 4px;
+}
+
+#tituloAreaTexto {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  color: #4a3f35;
+  font-weight: 500;
+}
+
+
+
+.btnFecharModal:hover {
+  opacity: 0.7;
+}
+
+.labelInput {
+  width: 100%;
+  height: 190px;             
+  background-color: #ebdcd0;
+  border: 1px dashed #b5a494; 
+  border-radius: 16px;
+  display: flex;
+}
+
+.labelDescricao {
+  width: 100%;
+  height: 270px;             
+  background-color: #ebdcd0;
+  border: 1px dashed #b5a494;
+  border-radius: 16px;
+  display: flex;
+}
+
+
+.inputCampo,
+.inputCampoDescricao {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  padding: 20px;
+  resize: none;
+  outline: none;
+  font-family: 'Quicksand', sans-serif;
+  color: #333333;
+}
+
+.inputCampo::placeholder,
+.inputCampoDescricao::placeholder {
+  color: #7a6e63;
+}
+
+.inputCampo,
+.inputCampoDescricao {
+  white-space: normal;
+}
+
+.inputCampo:focus,
+.inputCampoDescricao:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+
+
+
+.modalAcoes {
+  display: flex;
+  justify-content: flex-end; /* Alinha os botões à direita */
+  gap: 16px;
+  padding: 0 32px 32px 32px;
+  background-color: #E8D8C3;  
+}
+
+.modalAcoes button {
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  transition: transform 0.1s, opacity 0.2s;
+}
+
+.btnCriar {
+  background-color: #20315a;
+  color: #ffffff;
+}
+
+.btnCancelar {
+  background-color: #e63946;
+  color: #ffffff;
+}
+
+.modalAcoes button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.modalAcoes button:active {
+  transform: translateY(0);
+}
