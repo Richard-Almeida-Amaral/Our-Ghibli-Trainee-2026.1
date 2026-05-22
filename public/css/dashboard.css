@@ -25,13 +25,14 @@
 .body-dashboard{
 
     display: flex;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
 
+    overflow: hidden;
 }
 
 .dashboard{
@@ -58,7 +59,7 @@ align-items: center;
     width: fit-content;
     
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
@@ -79,8 +80,13 @@ align-items: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 18.73vh;
-    width: 22.5vw;
+    height: 10vw;
+    width: 25vw;
+
+    min-width: 220px;
+    min-height: 80px;
+
+
 
 }
 
@@ -90,7 +96,7 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:0.4vw;
+    gap:0.9vw;
     /* ! preciso de ajuda para fazer as sombras externas */
 
 }
@@ -98,12 +104,12 @@ align-items: center;
 .dashboard-botoes-de-pagina{
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    gap: 1.4vw;
-    padding: 0.7vw;
+    gap: 0.9vw;
+
 
 }
 
@@ -119,8 +125,8 @@ align-items: center;
     padding-bottom: 0.75vw;
     padding-right: 1.1vw;
     padding-left: 0.9vw;
-    width: fit-content;
-    height: fit-content;
+    width: 17vw;
+    height: 3.6vw;
 
     background-color: #5a78a6;
     border-radius: 2.8vw;
@@ -147,12 +153,13 @@ align-items: center;
     align-items: center;
     
     gap: 0.7vw;
-    padding-top: 1.0vw;
-    padding-bottom:1.0vw;
+    padding-top: 0.75vw;
+    padding-bottom: 0.75vw;
     padding-right: 1.1vw;
     padding-left: 0.9vw;
-    width: fit-content;
-    height: fit-content;
+    width: 17vw;
+    height: 3.6vw;
+
 
     border:0.2vw, solid, #00000000;
 
@@ -180,12 +187,12 @@ align-items: center;
     align-items: center;
     
     gap: 0.7vw;
-    padding-top: 0.7vw;
-    padding-bottom: 0.7vw;
+    padding-top: 0.75vw;
+    padding-bottom: 0.75vw;
     padding-right: 1.1vw;
     padding-left: 0.9vw;
-    width: fit-content;
-    height: fit-content;
+    width: 17vw;
+    height: 3.6vw;
 
     background-color: #8B1A1A;
     border-radius: 2.8vw;
@@ -234,3 +241,98 @@ align-items: center;
 
 }
 
+@media (max-width:768px){
+
+    .centro-dashboard{
+
+        flex-direction: column;
+        gap: 5vw;
+
+        padding-bottom: 2.4vh;
+        padding-top: 2vh;
+        padding-right: 0.7vw;
+        padding-left: 0.7vw;
+
+    }
+
+    .pagina-de-usuario{
+
+    width: 45vw;
+    height: 10vw;
+    border-radius: 6vw;
+    gap: 2vw;
+    }
+
+    .texto-pagina-de-usuarios{
+
+    font-family: var(--fonte-nunito);
+    font-weight: 800;
+    color: #F2F1E6;
+    font-size: 3vw;
+}
+
+    .pagina-de-posts{
+
+    width: 45vw;
+    height: 10vw;
+    border-radius: 6vw;
+    gap: 2vw;
+    }
+
+    .texto-pagina-de-posts{
+
+    font-family: var(--fonte-nunito);
+    font-weight: 800;
+    color: #F2F1E6;
+    font-size: 3vw;
+}
+
+    .dashboard-botao-de-logout{
+
+    width: 45vw;
+    height: 10vw;
+    border-radius: 6vw;
+
+    gap: 2vw;
+    }
+
+    .texto-logout-dashboard{
+
+    font-family: var(--fonte-nunito);
+    font-weight: 800;
+    color: #F2F1E6;
+    font-size: 3vw;
+}
+
+    .dashboard-botoes-de-pagina{
+
+        gap: 3vw;
+
+    }
+    .dashboard-botoes{
+
+        gap: 3vw;
+
+    }
+
+    .icone-logout{
+
+        width:5vw;
+        height:5vw;
+
+    }
+
+    .icone-usuarios{
+
+    width:5vw;
+    height:5vw;
+
+    }
+
+    .icone-posts{
+
+    width:5vw;
+    height:5vw;
+
+    }
+}
