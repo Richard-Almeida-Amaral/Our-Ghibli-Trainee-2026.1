@@ -61,6 +61,9 @@
     justify-content: start;
 }
 
+.ADMP-box::-webkit-search-cancel-button{
+    cursor: pointer;
+}
 
 
 .ADMP-butom{
@@ -84,6 +87,7 @@
     border: none;
     color: white;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .ADMP-table{
@@ -217,10 +221,19 @@ td:nth-child(odd) {
 .ADMP-pag button:hover {
     background-color: rgb(235, 227, 216);
     color: #000000;
+    transition: ease-in-out 200ms;
+    cursor: pointer;
 }
 .ADMP-sec{
     display: flex;
     justify-content: center;
     align-items: start;
     height: fit-content;
+}
+
+.icons:hover{
+    height: 1.4rem;
+    width: 1.4rem;
+    transition: ease-in-out 200ms ;
+    cursor: pointer;
 }
