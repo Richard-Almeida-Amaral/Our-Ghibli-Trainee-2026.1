@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* Estilização para o modal de criação */
 
 .modalContainer {
   width: 960px; 
@@ -163,7 +164,7 @@
 
 .modalAcoes {
   display: flex;
-  justify-content: flex-end; /* Alinha os botões à direita */
+  justify-content: flex-end; 
   gap: 16px;
   padding: 0 32px 32px 32px;
   background-color: #E8D8C3;  
@@ -197,4 +198,96 @@
 
 .modalAcoes button:active {
   transform: translateY(0);
+}
+
+
+#modalExcluir {
+  width: 400px; 
+
+}
+
+.modalAcoesExcluir{
+  background-color: #ffffff;  
+}
+
+
+
+.modalContainerExcluir {
+  background-color: #ffffff;
+  width: 320px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+
+.modalHeaderExcluir {
+  background-color: #1e325c;
+  padding: 18px;
+}
+
+.modalHeaderExcluir h2 {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+.modalBodyExcluir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 20px 16px 20px;
+  background-color: #ffffff;  
+}
+
+
+.lixeira {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 14px;
+}
+
+.modalBodyExcluir p {
+  color: #333333;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+}
+
+
+.modalAcoesExcluir {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 24px 24px 24px;
+}
+
+.modalAcoesExcluir button {
+  width: 90px;
+  padding: 8px 0;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.modalAcoesExcluir button:hover {
+  opacity: 0.85;
+}
+
+.btnSim {
+  background-color: #d31c1c;
+  color: #ffffff;
+}
+
+.btnNao {
+  background-color: #20315a;
+  color: #ffffff;
 }

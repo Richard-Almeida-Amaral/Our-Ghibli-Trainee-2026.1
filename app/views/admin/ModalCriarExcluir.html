@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../../public/css/ModalCriarExcluir.css" />
-  <!-- Fontes -->
+  <!---------------------------- Fontes ----------------------------------------------------------->
 
   <!-- Alice -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,6 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
     rel="stylesheet" />
 
+  <!----------------------------------------------------------------------------------------------->
   <title>ModalCriar</title>
 </head>
 
@@ -29,6 +30,7 @@
   <section class="TituloModal">
     <div>
       <div class="modalBtn">
+
         <button class="btnCriar" onclick="abrirModalCriar('modalCriar')">
           Adicionar Publicação
         </button>
@@ -38,18 +40,17 @@
       </div>
     </div>
   </section>
-  
-  <!-- Modal Visualizar -->
-  <section class="criarModal">
-    <div class="modalContainer" id="modalCriar">
+
+  <!-- MODAL CRIAÇÃO  -->
+  <section class="criarModal" id="modalCriar" style="display: none;">
+    <div class="modalContainer">
 
       <div class="modalHeader">
         <h2>Criação de Publicação</h2>
       </div>
 
       <div class="modalBody">
-        
-        <!-- Bloco de Imagem (Lado Esquerdo) -->
+
         <label class="arquivo">
           <input type="file" accept="image/*" />
           <div class="arquivo-content">
@@ -60,35 +61,61 @@
           </div>
         </label>
 
-        <!-- Bloco de Textos (Lado Direito) -->
+
         <div class="containerTextos">
           <div class="topoDescricao">
             <h1 id="tituloAreaTexto">Descrição</h1>
           </div>
-
           <label class="labelInput">
             <textarea placeholder="Escreva seu Título..." class="inputCampo"></textarea>
           </label>
-
           <label class="labelDescricao">
             <textarea placeholder="Escreva sua Descrição..." class="inputCampoDescricao"></textarea>
           </label>
         </div>
-
       </div>
 
-      <!-- Botões inferiores -->
+      <!-- Botões inferiores Criação -->
       <div class="modalAcoes">
         <button class="btnCancelar" onclick="fecharModalCriar('modalCriar')">
           Cancelar
         </button>
-        <button class="btnCriar" onclick="abrirModalCriar('modalCriar')">
+        <button class="btnCriar">
           Criar
         </button>
       </div>
 
     </div>
   </section>
+
+  <!-- Modal de Exclusão -->
+
+  <section class="criarModal" id="modalExcluir" style="display: none;">
+    <div class="modalContainer" id="modalExcluir">
+
+      <div class="ModalContainerExcuir">
+        <div class="modalHeaderExcluir">
+          <h2>Exclusão de Publicação</h2>
+        </div>
+        <div class="modalBodyExcluir">
+          <img class="lixeira" src="../../../public/assets/disposicao.png" alt="">
+          <p>Deseja excluir esta publicação?</p>
+        </div>
+      </div>
+
+      <!-- Botões inferiores Exclusão -->
+      <div class="modalAcoesExcluir">
+        <button class="btnNao" onclick="fecharModalCriar('modalExcluir')">
+          Não
+        </button>
+        <button class="btnSim">
+          Sim
+        </button>
+      </div>
+
+    </div>
+  </section>
+
 </body>
 <script src="../../../public/js/ModalCriarExcluir.js"></script>
 
