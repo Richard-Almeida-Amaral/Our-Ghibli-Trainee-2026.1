@@ -153,13 +153,13 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-.paginação {
+.ADMU-paginação {
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
 }
 
-.paginação button {
+.ADMU-paginação button {
     background-color: #EBE3D7;
     color: #20315A;
     border: none;
@@ -170,7 +170,7 @@
     font-family: "Nunito";
     font-weight: bold;
 }
-.paginação button:hover {
-    background-color: #20315A;
+.ADMU-paginação button:hover {
+    background-color: #659596;
     color: #EBE3D7;
 }
