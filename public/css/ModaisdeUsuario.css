@@ -1,0 +1,116 @@
+.html{
+
+ gap:2vw;
+
+}
+
+
+.modal-criar-usuario-container{
+
+    width:20vw;
+    border: 2px, solid, black;
+    border-radius: 12px;
+    overflow:hidden;
+
+}
+
+.botao-criar-usuario{
+
+    background-color: blue;
+    font-size: 64px;
+    color: white;
+    border-radius: 5vw;
+
+}
+
+
+.titulo-criar-usuario{
+
+    background-color: blue;
+    color: white;
+    text-align: center;
+    
+    width:100%;
+
+    font-family: var(quicksand);
+
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+
+
+
+
+}
+
+.content-criar-usuario{
+
+
+height: 30vw;
+background-color: blanchedalmond;
+
+display: flex;
+flex-direction: column;
+
+padding-right: 1vw;
+padding-left: 1vw;
+
+gap:1vw;
+
+
+}
+
+.container-botoes-finalizacao-criar-usuario{
+
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+
+
+}
+
+
+.botao-finalizacao-criar-usuario{
+
+    height: 2vw;
+    width: 10vw;
+
+}
+
+
+#botao-criar-criar-usuario{
+
+    background-color:#5A78A6;
+    border-radius: 1.3vw;
+    text-align: center;
+    color: #F2F1E6;
+    padding: 0.2vw;
+    font-size: 1.3vw;
+    justify-content: center;
+    align-content: center;
+    width: fit-content;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
+
+
+}
+
+#botao-cancelar-criar-usuario{
+
+    background-color:#20315A;
+    border-radius: 1.3vw;
+    text-align: center;
+    color: #F2F1E6;
+    padding: 0.2vw;
+    font-size: 1.3vw;
+    justify-content: center;
+    align-content: center;
+    width: fit-content;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
+}
+
+.input-text-criar-usuario{
+
+    background-color: #F2F1E6;
+
+}

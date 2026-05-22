@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modais de Usuario</title>
+
+    <link rel="stylesheet" href="../../../public/css/ModaisdeUsuario.css" />
+    <!-- Fontes -->
+
+    <!-- Alice -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+</head>
+
+
+<body>
+    <section class="botoes"></section>
+        <div class="modalAcoes">
+            <button class="botao-criar-usuario" onclick="abrir-modal-criar-usuario('modal-criar-usuario')">
+                Criar Usuário
+            </button>
+
+        </div>
+
+        <section class="modal-criar-usuario-container" id="modal-criar-usuario">
+            <div class="titulo-criar-usuario"> Criar Usuário</div>
+            <div class="content-criar-usuario">
+                <div class="container-input-nome-criar-usuario">
+                    <label class="subtitulo-nome-criar-usuario">Nome</label>
+                    <input class="input-text-criar-usuario" id="digite-nome-criar-usuario" type="text" placeholder=""/>
+                </div>
+                <div class="container-input-email-criar-usuario">
+                    <label class="subtitulo-nome-criar-usuario">Email</label>
+                    <input class="input-text-criar-usuario" id="digite-email-criar-usuario" type="text" placeholder="Digite o email"/>
+                </div>
+                <div class="container-input-senha-criar-usuario">
+                    <label class="subtitulo-nome-criar-usuario">Senha</label>
+                    <input class="input-text-criar-usuario" id="digite-senha-criar-usuario" type="text" placeholder="Digite a senha"/>
+                </div>
+                <div class="container-botoes-finalizacao-criar-usuario">
+                    <div class="botao-finalizacao-criar-usuario" id="botao-criar-criar-usuario"> Criar Usuário</div>
+                    <div class="botao-finalizacao-criar-usuario" id="botao-cancelar-criar-usuario"> Cancelar</div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <script src="../../../public/js/ModaisdeUsuario.js"></script>
+    
+</body>
+</html>
