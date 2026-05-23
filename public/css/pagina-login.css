@@ -7,9 +7,8 @@
 .all{
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content:start;
     flex-direction: column;
-    background-image: url(../assets/telas-desk/4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -18,29 +17,44 @@
     padding: 0;
     box-sizing: border-box;
 }
+#login-random{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
 
 .extra{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 8rem;
 }
 
 
 .up{
     display: flex;
-    justify-content: center;
-    align-items: end;
+    justify-content: start;
+    align-items: start;
+    background-color: #21315A;
+    flex-direction: column;
+    width: 100vw;
+    height: 2rem;
 }
+
 
 #tittle{
     display: flex;
     font-family: "Alice", serif;
-    font-weight: 300;
+    font-weight: 200;
     font-style: normal;
     color: whitesmoke;
-    font-size: 5.5rem;
-    margin: 0.8rem;
+    font-size: 3.8rem;
+    background-color: #21315A;
+    margin: 0;
+    border-bottom-left-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
+    padding-inline: 1rem;
 }
 
 .down{
@@ -125,6 +139,12 @@
     outline: none;
 }
 
+.login-tittle-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
 
 .input-login::placeholder{
     display: flex;
@@ -178,9 +198,16 @@
     margin-right: 20rem;
 }
 
-#eye{
+.bibi-eye-fill{
     position: absolute;
     margin-left: 20rem;
+}
+
+.bibi-eye-fill:hover{
+    cursor: pointer;
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: ease-in-out 100ms;
 }
 
 @media (max-width: 414px){
@@ -193,10 +220,7 @@
         height: 2.5rem;
     }
     #tittle{
-        font-size: 4rem;
-    }
-    .all{
-        background-image:url(../assets/telas-mobile/15.jpg);
+        font-size: 2.4rem;
     }
     #mail{
     position: absolute;
@@ -207,7 +231,15 @@
         margin-right: 13rem;
     }
 
-    #eye{
+    .extra{
+        gap: 3rem;
+    }
+
+    .up{
+        height: 1.4rem;
+    }
+
+    .bibi-eye-fill{
         position: absolute;
         margin-left: 13rem;
     }
@@ -219,3 +251,4 @@
         padding-block: 2rem;
     }
 }
+
