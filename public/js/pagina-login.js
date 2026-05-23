@@ -22,6 +22,12 @@ const LoginEyeClosed = document.getElementById('eye-closed');
 const LoginPassword= document.getElementById('login-password');
 
 LoginEyeClosed.addEventListener("click", function (){
-    LoginPassword.type = type;
+    LoginPassword.type = "text";
+    LoginEyeClosed.style.display = "none";
+    LoginEyeOpen.style.display = "block";
+});
+LoginEyeOpen.addEventListener("click", function (){
+    LoginPassword.type = "password";
+    LoginEyeClosed.style.display = "block";
     LoginEyeOpen.style.display = "none";
 });
