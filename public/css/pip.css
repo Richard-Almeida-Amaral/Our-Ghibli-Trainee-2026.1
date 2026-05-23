@@ -47,17 +47,19 @@ body{
     width: 100%;
     border-radius: 20px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    /* border: 6px solid #d47b06; */
 }
 
 .TopoPosts{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: auto;
     border-radius: 15px;
     background-color: #3C8E66;
     padding: 10px 10px;
     gap: 10px;
     justify-content: space-between;
+    /* border: 6px solid #543e20; */
 }
 
 .Usuarioposts{
@@ -91,8 +93,9 @@ body{
 .Infoposts{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: auto;
     height: fit-content;
+    /* border: 6px solid #272054; */
 }
 
 .TitEImgPosts{
@@ -135,3 +138,12 @@ body{
     width: 100%;
     font-size: 25px;
 }
+
+
+@media (max-width: 700px){
+
+}
+
+/* @media (min-width: 701px) and (max-width: 1000px){
+
+} */
