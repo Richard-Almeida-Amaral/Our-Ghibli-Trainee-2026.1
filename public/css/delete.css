@@ -4,3 +4,115 @@
     box-sizing: border-box;
 }
 
+.ADMPM-html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.ADMPM-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.ADMPM-container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    background-color: #E8D8C3;
+    height: 24rem;
+    width: 28rem;
+    border: 1px solid black;
+    border-radius: 3rem;
+    gap: 3rem;
+}
+.ADMPM-input{
+    display: flex;
+    width: 24rem;
+    height: 2.3rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    padding-left: 1rem;
+
+}
+
+.ADMPM-mid{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;    
+    align-items: center;
+    justify-content: start;
+}
+
+.ADMPM-fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.ADMPM-btncancel{
+    display: flex;
+    background-color: #20315A;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    padding-inline:1rem;
+    padding-block:0.4rem;
+}
+.ADMPM-btncancel:hover{
+    background-color:rgba(12, 49, 134, 0.89);
+    color: rgb(248, 248, 248);
+    transition: ease-in-out 200ms;
+    box-shadow: 0 0 40px rgba(24, 59, 104, 0.699); 
+}
+
+.ADMPM-btnapply{
+    display: flex;
+    background-color: #E51F1F;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    padding-inline:1rem;
+    padding-block:0.4rem;
+}
+.ADMPM-btnapply:hover{
+    background-color:rgba(248, 3, 3, 0.87);
+    color: rgb(255, 255, 255);
+    transition: ease-in-out 200ms;
+    box-shadow: 0 0 40px rgba(248, 3, 3, 0.651); 
+}
+
+
+.ADMPM-actions{
+    display: flex;
+    gap: 5rem;
+}
+
+.ADMPM-header{
+    background-color: #20315A;
+    color: white;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 2.8rem;
+    border-top-right-radius: 2.8rem;
+    padding-block: 1rem;
+}
+
+.ADMPM-end{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+#trash{
+    width: 4rem;
+    height: 4rem;
+}
