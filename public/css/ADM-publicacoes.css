@@ -17,6 +17,7 @@
     width: 100vw;
     height: 100%;
     flex-direction: column;
+    justify-content: start;
     align-items: center;
     gap: 3rem;
     background: linear-gradient(to top,#E8D8C3,#e2c6a2);
@@ -36,29 +37,28 @@
 .ADMP-tittle{
     font-weight: 150;
     font-family:"Alice","sans-serif";
-    margin-left: 20rem;
+    margin-left: 8rem;
 }
 
 .ADMP-mid{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     background-color: rgb(235, 227, 216);
     padding-inline: 2rem;
     padding-block: 1rem;
     border-radius: 1.5rem;
-    gap:1rem;
-    width: 75rem;
+    width: 100rem;
 }
 
 .ADMP-box{
     display: flex;
-    border-radius: 2rem;
+    border-radius: 1rem;
     padding-inline: 2rem;
     border: 0.5px solid black;
-    width: 55rem;
+    width: 70rem;
     padding-block: 0.8rem;
     justify-content: start;
 }
@@ -104,6 +104,8 @@
     width: 100%;
     height: fit-content;
     flex-direction: column;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
 }
 
 .ADMP-tbody{
@@ -119,6 +121,8 @@
     flex-direction:row;
     background-color: rgb(235, 227, 216);
     justify-content: center;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
 }
 
 .TP-col{
@@ -126,19 +130,22 @@
     align-items: center;
     justify-content: center;
     gap: 0.8rem;
-    height: 3rem;
-    width: 15rem;
+    height: 4rem;
+    width: 20rem;
 }
 
 .TP-header{
     display: flex;
     height: 3rem;
-    width: 15rem;
+    width: 20rem;
     align-items: center;
     justify-content: center;
     font-weight: 800;
     font-size: larger;
     font-family: "inter", "sans-serif";
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+
 }
 
 .TP-header-conteiner{
@@ -156,41 +163,22 @@
 
 .ADMP-uptable{
     display: flex;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    background-color: rgb(235, 227, 216);
+    flex-direction: row;
     justify-content: space-between;
-    gap: 4rem;
-    padding-inline: 3rem;
-    padding-block:0.4rem;
-    height: 3rem;
-    width: 75rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
 }
 .ADMP-downtable{
     display: flex;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
     background-color: rgb(235, 227, 216);
     padding-inline: 1rem;
     padding-block:0.4rem;
-    height: 3rem;
-    width: 75rem;
+    height: 4rem;
+    width: 100rem;
 }
 
-.ADMP-select{
-    display: flex;
-    padding-left: 0.5rem;
-}
-
-
-
-.ADMP-tname{
-    font-weight: 100;
-    display: flex;
-    align-items: center;
-    font-weight: 300;
-    font-size: 1.4rem;
-}
 
 
 td:nth-child(odd) {
@@ -205,13 +193,15 @@ td:nth-child(odd) {
 
 #ADMP-search{
     position: absolute;
-    left: 64%;
+    left: 10.5%;
+    top: 13.5%;
 }
 
 .ADMP-pag {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    gap: 0.8rem;
 }
 
 .ADMP-pag button {
@@ -219,7 +209,6 @@ td:nth-child(odd) {
     color: #20315A;
     border: none;
     padding: 10px 20px;
-    margin: 0 5px;
     border-radius: 50px;
     cursor: pointer;
     font-weight: bold;
