@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +8,12 @@
 
 .modalContainer {
   width: 960px; 
+  max-width: 95%;
   height: fit-content;
+  max-height: 90vh;
   background-color: #ebdcd0; 
   border-radius: 24px;     
-  overflow: hidden;          
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
@@ -203,18 +204,18 @@
 
 #modalExcluir {
   width: 400px; 
-
 }
 
 .modalAcoesExcluir{
-  background-color: #ffffff;  
+  background-color: #E8D8C3;  
 }
 
 
 
 .modalContainerExcluir {
-  background-color: #ffffff;
+  background-color: #E8D8C3;
   width: 320px;
+  max-width: 90%; 
   border-radius: 28px;
   overflow: hidden;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
@@ -231,6 +232,7 @@
   color: #ffffff;
   font-size: 18px;
   margin: 0;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 500;
   text-align: center;
 }
@@ -241,7 +243,7 @@
   flex-direction: column;
   align-items: center;
   padding: 24px 20px 16px 20px;
-  background-color: #ffffff;  
+  background-color: #E8D8C3;  
 }
 
 
@@ -290,4 +292,59 @@
 .btnNao {
   background-color: #20315a;
   color: #ffffff;
+}
+
+/* Responsividade */
+
+/* Telas de Celulares Grandes e Tablets */
+@media (max-width: 768px) {
+  .modalBody {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .arquivo {
+    width: 100%; 
+    height: 250px;
+  }
+
+  .containerTextos {
+    width: 100%;
+  }
+
+  .modalAcoes {
+    padding: 0 24px 24px 24px;
+  }
+}
+
+/* Telas de Celulares Pequenos (Até 480px) */
+@media (max-width: 480px) {
+  .modalHeader h2 {
+    font-size: 20px;
+  }
+
+  .modalBody {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .labelInput {
+    height: 150px; 
+  }
+
+  .labelDescricao {
+    height: 200px;
+  }
+
+  .modalAcoes {
+    flex-direction: column-reverse; 
+    width: 100%;
+    padding: 0 16px 16px 16px;
+    gap: 12px;
+  }
+
+  .modalAcoes button {
+    width: 100%;
+    padding: 12px 0;
+  }
 }
