@@ -21,7 +21,7 @@
     padding-block: 0.6rem;
 }
 
-#nav-logo{
+.nav-logo{
     height: 4.2rem;
     width: 12rem;
 }
@@ -64,7 +64,7 @@
     padding-inline: 0.8rem;
 }
 
-#nav-login{
+.nav-login{
     margin: 0;
     padding: 0;
     font-family: "Alice", sans-serif;
@@ -78,7 +78,7 @@
     padding-block: 0.5rem;
 }
 
-#nav-login:hover{
+.nav-login:hover{
     background-color:rgba(82, 152, 243, 0.795);
     color: rgb(255, 255, 255);
     transition: ease-in-out 200ms;
@@ -89,8 +89,54 @@
     display: none;
 }
 
+    .nav-container-open{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: #E8D8C3;
+
+    }
+
+    .nav-link-cell{
+        margin: 0;
+        padding: 0;
+        font-family: "Alice", sans-serif;
+        font-weight: 200;
+        font-size: 1.1rem;
+        border: 0px;
+        background-color: #E8D8C3;
+        padding-block: 0.5rem;
+        padding-inline: 0.8rem;
+        border-bottom: 1px solid black;
+    }
+
+    .nav-mid-cell{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        width: 100%;
+
+    }
+    .nav-up-cell{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        padding-left: 3rem;
+        gap: 4.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .X{
+        width: 2rem;
+        height: 2rem;
+    }
+
+
 @media (max-width: 414px){
-    #nav-logo{
+    .nav-logo{
         height: 3.6rem;
         width: 10rem;
     }
@@ -98,7 +144,7 @@
         display: none;
     }
     
-    #nav-login{
+    .nav-login{
         display: none;
     }
     .nav-container{
@@ -106,8 +152,8 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: row-reverse;
-        padding-right: 7.5rem;
-        padding-left: 1rem;
+        padding-right: 7.9rem;
+        padding-left: 1.5rem;
     }
 
     .list{
@@ -119,4 +165,5 @@
     .nav-right{
         display: flex;
     }
+
 }
