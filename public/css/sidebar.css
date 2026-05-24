@@ -135,7 +135,7 @@ ul {
   width: 8vw;
 }
 
-.closed-sidebar .active{
+.closed-sidebar .active {
   width: 100% !important;
   height: 100% !important;
 }
@@ -144,10 +144,9 @@ ul {
   min-height: auto;
   width: 100px;
   margin-bottom: 50px;
-} 
+}
 
-
-.closed-sidebar .perfilSidebar .iconeMenu img{
+.closed-sidebar .perfilSidebar .iconeMenu img {
   width: 50px;
   height: 50px;
   align-items: center;
@@ -162,20 +161,18 @@ ul {
   align-items: center;
 }
 
-
 .closed-sidebar .itemSidebar .icone-sidebar img {
   width: 50px;
   height: 50px;
 }
 
-.logoutSidebar img{
+.logoutSidebar img {
   align-items: center;
   width: 50px;
   height: 50px;
 }
 
-
-.logoutSidebar .icone-sidebar{
+.logoutSidebar .icone-sidebar {
   align-items: center;
   justify-items: center;
   width: 50%;
@@ -190,7 +187,7 @@ ul {
   display: none;
 }
 
-.closed-sidebar .iconeMenu img{
+.closed-sidebar .iconeMenu img {
   width: 50%;
   height: 30%;
 }
@@ -234,33 +231,98 @@ ul {
     width: 6vw;
     height: 6vh;
   }
+
   .closed-sidebar {
-    width: 12vw;
+    width: 15vw;
   }
   .closed-sidebar .perfilSidebar img {
     width: 9vw;
   }
 }
 
-/* Celular */
 @media (max-width: 768px) {
   .sidebar {
-    width: 180px;
+    width: 100px; 
+    padding: 10px 0;
   }
+
+  .perfilSidebar {
+    flex-direction: column; 
+    gap: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .imagemPerfil {
+    width: 60px; 
+    height: 60px;
+    object-fit: cover;
+  }
+
   .perfilSidebar img {
     width: 40px;
     height: 40px;
   }
+
   .icone-sidebar img {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .itemSidebar {
+    min-height: 70px;
+    margin-bottom: 15px;
+  }
+
+  .itemSidebar a {
+    font-size: 15px;
+    flex-direction: column;
+  }
+
+  .itemSidebar span {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  /* Sidebar Fechada no Celular */
+  .closed-sidebar {
+    width: 50px;
+  }
+  
+
+
+  .closed-sidebar .itemSidebar {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .closed-sidebar .itemSidebar a {
+    width: 100%;
+  }
+
+  .closed-sidebar .itemSidebar .active {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0;
+  }
+
+  .closed-sidebar .perfilSidebar img {
     width: 35px;
     height: 35px;
   }
-
-  .closed-sidebar {
-    width: 60px;
+  
+  .closed-sidebar .itemSidebar .icone-sidebar {
+    width: auto;
+    height: auto;
+    margin: 0;
   }
-  .closed-sidebar .perfilSidebar img {
-    width: 40px;
-    height: 40px;
+
+  .closed-sidebar .itemSidebar .icone-sidebar img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .logoutSidebar button {
+    margin-bottom: 10px;
   }
 }
