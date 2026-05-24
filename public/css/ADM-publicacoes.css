@@ -232,3 +232,31 @@ td:nth-child(odd) {
     transition: ease-in-out 200ms ;
     cursor: pointer;
 }
+
+@media (max-width: 414px){
+    .ADMP-top{
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .ADMP-tittle{
+        margin: 0;
+    }
+    .ADMP-body{
+        align-items: center;
+        justify-content: center;
+    }
+    .ADMP-mid{
+        width: 100%;
+    }
+    .ADMP-box{
+        width: 15rem;
+    }
+    #ADMP-search{
+        left: 10.5%;
+        top: 8.8%;
+    }
+    .ADMP-butom{
+        font-size: 0.8rem;
+    }
+}
