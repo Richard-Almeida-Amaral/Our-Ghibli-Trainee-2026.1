@@ -90,7 +90,7 @@
 }
 
     .nav-container-open{
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
@@ -132,6 +132,14 @@
     .X{
         width: 2rem;
         height: 2rem;
+    }
+    .nav-down-cell{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 2rem;
+        padding-block: 1rem;
+        border-bottom: 1px solid black;
     }
 
 
