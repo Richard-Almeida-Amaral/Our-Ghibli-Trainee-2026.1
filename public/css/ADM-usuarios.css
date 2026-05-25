@@ -263,4 +263,8 @@
     .usuarioTr {
     padding: 1rem 0;
     }
+
+    .usuarioTdAc svg{
+        margin-left: 0 !important;
+    }
     }
