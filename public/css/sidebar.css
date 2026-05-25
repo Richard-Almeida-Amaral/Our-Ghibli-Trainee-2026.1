@@ -73,7 +73,6 @@
 }
 
 .itemSidebar a:hover {
-  color: #4f6f52;
   scale: 1.1;
 }
 
@@ -118,9 +117,6 @@ ul {
   scale: 1.1;
 }
 
-.logoutSidebar button:hover .itemDescricao {
-  color: #4f6f52;
-}
 
 .imagemSidebar img {
   width: 100%;
