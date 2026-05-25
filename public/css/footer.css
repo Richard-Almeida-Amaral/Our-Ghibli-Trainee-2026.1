@@ -56,13 +56,21 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
-    /*border: 1px solid orange;*/
+    /* border: 1px solid orange; */
     column-gap: 2rem;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
+    text-align: start;
     font-family: "Nunito", sans-serif;
 }
+
+.Tipodeinfofooteremail{
+    display: flex;
+    align-items: start;
+    text-align: start;
+    
+}
+
 .Telefonecont{
     display: flex;
     flex-direction: row;
@@ -153,7 +161,7 @@ body{
 .time, .etica, .objetivo, .perspectiva{
     font-family: "Nunito", sans-serif;
     font-style: normal;
-    
+
 }
 
 .copyrigth{
