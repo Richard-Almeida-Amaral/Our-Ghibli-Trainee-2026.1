@@ -15,7 +15,6 @@ body{
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-weight: <weight>;
 }
 
 .alice-regular {
@@ -100,7 +99,7 @@ body{
     font-weight: 400;
     font-style: normal;
     color: #ffffff;
-    justify-content:center;
+    justify-content:end;
     align-items: center;
     text-align: center;
     font-size: 30px;
@@ -172,7 +171,7 @@ body{
     font-optical-sizing: auto;
     font-style: normal;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     text-align: center;
     min-height: 300px;
     width: 100%;
@@ -187,6 +186,57 @@ body{
 
     .TopoPosts{
         width: 100%;
+    }
+
+    .Usuarioposts{
+        padding: 0px;
+    }
+
+    .Usuarioposts img{
+        width: 30%;
+    }
+    .Usuarioposts p{
+        font-size: 20px;
+    }
+
+
+    .DataPosts{
+        font-size: 20px;
+        width: 50%;
+    }
+    .TitEImgPosts{
+        width: 100%;
+    }
+
+    .ImgPosts{
+        padding: 0.5rem 2rem;
+    }
+
+    .ImgPosts img{
+        width:100% ;
+        border-radius: 1rem;
+    }
+
+    .TextoPostsCont{
+        width: 100%;
+    }
+
+    .TextoPosts{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1000px){
+    .Infoposts{
+        flex-direction: column;
+    }
+
+    .TopoPosts{
+        width: 100%;
+    }
+
+    .Usuarioposts{
+        padding: 0px;
     }
     .Usuarioposts img{
         width: 30%;
@@ -216,8 +266,8 @@ body{
     .TextoPostsCont{
         width: 100%;
     }
+
+    .TextoPosts{
+        font-size: 20px;
+    }
 }
-
-/* @media (min-width: 701px) and (max-width: 1000px){
-
-} */
