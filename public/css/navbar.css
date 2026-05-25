@@ -95,7 +95,6 @@
         justify-content: space-between;
         flex-direction: column;
         background-color: #E8D8C3;
-
     }
 
     .nav-link-cell{
@@ -124,14 +123,14 @@
         justify-content: start;
         align-items: center;
         width: 100%;
+        gap: 3.5rem;
         padding-left: 3rem;
-        gap: 4.5rem;
-        padding-bottom: 1rem;
+        padding-block: 0.6rem;
     }
 
     .X{
-        width: 2rem;
-        height: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
     .nav-down-cell{
         display: flex;
