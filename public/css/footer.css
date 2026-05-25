@@ -1,28 +1,20 @@
 body{
-    font-family: Arial, sans-serif;
+    font-family: "Nunito", sans-serif;
     margin: 0;
     padding: 0;
     color: #000000;
 }
-
-.oleo-script-swash-caps-regular {
-  font-family: "Oleo Script Swash Caps", system-ui;
-  font-weight: 400;
-  font-style: normal;
+.alice-regular {
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .nunito-uniquifier {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.quicksand-uniquifier {
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .contvertical{
@@ -41,6 +33,12 @@ body{
     text-align: center;
 }
 
+.titulocont{
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .ContatsContainer{
     border-radius: 1rem;
     background-color: #F2F1E6;
@@ -48,7 +46,7 @@ body{
     padding-right: 2rem;
     padding-bottom: 1rem;
     padding-top: 1rem;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: large;
@@ -63,6 +61,7 @@ body{
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    font-family: "Nunito", sans-serif;
 }
 .Telefonecont{
     display: flex;
@@ -72,13 +71,15 @@ body{
     justify-content: space-between;
     align-items: center;
     text-align: center;
-   /* border: 1px solid orange;*/
+    font-family: "Nunito", sans-serif;
+    /* border: 1px solid orange;*/
 }
 .email{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    font-family: "Nunito", sans-serif;
     /*border: 1px solid green;*/
 }
 .telefone{
@@ -86,6 +87,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    font-family: "Nunito", sans-serif;
     /*border: 1px solid green;*/
 }
 .Logo{
@@ -99,6 +101,9 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /*.redessociaiseloc{
@@ -138,6 +143,19 @@ body{
     margin-top: 2rem;
     border-bottom: 0.1rem solid #000000;
 }
+
+.titulosobre{
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.time, .etica, .objetivo, .perspectiva{
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    
+}
+
 .copyrigth{
     justify-content: space-between;
     align-items: center;
@@ -153,8 +171,9 @@ body{
     display: flex;
     flex-direction: row;
     column-gap: 0.5rem;
-    
-    
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 .iconc{
     align-items: center;
@@ -168,7 +187,6 @@ footer{
     background-color: #6B85AF;
     width: 100%;
     height: fit-content;
-    border: 1px solid orange;
     display: flex;
     flex-direction: column;
 }
