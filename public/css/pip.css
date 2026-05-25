@@ -4,14 +4,16 @@ body{
     padding: 0;
     color: #000000;
 }
-.anonymous-pro-regular {
-    font-family: "Anonymous Pro", monospace;
-    font-weight: 400;
+
+.nunito{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
     font-style: normal;
+    font-weight: <weight>;
 }
 
-.oleo-script-swash-caps-regular {
-    font-family: "Oleo Script Swash Caps", system-ui;
+.alice-regular {
+    font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -51,6 +53,9 @@ body{
 .TopoPosts{
     display: flex;
     flex-direction: row;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
     width: auto;
     border-radius: 15px;
     background-color: #3C8E66;
@@ -63,6 +68,9 @@ body{
 .Usuarioposts{
     display: flex;
     flex-direction: row;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -71,6 +79,9 @@ body{
 }
 
 .NomeUsuarioPosts{
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
     justify-content:center;
     align-items: center;
     text-align: center;
@@ -78,6 +89,9 @@ body{
 }
 
 .DataPosts{
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
     justify-content:center;
     align-items: center;
     text-align: center;
@@ -89,6 +103,9 @@ body{
 }
 
 .Infoposts{
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
     display: flex;
     flex-direction: row;
     width: auto;
@@ -98,12 +115,18 @@ body{
 
 .TitEImgPosts{
     width: 50%;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 .TituloPosts{
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -120,6 +143,9 @@ body{
 
 .TextoPostsCont{
     display: flex;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     width: 50%;
     justify-content: center;
     align-items: center;
@@ -129,6 +155,9 @@ body{
 
 .TextoPosts{
     display: flex;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     justify-content: center;
     align-items: center;
     text-align: center;
