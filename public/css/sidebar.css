@@ -254,14 +254,15 @@ ul {
   }
 
   .imagemPerfil {
-    width: 60px; 
-    height: 60px;
+    width: 80px; 
+    height: 80px;
     object-fit: cover;
   }
 
   .perfilSidebar img {
-    width: 40px;
+    width: 60px;
     height: 40px;
+    object-fit: cover;
   }
 
   .icone-sidebar img {
@@ -270,7 +271,7 @@ ul {
   }
 
   .itemSidebar {
-    min-height: 70px;
+    min-height: 50px;
     margin-bottom: 15px;
   }
 
@@ -286,7 +287,7 @@ ul {
 
   /* Sidebar Fechada no Celular */
   .closed-sidebar {
-    width: 50px;
+    width: 80px;
   }
   
 
