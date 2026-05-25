@@ -206,3 +206,10 @@ input::-ms-reveal, input::-ms-clear {
 input::-webkit-contacts-auto-fill-button, input::-webkit-credentials-auto-fill-button {
   display: none !important;
 }
+
+
+@media (max-width: 700px){
+  .modoverlay{
+    padding: 2rem;
+  }
+}
