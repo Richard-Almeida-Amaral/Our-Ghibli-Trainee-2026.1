@@ -132,6 +132,9 @@
     gap: 0.8rem;
     height: 4rem;
     width: 20rem;
+    flex-wrap: nowrap;
+    overflow: hidden;        
+    text-overflow: ellipsis;
 }
 
 .TP-header{
@@ -189,6 +192,7 @@ td:nth-child(odd) {
     display: flex;
     flex-direction: column;
     width: fit-content;
+    background-color: none;
 }
 
 #ADMP-search{
@@ -233,30 +237,37 @@ td:nth-child(odd) {
     cursor: pointer;
 }
 
+.ADMP-sec{
+    background-color:none ;
+}
+
 @media (max-width: 414px){
-    .ADMP-top{
-        margin: 0;
-        align-items: center;
+    .ADMP-mid{
+        flex-direction: column;
+        width: 100%;
         justify-content: center;
+        gap: 1rem;
+        padding-block: 1rem;
+    }
+    .ADMP-box{
+        width: 90%;
     }
     .ADMP-tittle{
         margin: 0;
     }
-    .ADMP-body{
-        align-items: center;
-        justify-content: center;
-    }
-    .ADMP-mid{
-        width: 100%;
-    }
-    .ADMP-box{
-        width: 15rem;
-    }
     #ADMP-search{
-        left: 10.5%;
-        top: 8.8%;
+        top: 19.7%;
+        left: 15%;
     }
-    .ADMP-butom{
-        font-size: 0.8rem;
+    .ADMP-body{
+        width: 100%
+    }
+    .ADMP-table{
+        margin-left: 70rem;
+        width: 100rem;
+    }
+    .ADMP-downtable{
+        width: 100;
+        margin-left: 70rem;
     }
 }
