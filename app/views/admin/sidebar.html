@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../public/css/sidebar.css" />
+
+     <!-- Fontes -->
+
+    <!-- Alice -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sidebar</title>
+  </head>
+  <body>
+    <!-- Corpo da Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <!-- div do topo da sidebar, onde tem o logo e o nome do usuário, e é clicável para fechar a sidebar -->
+      <div class="top-sidebar">
+        <div class="perfilSidebar">
+          <img class="imagemPerfil" src="../../../public/assets/LogoSemFundo.png" alt="">
+          <i class="iconeMenu">
+            <img src="../../../public/assets/barra-de-menu.png" alt="">
+          </i>
+        </div>
+
+        <!-- Navegação da Sidebar -->
+        <nav class="navegacaoSidebar">
+          <ul>
+            <!-- Itens de navegação da sidebar -->
+            <li class="itemSidebar active" >
+              <a class="linksidebar" href="#">
+                <i class="icone-sidebar">
+                  <img src="../../../public/assets/casa.png" alt="" srcset="" />
+              </i>
+                <span class="descricao">Dashboard</span>
+              </a>
+            </li>
+            <!-- Itens de navegação da sidebar -->
+            <li class="itemSidebar" >
+              <a href="#">
+                <i class="icone-sidebar">
+                  <img
+                    src="../../../public/assets/postagem-no-instagram.png" alt="" srcset=""/>
+                  </i>
+                <span class="descricao">Postagens</span>
+            </li>
+            <!-- Itens de navegação da sidebar -->
+            <li class="itemSidebar" >
+              <a href="#">
+                <i class="icone-sidebar">
+                  <img src="../../../public/assets/grupo-de-usuarios.png" alt="" srcset=""/></i>
+                <i>
+                  
+                </i>
+                <span class="descricao">Usuários</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <!-- Parte do Logout da Sidebar -->
+
+      <div class="logoutSidebar">
+        <button type="button" id="buttonLogout">
+          <i class="icone-sidebar">
+            <img src="../../../public/assets/seta.png" alt="" srcset="" />
+          </i>
+          <span class="itemDescricao">Sair</span>
+        </button>
+      </div>
+    </aside>
+  </body>
+  <script src="../../../public/js/sidebar.js"></script>
+</html>

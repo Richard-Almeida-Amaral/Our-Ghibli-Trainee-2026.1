@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.ADMPME-html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.ADMPME-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.ADMPME-container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    background-color: #E8D8C3;
+    height: 30rem;
+    width: 28rem;
+    border: 1px solid black;
+    border-radius: 3rem;
+    gap: 3.5rem;
+}
+.ADMPME-input{
+    display: flex;
+    width: 24rem;
+    height: 2.3rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    padding-left: 1rem;
+
+}
+
+.ADMPME-mid{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;    
+    align-items: start;
+    justify-content: start;
+}
+
+.ADMPME-fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.ADMPME-btncancel{
+    display: flex;
+    background-color: #20315A;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    padding-inline:1rem;
+    padding-block:0.4rem;
+}
+.ADMPME-btncancel:hover{
+    background-color:rgba(12, 49, 134, 0.89);
+    color: rgb(248, 248, 248);
+    transition: ease-in-out 200ms;
+    box-shadow: 0 0 40px rgba(24, 59, 104, 0.699); 
+}
+
+.ADMPME-btnapply{
+    display: flex;
+    background-color: #5A78A6;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    padding-inline:1rem;
+    padding-block:0.4rem;
+}
+.ADMPME-btnapply:hover{
+    background-color:rgba(14, 108, 231, 0.623);
+    color: rgb(255, 255, 255);
+    transition: ease-in-out 200ms;
+    box-shadow: 0 0 40px rgba(24, 59, 104, 0.699); 
+}
+
+
+.ADMPME-actions{
+    display: flex;
+    gap: 5rem;
+}
+
+.ADMPME-header{
+    background-color: #20315A;
+    color: white;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 2.8rem;
+    border-top-right-radius: 2.8rem;
+    padding-block: 1rem;
+}
+
+.ADMPME-end{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
