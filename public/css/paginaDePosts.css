@@ -132,6 +132,7 @@ body {
   grid-row: 3;
   max-width: 300px;
   margin: 0;
+  font-size: 17px;
 }
 .paginação {
   display: flex;
@@ -177,6 +178,10 @@ body {
   .container {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 40px;
+  }
+
+  .card{
+    height: 100%;
   }
 
   #pesquisa {
