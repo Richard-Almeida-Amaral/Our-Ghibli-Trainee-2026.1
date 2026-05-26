@@ -1,0 +1,732 @@
+:root {
+
+    /* cores */
+    --azul-claro-ourghibli: #5A78A6;
+    --azul-escuro-ourghibli: #20315A;
+    --bege-ourghibli: #E8D8C3;
+    --branco-ourghibli:#F2F1E6;
+    --preto-ourghibli: #121212;
+    --verde-claro-ourghibli: #7A9478;
+    --verde-escuro-ourghibli: #4F6F52;
+
+    /* fontes */
+    /* nunito */
+    --fonte-nunito: "Nunito", sans-serif;
+    /* alice */
+    --fonte-alice: "Alice", serif;
+
+    /* quicksand */
+    --fonte-quicksand: "Quicksand", serif;
+
+}
+
+
+
+
+body{
+
+
+    /* fonte da página */
+    font-family: var(--fonte-nunito);
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--preto-ourghibli);
+
+    /* formatação da página */
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+
+}
+
+.main{
+    background-image: linear-gradient(to bottom, #E8D8C3, #5A78A6); 
+}
+#hero{
+    
+    /* display */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    /* frase filme */
+    font-family: var(--fonte-alice);
+    font-weight: 200;
+    font-style: normal;
+    color: var(--verde-escuro-ourghibli);
+    text-align: center;
+    font-size: 3.385vw;
+    text-shadow: 
+        -0.104vw -0.104vw 0 #E8D8C3,  
+         0.104vw -0.104vw 0 #E8D8C3,
+        -0.104vw  0.104vw 0 #E8D8C3,  
+         0.104vw  0.104vw 0 #E8D8C3,
+         0.104vw -0.104vw 0 #E8D8C3,
+         0.104vw  0.104vw 0 #E8D8C3,
+        -0.104vw  0.104vw 0 #E8D8C3,
+         0.104vw  0.104vw 0 #E8D8C3;
+
+
+
+    /* background */
+    background-color: var(--bege-ourghibli);
+    background-image: url(../assets/ghiblicompleto.png);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height:43.3vw;
+    background-position: center;
+    background-size: cover;
+    
+    min-height: 268px;
+}
+
+#hero.reduzida{
+
+    /* display */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    /* frase filme */
+    font-family: var(--fonte-alice);
+    font-weight: 200;
+    font-style: normal;
+    color: var(--verde-escuro-ourghibli);
+    text-align: center;
+    font-size: 3.385vw;
+    text-shadow: 
+        -0.104vw -0.104vw 0 #E8D8C3,  
+         0.104vw -0.104vw 0 #E8D8C3,
+        -0.104vw  0.104vw 0 #E8D8C3,  
+         0.104vw  0.104vw 0 #E8D8C3,
+         0.104vw -0.104vw 0 #E8D8C3,
+         0.104vw  0.104vw 0 #E8D8C3,
+        -0.104vw  0.104vw 0 #E8D8C3,
+         0.104vw  0.104vw 0 #E8D8C3;
+
+
+
+    /* background */
+    background-color: var(--bege-ourghibli);
+    background-image: url(../assets/ghiblicompleto.png);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height:0px !important;
+    background-position: center;
+    background-size: cover;
+
+    transition-duration: 1s;
+
+    min-height: 0px !important;
+    
+}
+
+
+#frametextofilme{
+
+    /* frame de posicionamento da logo e da frase impactante */
+    height: 20vw;
+    display:flex;
+    flex-direction: row;
+    align-items: end;
+    margin-block-end: 0px;
+    padding-left: 2vw;
+
+    background-image: linear-gradient( to top, #E8D8C3, #E8D8C300);
+  
+}
+
+
+h2 {
+     /* texto impactante filme */
+    margin: 0px;
+}
+
+
+#homelanding{
+
+    /* tudo no site com exceção do herocard */
+    width: 100vw;
+    height: fit-content;
+    background-image: url(../assets/horizontecompleto1920.png), linear-gradient(to bottom, #E8D8C3, #5A78A6);
+    padding-bottom: 8.68vw;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+#framesetahero{
+
+    /* frame horizontal onde se posiciona a seta */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 4.8vw;
+    background-color: var(--bege-ourghibli);
+
+
+}
+
+#framesetahero.reduzida{
+    height:0px;
+    transition-duration: 1s;
+}
+
+
+
+#seta-para-cima-hero{
+
+    /* container da seta */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.06vw;
+    height: 2.62vw;
+    border-top-left-radius: 1200vw;
+    border-top-right-radius:1200vw;
+    background-color: #E8D8C3;
+    padding-top: 0,46vh;    
+    border-top: 0.3vw solid #4F6F52;
+    border-right: 0.3vw solid #4F6F52;
+    border-left: 0.3vw solid #4F6F52;
+
+
+    /* ! preciso de ajuda para fazer o stroke da setinha */
+
+}
+
+
+#seta-para-baixo-hero{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.06vw;
+    height: 2.62vw;
+    border-bottom-left-radius: 1200px;
+    border-bottom-right-radius:1200px;
+    background-color: #E8D8C3;
+    padding-bottom: 0,46vh;    
+    border-bottom: 0.3vw solid #4F6F52;
+    border-right: 0.3vw solid #4F6F52;
+    border-left: 0.3vw solid #4F6F52;
+    opacity: 0%;
+    transition-delay: 1s;
+    transition-duration: 0.5s;
+}
+
+#seta-para-baixo-hero.reduzida{
+    opacity: 100%
+}
+
+#framepaddingposts{
+
+    /* container de espaçamento entre seta e posts */
+    width: 100vw;
+    height: 5.15vw;
+    border-top:0.3vw solid #4F6F52;
+    box-shadow: 0 -1.3vw 1.6vw #00000050;
+    justify-items: center;
+    align-items: baseline;
+
+}
+
+#postsrecentes{
+
+     /* Container post e scroll 1 */
+
+     width: 100vw;
+     height: fit-content;
+     
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: row;
+
+     min-height: 310px;
+
+}
+
+
+#imagemetextopost{
+
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+
+
+}
+
+#imagempost{
+
+    display:flex;
+    flex-direction: column;
+
+    background-image: url(../assets/dragao.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 71.25vw;
+    height: 37.5vw;
+    gap: 23vw;
+    background-repeat: no-repeat;
+    border-top-left-radius: 1.3889vw;
+    border-top-right-radius: 1.3889vw;
+    box-shadow: 1vw 1vw 0.5vw 0 #00000050;
+    
+
+    min-height: 150px;
+    
+}
+
+#usuariopost{
+
+    align-self: baseline;
+    justify-self: baseline;
+    padding: 1.389vw;
+    gap: 0.65vw;
+
+    display: flex;
+    align-items: center;
+}
+
+#fotousuariopost{
+
+    width: 6.95vw;
+    height: 6.95vw;
+    border-radius: 5vw;
+    background-image: url(../assets/graveofthefireflies.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 0 0.2vw #F2F1E600, 0.3vw 0.3vw 0.5vw #00000070;
+
+}
+
+#nomeusuariopost{
+
+    padding: 0.7vw;
+    font-family: var(--fonte-quicksand);
+    font-size: 2.75vw;
+    font-weight: 800 ;
+    color: var(--branco-ourghibli)
+}
+
+#tituloecurtidaspost{
+    
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 0.7vw;
+    padding-right: 1.4vw;
+    align-items: end;
+    background-image: linear-gradient(to top, #2E4230, #4F6F5200);
+    gap: 47.5vw;
+}
+
+#textoemdestaque{
+
+    margin-left: 0.7vw;
+    margin-right: 0.7vw;
+    font-family: var(--fonte-quicksand);
+    font-weight: 400;
+    color: var(--branco-ourghibli);
+    font-size: 2.75vw;
+
+}
+
+#textodescricaopost{
+
+    height:fit-content;
+    width:68.45vw;
+    background-color: var(--verde-escuro-ourghibli);
+    padding-left: 1.4vw;
+    padding-right: 1.4vw;
+    padding-top: 1.05vw;
+    padding-bottom: 1.05vw;
+    font-family: var(--fonte-nunito);
+    font-size: 2.7vw;
+    color: var(--branco-ourghibli);
+    border-bottom-left-radius: 1.3889vw;
+    border-bottom-right-radius: 1.3889vw;
+    box-shadow: 1vw 1vw 0.5vw 0 #00000050;
+
+    
+
+
+}
+
+#scrollpost{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    gap: 3vw;
+    padding: 0vw;
+}
+
+#fundoscrollpost{
+
+    background-color: #2E4230;
+    width: fit-content;
+    height: fit-content;
+
+    padding-right: 0.1vw;
+    padding-top: 0,73vw;
+    padding-bottom: 0,73vw;
+    padding-left:0.15vw;
+    gap: 1vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+
+    box-shadow: inset 0.2vw 0 0.5vw #00000050;
+
+}
+
+#botaovermaispost{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #2E4230;
+    width: fit-content;
+
+    padding-right: 0.4vw;
+    padding-bottom: 0.6vw;
+    padding-top: 0.6vw;
+    padding-left: 0.2vw;
+
+    border-bottom-right-radius: 1vw;
+    border-top-right-radius: 1vw;
+
+    box-shadow: inset 0.2vw 0 0.5vw #00000050;
+}
+
+
+#seta-para-cima-hero:hover{
+
+    cursor: pointer;
+    width: 5.26vw;
+    height: 3vw;
+    transition-duration: 0.15s;
+
+}
+
+#seta-para-baixo-hero.reduzida:hover{
+
+    cursor: pointer;
+    width: 5.26vw;
+    height: 3vw;
+    transition-duration: 0.15s;
+
+}
+
+.circulo-scroll{
+
+    width: 1vw;
+    height: 0.8vw; 
+    fill: #F2F1E6;
+
+}
+.circulo-scroll:hover{
+
+    cursor: pointer;
+
+}
+
+#circulo-scroll-1:hover{
+
+    fill: #7a9478;
+    transition-duration:0.4s;
+
+}
+
+#circulo-scroll-2:hover{
+
+    fill: #7a9478;
+    transition-duration:0.4s;
+
+}
+
+#circulo-scroll-3:hover{
+
+    fill: #7a9478;
+    transition-duration:0.4s;
+
+}
+
+
+#circulo-scroll-4:hover{
+
+    fill: #7a9478;
+    transition-duration:0.4s;
+
+}
+
+#circulo-scroll-5:hover{
+
+    fill: #7a9478;
+    transition-duration:0.5s;
+
+}
+
+
+.seta-scroll{
+
+    width:2.5vw;
+    height:2.1vw; 
+    fill: #F2F1E6;
+    stroke: #aaa79c00;
+    stroke-width: 0.036vw;
+    cursor: pointer;
+}
+
+#seta-cima-scroll:hover{
+
+    fill: #7a9478;
+    stroke: #7a9478;
+    stroke-width: 0.036vw;
+    transition-duration: 0.3s;
+
+}
+
+#seta-baixo-scroll:hover{
+
+    fill: #7a9478;
+    stroke: #7a9478;
+    stroke-width: 0.036vw;
+    transition-duration: 0.3s;
+
+}
+
+#vermais-vetor{
+
+    width:2.2vw;
+    height:2.1vw;
+    fill:#F2F1E6;
+    
+}
+
+#vermais-vetor{
+
+    width:2.2vw;
+    height:2.1vw;
+    fill:#F2F1E6;
+    
+}
+
+#vermais-vetor:hover{
+
+    cursor: pointer;
+    fill:#7a9478;
+    stroke: #7a9478;
+    stroke-width: 0.016vw;
+
+}
+
+#vetor-favoritar-carrossel{
+
+    width:3vw;
+    height:3vw;
+    fill:#F2F1E6;
+
+}
+
+#vetor-favoritar-carrossel:hover{
+
+    cursor: pointer;
+    fill: #7a9478;
+    transition-duration: 0.2s;
+
+}
+
+#usuariopost:hover #fotousuariopost{
+
+    box-shadow: 0 0 0 0.2vw #F2F1E6, 0.2vw 0.5vw 0.6vw #00000070;
+    transition-duration: 0.3s;
+    cursor: pointer;
+
+}
+
+
+@media (max-width: 768px){
+
+
+    #postsrecentes{
+
+        padding-top:5vw;
+    }
+    #framesetahero{
+
+        opacity: 0%;
+
+    }
+
+    #framepaddingposts {
+
+        height: 2vw;
+
+    }
+
+    #textodescricaopost{
+
+        padding-right: 2vw;
+        padding-left: 2vw;
+        padding-bottom: 2vw;
+        font-size: 6vw;
+        width: 82.67vw;
+    }
+
+    #imagempost{
+
+        width: 86.6vw;
+        height: 62vh;
+        gap: 47vw;
+
+    }
+
+    #tituloecurtidaspost{
+
+        gap: 57vw;
+
+    }
+
+    #textoemdestaque{
+
+        font-size: 3.5vw;
+        
+    }
+
+    #vetor-favoritar-carrossel{
+
+        width: 4vw;
+        height: 4vw;
+
+    }
+
+    #fotousuariopost{
+
+        width: 12vw;
+        height: 12vw;
+        border-radius: 60vw;
+    }
+
+    #nomeusuariopost{
+
+        font-size: 4vw;
+
+    }
+
+    #postsrecentes{
+
+        flex-direction: column;
+
+        gap:2vw;
+
+    }
+
+    #fundoscrollpost{
+
+        flex-direction: row;
+        gap: 2vw;
+        padding: 2vw;
+        border-radius: 4vw;
+
+    }
+
+    #seta-scroll{
+
+            opacity: 0%;
+
+            width: 0px;
+            height:0px;
+
+    }
+
+    #circulo-scroll{
+
+        width: 3vw;
+        height: 3vw;
+
+    }
+
+    #vermais-vetor{
+
+        width: 5vw;
+        height:5vw;
+    }
+
+    #botaovermaispost{
+
+        padding: 1vw;
+        border-radius: 2vw;
+
+    }
+
+    #scrollpost{
+
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+
+        padding-top: 2vw;
+    }
+}
+
+
+@media (max-width: 425px){
+
+
+    #postsrecentes{
+
+        height:63vh;
+        padding-top:0vw;
+    }
+
+
+    #imagempost{
+
+        gap:57.5vw;
+        height: 40vh;
+    }
+
+}
+
+@media (max-width: 375px){
+
+
+
+
+    #imagempost{
+
+        gap:67.6vw;
+    }
+
+}
+
+
+@media (max-width: 320px){
+
+
+
+
+    #imagempost{
+
+        gap:82vw;
+    }
+
+}
