@@ -1,0 +1,271 @@
+#heitor{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.alllogin{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#login-random{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.extralogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+
+.uplogin{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background-color: #21315A;
+    flex-direction: column;
+    width: 100vw;
+    height: 2rem;
+}
+
+
+#tittlelogin{
+    display: flex;
+    font-family: "Alice", serif;
+    font-weight: 200;
+    font-style: normal;
+    color: whitesmoke;
+    font-size: 3.8rem;
+    background-color: #21315A;
+    margin: 0;
+    border-bottom-left-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
+    padding-inline: 1rem;
+}
+
+.downlogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+.modal-login{
+    display: flex;  
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    background-color:rgb(186, 177, 166,0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 50px;
+    width: fit-content;
+    height: fit-content;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+
+
+.modal-uplogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logologin{
+    height: 16rem;
+    width: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-midlogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login-fill{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.subtittlelogin{
+    display: flex;
+    height: 1rem;
+    width: fit-content;
+    font-family: "Alice",sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.4rem;
+    font-style: bold;
+
+}
+
+.input-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px;
+    width: 24rem;
+    height: 2.5rem;
+    text-align:center;
+}
+
+.input-login:focus{
+    outline: none;
+}
+
+.login-tittle-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.input-login::placeholder{
+    display: flex;
+    font-family: inter;
+    color: rgb(89, 89, 89);
+    font-size: larger;
+}
+
+.modal-downlogin{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#botaologin{
+    background-color:rgba(61, 123, 204, 0.623);
+    color: black;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: fit-content;
+    padding-inline: 50px;
+    height: fit-content;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    font-size: 1.8rem;
+    font-family: Quicksand;
+    display: flex;
+}
+
+#botaologin:hover{
+    background-color:rgba(14, 108, 231, 0.623);
+    color: rgb(255, 255, 255);
+    transition: ease-in-out 200ms;
+    box-shadow: 0 0 40px rgba(120, 158, 209, 0.699); 
+    
+}
+
+.boxlogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#maillogin{
+    position: absolute;
+    margin-right: 20rem;
+}
+
+#locklogin{
+    position: absolute;
+    margin-right: 20rem;
+}
+
+.login-eye-openlogin{
+    position: absolute;
+    margin-left: 20rem;
+    display: none;
+}
+
+.login-eye-openlogin:hover{
+    cursor: pointer;
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: ease-in-out 100ms;
+}
+.login-eye-closedlogin{
+    position: absolute;
+    margin-left: 20rem;
+    display: block;
+}
+
+.login-eye-closedlogin:hover{
+    cursor: pointer;
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: ease-in-out 100ms;
+}
+
+@media (max-width: 414px){
+    #logologin{
+        height: 10rem;
+        width: 10rem;
+    }
+    .input-login{
+        width: 16rem;
+        height: 2.5rem;
+    }
+    #tittlelogin{
+        font-size: 2.4rem;
+    }
+    #maillogin{
+    position: absolute;
+    margin-right: 13rem;
+    }
+    #locklogin{
+        position: absolute;
+        margin-right: 13rem;
+    }
+
+    .extralogin{
+        gap: 3rem;
+    }
+
+    .uplogin{
+        height: 1.4rem;
+    }
+
+    .login-eye-openlogin{
+        position: absolute;
+        margin-left: 13rem;
+    }
+    .login-eye-closedlogin{
+        position: absolute;
+        margin-left: 13rem;
+    }
+    .modal-midlogin{
+        gap: 0.5rem;
+    }
+    .modal-loginlogin{
+        gap:1rem;
+        padding-block: 2rem;
+    }
+}
+
