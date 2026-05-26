@@ -198,25 +198,25 @@
     margin-right: 20rem;
 }
 
-.login-eye-openlogin{
+.login-eye-open{
     position: absolute;
     margin-left: 20rem;
     display: none;
 }
 
-.login-eye-openlogin:hover{
+.login-eye-open:hover{
     cursor: pointer;
     width: 1.2rem;
     height: 1.2rem;
     transition: ease-in-out 100ms;
 }
-.login-eye-closedlogin{
+.login-eye-closed{
     position: absolute;
     margin-left: 20rem;
     display: block;
 }
 
-.login-eye-closedlogin:hover{
+.login-eye-closed:hover{
     cursor: pointer;
     width: 1.2rem;
     height: 1.2rem;
@@ -252,11 +252,11 @@
         height: 1.4rem;
     }
 
-    .login-eye-openlogin{
+    .login-eye-open{
         position: absolute;
         margin-left: 13rem;
     }
-    .login-eye-closedlogin{
+    .login-eye-closed{
         position: absolute;
         margin-left: 13rem;
     }
