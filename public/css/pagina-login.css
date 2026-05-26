@@ -4,7 +4,7 @@
     height: 100%;
 }
 
-.all{
+.alllogin{
     display: flex;
     align-items: center;
     justify-content:start;
@@ -23,7 +23,7 @@
     background-size: cover;
 }
 
-.extra{
+.extralogin{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +32,7 @@
 }
 
 
-.up{
+.uplogin{
     display: flex;
     justify-content: start;
     align-items: start;
@@ -43,7 +43,7 @@
 }
 
 
-#tittle{
+#tittlelogin{
     display: flex;
     font-family: "Alice", serif;
     font-weight: 200;
@@ -57,7 +57,7 @@
     padding-inline: 1rem;
 }
 
-.down{
+.downlogin{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,13 +81,13 @@
 
 
 
-.modal-up{
+.modal-uplogin{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#logo{
+#logologin{
     height: 16rem;
     width: 16rem;
     display: flex;
@@ -95,7 +95,7 @@
     justify-content: center;
 }
 
-.modal-mid{
+.modal-midlogin{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,7 +112,7 @@
     margin: 1rem;
 }
 
-.subtittle{
+.subtittlelogin{
     display: flex;
     height: 1rem;
     width: fit-content;
@@ -153,7 +153,7 @@
     font-size: larger;
 }
 
-.modal-down{    
+.modal-downlogin{    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,41 +182,41 @@
     
 }
 
-.box{
+.boxlogin{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#mail{
+#maillogin{
     position: absolute;
     margin-right: 20rem;
 }
 
-#lock{
+#locklogin{
     position: absolute;
     margin-right: 20rem;
 }
 
-.login-eye-open{
+.login-eye-openlogin{
     position: absolute;
     margin-left: 20rem;
     display: none;
 }
 
-.login-eye-open:hover{
+.login-eye-openlogin:hover{
     cursor: pointer;
     width: 1.2rem;
     height: 1.2rem;
     transition: ease-in-out 100ms;
 }
-.login-eye-closed{
+.login-eye-closedlogin{
     position: absolute;
     margin-left: 20rem;
     display: block;
 }
 
-.login-eye-closed:hover{
+.login-eye-closedlogin:hover{
     cursor: pointer;
     width: 1.2rem;
     height: 1.2rem;
@@ -224,7 +224,7 @@
 }
 
 @media (max-width: 414px){
-    #logo{
+    #logologin{
         height: 10rem;
         width: 10rem;
     }
@@ -232,38 +232,38 @@
         width: 16rem;
         height: 2.5rem;
     }
-    #tittle{
+    #tittlelogin{
         font-size: 2.4rem;
     }
-    #mail{
+    #maillogin{
     position: absolute;
     margin-right: 13rem;
     }
-    #lock{
+    #locklogin{
         position: absolute;
         margin-right: 13rem;
     }
 
-    .extra{
+    .extralogin{
         gap: 3rem;
     }
 
-    .up{
+    .uplogin{
         height: 1.4rem;
     }
 
-    .login-eye-open{
+    .login-eye-openlogin{
         position: absolute;
         margin-left: 13rem;
     }
-    .login-eye-closed{
+    .login-eye-closedlogin{
         position: absolute;
         margin-left: 13rem;
     }
-    .modal-mid{
+    .modal-midlogin{
         gap: 0.5rem;
     }
-    .modal-login{
+    .modal-loginlogin{
         gap:1rem;
         padding-block: 2rem;
     }
