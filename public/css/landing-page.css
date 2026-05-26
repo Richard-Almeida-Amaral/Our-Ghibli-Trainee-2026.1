@@ -177,6 +177,7 @@ h2 {
 #framesetahero.reduzida{
     height:0px;
     transition-duration: 1s;
+    transition-delay:0.7s;
 }
 
 
@@ -218,7 +219,7 @@ h2 {
     border-right: 0.3vw solid #4F6F52;
     border-left: 0.3vw solid #4F6F52;
     opacity: 0%;
-    transition-delay: 1s;
+    transition-delay: 1.7s;
     transition-duration: 0.5s;
 }
 
