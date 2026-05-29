@@ -12,7 +12,7 @@ const setaParaBaixo = document.getElementById("seta-para-baixo-hero")
 })
 
 setaParaBaixo.addEventListener("click", () =>{
-    heroCard.classList.toggle()
+    heroCard.classList.toggle("ampliada");
 
 
 })

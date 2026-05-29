@@ -44,7 +44,7 @@ body{
 .main{
     background-image: linear-gradient(to bottom, #E8D8C3, #5A78A6); 
 }
-#hero{
+#hero.ampliada{
     
     /* display */
     display: flex;
@@ -223,6 +223,7 @@ h2 {
 }
 
 #seta-para-baixo-hero.reduzida{
+    transition-delay:0s;
     opacity: 100%
 }
 
@@ -432,6 +433,7 @@ h2 {
     width: 5.26vw;
     height: 3vw;
     transition-duration: 0.15s;
+    transition-delay: 0s;
 
 }
 
