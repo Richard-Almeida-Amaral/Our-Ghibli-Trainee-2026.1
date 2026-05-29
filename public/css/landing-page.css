@@ -80,6 +80,8 @@ body{
     background-size: cover;
     
     min-height: 268px;
+
+    transition-duration: 1s;
 }
 
 #hero.reduzida{
@@ -170,6 +172,7 @@ h2 {
     width: 100vw;
     height: 4.8vw;
     background-color: var(--bege-ourghibli);
+    transition-duration: 1s;
 
 
 }
@@ -177,7 +180,6 @@ h2 {
 #framesetahero.reduzida{
     height:0px;
     transition-duration: 1s;
-    transition-delay:0.7s;
 }
 
 
@@ -190,13 +192,40 @@ h2 {
     align-items: center;
     width: 5.06vw;
     height: 2.62vw;
-    border-top-left-radius: 1200vw;
-    border-top-right-radius:1200vw;
+    border-top-left-radius: 2.75vw;
+    border-top-right-radius:2.75vw;
     background-color: #E8D8C3;
     padding-top: 0,46vh;    
     border-top: 0.3vw solid #4F6F52;
     border-right: 0.3vw solid #4F6F52;
     border-left: 0.3vw solid #4F6F52;
+
+    transition-duration: 1s;
+
+
+    /* ! preciso de ajuda para fazer o stroke da setinha */
+
+}
+
+#seta-para-cima-hero.reduzida{
+
+    /* container da seta */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.06vw;
+    height: 2.62vw;
+    border-top-left-radius: 2.75vw;
+    border-top-right-radius:2.75vw;
+    background-color: #E8D8C3;
+    padding-top: 0,46vh;    
+    border-top: 0.3vw solid #4F6F52;
+    border-right: 0.3vw solid #4F6F52;
+    border-left: 0.3vw solid #4F6F52;
+
+    transition-duration: 1s;
+
+    opacity:0%;
 
 
     /* ! preciso de ajuda para fazer o stroke da setinha */
@@ -219,12 +248,14 @@ h2 {
     border-right: 0.3vw solid #4F6F52;
     border-left: 0.3vw solid #4F6F52;
     opacity: 0%;
-    transition-delay: 1.7s;
-    transition-duration: 0.5s;
+    transition-delay: .2s;
+    transition-duration: 0.3s;
 }
 
 #seta-para-baixo-hero.reduzida{
-    opacity: 100%
+    opacity: 100%;
+    transition-duration:.15s;
+    
 }
 
 #framepaddingposts{
@@ -433,6 +464,7 @@ h2 {
     width: 5.26vw;
     height: 3vw;
     transition-duration: 0.15s;
+    transition-delay: 0s !important;
 
 }
 
