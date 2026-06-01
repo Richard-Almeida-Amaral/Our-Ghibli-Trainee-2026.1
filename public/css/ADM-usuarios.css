@@ -14,7 +14,6 @@
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    /* font-weight: <weight>; */
     }
 
     .ADMU-body {
@@ -162,6 +161,7 @@
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    text-overflow: ellipsis;
     }
 
     .usuarioTr {
@@ -257,6 +257,9 @@
     .adcusuario button {
         width: 100%;
         text-align: center;
+    }
+    .usuarioTd{
+        text-overflow: ellipsis;
     }
 
     /* Parte da frente da Tabela  */
