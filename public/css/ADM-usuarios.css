@@ -102,8 +102,8 @@
         align-items: center;
         text-align: center;
         gap: 10px;
-        border: 2px solid #000000;
-        border-color: #000000;
+        /* border: 2px solid #000000;
+        border-color: #000000; */
     }
 
     .tablecont,
@@ -130,6 +130,7 @@
         font-family: "Nunito", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
+        
     }
 
     .usuarioTdAc svg {
@@ -147,6 +148,9 @@
     .usuarioTh,
     .usuarioTr {
         padding: 1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     /* border: 1px solid rgb(255, 0, 0); */
     }
 
@@ -259,6 +263,10 @@
         text-align: center;
     }
     .usuarioTd{
+        justify-content: center;
+        max-width: 120px;
+        white-space: nowrap;
+        overflow: hidden;
         text-overflow: ellipsis;
     }
 
@@ -272,4 +280,41 @@
     .usuarioTdAc svg{
         margin-left: 0 !important;
     }
+    }
+
+    @media (min-width: 701px) and (max-width: 1000px){
+        .ADMU-body {
+        gap: 1.5rem;
+        padding: 1rem;
+        height: 100%;
+        width: 100%;
+    }
+
+    .Topo {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .acoestopo {
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .pesqusuario {
+        width: 100%;
+    }
+
+    .pesqusuario {
+        height: fit-content;
+        padding: 0;
+        margin: 0;
+        justify-items: center;
+    }
+
+    .adcusuario button {
+        width: 100%;
+        text-align: center;
+    }
+    
     }
