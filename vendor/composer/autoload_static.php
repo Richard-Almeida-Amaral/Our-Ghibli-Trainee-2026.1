@@ -34,6 +34,7 @@ class ComposerStaticInit90bbf95869b4e88bf0dc5022e708a458
         'App\\Controllers\\ControllerModalCriarUsuario' => __DIR__ . '/../..' . '/app/Controllers/ControllerModalCriarUsuario.php',
         'App\\Controllers\\ControllerModalEditarUsuario' => __DIR__ . '/../..' . '/app/Controllers/ControllerModalUsuarioPost.php',
         'App\\Controllers\\ControllerModalExcluirUsuario' => __DIR__ . '/../..' . '/app/Controllers/ControllerModalExcluirUsuario.php',
+        'App\\Controllers\\ControllerModalVisualizarPost' => __DIR__ . '/../..' . '/app/Controllers/ControllerModalVisualizarPost.php',
         'App\\Controllers\\ControllerModalVisualizarUsuario' => __DIR__ . '/../..' . '/app/Controllers/ControllerModalVisualizarUsuario.php',
         'App\\Controllers\\ControllerNavbar' => __DIR__ . '/../..' . '/app/Controllers/ControllerNavbar.php',
         'App\\Controllers\\ControllerPaginaDePosts' => __DIR__ . '/../..' . '/app/Controllers/ControllerPaginaDePosts.php',

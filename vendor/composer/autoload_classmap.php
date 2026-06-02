@@ -15,6 +15,7 @@ return array(
     'App\\Controllers\\ControllerModalCriarUsuario' => $baseDir . '/app/Controllers/ControllerModalCriarUsuario.php',
     'App\\Controllers\\ControllerModalEditarUsuario' => $baseDir . '/app/Controllers/ControllerModalUsuarioPost.php',
     'App\\Controllers\\ControllerModalExcluirUsuario' => $baseDir . '/app/Controllers/ControllerModalExcluirUsuario.php',
+    'App\\Controllers\\ControllerModalVisualizarPost' => $baseDir . '/app/Controllers/ControllerModalVisualizarPost.php',
     'App\\Controllers\\ControllerModalVisualizarUsuario' => $baseDir . '/app/Controllers/ControllerModalVisualizarUsuario.php',
     'App\\Controllers\\ControllerNavbar' => $baseDir . '/app/Controllers/ControllerNavbar.php',
     'App\\Controllers\\ControllerPaginaDePosts' => $baseDir . '/app/Controllers/ControllerPaginaDePosts.php',

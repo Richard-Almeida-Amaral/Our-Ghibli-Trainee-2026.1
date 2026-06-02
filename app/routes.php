@@ -17,6 +17,9 @@ $router->get('navbar', 'ControllerNavbar@Navbar');
 // criar e excluir post:
 $router->get('criarpost', 'ControllerModalCriarPost@ModalCriarPost');
 
+// visualizar e editar post:
+$router->get('visualizarpost', 'ControllerModalVisualizarPost@ModalVisualizarPost');
+
 // visualizar usuario
 $router->get('visualizarusuario', 'ControllerModalVisualizarUsuario@ModalVisualizarUsuario');
 
