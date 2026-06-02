@@ -136,7 +136,7 @@ body {
 .paginação {
   display: flex;
   justify-content: center;
-  margin: 80px 0;
+  margin: 100px 0;
 }
 .paginação button {
   background-color: white;
