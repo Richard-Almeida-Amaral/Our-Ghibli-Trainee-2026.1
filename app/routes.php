@@ -4,9 +4,41 @@ namespace App\Controllers;
 use App\Controllers\ExampleController;
 use App\Core\Router;
 
+// Site
 $router->get('', 'ControllerLandingPage@landingPage');
-$router->get('login-page', 'ControllerLoginPage@loginPage');
-$router->get('pagina-de-posts', 'ControllerPaginaDePosts@PaginaDePosts');
-$router->get('pagina-independencia-de-posts', 'ControllerPaginaIndependenteDePosts@PaginaIndependenteDePosts');
+$router->get('login', 'ControllerLoginPage@loginPage');
+$router->get('posts', 'ControllerPaginaDePosts@PaginaDePosts');
+$router->get('posts#', 'ControllerPaginaIndependenteDePosts@PaginaIndependenteDePosts');
+$router->get('footer', 'ControllerFooter@Footer');
+$router->get('navbar', 'ControllerNavbar@Navbar');
+
+// Modais
+
+// criar e excluir post:
+$router->get('criarpost', 'ControllerModalCriarPost@ModalCriarPost');
+
+// visualizar usuario
+$router->get('visualizarusuario', 'ControllerModalVisualizarUsuario@ModalVisualizarUsuario');
+
+// excluir usuario
+$router->get('excluirusuario', 'ControllerModalExcluirUsuario@ModalExcluirUsuario');
+
+// criar usuario
+$router->get('criarusuario', 'ControllerModalCriarUsuario@ModalCriarUsuario');
+
+// editar usuario
+$router->get('editarusuario', 'ControllerModalEditarUsuario@ModalEditarUsuario');
+
+
+// Admin
+
+$router->get('sidebar', 'ControllerSidebar@Sidebar');
 $router->get('dashboard', 'ControllerDashboard@Dashboard');
-$router->get('ADM-usuarios', 'ControllerAdmUsuarios@AdmUsuarios');
+$router->get('users', 'ControllerAdmUsuarios@AdmUsuarios');
+
+
+
+
+
+
+
