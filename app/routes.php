@@ -8,7 +8,7 @@ use App\Core\Router;
 $router->get('', 'ControllerLandingPage@landingPage');
 $router->get('login', 'ControllerLoginPage@loginPage');
 $router->get('posts', 'ControllerPaginaDePosts@PaginaDePosts');
-$router->get('posts#', 'ControllerPaginaIndependenteDePosts@PaginaIndependenteDePosts');
+$router->get('postsI', 'ControllerPaginaIndependenteDePosts@PaginaIndependenteDePosts');
 $router->get('footer', 'ControllerFooter@Footer');
 $router->get('navbar', 'ControllerNavbar@Navbar');
 
