@@ -71,4 +71,39 @@ class ControllerAdmUsuarios
     }
 
 }
- 
+class ControllerModalVisualizarUsuario
+{
+
+    public function ModalVisualizarUsuario()
+    {
+        return view('admin/ModalVisualizarUsuario');
+    }
+
+}
+class ControllerVisualizaViewAdd{
+    public function AddView(){
+        return view('admin/add');
+    }
+}
+class ControllerDeleteUser{
+    public function DeleteUser(){
+        return view('admin/delete');
+    }
+}
+class ControllerEditUser{
+    public function EditUser(){
+        return view('admin/edit');
+    }
+}
+class ControllerVisualizar{
+    public function Visualizar(){
+        return view('admin/view');
+    }
+}
+class ControllerSiderbar{
+    public function Sidebar(){
+        return view('admin/sidebar');   
+    }
+}
+
+
