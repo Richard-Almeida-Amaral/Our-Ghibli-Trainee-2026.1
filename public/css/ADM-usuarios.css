@@ -217,8 +217,8 @@
     }
 
     .ADMU-paginação button {
-    background-color: #ebe3d7;
-    color: #20315a;
+    background-color: #ffffff;
+    color: #000000;
     border: none;
     padding: 10px 20px;
     margin: 0 5px;
@@ -229,7 +229,7 @@
     }
     .ADMU-paginação button:hover {
     background-color: #659596;
-    color: #ebe3d7;
+    color: #000000;
     }
 
     @media (max-width: 700px) {
