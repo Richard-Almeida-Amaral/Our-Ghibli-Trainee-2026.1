@@ -38,7 +38,7 @@
       <!-- div do topo da sidebar, onde tem o logo e o nome do usuário, e é clicável para fechar a sidebar -->
       <div class="top-sidebar">
         <div class="perfilSidebar">
-          <img class="imagemPerfil" src="../../../public/assets/LogoSemFundo.png" alt="">
+          <img id= "fotoPerfil" class="imagemPerfil" src="../../../public/assets/LogoSemFundoApenasTotoro.png" alt="">
           <i class="iconeMenu">
             <img src="../../../public/assets/barra-de-menu.png" alt="">
           </i>
@@ -49,15 +49,15 @@
           <ul>
             <!-- Itens de navegação da sidebar -->
             <li class="itemSidebar active" >
-              <a class="linksidebar" href="#">
-                <i class="icone-sidebar">
+              <a class="linksidebar" href="#" id="iconeDashboard">
+                <i class="icone-sidebar" >
                   <img src="../../../public/assets/casa.png" alt="" srcset="" />
               </i>
                 <span class="descricao">Dashboard</span>
               </a>
             </li>
             <!-- Itens de navegação da sidebar -->
-            <li class="itemSidebar" >
+            <li class="itemSidebar" id="iconePostagens">
               <a href="#">
                 <i class="icone-sidebar">
                   <img
@@ -66,7 +66,7 @@
                 <span class="descricao">Postagens</span>
             </li>
             <!-- Itens de navegação da sidebar -->
-            <li class="itemSidebar" >
+            <li class="itemSidebar" id="iconeUsuarios">
               <a href="#">
                 <i class="icone-sidebar">
                   <img src="../../../public/assets/grupo-de-usuarios.png" alt="" srcset=""/></i>
@@ -86,7 +86,7 @@
       <div class="logoutSidebar">
         <button type="button" id="buttonLogout">
           <i class="icone-sidebar">
-            <img src="../../../public/assets/seta.png" alt="" srcset="" />
+            <img id="iconeLogout" src="../../../public/assets/seta.png" alt="" srcset="" />
           </i>
           <span class="itemDescricao">Sair</span>
         </button>
