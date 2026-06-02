@@ -87,9 +87,9 @@
 .containerTextos {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
   gap: 20px;
-  flex: 1;                 
+  flex: 1;       
+  margin-top: 20px;          
 }
 
 .topoDescricao {
