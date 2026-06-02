@@ -8,11 +8,18 @@ const setaParaBaixo = document.getElementById("seta-para-baixo-hero")
     frameSetaParaCima.classList.toggle("reduzida");
     setaParaBaixo.classList.toggle("flex");
     setaParaBaixo.classList.toggle("reduzida");
-
+    setaParaCima.classList.toggle("reduzida");
 })
 
 setaParaBaixo.addEventListener("click", () =>{
-    heroCard.classList.toggle("ampliada");
-
+    heroCard.classList.toggle("reduzida", false);
+    frameSetaParaCima.classList.toggle("reduzida", false);
+    setaParaBaixo.classList.toggle("flex", false);
+    setaParaBaixo.classList.toggle("reduzida", false);
+    setaParaCima.classList.toggle("reduzida", false);
+    
 
 })
+
+
+

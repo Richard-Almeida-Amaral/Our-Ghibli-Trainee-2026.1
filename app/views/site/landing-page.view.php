@@ -31,7 +31,6 @@
 
             <section id="frametextofilme"> <!-- texto filme + logo -->
 
-                <img src="../../../public/assets/LogoSemFundo.png" style="height: 8,125vw; width: 8.95vw" alt = "logoourghibli"> <!-- Logo sem fundo-->
                 <h2>“O mundo é mágico quando visto com olhos sinceros.”</h2>
 
               </section>
