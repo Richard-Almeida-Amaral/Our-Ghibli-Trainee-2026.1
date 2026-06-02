@@ -14,11 +14,10 @@
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    /* font-weight: <weight>; */
     }
 
     .ADMU-body {
-    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: radial-gradient(circle,rgba(123, 175, 104, 1.0) 0%, rgba(148, 187, 233, 1) 100%);
     backdrop-filter: blur(20px); 
     display: flex;
     flex-direction: column;
@@ -162,6 +161,7 @@
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    text-overflow: ellipsis;
     }
 
     .usuarioTr {
@@ -257,6 +257,9 @@
     .adcusuario button {
         width: 100%;
         text-align: center;
+    }
+    .usuarioTd{
+        text-overflow: ellipsis;
     }
 
     /* Parte da frente da Tabela  */

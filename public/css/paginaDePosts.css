@@ -139,7 +139,7 @@ body {
   margin: 80px 0;
 }
 .paginação button {
-  background-color: var(--color-bege1-100);
+  background-color: white;
   color: var(--color-azul1-100);
   border: none;
   padding: 10px 20px;
