@@ -146,7 +146,7 @@ body{
     width: 100%;
     object-fit: cover; 
     display: block;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 .ImgPosts img{
     border-radius: 15px;

@@ -64,7 +64,7 @@
 
         <div class="containerTextos">
           <div class="topoDescricao">
-            <h1 id="tituloAreaTexto">Descrição</h1>
+            
           </div>
           <label class="labelInput">
             <textarea placeholder="Escreva seu Título..." class="inputCampo"></textarea>

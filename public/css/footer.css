@@ -232,18 +232,11 @@ footer{
         .Tipodeinfofooter{
             display: none;
         }
-        .Tipodeinfofooteremail{
-            display: none;
-        }
     }
     .sobrenos{
     padding-left: 1rem;
     padding-right: 1rem;
     
-    }
-    .copyrigth{
-        padding-left: 1rem;
-        padding-right: 1rem;
     }
 }
 
@@ -283,9 +276,6 @@ footer{
         }
     
         .Tipodeinfofooter{
-            display: none;
-        }
-        .Tipodeinfofooteremail{
             display: none;
         }
     }
