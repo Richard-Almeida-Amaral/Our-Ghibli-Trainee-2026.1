@@ -26,7 +26,7 @@
 </head>
 <body>
     <main>
-        
+
         <section id="hero"> <!-- Hero card -->
 
             <section id="frametextofilme"> <!-- texto filme + logo -->
