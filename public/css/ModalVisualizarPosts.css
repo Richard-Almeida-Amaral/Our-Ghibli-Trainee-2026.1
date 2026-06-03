@@ -20,6 +20,14 @@
 
 }
 
+.body{
+
+display: flex;
+flex-direction: row;
+
+}
+
+
 #containermodalview{
 
     width:50vw;
@@ -176,3 +184,171 @@
     width: 100%;
 
 }
+
+
+
+
+
+
+/* modal edit post */
+
+
+
+
+#containermodaledit{
+
+    width:50vw;
+    height:40vw;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+#frametitulomodaledit{
+    
+    background-color: #20315A;
+    width: 100%;
+    height: 3vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+
+    
+    display: flex;
+    
+}
+
+#titulomodaledit{
+
+    width:100%;
+    color:#F2F1E6;
+    font-family: var(--fonte-quicksand);
+    font-size: 1.3vw;
+    font-weight: 500;
+
+    text-align:center;
+    align-self: center;
+    justify-self: center;
+
+    padding-left: 10%;
+}
+
+.xmodaleditpost{
+    
+    display:flex;
+
+    height:100%;
+    width:10%;
+    
+    fill: #8B1A1A;
+
+
+    padding-right: -60%;
+
+
+
+}
+
+#conteudomodaledit{
+    
+    background-color: #E8D8C3;
+    height: 100%;
+    gap: 4%;
+    
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+#imagempostmodaledit{
+
+    width: 50%;
+    height: 100%;
+    border-radius: 1vw;
+
+    background-image: url(../assets/Totoro.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border:1px solid #b5a494 ;
+
+}
+
+#tituloedescricaomodaledit{
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    height: 100%;
+    gap: 2%;
+
+}
+
+#frametitulopostmodaledit{
+
+    width: 100%;
+    height:35%;
+    
+    background-color: #ebdcd0;
+    border:1px solid #b5a494 ;
+
+    border-radius: 1vw;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+#framedescricaomodaledit{
+
+    width: 100%;
+    height:63%;
+
+    background-color: #ebdcd0;
+    border:1px solid #b5a494 ;
+    
+    border-radius: 1vw;
+
+    align-self: end;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+#titulopostmodaledit{
+    
+    height: 90%;
+    width: 90%;
+    padding: 5%;
+
+    color:#5f564e;
+    font-family: var(--fonte-nunito);
+    font-weight: 700;
+}
+
+#descricaomodaledit{
+    
+    height: 90%;
+    width: 90%;
+    padding: 5%;
+    
+    color:#5f564e;
+    font-family: var(--fonte-nunito);
+    font-weight: 500;
+}
+
+#botoesmodaledit{
+
+    height: 8%;
+    width: 100%;
+
+}
+

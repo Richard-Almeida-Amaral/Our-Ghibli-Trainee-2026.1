@@ -26,6 +26,8 @@
 
 
 <body>
+
+<!-- modal visualizar post -->
   <div id="containermodalview">
 
       <section id="frametitulomodalview">
@@ -53,6 +55,39 @@
           </div>
         </div>
       </section>
+  </div>
+
+
+
+  <!-- modal editar post -->
+      <div id="containermodaledit">
+
+      <section id="frametitulomodaledit">
+        <div id="titulomodaledit">Editar Publicação</div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="xmodaleditpost" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+        </svg>
+      </section>
       
+      <section id="conteudomodaledit">
+        <div id="imagempostmodaledit"></div>
+        <div id="tituloedescricaomodaledit">
+          <div id="frametitulopostmodaledit">
+            <div id="titulopostmodaledit"> 
+                A magia cotidiana dos filmes do Studio Ghibli e como suas histórias continuam encantando diferentes gerações ao redor do mundo.
+            </div>
+          </div>
+          <div id="framedescricaomodaledit">
+            <div id="descricaomodaledit">
+              Os filmes do Studio Ghibli conquistaram milhões de fãs ao unir fantasia, emoção e reflexões profundas sobre humanidade, natureza
+            e amadurecimento. Com personagens marcantes, trilhas sonoras inesquecíveis e animações artesanais impressionantes, obras como A Viagem de Chihiro e Meu Amigo
+            Totoro transformaram o estúdio em referência mundial da animação. Neste artigo, exploramos os elementos que tornam os filmes Ghibli experiências tão sensíveis, 
+            acolhedoras e atemporais para públicos de todas as idades.
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+
         </body>
         </html>
