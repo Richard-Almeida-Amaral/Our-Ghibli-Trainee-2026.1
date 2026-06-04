@@ -14,7 +14,7 @@
 </head>
 <body class="ADMP-body">
     <div class="ADMP-top">
-        <h1 class="ADMP-tittle">Página de Publicação</h1>
+        <h1 class="ADMP-tittle">Lista de Publicação</h1>
     </div>
 
     <div class="ADMP-mid">
