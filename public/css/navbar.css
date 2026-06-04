@@ -21,7 +21,7 @@
     padding-inline: 1rem;
     padding-block: 0.6rem;
 }
-.nav-container.const{
+.nav-container.construct{
     background-color: #E8D8C3;
 }
 
@@ -33,7 +33,7 @@
     border: 0.1px solid rgb(75, 75, 75);
     border-radius: 2rem;
 }
-.nav-logo.const{
+.nav-logo.construct{
     border: none;
 }
 
@@ -179,6 +179,7 @@
 
     .nav-link-cell{
         padding-block: 1rem;
+        width: 100%;
     }
 
     .list{

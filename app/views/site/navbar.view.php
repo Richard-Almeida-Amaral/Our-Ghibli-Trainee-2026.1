@@ -47,15 +47,25 @@
         </div>
 
         <div class="nav-mid-cell">
-            <input type="button" value="HOME" class="nav-link-cell">
-            <input type="button" value="PUBLICAÇÕES" class="nav-link-cell">
-            <input type="button" value="LOGIN" id="nav-login-cell" class="nav-link-cell">
+            <a href="/">
+                <input type="button" value="HOME" class="nav-link-cell"> 
+            </a>
+            <a href="/posts">
+                <input type="button" value="PUBLICAÇÕES" class="nav-link-cell">
+            </a>
+            <a href="/login">
+                <input type="button" value="LOGIN" id="nav-login-cell" class="nav-link-cell">
+            </a>
         </div>
 
         <div class="nav-down-cell">
             <img src="../../../public/assets/Linkedin.png" alt="">
-            <img src="../../../public/assets/Instagram.png" alt="">
-            <img src="../../../public/assets/Facebook.png" alt="">
+            <a href="https://www.instagram.com/studioghibliofficiall/">
+                <img src="../../../public/assets/Instagram.png" alt="">
+            </a>
+            <a href="https://www.facebook.com/WorldofGhibliUS">
+                <img src="../../../public/assets/Facebook.png" alt="">
+            </a>
         </div>
     </nav>
     
