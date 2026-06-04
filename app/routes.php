@@ -38,7 +38,7 @@ $router->get('editarusuario', 'ControllerModalEditarUsuario@ModalEditarUsuario')
 $router->get('sidebar', 'ControllerSidebar@Sidebar');
 $router->get('dashboard', 'ControllerDashboard@Dashboard');
 $router->get('users', 'ControllerAdmUsuarios@AdmUsuarios');
-$router->get('publications', 'ControllerAdmPublicacoes@AdmPublicacoes');
+$router->get('publi', 'ControllerAdmPublicacoes@AdmPublicacoes');
 
 
 
