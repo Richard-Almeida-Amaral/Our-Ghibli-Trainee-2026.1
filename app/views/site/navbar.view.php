@@ -17,8 +17,12 @@
         </div>
 
         <div class="nav-mid">
-            <input type="button" value="HOME" class="nav-link">
-            <input type="button" value="PUBLICAÇÕES" class="nav-link">
+            <a href=" ">
+                <input type="button" value="HOME" class="nav-link">
+            </a>
+            <a href="/posts">
+                <input type="button" value="PUBLICAÇÕES" class="nav-link">
+            </a>
         </div>
 
         <div class="nav-right">
