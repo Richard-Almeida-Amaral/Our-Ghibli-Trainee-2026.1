@@ -73,10 +73,11 @@
         <div id="imagempostmodaledit"></div>
         <div id="tituloedescricaomodaledit">
           <div id="frametitulopostmodaledit">
-            <div id="titulopostmodaledit"> 
-                A magia cotidiana dos filmes do Studio Ghibli e como suas histórias continuam encantando diferentes gerações ao redor do mundo.
-            </div>
-          </div>
+            <input type='text' placeholder="A magia cotidiana dos filmes do Studio Ghibli e como suas histórias continuam encantando diferentes gerações ao redor do mundo."
+            id="titulopostmodaledit">
+          </input>
+        </div>
+          
           <div id="framedescricaomodaledit">
             <div id="descricaomodaledit">
               Os filmes do Studio Ghibli conquistaram milhões de fãs ao unir fantasia, emoção e reflexões profundas sobre humanidade, natureza

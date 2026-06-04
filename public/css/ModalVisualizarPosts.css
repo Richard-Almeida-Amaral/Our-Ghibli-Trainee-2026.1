@@ -20,10 +20,11 @@
 
 }
 
-.body{
+body{
 
 display: flex;
 flex-direction: row;
+gap: 20px;
 
 }
 
@@ -322,16 +323,76 @@ flex-direction: row;
     overflow-y: scroll;
     scrollbar-width: none;
 }
-
-#titulopostmodaledit{
-    
-    height: 90%;
+#frametitulopostmodaledit{
+    height: 30%;
     width: 90%;
     padding: 5%;
+
+    background-color: #ebdcd0;
+    border:1px solid #b5a494;
+
+    border-radius: 1vw;
+
+}
+#titulopostmodaledit{
+    
+    display: flex;
+    box-sizing: border-box;
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    text-wrap-mode: wrap;
+    word-break: break-all;
+
+    width:100%;
+    height: 12%;
+
+    vertical-align: top;
+    line-height: normal;
+
+    background-color: #00000000;
+    
+    line-height: 30%;
+    text-justify: start;
 
     color:#5f564e;
     font-family: var(--fonte-nunito);
     font-weight: 700;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+    border: none;
+}
+
+#titulopostmodaledit:focus{
+    outline-style: none;
+}
+#titulopostmodaledit::placeholder{
+
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    text-wrap-mode: wrap;
+    overflow-wrap: break-word;
+
+    color:#5f564e;
+    font-family: var(--fonte-nunito);
+    font-size: 0.8vw;
+
+    width: 90%;
+
+    align-items: start;
+
+    color:#5f564e;
+
+    font-family: var(--fonte-nunito);
+    font-weight: 700;
+
+    position:absolute;
+
+
 }
 
 #descricaomodaledit{
