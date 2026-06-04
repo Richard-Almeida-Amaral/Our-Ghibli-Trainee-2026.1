@@ -230,9 +230,6 @@
     height: fit-content;
 }
 
-#PVisualizar{
-    display: none;
-}
 
 .icons:hover{
     height: 1.4rem;
@@ -373,6 +370,426 @@
     flex-direction: row;
     gap: 4rem;
 }
+
+
+
+
+:root {
+
+    /* cores */
+    --azul-claro-ourghibli: #5A78A6;
+    --azul-escuro-ourghibli: #20315A;
+    --bege-ourghibli: #E8D8C3;
+    --branco-ourghibli:#F2F1E6;
+    --preto-ourghibli: #121212;
+    --verde-claro-ourghibli: #7A9478;
+    --verde-escuro-ourghibli: #4F6F52;
+
+    /* fontes */
+    /* nunito */
+    --fonte-nunito: "Nunito", sans-serif;
+    /* alice */
+    --fonte-alice: "Alice", serif;
+
+    /* quicksand */
+    --fonte-quicksand: "Quicksand", serif;
+
+}
+
+body{
+
+display: flex;
+flex-direction: row;
+gap: 20px;
+
+}
+
+
+#containermodalview{
+    position: absolute;
+    width:50vw;
+    height:30vw;
+    display: none;
+    flex-direction: column;
+    top: 22%;
+}
+
+#frametitulomodalview{
+    
+    background-color: #20315A;
+    width: 100%;
+    height: 3vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+
+    
+    display: flex;
+    
+}
+
+#titulomodalview{
+
+    width:100%;
+    color:#F2F1E6;
+    font-family: var(--fonte-quicksand);
+    font-size: 1.3vw;
+    font-weight: 500;
+
+    text-align:center;
+    align-self: center;
+    justify-self: center;
+
+    padding-left: 10%;
+}
+
+.xmodalviewpost{
+    
+    display:flex;
+
+    height:100%;
+    width:10%;
+    
+    fill: #8B1A1A;
+
+
+    padding-right: -60%;
+
+
+
+}
+
+#conteudomodalview{
+    
+    background-color: #E8D8C3;
+    height: 100%;
+    gap: 4%;
+    
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+#imagempostmodalview{
+
+    width: 50%;
+    height: 100%;
+    border-radius: 1vw;
+
+    background-image: url(../assets/Totoro.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border:1px solid #b5a494 ;
+
+}
+
+#tituloedescricaomodalview{
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    height: 100%;
+    gap: 2%;
+
+}
+
+#frametitulopostmodalview{
+
+    width: 100%;
+    height:35%;
+    
+    background-color: #ebdcd0;
+    border:1px solid #b5a494 ;
+
+    border-radius: 1vw;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+#framedescricaomodalview{
+
+    width: 100%;
+    height:63%;
+
+    background-color: #ebdcd0;
+    border:1px solid #b5a494 ;
+    
+    border-radius: 1vw;
+
+    align-self: end;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+#titulopostmodalview{
+    
+    height: 90%;
+    width: 90%;
+    padding: 5%;
+
+    color:#5f564e;
+    font-family: var(--fonte-nunito);
+    font-weight: 700;
+}
+
+#descricaomodalview{
+    
+    height: 90%;
+    width: 90%;
+    padding: 5%;
+    
+    color:#5f564e;
+    font-family: var(--fonte-nunito);
+    font-weight: 500;
+}
+
+#botoesmodalview{
+
+    height: 8%;
+    width: 100%;
+
+}
+
+
+
+
+
+
+/* modal edit post */
+
+
+
+
+#containermodaledit{
+
+    width:50vw;
+    height:40vw;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+#frametitulomodaledit{
+    
+    background-color: #20315A;
+    width: 100%;
+    height: 3vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+
+    
+    display: flex;
+    
+}
+
+#titulomodaledit{
+
+    width:100%;
+    color:#F2F1E6;
+    font-family: var(--fonte-quicksand);
+    font-size: 1.3vw;
+    font-weight: 500;
+
+    text-align:center;
+    align-self: center;
+    justify-self: center;
+
+    padding-left: 10%;
+}
+
+.xmodaleditpost{
+    
+    display:flex;
+
+    height:100%;
+    width:10%;
+    
+    fill: #8B1A1A;
+
+
+    padding-right: -60%;
+
+
+
+}
+
+#conteudomodaledit{
+    
+    background-color: #E8D8C3;
+    height: 100%;
+    gap: 4%;
+    
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+#imagempostmodaledit{
+
+    width: 50%;
+    height: 100%;
+    border-radius: 1vw;
+
+    background-image: url(../assets/Totoro.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border:1px solid #b5a494 ;
+
+}
+
+#tituloedescricaomodaledit{
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    height: 100%;
+    gap: 2%;
+
+}
+
+#frametitulopostmodaledit{
+
+    width: 100%;
+    height:35%;
+    
+    background-color: #ebdcd0;
+    border:1px solid #b5a494 ;
+
+    border-radius: 1vw;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+#framedescricaomodaledit{
+
+    width: 100%;
+    height:63%;
+
+    background-color: #ebdcd0;
+    border:1px solid #b5a494 ;
+    
+    border-radius: 1vw;
+
+    align-self: end;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+#frametitulopostmodaledit{
+    height: 30%;
+    width: 90%;
+    padding: 5%;
+
+    background-color: #ebdcd0;
+    border:1px solid #b5a494;
+
+    border-radius: 1vw;
+
+}
+#titulopostmodaledit{
+    
+    display: flex;
+    box-sizing: border-box;
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    text-wrap-mode: wrap;
+    word-break: break-all;
+
+    width:100%;
+    height: 12%;
+
+    vertical-align: top;
+    line-height: normal;
+
+    background-color: #00000000;
+    
+    line-height: 30%;
+    text-justify: start;
+
+    color:#5f564e;
+    font-family: var(--fonte-nunito);
+    font-weight: 700;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+    border: none;
+}
+
+#titulopostmodaledit:focus{
+    outline-style: none;
+}
+#titulopostmodaledit::placeholder{
+
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    text-wrap-mode: wrap;
+    overflow-wrap: break-word;
+
+    color:#5f564e;
+    font-family: var(--fonte-nunito);
+    font-size: 0.8vw;
+
+    width: 90%;
+
+    align-items: start;
+
+    color:#5f564e;
+
+    font-family: var(--fonte-nunito);
+    font-weight: 700;
+
+    position:absolute;
+
+
+}
+
+#descricaomodaledit{
+    
+    height: 90%;
+    width: 90%;
+    padding: 5%;
+    
+    color:#5f564e;
+    font-family: var(--fonte-nunito);
+    font-weight: 500;
+}
+
+#botoesmodaledit{
+
+    height: 8%;
+    width: 100%;
+
+}
+
+
+
 
 @media (max-width: 414px){
     .ADMP-mid{

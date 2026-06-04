@@ -24,32 +24,38 @@
             <input type="search" name="" id="" placeholder="Pesquisar..." class="ADMP-box">
             <input type="button" value="+ Adicionar Publicação" class="ADMP-butom">
         </div>
-    <div class="ADMPMV-body" id="PVisualizar">
-        <div class="ADMPMV-container">
-            <div class="ADMPMV-header">
-                <h1>Visualizar Usuário</h1>
-            </div> 
+    
 
-            <div class="ADMPMV-mid">
-                <div class="ADMPMV-fields">
-                    <label for="">Id</label>
-                    <input type="text" id="" class="ADMPMV-input" disabled>
-                </div>
-                <div class="ADMPMV-fields">
-                    <label for="">Nome</label>
-                    <input type="text" name="" id=""  class="ADMPMV-input" disabled>
-                </div>
-                <div class="ADMPMV-fields">
-                    <label for="" >Email</label>
-                    <input type="email" name="" id="" class="ADMPMV-input" disabled>
-                </div>
-                <div class="ADMPMV-fields">
-                    <label for="">Senha</label>
-                    <input type="password" name="" id="" class="ADMPMV-input" disabled>
-                </div>
+    <div id="containermodalview">
+
+      <section id="frametitulomodalview">
+        <div id="titulomodalview">Visualização de Publicação</div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="xmodalviewpost" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+        </svg>
+      </section>
+      
+      <section id="conteudomodalview">
+        <div id="imagempostmodalview"></div>
+        <div id="tituloedescricaomodalview">
+          <div id="frametitulopostmodalview">
+            <div id="titulopostmodalview"> 
+                A magia cotidiana dos filmes do Studio Ghibli e como suas histórias continuam encantando diferentes gerações ao redor do mundo.
             </div>
+          </div>
+          <div id="framedescricaomodalview">
+            <div id="descricaomodalview">
+              Os filmes do Studio Ghibli conquistaram milhões de fãs ao unir fantasia, emoção e reflexões profundas sobre humanidade, natureza
+            e amadurecimento. Com personagens marcantes, trilhas sonoras inesquecíveis e animações artesanais impressionantes, obras como A Viagem de Chihiro e Meu Amigo
+            Totoro transformaram o estúdio em referência mundial da animação. Neste artigo, exploramos os elementos que tornam os filmes Ghibli experiências tão sensíveis, 
+            acolhedoras e atemporais para públicos de todas as idades.
+            </div>
+          </div>
         </div>
+      </section>
     </div>
+
+
     <div class="ADMP-bottom">
         <table class="ADMP-table">
             <thead class="ADMP-theader">
@@ -96,7 +102,7 @@
                 </tr>
                 <tr class="TP-body-conteiner">
                     <td class="TP-col">
-                        <button class="btnIcons" onclick="Pabrirmodal('PVisualizar')">
+                        <button class="btnIcons" onclick="Pabrirmodal('containermodalview')">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icons" viewBox="0 0 16 16">
                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
@@ -111,7 +117,7 @@
                         </svg>
                     </td>
                     <td class="TP-col">
-                        <button class="btnIcons" onclick="Pabrirmodal('PVisualizar')">
+                        <button class="btnIcons" onclick="Pabrirmodal('containermodalview')">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icons" viewBox="0 0 16 16">
                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
@@ -126,7 +132,7 @@
                         </svg>
                     </td>
                     <td class="TP-col">
-                        <button class="btnIcons" onclick="Pabrirmodal('PVisualizar')">
+                        <button class="btnIcons" onclick="Pabrirmodal('containermodalview')">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icons" viewBox="0 0 16 16">
                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
@@ -141,7 +147,7 @@
                         </svg>
                     </td>
                     <td class="TP-col">
-                        <button class="btnIcons" onclick="Pabrirmodal('PVisualizar')">
+                        <button class="btnIcons" onclick="Pabrirmodal('containermodalview')">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icons" viewBox="0 0 16 16">
                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
@@ -156,7 +162,7 @@
                         </svg>
                     </td>
                     <td class="TP-col">
-                        <button class="btnIcons" onclick="Pabrirmodal('PVisualizar')">
+                        <button class="btnIcons" onclick="Pabrirmodal('containermodalview')">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icons" viewBox="0 0 16 16">
                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
@@ -171,7 +177,7 @@
                         </svg>
                     </td>
                     <td class="TP-col">
-                        <button class="btnIcons" onclick="Pabrirmodal('PVisualizar')">
+                        <button class="btnIcons" onclick="Pabrirmodal('containermodalview')">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icons" viewBox="0 0 16 16">
                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
