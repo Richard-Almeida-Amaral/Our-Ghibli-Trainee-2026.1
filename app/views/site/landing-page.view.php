@@ -21,14 +21,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
-
-
+    
 </head>
 <body>
+    <div id="navbar">
+    <?php require('navbar.view.php');?>
+    </div>
     <main>
 
         <section id="hero"> <!-- Hero card -->
-
+            
             <section id="frametextofilme"> <!-- texto filme + logo -->
 
                 <h2>“O mundo é mágico quando visto com olhos sinceros.”</h2>

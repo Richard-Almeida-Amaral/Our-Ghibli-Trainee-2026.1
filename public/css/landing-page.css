@@ -41,6 +41,12 @@ body{
 
 }
 
+#navbar{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
 .main{
     background-image: linear-gradient(to bottom, #E8D8C3, #5A78A6); 
 }
