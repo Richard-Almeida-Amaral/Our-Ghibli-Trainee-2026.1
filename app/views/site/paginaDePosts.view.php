@@ -33,6 +33,9 @@
     <link rel="stylesheet" href="../../../public/css/paginaDePosts.css" />
   </head>
   <body>
+    <div id="navbar">
+      <?php require('navbar.view.php');?>
+    </div>
     <main>
       <!-- Section do topo da página, onde tem o título e a barra de pesquisa -->
       <section>

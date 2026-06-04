@@ -17,7 +17,7 @@
         </div>
 
         <div class="nav-mid">
-            <a href=" ">
+            <a href="/ ">
                 <input type="button" value="HOME" class="nav-link">
             </a>
             <a href="/posts">
@@ -26,7 +26,9 @@
         </div>
 
         <div class="nav-right">
-            <input type="button" value="LOGIN" class="nav-login">
+            <a href="/login">
+                <input type="button" value="LOGIN" class="nav-login">
+            </a>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="list" id="list" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
             </svg>

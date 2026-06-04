@@ -20,7 +20,9 @@
             <form action="" class="modal-login">
 
                 <div class="modal-uplogin">
-                    <img src="../../../public/assets/LogoLogin.png" alt="" id="logologin">
+                    <a href="/ ">
+                        <img src="../../../public/assets/LogoLogin.png" alt="" id="logologin">
+                    </a>
                 </div>
 
                 <div class="modal-midlogin">
