@@ -56,7 +56,6 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
-    /* border: 1px solid orange; */
     column-gap: 2rem;
     justify-content: space-between;
     align-items: center;
@@ -147,7 +146,7 @@ body{
     align-items: center;
     text-align: center;
     height: fit-content;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     padding-left: 4rem;
     padding-right: 4rem;
     margin-top: 2rem;
@@ -232,14 +231,19 @@ footer{
         .Tipodeinfofooter{
             display: none;
         }
+        .Tipodeinfofooteremail{
+            display: none;
+        }
     }
     .sobrenos{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    }
+    .copyrigth{
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
 }
-
 
 
 @media (min-width: 701px) and (max-width: 1000px) {
@@ -260,6 +264,10 @@ footer{
         }
         .emailcont {
             justify-content: center;
+            gap: 6vw;
+        }
+        .emailcont .p{
+            justify-content: start;
         }
         .Telefonecont{
             justify-content: center;
@@ -276,6 +284,9 @@ footer{
         }
     
         .Tipodeinfofooter{
+            display: none;
+        }
+        .Tipodeinfofooteremail{
             display: none;
         }
     }
