@@ -57,7 +57,7 @@
               <label for="userId">ID</label>
 
               <div class="input-wrapper no-icon">
-                <input type="text" id="userId" placeholder="ID...">
+                <input type="text" id="userId" disabled>
               </div>
             </div>
 
@@ -65,7 +65,7 @@
               <label for="userName">Nome</label>
 
               <div class="input-wrapper no-icon">
-                <input type="text" id="userName" placeholder="Nome...">
+                <input type="text" id="userName" disabled>
               </div>
             </div>
 
@@ -75,7 +75,7 @@
               <div class="input-wrapper">
                 <i class="fa-regular fa-envelope input-icon"></i>
                 
-                <input type="text" id="userEmail" placeholder="Email...">
+                <input type="text" id="userEmail" disabled>
               </div>
             </div>
 
@@ -85,7 +85,7 @@
               <div class="input-wrapper">
                 <i class="fa-solid fa-lock input-icon"></i>
                 
-                <input type="password" id="userSenha" placeholder="Senha...">
+                <input type="password" id="userSenha" disabled>
 
                 <i class="fa-regular fa-eye-slash toggle-password" id="togglePassword"></i>
               </div>
@@ -108,7 +108,7 @@
 
           <div class="modbody bodyExcluir">
             
-            <i class="fa-solid fa-trash-can icon-excluir"></i>
+            <img class="iconlix" src="../../../public/assets/disposicao.png" alt="">
             <p class="textoExcluir"> Deseja excluir este usuário</p>
             
             <div class="btsExcluir">
