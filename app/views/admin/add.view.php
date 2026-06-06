@@ -29,7 +29,7 @@
 
         <div class="ADMPMA-end">
             <button class="ADMPMA-btncancel" onclick="fecharModalVisualizar('admmacontainer')">Cancelar</button>
-            <button class="ADMPMA-btnapply">Aplicar</button>
+            <button class="ADMPMA-btnapply">Criar</button>
         </div>
     </div>
 
