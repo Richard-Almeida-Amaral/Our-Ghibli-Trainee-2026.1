@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers;  
 use App\Controllers\ExampleController;
 use App\Core\Router;
+
+$router = new Router();
 
 // Site
 $router->get('', 'ControllerLandingPage@landingPage');
@@ -39,6 +41,7 @@ $router->get('sidebar', 'ControllerSidebar@Sidebar');
 $router->get('dashboard', 'ControllerDashboard@Dashboard');
 $router->get('users', 'ControllerAdmUsuarios@AdmUsuarios');
 $router->get('publi', 'ControllerAdmPublicacoes@AdmPublicacoes');
+$router->post('usuarios/criar', 'ControllerUsuario@criar');
 
 
 

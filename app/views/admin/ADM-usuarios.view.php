@@ -50,7 +50,7 @@
             </div>
 
             <div class="adcusuario">
-            <button onclick="Uabrirmodal('admmacontainer')">+ Adicionar Usuário</button>
+            <button id="adicionarUsuario <?php $usuario->id; ?>" onclick="Uabrirmodal('admmacontainer')">+ Adicionar Usuário</button>
             </div>
         </div>
         </section>
@@ -68,10 +68,11 @@
             </thead>
 
             <tbody class="usuarioTbody">
+                <?php foreach($usuarios as $usuario): ?>
                 <tr class="usuarioTr">
-                <td class="usuarioTd">1</td>
-                <td class="usuarioTd">Julia</td>
-                <td class="usuarioTd">juliacoelho@gmail.com</td>
+                <td class="usuarioTd"><?php $usuario->id; ?></td>
+                <td class="usuarioTd"><?php $usuario->nome; ?></td>
+                <td class="usuarioTd"><?php $usuario->email; ?></td>
                 <td class="usuarioTdAc">
                     <button id="btnUsuModal" class="usubtnvisualizar" onclick="abrirModalVisualizar('Usumodalc')">
                         <svg
@@ -88,7 +89,7 @@
                         </svg>
                     </button>
 
-                    <button id="btnExcluirModal" class="usubtnvisualizar botaoexcluir" onclick="abrirModalVisualizar('Usumodalexcluir')">
+                    <button id="btnExcluirModal<?php $usuario->id; ?>" class="usubtnvisualizar botaoexcluir" onclick="abrirModalVisualizar('Usumodalexcluir')"<?php $usuario->id; ?>>
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -123,6 +124,9 @@
                     </button>
                 </td>
                 </tr>
+                <?php endforeach; ?>
+
+                
 
                 <tr class="usuarioTr">
                 <td class="usuarioTd">2</td>
@@ -387,3 +391,4 @@
     </body>
     <script src="../../../public/js/ADM-usuarios.js"></script>
     </html>
+                    
