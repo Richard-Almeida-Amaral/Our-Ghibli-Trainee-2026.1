@@ -38,9 +38,7 @@
   </head>
   <body>
     <!-- Modal Visualizar -->
-    <section class="UsuModalCont">
-      <button id="btnUsuModal" class="usubtnabrir" onclick="abrirModalVisualizar('Usumodalc')">Visualizar</button>
-      
+    <section class="UsuModalCont">      
       <div id="Usumodalc" class="modoverlay" >
         
         <div class="modcont">
@@ -95,8 +93,6 @@
       </div>
 
 
-
-      <button id="btnExcluirModal" class="usubtnabrir botaoexcluir" onclick="abrirModalVisualizar('Usumodalexcluir')">Excluir</button>
       
       <div id="Usumodalexcluir" class="modoverlay" >
         

@@ -5,7 +5,7 @@
 }
 
 .ADMPME-html{
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -13,10 +13,19 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-
+.ADMPME-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
 
 .ADMPME-container{
-    display: flex;
+    display: none;
+    position: absolute;
+    left: 35%;
+    top: 30%;
     align-items: center;
     justify-content: start;
     flex-direction: column;

@@ -50,7 +50,7 @@
             </div>
 
             <div class="adcusuario">
-            <button>+ Adicionar Usuário</button>
+            <button onclick="Uabrirmodal('admmacontainer')">+ Adicionar Usuário</button>
             </div>
         </div>
         </section>
@@ -103,7 +103,7 @@
                         </svg>
                     </button>
                     
-                    <button id="btnUsuModal" class="usubtnabrir" onclick="abrirModalVisualizar('ModalEditUsu')">
+                    <button id="btnUsuModal" class="usubtnabrir" onclick="Uabrirmodal('admpmecontainer')">
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -385,4 +385,5 @@
         </div>
         </section>
     </body>
+    <script src="../../../public/js/ADM-usuarios.js"></script>
     </html>
