@@ -27,23 +27,9 @@
 </head>
 
 <body>
-  <section class="TituloModal">
-    <div>
-      <div class="modalBtn">
-
-        <button class="btnCriar" onclick="abrirModalCriar('modalCriar')">
-          Adicionar Publicação
-        </button>
-        <button class="btnExcluir" onclick="abrirModalCriar('modalExcluir')">
-          Excluir Publicação
-        </button>
-      </div>
-    </div>
-  </section>
 
   <!-- MODAL CRIAÇÃO  -->
-  <section class="criarModal" id="modalCriar" style="display: none;">
-    <div class="modalContainer">
+    <div class="modalContainer" id="ModalCriar">
 
       <div class="modalHeader">
         <h2>Criação de Publicação</h2>
@@ -77,7 +63,7 @@
 
       <!-- Botões inferiores Criação -->
       <div class="modalAcoes">
-        <button class="btnCancelar" onclick="fecharModalCriar('modalCriar')">
+        <button class="btnCancelar">
           Cancelar
         </button>
         <button class="btnCriar">
@@ -86,12 +72,11 @@
       </div>
 
     </div>
-  </section>
+
 
   <!-- Modal de Exclusão -->
 
-  <section class="criarModal" id="modalExcluir" style="display: none;">
-    <div class="modalContainer" id="modalExcluir">
+    <div class="modalContainer" id="ModalExcluir">
 
       <div class="ModalContainerExcuir">
         <div class="modalHeaderExcluir">
@@ -114,7 +99,6 @@
       </div>
 
     </div>
-  </section>
 
 </body>
 <script src="../../../public/js/ModalCriarExcluir.js"></script>
