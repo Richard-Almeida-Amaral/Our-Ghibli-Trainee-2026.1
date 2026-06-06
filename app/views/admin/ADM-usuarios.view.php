@@ -29,7 +29,11 @@
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet"
         />
-        </head>
+        
+        <?php require('ModalVisualizarUsuario.view.php');?>
+        
+        
+    </head>
         <body class="ADMU-body">
         <section class="Topo">
         <div class="Titulo">

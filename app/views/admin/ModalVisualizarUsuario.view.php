@@ -39,7 +39,7 @@
   <body>
     <!-- Modal Visualizar -->
     <section class="UsuModalCont">
-      <button id="btnUsuModal" class="usubtnabrir" onclick="abrirModalVisualizar('Usumodalc')">Visualizar</button>
+      <!-- <button id="btnUsuModal" class="usubtnabrir" onclick="abrirModalVisualizar('Usumodalc')">Visualizar</button> -->
       
       <div id="Usumodalc" class="modoverlay" >
         
@@ -96,7 +96,7 @@
 
 
 
-      <button id="btnExcluirModal" class="usubtnabrir botaoexcluir" onclick="abrirModalVisualizar('Usumodalexcluir')">Excluir</button>
+      <!-- <button id="btnExcluirModal" class="usubtnabrir botaoexcluir" onclick="abrirModalVisualizar('Usumodalexcluir')">Excluir</button> -->
       
       <div id="Usumodalexcluir" class="modoverlay" >
         
