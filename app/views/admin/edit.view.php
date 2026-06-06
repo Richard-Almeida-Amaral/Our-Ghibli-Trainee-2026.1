@@ -30,7 +30,7 @@
 
         <div class="ADMPME-end">
             <button class="ADMPME-btncancel" onclick="fecharModalVisualizar('admpmecontainer')">Cancelar</button>
-            <button class="ADMPME-btnapply">Salvar Mudanças</button>
+            <button class="ADMPME-btnapply">Salvar</button>
         </div>
     </div>
     <script src="../../../public/js/ModalVisualizarUsuario.js"></script>
