@@ -28,9 +28,11 @@
         </div>
 
         <div class="ADMPMA-end">
-            <button class="ADMPMA-btncancel">Cancelar</button>
+            <button class="ADMPMA-btncancel" onclick="fecharModalVisualizar('admmacontainer')">Cancelar</button>
             <button class="ADMPMA-btnapply">Aplicar</button>
         </div>
     </div>
+
+    <script src="../../../public/js/ModalVisualizarUsuario.js"></script>
 </body>
 </html>

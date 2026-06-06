@@ -103,7 +103,7 @@
                         </svg>
                     </button>
                     
-                    <button id="btnUsuModal" class="usubtnabrir" onclick="Uabrirmodal('admpmecontainer')">
+                    <button id="btnUsuModal" class="usubtnvisualizar" onclick="Uabrirmodal('admpmecontainer')">
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"

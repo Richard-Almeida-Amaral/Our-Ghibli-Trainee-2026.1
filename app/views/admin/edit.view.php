@@ -29,9 +29,10 @@
         </div>
 
         <div class="ADMPME-end">
-            <button class="ADMPME-btncancel">Cancelar</button>
+            <button class="ADMPME-btncancel" onclick="fecharModalVisualizar('admpmecontainer')">Cancelar</button>
             <button class="ADMPME-btnapply">Salvar Mudanças</button>
         </div>
     </div>
+    <script src="../../../public/js/ModalVisualizarUsuario.js"></script>
 </body>
 </html>
