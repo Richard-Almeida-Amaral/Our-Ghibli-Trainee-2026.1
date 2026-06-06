@@ -164,8 +164,6 @@ padding: 0;
     
     border-radius: 1vw;
 
-    align-self: end;
-
     overflow-y: scroll;
     scrollbar-width: none;
 }
@@ -336,8 +334,6 @@ padding: 0;
     
     border-radius: 1vw;
 
-    align-self: end;
-
     overflow-y: scroll;
     scrollbar-width: none;
 
@@ -353,28 +349,23 @@ padding: 0;
 
     border-radius: 1vw;
 
+    overflow-y: scroll;
+    scrollbar-width: none;
+
 }
 #titulopostmodaledit{
-    
-    display: flex;
-    box-sizing: border-box;
-    align-items: flex-start;
 
+    display: flex;
     flex-wrap: wrap;
     word-wrap: break-word;
     text-wrap-mode: wrap;
-    word-break: break-all;
 
     width:100%;
-    height: 12%;
-
-    vertical-align: top;
-    line-height: normal;
+    height: 100%;
 
     background-color: #00000000;
-    
-    line-height: 30%;
-    text-justify: start;
+
+    align-items: start;
 
     color:#5f564e;
     font-family: var(--fonte-nunito);
@@ -384,60 +375,36 @@ padding: 0;
     scrollbar-width: none;
 
     border: none;
+
+    resize: none;
 }
 
-#titulopostmodaledit:focus{
-    outline-style: none;
-}
+
 #titulopostmodaledit::placeholder{
 
-    display: flex;
-    flex-wrap: wrap;
-    word-wrap: break-word;
-    text-wrap-mode: wrap;
-    overflow-wrap: break-word;
 
     color:#5f564e;
     font-family: var(--fonte-nunito);
     font-size: 0.8vw;
 
-    width: 90%;
-
-    align-items: start;
-
-    color:#5f564e;
-
-    font-family: var(--fonte-nunito);
-    font-weight: 700;
-
-    position:absolute;
+    width: 100%;
+    height: 100%;
 
 
 }
 
+#titulopostmodaledit:focus{
+    outline-style: none;
+}
 
 
 #descricaomodaledit{
-    
-    display: flex;
-    box-sizing: border-box;
-    align-items: flex-start;
 
-    flex-wrap: wrap;
-    word-wrap: break-word;
-    text-wrap-mode: wrap;
-    word-break: break-all;
 
     width:100%;
-    height: 12%;
-
-    vertical-align: top;
-    line-height: normal;
+    height: 100%;
 
     background-color: #00000000;
-    
-    line-height: 30%;
-    text-justify: start;
 
     color:#5f564e;
     font-family: var(--fonte-nunito);
@@ -446,9 +413,9 @@ padding: 0;
 
     overflow-y: scroll;
     scrollbar-width: none;
-
     border: none;
 
+    resize: none;
 
 }
 
@@ -456,18 +423,15 @@ padding: 0;
     outline-style: none;
 }
 
+
+
 #titulopostmodaledit::placeholder{
 
-    display: flex;
-    flex-wrap: wrap;
-    word-wrap: break-word;
-    text-wrap-mode: wrap;
-    overflow-wrap: break-word;
-
-    width: 90%;
-
-    align-items: start;
-
+    width: 100%;
+    color:#5f564e;
+    font-family: var(--fonte-nunito);
+    font-weight: 500;
+    font-size:0.8vw;
 
 }
 

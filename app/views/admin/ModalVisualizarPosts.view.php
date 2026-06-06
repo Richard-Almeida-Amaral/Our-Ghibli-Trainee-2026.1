@@ -86,18 +86,11 @@
         </div>
         <div id="tituloedescricaomodaledit">
           <div id="frametitulopostmodaledit">
-            <input type='text' placeholder="A magia cotidiana dos filmes do Studio Ghibli e como suas histórias continuam encantando diferentes gerações ao redor do mundo."
-            id="titulopostmodaledit">
-          </input>
+            <textarea placeholder="A magia cotidiana dos filmes do Studio Ghibli e como suas histórias continuam encantando diferentes gerações ao redor do mundo." id="titulopostmodaledit"></textarea>
         </div>
           
           <div id="framedescricaomodaledit">
-            <input id="descricaomodaledit" type='text'
-            placeholder="Os filmes do Studio Ghibli conquistaram milhões de fãs ao unir fantasia, emoção e reflexões profundas sobre humanidade, natureza
-            e amadurecimento. Com personagens marcantes, trilhas sonoras inesquecíveis e animações artesanais impressionantes, obras como A Viagem de Chihiro e Meu Amigo
-            Totoro transformaram o estúdio em referência mundial da animação. Neste artigo, exploramos os elementos que tornam os filmes Ghibli experiências tão sensíveis, 
-            acolhedoras e atemporais para públicos de todas as idades.">
-            </input>
+            <textarea id="descricaomodaledit"placeholder="Os filmes do Studio Ghibli conquistaram milhões de fãs ao unir fantasia, emoção e reflexões profundas sobre humanidade, naturezae amadurecimento. Com personagens marcantes, trilhas sonoras inesquecíveis e animações artesanais impressionantes, obras como A Viagem de Chihiro e Meu Amigo Totoro transformaram o estúdio em referência mundial da animação. Neste artigo, exploramos os elementos que tornam os filmes Ghibli experiências tão sensíveis, acolhedoras e atemporais para públicos de todas as idades."></textarea>
           </div>
         </div>
       </section>
