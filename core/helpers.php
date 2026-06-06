@@ -13,7 +13,7 @@ function view($name, $data = [])
     return require "app/views/{$name}.view.php";
 }
 
-return view('admin/modais/ModalCriarUsuario');
+return view('admin/add');
 
 /**
  * Redirect to a new page.

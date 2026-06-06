@@ -15,15 +15,15 @@
         <div class="ADMPMA-mid">
             <div class="ADMPMA-fields">
                 <label for="">Nome</label>
-                <input type="text" name="" id="" placeholder="Digite o seu nome" class="ADMPMA-input">
+                <input type="text" name="nome" id="" placeholder="Digite o seu nome" class="ADMPMA-input">
             </div>
             <div class="ADMPMA-fields">
                 <label for="" >Email</label>
-                <input type="email" name="" id="" placeholder="Digite o seu email" class="ADMPMA-input">
+                <input type="email" name="email" id="" placeholder="Digite o seu email" class="ADMPMA-input">
             </div>
             <div class="ADMPMA-fields">
                 <label for="">Senha</label>
-                <input type="password" name="" id="" placeholder="Digite a sua senha" class="ADMPMA-input">
+                <input type="password" name="senha" id="" placeholder="Digite a sua senha" class="ADMPMA-input">
             </div>
         </div>
 

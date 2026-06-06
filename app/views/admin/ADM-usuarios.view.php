@@ -43,7 +43,6 @@
         <div class="Titulo">
             <p>Listas de Usuários</p>
         </div>
-
         <div class="acoestopo">
             <div class="pesqusuario">
             <input type="text" id="pesquisa" placeholder="Pesquisar" />
@@ -124,7 +123,7 @@
                     </button>
                 </td>
                 </tr>
-                <?php endforeach; ?>
+                <?php endforeach;?>
 
                 
 
