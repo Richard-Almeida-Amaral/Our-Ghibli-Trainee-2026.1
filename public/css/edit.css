@@ -5,21 +5,15 @@
 }
 
 .ADMPME-html{
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.ADMPME-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    
-}
+
 
 .ADMPME-container{
     display: flex;

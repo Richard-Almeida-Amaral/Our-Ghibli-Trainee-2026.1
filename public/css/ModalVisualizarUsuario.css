@@ -11,24 +11,13 @@ body{
   align-items: center;
   height: 100vh;
 }
-.usubtnabrir{
-  padding: 10px 20px;
-  background-color: #524ae3;
-  color: white;
+
+
+.usubtnvisualizar{
   border: none;
-  border-radius: 1rem;
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  font-size: 10px;
-  font-weight: bold;
-  transition: background 0.3s;
-  margin: 5px;
+  background-color: transparent;
 }
 
-.usubtnabrir:hover{
-  background-color: #736ed9;
-}
 
 .modoverlay{
   position: fixed;
@@ -142,11 +131,11 @@ input::placeholder{
 }
 
 .botaoexcluir{
-  background-color: #d32f2f;
+  background-color: transparent;
 }
 
 .botaoexcluir:hover{
-  background-color: #f44336;
+  background-color: transparent;
 }
 
 .titExcluir{

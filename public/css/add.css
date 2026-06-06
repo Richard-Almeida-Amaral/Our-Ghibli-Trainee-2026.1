@@ -5,20 +5,11 @@
 }
 
 .ADMPMA-html{
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
-}
-
-.ADMPMA-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    
 }
 
 .ADMPMA-container{

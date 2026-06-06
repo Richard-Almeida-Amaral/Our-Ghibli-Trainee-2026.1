@@ -4,6 +4,8 @@ function abrirModalVisualizar(idModal) {
 
 }
 
+
+
 function fecharModalVisualizar(idModal) {
     const modal = document.getElementById(idModal);
     modal.style.display = "none";
