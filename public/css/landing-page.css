@@ -307,7 +307,8 @@ h2 {
 
     display:flex;
     flex-direction: column;
-
+    /* flex-direction: row; */
+    gap:0px;
     background-image: url(../assets/dragao.jpg);
     background-position: center;
     background-size: cover;
@@ -321,7 +322,15 @@ h2 {
     
 
     min-height: 150px;
+
+
     
+}
+
+.imagemcarrossel{
+    width:100%;
+    justify-self: center;
+    align-content: center;
 }
 
 #usuariopost{

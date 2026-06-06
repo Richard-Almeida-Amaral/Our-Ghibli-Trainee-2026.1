@@ -63,6 +63,12 @@
 
                         <div id="imagemetextopost">  <!-- Container post-->
                             <div id="imagempost">    <!-- Imagem post -->
+                                
+                                <!-- <img class="imagemcarrossel" id="imagemcarrossel1" src="../../../public/assets/dragao.jpg">
+                                <img class="imagemcarrossel" id="imagemcarrossel2" src="../../../public/assets/viagemdechihiro1920certo.png">
+                                <img class="imagemcarrossel" id="imagemcarrossel3" src="../../../public/assets/princesamonoke.jpg">
+                                <img class="imagemcarrossel" id="imagemcarrossel4" src="../../../public/assets/porcorosso.jpg">
+                                <img class="imagemcarrossel" id="imagemcarrossel5" src="../../../public/assets/casteloanimado.jpg"> -->
                                 <div id="usuariopost">   <!-- Container informações do post -->
                                     <div id="fotousuariopost"> </div>    <!-- Foto usuário -->
                                     <div id="nomeusuariopost">@usuario </div>   <!-- Nome usuário -->   
