@@ -63,7 +63,7 @@
 
       <!-- Botões inferiores Criação -->
       <div class="modalAcoes">
-        <button class="btnCancelar">
+        <button class="btnCancelar"  onclick="fecharModalCriar('ModalCriar')">
           Cancelar
         </button>
         <button class="btnCriar">
@@ -90,7 +90,7 @@
 
       <!-- Botões inferiores Exclusão -->
       <div class="modalAcoesExcluir">
-        <button class="btnNao" onclick="fecharModalCriar('modalExcluir')">
+        <button class="btnNao" onclick="fecharModalCriar('ModalExcluir')">
           Não
         </button>
         <button class="btnSim">
