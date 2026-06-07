@@ -34,7 +34,7 @@
 
         <table class="ADMP-table">
             <thead class="ADMP-tableheader">       <!-- Cabecalho -->
-                <tr class="ADMP-row">
+                <tr class="ADMP-row" id="ADMP-rowheader">
                     <th class="ADMP-cell">ID</th>
                     <th class="ADMP-cell">TÍTULO</th>
                     <th class="ADMP-cell">AUTOR</th>
@@ -50,7 +50,7 @@
                     <td class="ADMP-cell">TesteData</td>
 
 
-                    <td>    <!-- Icones da Tabela -->
+                    <td class="ADMP-cell">    <!-- Icones da Tabela -->
                         <button class="ADMP-btnIcons" onclick="ModalInteracao('containermodalview')">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icons" viewBox="0 0 16 16">
                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
@@ -71,6 +71,9 @@
                     </td>
                 </tr>
             </tbody>
+            <tfoot ADMP-tablefooter>        <!-- rodape da tabela -->
+                 <div class="ADMP-auxtablefooter"></div>
+            </tfoot>
         </table>
         <div class="ADMP-pag">
             <button class="ADMP-btnpag"><</button>
