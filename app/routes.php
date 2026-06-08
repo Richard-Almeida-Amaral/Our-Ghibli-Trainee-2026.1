@@ -7,6 +7,7 @@ use App\Core\Router;
 // Site
 $router->get('', 'ControllerLandingPage@landingPage');
 $router->get('login', 'ControllerLoginPage@loginPage');
+$router->post('login', 'ControllerLoginPage@execlogin');
 $router->get('posts', 'ControllerPaginaDePosts@PaginaDePosts');
 $router->get('postsI', 'ControllerPaginaIndependenteDePosts@PaginaIndependenteDePosts');
 $router->get('footer', 'ControllerFooter@Footer');
