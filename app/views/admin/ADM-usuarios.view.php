@@ -32,12 +32,6 @@
         
     </head>
         <body class="ADMU-body">
-        <div id="ModaisImportados">
-            <?php require('add.view.php');?>
-            <?php require('edit.view.php');?>
-            <?php require('ModalVisualizarUsuario.view.php');?>
-            
-        </div>
 
         <section class="Topo">
         <div class="Titulo">
@@ -387,6 +381,12 @@
             <button class="ADMU-bptão-paginação">></button>
         </div>
         </section>
+        <div id="ModaisImportados">
+            <?php require('add.view.php');?>
+            <?php require('edit.view.php');?>
+            <?php require('ModalVisualizarUsuario.view.php');?>
+            
+        </div>
     </body>
     <script src="../../../public/js/ADM-usuarios.js"></script>
     </html>

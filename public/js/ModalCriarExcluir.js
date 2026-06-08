@@ -11,6 +11,7 @@ function fecharModalCriar(idModal) {
 }
 // Modal Excluir
 function abrirModalExcluir(idModal) {
+    alert("Cu Do Heitor");
     const modal = document.getElementById(idModal);
     modal.style.display = "flex";
 }

@@ -34,9 +34,11 @@
         <button class="btnCriar" onclick="abrirModalCriar('modalCriar')">
           Adicionar Publicação
         </button>
-        <button class="btnExcluir" onclick="abrirModalCriar('modalExcluir')">
+        <?php foreach ($usuarios as $usuario): ?>
+        <button class="btnExcluir" onclick="abrirModalExcluir('modalExcluir<?= $usuario->id; ?>')">
           Excluir Publicação
         </button>
+        <?php endforeach; ?>
       </div>
     </div>
   </section>
@@ -89,13 +91,13 @@
   </section>
 
   <!-- Modal de Exclusão -->
-
-  <section class="criarModal" id="modalExcluir" style="display: none;">
-    <div class="modalContainer" id="modalExcluir">
+<?php foreach ($usuarios as $usuario): ?>
+  <section class="criarModal" id="modalExcluir<?= $usuario->id; ?>" style="display: none;">
+    <div class="modalContainer" >
 
       <div class="ModalContainerExcuir">
         <div class="modalHeaderExcluir">
-          <h2>Exclusão de Publicação</h2>
+          <h2>"Exclusão de Publicação<?= $usuario->id; ?>"</h2>
         </div>
         <div class="modalBodyExcluir">
           <img class="lixeira" src="../../../public/assets/disposicao.png" alt="">
@@ -115,6 +117,7 @@
 
     </div>
   </section>
+  <?php endforeach; ?>
 
 </body>
 <script src="../../../public/js/ModalCriarExcluir.js"></script>

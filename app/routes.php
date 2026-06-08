@@ -45,7 +45,7 @@ $router->get('publi', 'ControllerAdmPublicacoes@AdmPublicacoes');
 $router->get('app', 'ControllerUsuario@index');
 
 $router->post('users/criar', 'ControllerUsuario@criar');
-$router->post('users/delete', 'ControllerAdmUsuarios@deletar');
+$router->post('users/delete', 'ControllerAdmUsuarios@delete');
 
 
 
