@@ -38,6 +38,8 @@ gap: 20px;
     position: absolute;
     top: 20%;
     left: 32%;
+    z-index: 99;
+
     
 }
 
@@ -204,6 +206,8 @@ gap: 20px;
     position: absolute;
     top: 20%;
     left: 32%;
+    z-index: 99;
+
     
 }
 

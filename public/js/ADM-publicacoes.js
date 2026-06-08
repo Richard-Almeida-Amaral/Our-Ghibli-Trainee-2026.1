@@ -1,24 +1,19 @@
-const modalcreate = document.getElementById(ModalCriar);
-const modaledit = document.getElementById(containermodalview);
-const modalview = document.getElementById(ModalExcluir);
-const modaldelete = document.getElementById(containermodaledit);
 const screenposts = document.getElementById('auxposts');
+const modais1 = document.getElementById('ModalCriar');
+const modais2 = document.getElementById('containermodalview');
+const modais3 = document.getElementById('ModalExcluir');
+const modais4 = document.getElementById('containermodaledit');
 
 function InteracaoModal(idModal) {
     const modal = document.getElementById(idModal);
-    if(modal.style.display == 'none'){
-        modal.style.display = "block";
         screenposts.style.display = "block";
-    }else{
-        modal.style.display = "none";
-    }
+        modal.style.display = "block";
 }
 
 screenposts.addEventListener("click", function (){
-    alert ("se fuder")
-    modalcreate.style.display = "none";
-    modaledit.style.display = "none";
-    modalview.style.display = "none";
-    modaldelete.style.display = "none";
     screenposts.style.display = "none";
+    modais1.style.display = "none";
+    modais2.style.display = "none";
+    modais3.style.display = "none";
+    modais4.style.display = "none";
 });
