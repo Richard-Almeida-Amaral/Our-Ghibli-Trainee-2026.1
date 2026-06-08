@@ -36,7 +36,7 @@
       </div>
 
       <div class="modalBody">
-
+        <form method="POST" action="/criarpost"></form>
         <label class="arquivo">
           <input type="file" accept="image/*" />
           <div class="arquivo-content">
