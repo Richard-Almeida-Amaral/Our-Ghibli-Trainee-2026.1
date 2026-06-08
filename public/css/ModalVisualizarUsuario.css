@@ -3,7 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* .alice-regular {
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.nunito-<uniquifier> {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
 body{
   background-color: #ffffff;
   display: flex;
@@ -92,8 +102,9 @@ body{
   align-items: center;
 }
 
-.input-wrapper input{
+.input-wrapper .InfoCont{
   width: 100%;
+  height: 38px;
   padding: 10px 14px;
   border: 0.5px solid #000000;
   border-radius: 10px;
@@ -102,8 +113,23 @@ body{
   color: #333333;
   outline: none;
 }
+/* Informação sem icones */
+.Info{
+  font-size: 15px;
+  font-family: "Alice", serif;
+  font-weight: 450;
+  font-style: normal;
+}
+/* Informação com icones */
+.InfoCI{
+  margin-left: 30px;
+  font-size: 15px;
+  font-family: "Alice", serif;
+  font-weight: 450;
+  font-style: normal;
+}
 
-.input-wrapper:not(.no-icon) input{
+.input-wrapper:not(.no-icon) InfoCont{
   padding-left: 45px;
 }
 
@@ -126,7 +152,7 @@ body{
   color: #000000;
 }
 
-input::placeholder{
+.InfoCont::placeholder{
   color: #919191;
 }
 
@@ -194,14 +220,6 @@ input::placeholder{
 
 .btnUsuExcluir{
   background-color: #E51F1F;
-}
-
-input::-ms-reveal, input::-ms-clear {
-  display: none;
-}
-
-input::-webkit-contacts-auto-fill-button, input::-webkit-credentials-auto-fill-button {
-  display: none !important;
 }
 
 

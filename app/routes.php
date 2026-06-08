@@ -43,6 +43,3 @@ $router->get('publi', 'ControllerAdmPublicacoes@AdmPublicacoes');
 
 
 
-
-
-

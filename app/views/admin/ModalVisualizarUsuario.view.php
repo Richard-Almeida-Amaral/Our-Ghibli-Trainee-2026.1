@@ -37,11 +37,12 @@
   
   </head>
   <body>
+    <?php foreach($usuarios as $usuario): ?>
     <!-- Modal Visualizar -->
     <section class="UsuModalCont">      
       <div id="Usumodalc" class="modoverlay" >
         
-        <div class="modcont">
+        <div class="modcont" id="modbody<?=$usuario-> id?>">
           
           <div class="modtit">
             <h2>Visualização do Usuário</h2>
@@ -55,15 +56,20 @@
               <label for="userId">ID</label>
 
               <div class="input-wrapper no-icon">
-                <input type="text" id="userId" disabled>
+                <div class="InfoCont">
+                  <span  class="Info"><?=$usuario->id?></span>
+                </div>
               </div>
+
             </div>
 
             <div class="inputcont">
               <label for="userName">Nome</label>
 
               <div class="input-wrapper no-icon">
-                <input type="text" id="userName" disabled>
+                <div class="InfoCont">
+                  <span  class="Info"><?=$usuario->nome?> </span>
+                </div>
               </div>
             </div>
 
@@ -73,7 +79,9 @@
               <div class="input-wrapper">
                 <i class="fa-regular fa-envelope input-icon"></i>
                 
-                <input type="text" id="userEmail" disabled>
+                <div class="InfoCont">
+                  <span  class="InfoCI"><?=$usuario->email?> </span>
+                </div>
               </div>
             </div>
 
@@ -83,15 +91,22 @@
               <div class="input-wrapper">
                 <i class="fa-solid fa-lock input-icon"></i>
                 
-                <input type="password" id="userSenha" disabled>
+                <div class="InfoCont">
+                  <span  class="InfoCI"><?=$usuario->senha?></span>
+                </div>
 
-                <i class="fa-regular fa-eye-slash toggle-password" id="togglePassword"></i>
+
+                <!-- <i class="fa-regular fa-eye-slash toggle-password" id="togglePassword"></i> -->
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    <?php endforeach;?>
 
       
       <div id="Usumodalexcluir" class="modoverlay" >
