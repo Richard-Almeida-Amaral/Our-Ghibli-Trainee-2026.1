@@ -39,12 +39,13 @@ $router->get('editarusuario', 'ControllerModalEditarUsuario@ModalEditarUsuario')
 
 $router->get('sidebar', 'ControllerSidebar@Sidebar');
 $router->get('dashboard', 'ControllerDashboard@Dashboard');
-$router->get('users', 'ControllerAdmUsuarios@AdmUsuarios');
+$router->get('users', 'ControllerAdmUsuarios@index');
 $router->get('publi', 'ControllerAdmPublicacoes@AdmPublicacoes');
 
 $router->get('app', 'ControllerUsuario@index');
 
-$router->post('usuarios/criar', 'ControllerUsuario@criar');
+$router->post('users/criar', 'ControllerUsuario@criar');
+$router->post('users/delete', 'ControllerAdmUsuarios@deletar');
 
 
 

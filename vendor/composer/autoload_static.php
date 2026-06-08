@@ -40,7 +40,6 @@ class ComposerStaticInit90bbf95869b4e88bf0dc5022e708a458
         'App\\Controllers\\ControllerPaginaDePosts' => __DIR__ . '/../..' . '/app/Controllers/ControllerPaginaDePosts.php',
         'App\\Controllers\\ControllerPaginaIndependenteDePosts' => __DIR__ . '/../..' . '/app/Controllers/ControllerPaginaIndependenteDePosts.php',
         'App\\Controllers\\ControllerSidebar' => __DIR__ . '/../..' . '/app/Controllers/ControllerSidebar.php',
-        'App\\Controllers\\UsuarioController' => __DIR__ . '/../..' . '/app/Controllers/ControllerUsuario.php',
         'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
         'App\\Core\\Database\\Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
         'App\\Core\\Database\\QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',

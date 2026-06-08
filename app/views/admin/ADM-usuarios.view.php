@@ -67,11 +67,11 @@
             </thead>
 
             <tbody class="usuarioTbody">
-                <?php foreach($usuarios as $usuario): ?>
+            <?php foreach ($usuarios as $usuario): ?>
                 <tr class="usuarioTr">
-                <td class="usuarioTd"><?php $usuario->id; ?></td>
-                <td class="usuarioTd"><?php $usuario->nome; ?></td>
-                <td class="usuarioTd"><?php $usuario->email; ?></td>
+                <td class="usuarioTd"><?= $usuario->id ?></td>
+                <td class="usuarioTd"><?= $usuario->nome ?></td>
+                <td class="usuarioTd"><?= $usuario->email ?></td>
                 <td class="usuarioTdAc">
                     <button id="btnUsuModal" class="usubtnvisualizar" onclick="abrirModalVisualizar('Usumodalc')">
                         <svg
@@ -88,7 +88,7 @@
                         </svg>
                     </button>
 
-                    <button id="btnExcluirModal<?php $usuario->id; ?>" class="usubtnvisualizar botaoexcluir" onclick="abrirModalVisualizar('Usumodalexcluir')"<?php $usuario->id; ?>>
+                    <button id="btnExcluirModal<?= $usuario->id; ?>" class="usubtnvisualizar botaoexcluir" onclick="abrirModalVisualizar('Usumodalexcluir')"<?php $usuario->id; ?>>
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"

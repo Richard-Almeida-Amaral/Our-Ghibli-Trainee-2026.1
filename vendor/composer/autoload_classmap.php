@@ -21,7 +21,6 @@ return array(
     'App\\Controllers\\ControllerPaginaDePosts' => $baseDir . '/app/Controllers/ControllerPaginaDePosts.php',
     'App\\Controllers\\ControllerPaginaIndependenteDePosts' => $baseDir . '/app/Controllers/ControllerPaginaIndependenteDePosts.php',
     'App\\Controllers\\ControllerSidebar' => $baseDir . '/app/Controllers/ControllerSidebar.php',
-    'App\\Controllers\\UsuarioController' => $baseDir . '/app/Controllers/ControllerUsuario.php',
     'App\\Core\\App' => $baseDir . '/core/App.php',
     'App\\Core\\Database\\Connection' => $baseDir . '/core/database/Connection.php',
     'App\\Core\\Database\\QueryBuilder' => $baseDir . '/core/database/QueryBuilder.php',
