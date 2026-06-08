@@ -46,8 +46,8 @@
                 <tr class="ADMP-row">
                     <td class="ADMP-cell"><?=$publicacao-> id?></td>
                     <td class="ADMP-cell"><?=$publicacao-> titulo?></td>
-                    <td class="ADMP-cell"><?=$publicacao-> usuarios_id?></td>
-                    <td class="ADMP-cell"><?=$publicacao-> data?></td>
+                    <td class="ADMP-cell"><?=$publicacao-> autor?></td>
+                    <td class="ADMP-cell"><?=$publicacao-> dataformatada?></td>
 
 
                     <td class="ADMP-cell">    <!-- Icones da Tabela -->

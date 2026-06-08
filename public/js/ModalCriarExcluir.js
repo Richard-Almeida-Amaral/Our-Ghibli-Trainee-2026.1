@@ -19,3 +19,4 @@ function fecharModalExcluir(idModal) {
     const modal = document.getElementById(idModal);
     modal.style.display = "none";
 }
+

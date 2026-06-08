@@ -9,7 +9,7 @@ class ControllerAdmPublicacoes
 {
     public function AdmPublicacoes()
     {
-        $publicacoes =  App ::get('database')->selectAll('posts');
+        $publicacoes =  App ::get('database')->selectJoinADMP('posts','usuarios');
         return view('admin/ADM-publicacoes',compact('publicacoes'));
     }
 }
