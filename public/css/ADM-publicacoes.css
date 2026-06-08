@@ -1,42 +1,30 @@
-/*   235 227  216      233 233 233     221   220  218   */ 
-
-*{
+.ADMP-html{     /* {padronizacao da pagina */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.ADMP-html{
-    display: flex;
-    width: 100%;
-    height: 100%;
+.ADMP-filter{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
 }
 
-.ADMP-body{
+.ADMP-body{ 
     display: flex;
-    width: 100vw;
-    height: 100%;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    gap: 3rem;
+    justify-content: center;
+    height: 100vh;
+    padding-inline: 15%;
     background: radial-gradient(circle,rgba(123, 175, 104, 1.0) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
-.ADMP-top{
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    width: fit-content;
-    margin-top: 1rem;
-    margin-left: 3rem;
-    align-self: flex-start;
-}
+.ADMP-up{}
 
 .ADMP-tittle{
     font-weight: 150;
     font-family:"Alice","sans-serif";
-    margin-left: 8rem;
     color: white;
 }
 
@@ -45,170 +33,154 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-    background-color: rgb(235, 227, 216);
+    width: 100%;
+    gap: 2rem;
     padding-inline: 2rem;
     padding-block: 1rem;
     border-radius: 1rem;
-    width: 100rem;
+    background-color: rgb(235, 227, 216);
 }
 
-.ADMP-box{
+.ADMP-searchinput{
     display: flex;
-    border-radius: 1rem;
-    padding-inline: 2rem;
-    border: none;
-    width: 70rem;
-    padding-block: 0.8rem;
+    align-items: center;
     justify-content: start;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    gap: 0.6rem;
+    padding-inline: 1rem;
+    background-color: white;
+
 }
 
-.ADMP-box:focus{
+#ADMP-searchIcon{}
+
+.ADMP-searchfield{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.ADMP-searchfield:focus{    /* Retirada da borda ao digitar */
     outline: none;
 }
 
-.ADMP-box::-webkit-search-cancel-button{
+.ADMP-searchfield::-webkit-search-cancel-button{    /* Mudanca de ponteiro do X do pesquisar */
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.ADMP-searchfield::-webkit-search-cancel-button:hover{  /* Mudanca de tamanho no hover do X da pesquisar */
+    scale: 1.5;
 }
 
-
 .ADMP-butom{
-    display: flex;
+    font-size: 1rem;
+    color: white;
     border-radius: 2rem;
+    border: none;
     padding-inline: 3rem;
     padding-block: 0.8rem;
     background-color: #20315A;
-    border: none;
-    color: white;
-    font-size: 1rem;
-}
-.ADMP-butom:hover{
-    display: flex;
-    border-radius: 2rem;
-    padding-inline: 3rem;
-    padding-block: 0.8rem;
-    background-color: #2a4074;
     transition: ease-in-out 200ms;
-    box-shadow: 0 0 40px rgba(93, 133, 185, 0.699);
-    border: none;
-    color: white;
-    font-size: 1rem;
+}
+
+.ADMP-butom:hover{  /* Hover de tamanho e brilho */
     cursor: pointer;
+    scale: 1.05;
+    background-color: #2a4074;
+    box-shadow: 0 0 40px rgba(93, 133, 185, 0.699);
+}
+
+.ADMP-down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+    width: 100%;
 }
 
 .ADMP-table{
     display: flex;
-    background-color: rgb(233,233,233);
-    align-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    border-top-left-radius:1rem ;
+    border-top-right-radius:1rem ;
+    background-color: rgb(235, 227, 216);
+}
+
+.ADMP-tableheader{
+    width: 100%;
+}
+
+.ADMP-row{
+    display: flex;
     justify-content: space-between;
     width: 100%;
-    height: fit-content;
-    flex-direction: column;
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
+    padding-inline: 2rem;
+    padding-block: 1rem;
 }
 
-.ADMP-tbody{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
-.ADMP-theader{
-    display: flex;
-    align-content: center;
-    flex-direction:row;
-    background-color: rgb(235, 227, 216);
-    justify-content: center;
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
-}
-
-.TP-col{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
-    height: 4rem;
-    width: 20rem;
-    flex-wrap: nowrap;
-    overflow: hidden;        
-    text-overflow: ellipsis;
-}
-
-.TP-header{
-    display: flex;
-    height: 3rem;
-    width: 20rem;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: larger;
-    font-family: "inter", "sans-serif";
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
-
-}
-
-.TP-header-conteiner{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.TP-body-conteiner{
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    justify-content: space-between;
-}
-
-.ADMP-uptable{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
-}
-.ADMP-downtable{
-    display: flex;
-    border-bottom-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
-    background-color: rgb(235, 227, 216);
-    padding-inline: 1rem;
-    padding-block:0.4rem;
-    height: 4rem;
-    width: 100rem;
-}
-
-
-
-.TP-col:nth-child(even) {
+.ADMP-row:nth-child(even) {
   background-color: rgb(221,220,218);
 }
 
-.ADMP-bottom{
+.ADMP-row:nth-child(odd) {
+  background-color: rgb(233, 233, 233);
+}
+
+#ADMP-rowheader{
+    background-color:rgb(235, 227, 216) ;
+    border-top-left-radius:1rem ;
+    border-top-right-radius:1rem ;
+}
+
+.ADMP-tablebody{
+    width: 100%;
+    
+}
+
+.ADMP-cell{
     display: flex;
-    flex-direction: column;
-    width: fit-content;
-    background-color: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
 }
 
-#ADMP-search{
-    position: absolute;
-    left: 10.5%;
-    top: 13.5%;
+.ADMP-icons{
+    transition: ease-in-out 200ms ;
 }
 
-.ADMP-pag {
+.ADMP-icons:hover{
+    scale: 1.5;
+    cursor: pointer;
+}
+
+.ADMP-btnIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.ADMP-auxtablefooter{
+    background-color:rgb(235, 227, 216);
+    border-bottom-left-radius:1rem ;
+    border-bottom-right-radius:1rem ;
+    width:100%;
+    height: 2rem;
+}
+
+.ADMP-pag{
     display: flex;
     justify-content: center;
     margin-top: 2rem;
     gap: 0.8rem;
 }
 
-.ADMP-pag button {
+.ADMP-btnpag{
     background-color: #F4F4F4;
     color: #20315A;
     border: none;
@@ -217,189 +189,10 @@
     cursor: pointer;
     font-weight: bold;
 }
-.ADMP-pag button:hover {
+
+.ADMP-btnpag:hover {
     background-color: #659596;
     color: #000000;
-    transition: ease-in-out 200ms;
+    transition: ease-in-out 300ms;
     cursor: pointer;
-}
-.ADMP-sec{
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    height: fit-content;
-}
-
-
-.icons:hover{
-    height: 1.4rem;
-    width: 1.4rem;
-    transition: ease-in-out 200ms ;
-    cursor: pointer;
-}
-
-.ADMP-sec{
-    background-color:none ;
-}
-
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.ADMPMV-html{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-.ADMPMV-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30rem;
-    width: 28rem;
-    position: absolute;
-    top: 25%;
-    left: 40%;
-}
-
-.btnIcons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-}
-
-.ADMPMV-container{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-direction: column;
-    background-color: #E8D8C3;
-    height: 30rem;
-    width: 28rem;
-    border: 1px solid black;
-    border-radius: 3rem;
-    gap: 3.5rem;
-}
-.ADMPMV-input{
-    display: flex;
-    width: 24rem;
-    height: 2.3rem;
-    border-radius: 2rem;
-    border: 1px solid black;
-    padding-left: 1rem;
-
-}
-
-.ADMPMV-mid{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;    
-    align-items: start;
-    justify-content: start;
-}
-
-.ADMPMV-fields{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    
-}
-
-.ADMPMV-input{
-    cursor: not-allowed;
-}
-
-.ADMPMV-btncancel{
-    display: flex;
-    background-color: #20315A;
-    color: white;
-    font-size: 1.6rem;
-    border-radius: 1rem;
-    padding-inline:1rem;
-    padding-block:0.4rem;
-}
-.ADMPMV-btncancel:hover{
-    background-color:rgba(12, 49, 134, 0.89);
-    color: rgb(248, 248, 248);
-    transition: ease-in-out 200ms;
-    box-shadow: 0 0 40px rgba(24, 59, 104, 0.699); 
-}
-
-.ADMPMV-btnapply{
-    display: flex;
-    background-color: #5A78A6;
-    color: white;
-    font-size: 1.6rem;
-    border-radius: 1rem;
-    padding-inline:1rem;
-    padding-block:0.4rem;
-}
-.ADMPMV-btnapply:hover{
-    background-color:rgba(14, 108, 231, 0.623);
-    color: rgb(255, 255, 255);
-    transition: ease-in-out 200ms;
-    box-shadow: 0 0 40px rgba(24, 59, 104, 0.699); 
-}
-
-
-.ADMPMV-actions{
-    display: flex;
-    gap: 5rem;
-}
-
-.ADMPMV-header{
-    background-color: #20315A;
-    color: white;
-    width:100%;
-    display: flex;
-    justify-content: center;
-    border-top-left-radius: 2.8rem;
-    border-top-right-radius: 2.8rem;
-    padding-block: 1rem;
-}
-
-.ADMPMV-end{
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
-}
-
-@media (max-width: 414px){
-    .ADMP-mid{
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        gap: 1rem;
-        padding-block: 1rem;
-    }
-    .ADMP-box{
-        width: 90%;
-    }
-    .ADMP-tittle{
-        margin: 0;
-    }
-    #ADMP-search{
-        top: 19.7%;
-        left: 15%;
-    }
-    .ADMP-body{
-        width: 100%;
-        padding-inline: 1rem;
-        
-    }
-    .ADMP-table{
-        margin-left: 70rem;
-        width: 100rem;
-    }
-    .ADMP-downtable{
-        width: 100;
-        margin-left: 70rem;
-    }
 }
