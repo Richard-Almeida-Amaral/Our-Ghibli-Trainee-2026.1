@@ -38,7 +38,7 @@
       <div class="modalBody">
         <form method="POST" action="/criarpost"></form>
         <label class="arquivo">
-          <input type="file" accept="image/*" />
+          <input type="file" accept="image/*" name="imagem"/>
           <div class="arquivo-content">
             <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12" />
@@ -53,10 +53,10 @@
             
           </div>
           <label class="labelInput">
-            <textarea placeholder="Escreva seu Título..." class="inputCampo"></textarea>
+            <textarea placeholder="Escreva seu Título..." class="inputCampo" name="titulo"></textarea>
           </label>
           <label class="labelDescricao">
-            <textarea placeholder="Escreva sua Descrição..." class="inputCampoDescricao"></textarea>
+            <textarea placeholder="Escreva sua Descrição..." class="inputCampoDescricao" name="descricao"></textarea>
           </label>
         </div>
       </div>
@@ -66,7 +66,7 @@
         <button class="btnCancelar"  onclick="fecharModalCriar('ModalCriar')">
           Cancelar
         </button>
-        <button class="btnCriar">
+        <button class="btnCriar" onclick="fecharModalCriar('ModalCriar')">
           Criar
         </button>
       </div>

@@ -42,4 +42,20 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
-}
+    public function insertADMP($table, $parameters){
+        $sql = sprintf('insert into %s (%s) values (:%s)',
+        $table,
+        implode(', ', array_keys($parameters)),
+        implode(', :', array_keys($parameters)),
+        );
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }   
+    }   
+    }

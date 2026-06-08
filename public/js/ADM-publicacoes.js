@@ -6,8 +6,9 @@ const modais4 = document.getElementById('containermodaledit');
 
 function InteracaoModal(idModal) {
     const modal = document.getElementById(idModal);
-        screenposts.style.display = "block";
-        modal.style.display = "block";
+    alert (modal);
+    screenposts.style.display = "block";
+    modal.style.display = "block";
 }
 
 screenposts.addEventListener("click", function (){

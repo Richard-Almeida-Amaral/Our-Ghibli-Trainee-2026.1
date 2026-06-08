@@ -15,7 +15,7 @@ $router->get('navbar', 'ControllerNavbar@Navbar');
 // Modais
 
 // criar e excluir post:
-$router->post('criarpost', 'ControllerModalCriarPost@ModalCriarPost');
+$router->post('criarpost', 'ControllerModalCriarPost@steal');
 
 // visualizar e editar post:
 $router->get('visualizarpost', 'ControllerModalVisualizarPost@ModalVisualizarPost');
