@@ -10,8 +10,7 @@ class ControllerAdmPublicacoes
 
     public function AdmPublicacoes()
     {
-        return view('admin/ADM-publicacoes');
+        $publicacoes =  App ::get('database')->selectAll('posts');
+        return view('admin/ADM-publicacoes',compact('publicacoes'));
     }
-
 }
- 
