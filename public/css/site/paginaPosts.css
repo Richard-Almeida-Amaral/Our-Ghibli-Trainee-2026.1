@@ -1,0 +1,229 @@
+:root {
+  --color-bege1-100: #f2f1e6;
+  --color-bege2-50: #ffedd3;
+  --color-verde1-100: #4f6f52;
+  --color-azul1-100: #20315a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background-color: var(--color-bege2-50);
+}
+
+.topoPaginaDePosts {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(235, 215, 185, 0) 50%,
+      rgb(255, 237, 211) 100%
+    ),
+    url(../../assets/TotoroTopo+.png);
+  background-size: cover;
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  padding: 0 150px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.topoPaginaDePosts h1 {
+  font-family: "Alice";
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--color-verde1-100);
+  padding: 20px 0px;
+  margin: 0 20px 0 0;
+  align-items: center;
+  position: absolute;
+  left: 18%;
+  top: 50%;
+  transform: translate(-50%, -90%);
+  text-shadow:
+    -2px -2px 0 #e8d8c3,
+    2px -2px 0 #e8d8c3,
+    -2px 2px 0 #e8d8c3,
+    2px 2px 0 #e8d8c3,
+    0px -2px 0 #e8d8c3,
+    0px 2px 0 #e8d8c3,
+    -2px 0px 0 #e8d8c3,
+    2px 0px 0 #e8d8c3;
+}
+
+#pesquisa {
+  display: flex;
+  width: 60%;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: none;
+  padding: 20px;
+  font-size: 16px;
+
+  position: absolute;
+  right: 20%;
+  bottom: 30px;
+  outline: none;
+}
+
+#pesquisa::placeholder {
+  color: var(--color-azul1-100);
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: large;
+  background-image: url(https://cdn-icons-png.flaticon.com/128/2319/2319177.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+.container {
+  margin-top: 150px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 0 100px;
+  row-gap: 20px;
+}
+.card {
+  display: grid;
+  grid-template-rows: 1fr 50px 100px;
+  width: 80%;
+  height: 70vh;
+  margin-bottom: 50px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  background-color: var(--color-bege1-100);
+  align-items: start;
+  justify-items: center;
+  cursor: pointer;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.card h1 {
+  grid-row: 2;
+  height: 50px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0;
+}
+.card p {
+  grid-row: 3;
+  max-width: 300px;
+  margin: 0;
+}
+.paginação {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+.paginação button {
+  background-color: white;
+  color: var(--color-azul1-100);
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "Nunito";
+  font-size: large;
+  font-weight: bold;
+}
+.paginação button:hover {
+  background-color: var(--color-azul1-100);
+  color: var(--color-bege1-100);
+}
+
+/* Tablet e telas médias */
+@media (max-width: 1024px) {
+  .topoPaginaDePosts {
+    padding: 20px 50px;
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .topoPaginaDePosts h1 {
+    position: static;
+    transform: none;
+    font-size: 40px;
+    text-align: center;
+    margin: auto 0;
+    margin-right: 65%;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 40px;
+  }
+
+  #pesquisa {
+    position: static;
+    width: 80%;
+    margin: 0 auto 10px auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .topoPaginaDePosts {
+    padding: 15px 20px;
+    height: 220px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .topoPaginaDePosts h1 {
+    position: static;
+    transform: none;
+    font-size: 32px;
+    text-align: center;
+    margin: auto 0;
+    margin-right: 50%;
+    padding-left: 20px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  #pesquisa {
+    position: static;
+    width: 75%;
+    margin: 0 auto 5px auto;
+  }
+
+  /* Celular não tem paginação */
+  .paginação {
+    display: none;
+  }
+}

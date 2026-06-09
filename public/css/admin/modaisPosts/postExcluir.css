@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização para o modal de criação */
+
+.modalContainer {
+  width: 960px; 
+  max-width: 95%;
+  height: fit-content;
+  max-height: 90vh;
+  background-color: #ebdcd0; 
+  border-radius: 24px;     
+  overflow-y: auto;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.modalHeader {
+  width: 100%;
+  background-color: #20315a; 
+  padding: 18px 0;
+  text-align: center;
+}
+
+.modalHeader h2 {
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;                 
+  padding: 32px;
+  background-color: #E8D8C3;  
+}
+
+
+.arquivo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 440px;              
+  height: 485px;
+  background-color: #ebdcd0;
+  border: 1px dashed #b5a494; 
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+  padding: 20px;
+  margin-top: 45px;
+}
+
+.arquivo input[type="file"] {
+  display: none;             
+}
+
+.arquivo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: #4a3f35;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.upload-icon {
+  width: 42px;
+  height: 42px;
+  stroke: #4a3f35;
+}
+
+
+.containerTextos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;       
+  margin-top: 20px;          
+}
+
+.topoDescricao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 4px;
+}
+
+#tituloAreaTexto {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  color: #4a3f35;
+  font-weight: 500;
+}
+
+
+
+.btnFecharModal:hover {
+  opacity: 0.7;
+}
+
+.labelInput {
+  width: 100%;
+  height: 190px;             
+  background-color: #ebdcd0;
+  border: 1px dashed #b5a494; 
+  border-radius: 16px;
+  display: flex;
+}
+
+.labelDescricao {
+  width: 100%;
+  height: 270px;             
+  background-color: #ebdcd0;
+  border: 1px dashed #b5a494;
+  border-radius: 16px;
+  display: flex;
+}
+
+
+.inputCampo,
+.inputCampoDescricao {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  padding: 20px;
+  resize: none;
+  outline: none;
+  font-family: 'Quicksand', sans-serif;
+  color: #333333;
+}
+
+.inputCampo::placeholder,
+.inputCampoDescricao::placeholder {
+  color: #7a6e63;
+}
+
+.inputCampo,
+.inputCampoDescricao {
+  white-space: normal;
+}
+
+.inputCampo:focus,
+.inputCampoDescricao:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+
+
+
+.modalAcoes {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 16px;
+  padding: 0 32px 32px 32px;
+  background-color: #E8D8C3;  
+}
+
+.modalAcoes button {
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  transition: transform 0.1s, opacity 0.2s;
+}
+
+.btnCriar {
+  background-color: #20315a;
+  color: #ffffff;
+}
+
+.btnCancelar {
+  background-color: #e63946;
+  color: #ffffff;
+}
+
+.modalAcoes button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.modalAcoes button:active {
+  transform: translateY(0);
+}
+
+
+#modalExcluir {
+  width: 400px; 
+}
+
+.modalAcoesExcluir{
+  background-color: #E8D8C3;  
+}
+
+
+
+.modalContainerExcluir {
+  background-color: #E8D8C3;
+  width: 320px;
+  max-width: 90%; 
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+
+.modalHeaderExcluir {
+  background-color: #1e325c;
+  padding: 18px;
+}
+
+.modalHeaderExcluir h2 {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+.modalBodyExcluir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 20px 16px 20px;
+  background-color: #E8D8C3;  
+}
+
+
+.lixeira {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 14px;
+}
+
+.modalBodyExcluir p {
+  color: #333333;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+}
+
+
+.modalAcoesExcluir {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 24px 24px 24px;
+}
+
+.modalAcoesExcluir button {
+  width: 90px;
+  padding: 8px 0;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.modalAcoesExcluir button:hover {
+  opacity: 0.85;
+}
+
+.btnSim {
+  background-color: #d31c1c;
+  color: #ffffff;
+}
+
+.btnNao {
+  background-color: #20315a;
+  color: #ffffff;
+}
+
+/* Responsividade */
+
+/* Telas de Celulares Grandes e Tablets */
+@media (max-width: 768px) {
+  .modalBody {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .arquivo {
+    width: 100%; 
+    height: 250px;
+  }
+
+  .containerTextos {
+    width: 100%;
+  }
+
+  .modalAcoes {
+    padding: 0 24px 24px 24px;
+  }
+}
+
+/* Telas de Celulares Pequenos (Até 480px) */
+@media (max-width: 480px) {
+  .modalHeader h2 {
+    font-size: 20px;
+  }
+
+  .modalBody {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .labelInput {
+    height: 150px; 
+  }
+
+  .labelDescricao {
+    height: 200px;
+  }
+
+  .modalAcoes {
+    flex-direction: column-reverse; 
+    width: 100%;
+    padding: 0 16px 16px 16px;
+    gap: 12px;
+  }
+
+  .modalAcoes button {
+    width: 100%;
+    padding: 12px 0;
+  }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Our Ghibli</title>
-    <link rel="stylesheet" href="../../../public/css/dashboard.css">
+    <link rel="stylesheet" href="../../../public/css/admin/dashboard.css">
 
         <!-- Fonte Alice --> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +38,7 @@
                 <div class="dashboard-botoes">
                     <div class="dashboard-botoes-de-pagina">
 
-                        <div class="pagina-de-usuario">
+                        <a href="/admin/usuarios" class="pagina-de-usuario">
 
                             <div class="icone-usuario-dashboard">  
 
@@ -50,9 +50,9 @@
                             </div>
 
                             <div class="texto-pagina-de-usuarios">PÁGINA DE USUÁRIOS</div>
-                        </div>
-
-                        <div class="pagina-de-posts">
+                        </a>
+                        
+                        <a href="/admin/posts" class="pagina-de-posts">
                             
                             <div class="icone-posts-dashboard">
 
@@ -62,11 +62,11 @@
                             </div>
 
                             <div class="texto-pagina-de-posts">PÁGINA DE POSTS</div>
-                        </div>
+                        </a>
 
                     </div>
 
-                    <div class="dashboard-botao-de-logout">
+                    <a href="/ " class="dashboard-botao-de-logout">
                         
                         <div class="icone-logout-dashboard">
                             
@@ -79,7 +79,7 @@
 
                         <div class="texto-logout-dashboard">LOGOUT</div>
 
-                        </div>
+                    </a>
 
                 </div>
             </div>

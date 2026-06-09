@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer</title>
-    <link rel="stylesheet" href="../../../public/css/footer.css">
+    <link rel="stylesheet" href="../../../public/css/site/footer.css">
 
     <!-- Nunito -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-    
+
     <footer>
         <div class="contvertical">
             <div class="Contatoscont">
@@ -31,32 +33,32 @@
                     <div class="ContatsContainer">
                         <div class="email">
 
-                        <div class="emailcont">
-                            <img class="iconemail" src="../../../public/assets/Emailicon.png"  alt="Descrição da imagem">
-                            <p class="Tipodeinfofooteremail"> Email: </p>
-                            <p>ourghibli@gmail.com</p>
-                        </div>
+                            <div class="emailcont">
+                                <img class="iconemail" src="../../../public/assets/Emailicon.png" alt="Descrição da imagem">
+                                <p class="Tipodeinfofooteremail"> Email: </p>
+                                <p>ourghibli@gmail.com</p>
+                            </div>
                         </div>
                         <div class="telefone">
                             <div class="Telefonecont">
-                                <img class="icontelefone" src="../../../public/assets/Telefoneicon.png"  alt="Descrição da imagem">
+                                <img class="icontelefone" src="../../../public/assets/Telefoneicon.png" alt="Descrição da imagem">
                                 <p class="Tipodeinfofooter"> Telefone: </p>
                                 <p>+55 (32) 91523-7291</p>
                             </div>
                         </div>
                     </div>
-                    
+
 
                 </div>
             </div>
-        
-            <div class="Logo"> 
-                
-                <img class="icontelogo" src="../../../public/assets/LogoSemFundoApenasTotoro.png"  alt="Descrição da imagem">
-                
+
+            <div class="Logo">
+
+                <img class="icontelogo" src="../../../public/assets/LogoSemFundoApenasTotoro.png" alt="Descrição da imagem">
+
             </div>
-            
-            <div class="redessociaiseloc"> 
+
+            <div class="redessociaiseloc">
                 <div class="apenasredes">
                     <div class="rstitulo">
                         <h1>Redes Sociais</h1>
@@ -68,13 +70,15 @@
                             <img src="../../../public/assets/Linkedin.png" alt="Descrição da imagem">
                         </div>
 
-                        <div class="instagram">
+                        <a href="https://www.instagram.com/studioghibliofficiall/" class="footer-ancora">
                             <img src="../../../public/assets/Instagram.png" alt="Descrição da imagem">
-                        </div>
+                        </a>
 
-                        <div class="facebook">
+
+                        <a href="https://www.facebook.com/WorldofGhibliUS" class="footer-ancora">
                             <img src="../../../public/assets/Facebook.png" alt="Descrição da imagem">
-                        </div>
+                        </a>
+
 
                     </div>
                 </div>
@@ -86,7 +90,7 @@
                         <p>Rua José Lourenço Kelmer - Martelos, Juiz de Fora - MG, 36036-330</p>
                     </div>
                 </div>
-    
+
             </div>
         </div>
 
@@ -117,6 +121,7 @@
         </div>
 
     </footer>
-    
+
 </body>
+
 </html>

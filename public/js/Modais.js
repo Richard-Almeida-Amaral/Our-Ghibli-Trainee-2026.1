@@ -1,10 +1,30 @@
-function abrirModalVisualizar(idModal) {
+// Modal Criar
+function AbrirModal(idModal) {
     const modal = document.getElementById(idModal);
     modal.style.display = "flex";
 
 }
 
+function FecharModal(idModal) {
+    const modal = document.getElementById(idModal);
+    modal.style.display = "none";
+}
 
+function abrirModal(idModal, idFiltroModal){
+    const modal = document.getElementById(idModal);
+    const filtromodal = document.getElementById(idFiltroModal);
+    modal.classList.add("aberto");
+    filtromodal.classList.add("aberto");
+
+}
+
+function fecharModal(idModal, idFiltroModal){
+    const modal = document.getElementById(idModal);
+    const filtromodal = document.getElementById(idFiltroModal);
+    modal.classList.remove("aberto");
+    filtromodal.classList.remove("aberto");
+
+}
 
 function fecharModalVisualizar(idModal) {
     const modal = document.getElementById(idModal);

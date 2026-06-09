@@ -5,40 +5,74 @@ use App\Controllers\ExampleController;
 use App\Core\Router;
 
 // Site
-$router->get('', 'ControllerLandingPage@landingPage');
-$router->get('login', 'ControllerLoginPage@loginPage');
-$router->get('posts', 'ControllerPaginaDePosts@PaginaDePosts');
-$router->get('postsI', 'ControllerPaginaIndependenteDePosts@PaginaIndependenteDePosts');
-$router->get('footer', 'ControllerFooter@Footer');
-$router->get('navbar', 'ControllerNavbar@Navbar');
 
-// Modais
+//Landing Page
+$router->get('', 'LandingPageController@index');
 
-// criar e excluir post:
-$router->get('criarpost', 'ControllerModalCriarPost@ModalCriarPost');
+//Pagina de Posts
+$router->get('posts', 'PaginaPostsController@index');
 
-// visualizar e editar post:
-$router->get('visualizarpost', 'ControllerModalVisualizarPost@ModalVisualizarPost');
+//Pagina Individual de Posts
+$router->get('post', 'PaginaIndividualPostsController@index');
 
-// visualizar usuario
-$router->get('visualizarusuario', 'ControllerModalVisualizarUsuario@ModalVisualizarUsuario');
-
-// excluir usuario
-$router->get('excluirusuario', 'ControllerModalExcluirUsuario@ModalExcluirUsuario');
-
-// criar usuario
-$router->get('criarusuario', 'ControllerModalCriarUsuario@ModalCriarUsuario');
-
-// editar usuario
-$router->get('editarusuario', 'ControllerModalEditarUsuario@ModalEditarUsuario');
+//Pagina de Login
+$router->get('login', 'LoginController@index');
 
 
 // Admin
 
-$router->get('sidebar', 'ControllerSidebar@Sidebar');
-$router->get('dashboard', 'ControllerDashboard@Dashboard');
-$router->get('users', 'ControllerAdmUsuarios@AdmUsuarios');
-$router->get('publi', 'ControllerAdmPublicacoes@AdmPublicacoes');
+//Dashboard
+$router->get('admin', 'DashboardController@index');
+
+//Tabela de Publicacoes
+$router->get('admin/posts', 'PostsController@index');
+
+//Tabela de Usuarios
+$router->get('admin/usuarios', 'UsuariosController@index');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // criar e excluir post:
+// $router->get('criarpost', 'ControllerModalCriarPost@ModalCriarPost');
+
+// // visualizar e editar post:
+// $router->get('visualizarpost', 'ControllerModalVisualizarPost@ModalVisualizarPost');
+
+// // visualizar usuario
+// $router->get('visualizarusuario', 'ControllerModalVisualizarUsuario@ModalVisualizarUsuario');
+
+// // excluir usuario
+// $router->get('excluirusuario', 'ControllerModalExcluirUsuario@ModalExcluirUsuario');
+
+// // criar usuario
+// $router->get('criarusuario', 'ControllerModalCriarUsuario@ModalCriarUsuario');
+
+// // editar usuario
+// $router->get('editarusuario', 'ControllerModalEditarUsuario@ModalEditarUsuario');
+
+
+// // Admin
+
+// $router->get('sidebar', 'ControllerSidebar@Sidebar');
+// $router->get('dashboard', 'ControllerDashboard@Dashboard');
+// $router->get('users', 'ControllerAdmUsuarios@AdmUsuarios');
+// $router->get('publi', 'ControllerAdmPublicacoes@AdmPublicacoes');
 
 
 
