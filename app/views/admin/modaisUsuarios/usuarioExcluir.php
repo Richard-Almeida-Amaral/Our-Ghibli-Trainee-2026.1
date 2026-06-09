@@ -40,7 +40,7 @@
     <!-- Modal Visualizar -->
     <section class="UsuModalCont">      
       <div id="Usumodalc" class="modoverlay" >
-        <form method="POST" action="" id="Usumodalexcluir" class="modoverlay" >
+        <form method="POST" action="" id="usuarioExcluir<?=$usuario->id ?>" class="modoverlay" >
         
         <div class="modcont">
           

@@ -39,7 +39,7 @@
   <section class="UsuModalCont">
     <div id="Usumodalc" class="modoverlay">
 
-      <form method="POST" action=""class="modcont">
+      <form method="POST" action=""class="modcont" id="usuarioVisualizar<?=$usuario->id ?>">
 
         <div class="modtit">
           <h2>Visualização do Usuário</h2>
