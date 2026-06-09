@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Administração Usuários</title>
-        <link rel="stylesheet" href="../../../public/css/ADM-usuarios.css" />
+        <link rel="stylesheet" href="../../../public/css/admin/tabelaUsuarios.css" />
 
         <!-- Alice -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,6 +42,8 @@
                     
             </div>
 
+            <div id="filtromodalview"></div>
+
         <section class="Topo">
         <div class="Titulo">
             <p>Listas de Usuários</p>
@@ -53,7 +55,7 @@
             </div>
 
             <div class="adcusuario">
-            <button onclick="Uabrirmodal('admmacontainer')">+ Adicionar Usuário</button>
+            <button onclick="abrirModal('admmacontainer, filtromodalview')">+ Adicionar Usuário</button>
             </div>
         </div>
         </section>
@@ -92,7 +94,7 @@
                                 </svg>
                             </button>
 
-                            <button id="btnExcluirModal" class="usubtnvisualizar botaoexcluir" onclick="abrirModalVisualizar('Usumodalexcluir')">
+                            <button id="btnExcluirModal<?php echo $usuario->id; ?>" class="usubtnvisualizar botaoexcluir" onclick="abrirModalVisualizar('Usumodalexcluir')">
                                 <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="16"

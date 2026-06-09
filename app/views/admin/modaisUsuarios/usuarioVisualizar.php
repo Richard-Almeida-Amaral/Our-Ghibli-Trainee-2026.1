@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../../../public/css/ModalVisualizarUsuario.css" />
+  <link rel="stylesheet" href="../../../public/css/admin/modaisUsuarios/usuarioVisualizar.css" />
   <!-- Bibblioteca que armazena os olhos fechados-->
   <link rel="stylesheet" href="../../../../public/css/admin/modaisUsuarios/postDeletar.css" />
   <!-- Fontes -->

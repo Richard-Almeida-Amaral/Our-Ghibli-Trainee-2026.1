@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../../public/css/admin/modaisUsuarios/postCriar.css" />
+    <link rel="stylesheet" href="../../../../public/css/admin/modaisUsuarios/usuarioCriar.css" />
     <title>Modal Adicionar</title>
 </head>
 
 <body class="ADMPMA-body">
-    <form method="POST" action="" class="ADMPMA-container" id="admmacontainer">
+    <form method="POST" action="/admin/usuarios/criar" class="ADMPMA-container" id="admmacontainer">
         <div class="ADMPMA-header">
             <h1>Criar Usuário</h1>
         </div>
@@ -35,7 +35,7 @@
         </div>
     </form>
 
-    <script src="../../../public/js/Modais.js"></script>
+    <script src="../../../../public/js/Modais.js"></script>
 </body>
 
 </html>
