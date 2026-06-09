@@ -22,6 +22,8 @@ $router->get('post', 'PaginaIndividualPostsController@index');
 //Pagina de Login
 $router->get('login', 'LoginController@index');
 
+$router->get('sidebar', 'SidebarController@index');
+
 
 // Admin
 
