@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../../../../public/css/admin/modaisPosts/postExcluir.css"/>
+  <link rel="stylesheet" href="../../../../public/css/admin/modaisPosts/postExcluir.css" />
   <!---------------------------- Fontes ----------------------------------------------------------->
 
   <!-- Alice -->
@@ -28,77 +28,30 @@
 
 <body>
 
-  <!-- MODAL CRIAÇÃO  -->
-    <div class="modalContainer" id="ModalCriar">
-
-      <div class="modalHeader">
-        <h2>Criação de Publicação</h2>
-      </div>
-
-      <div class="modalBody">
-        <form method="POST" action="/criarpost"></form>
-        <label class="arquivo">
-          <input type="file" accept="image/*" />
-          <div class="arquivo-content">
-            <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12" />
-            </svg>
-            <span>Faça upload da imagem</span>
-          </div>
-        </label>
-
-
-        <div class="containerTextos">
-          <div class="topoDescricao">
-            
-          </div>
-          <label class="labelInput">
-            <textarea placeholder="Escreva seu Título..." class="inputCampo"></textarea>
-          </label>
-          <label class="labelDescricao">
-            <textarea placeholder="Escreva sua Descrição..." class="inputCampoDescricao"></textarea>
-          </label>
-        </div>
-      </div>
-
-      <!-- Botões inferiores Criação -->
-      <div class="modalAcoes">
-        <button class="btnCancelar"  onclick="fecharModalCriar('ModalCriar')">
-          Cancelar
-        </button>
-        <button class="btnCriar">
-          Criar
-        </button>
-      </div>
-
-    </div>
-
-
   <!-- Modal de Exclusão -->
 
-    <div class="modalContainer" id="ModalExcluir">
+  <form action="" method="POST" class="modalContainer" id="ModalExcluir">
 
-      <div class="ModalContainerExcuir">
-        <div class="modalHeaderExcluir">
-          <h2>Exclusão de Publicação</h2>
-        </div>
-        <div class="modalBodyExcluir">
-          <img class="lixeira" src="../../../public/assets/disposicao.png" alt="">
-          <p>Deseja excluir esta publicação?</p>
-        </div>
+    <div class="ModalContainerExcuir">
+      <div class="modalHeaderExcluir">
+        <h2>Exclusão de Publicação</h2>
       </div>
-
-      <!-- Botões inferiores Exclusão -->
-      <div class="modalAcoesExcluir">
-        <button class="btnNao" onclick="fecharModalCriar('ModalExcluir')">
-          Não
-        </button>
-        <button class="btnSim">
-          Sim
-        </button>
+      <div class="modalBodyExcluir">
+        <img class="lixeira" src="../../../public/assets/disposicao.png" alt="">
+        <p>Deseja excluir esta publicação?</p>
       </div>
-
     </div>
+
+    <!-- Botões inferiores Exclusão -->
+    <div class="modalAcoesExcluir">
+      <button class="btnNao" onclick="fecharModalCriar('ModalExcluir')">
+        Não
+      </button>
+      <button class="btnSim">
+        Sim
+      </button>
+    </div>
+  </form>
 
 </body>
 <script src="../../../public/js/Modais.js"></script>
