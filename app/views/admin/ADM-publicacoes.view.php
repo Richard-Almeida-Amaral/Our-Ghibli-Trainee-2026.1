@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=], initial-scale=1.0">
-    <link rel="stylesheet" href="../../../public/css/ADM-publicacoes.css"> <!--impostando o estilo CSS-->
+    <link rel="stylesheet" href="../../../public/css/tabelaPublicacoes.css"> <!--impostando o estilo CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Importando fontes -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
             </svg>
             <input type="search" name="" id="" placeholder="Pesquisar..." class="ADMP-searchfield"> 
         </div>
-            <input type="button" value="+ Adicionar Publicação" class="ADMP-butom" onclick="InteracaoModal('ModalCriar')"> <!-- botao com onclick JS-->
+            <input type="button" value="+ Adicionar Publicação" class="ADMP-butom" onclick="abrirModal('ModalCriar')"> <!-- botao com onclick JS-->
     </div>
 
     <div class="ADMP-down">
@@ -48,18 +48,18 @@
 
 
                     <td class="ADMP-cell">    <!-- Icones da Tabela -->
-                        <button class="ADMP-btnIcons" onclick="InteracaoModal('containermodalview')">
+                        <button class="ADMP-btnIcons" onclick="abrirModal('containermodalview')">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ADMP-icons" viewBox="0 0 16 16">
                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
                             </svg>
                         </button>
-                        <button class="ADMP-btnIcons" onclick="InteracaoModal('ModalExcluir')" >
+                        <button class="ADMP-btnIcons" onclick="abrirModal('ModalExcluir')" >
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ADMP-icons" viewBox="0 0 16 16">
                             <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
                         </svg>
                         </button>
-                        <button class="ADMP-btnIcons" onclick="InteracaoModal('containermodaledit')">
+                        <button class="ADMP-btnIcons" onclick="abrirModal('containermodaledit')">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ADMP-icons" viewBox="0 0 16 16">
                                 <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                                 <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
@@ -68,8 +68,10 @@
                                 </td>
                                 </tr>
                                 <!-- importando os modais  -->
-                                <?php require('ModalCriarExcluir.view.php');?>
-                                <?php require('ModalVisualizarPosts.view.php');?>
+                                <?php require('PostsCriar.view.php');?>
+                                <?php require('PostsEditar.view.php');?>
+                                <?php require('PostsDeletar.view.php');?>
+                                <?php require('PostsVisualizar.view.php');?>
                 <?php endforeach ?>
             </tbody>
             </table>
@@ -87,5 +89,5 @@
     
 </body>
 <div class="ADMP-filter" id="auxposts"></div>
-    <script type="text/javascript" src="../../../public/js/ADM-publicacoes.js"></script>
+    <script type="text/javascript" src="../../../public/js/tabelaPublicacoes.js"></script>
 </html>
