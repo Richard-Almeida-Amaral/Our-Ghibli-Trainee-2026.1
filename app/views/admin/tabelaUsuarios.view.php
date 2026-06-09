@@ -27,22 +27,25 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="../../../../public/css/admin/modaisUsuarios/usuarioCriar.css" />
+    <link rel="stylesheet" href="../../../../public/css/admin/modaisUsuarios/usuarioExcluir.css" />
+    <link rel="stylesheet" href="../../../../public/css/admin/modaisUsuarios/usuarioEditar.css" />
+    <link rel="stylesheet" href="../../../public/css/admin/modaisUsuarios/usuarioVisualizar.css" />
+
+
 
 </head>
 
 <body class="ADMU-body">
 
-    <div id="ModaisImportados">
-        <?php require('./app/views/admin/modaisUsuarios/usuarioCriar.php') ?>
-        
-        <?php foreach ($usuarios as $usuario): ?>
-            <?php require('./app/views/admin/modaisUsuarios/usuarioEditar.php') ?>
-            <?php require('./app/views/admin/modaisUsuarios/usuarioVisualizar.php') ?>
-            <?php require('./app/views/admin/modaisUsuarios/usuarioExcluir.php') ?>
-        <?php endforeach; ?>
+    <?php require('./app/views/admin/modaisUsuarios/usuarioCriar.php') ?>
 
+    <?php foreach ($usuarios as $usuario): ?>
+        <?php require('./app/views/admin/modaisUsuarios/usuarioEditar.php') ?>
+        <?php require('./app/views/admin/modaisUsuarios/usuarioVisualizar.php') ?>
+        <?php require('./app/views/admin/modaisUsuarios/usuarioExcluir.php') ?>
+    <?php endforeach; ?>
 
-    </div>
 
     <div id="filtromodalview"></div>
 
@@ -57,7 +60,7 @@
             </div>
 
             <div class="adcusuario">
-                <button onclick="abrirModal('admmacontainer, filtromodalview')">+ Adicionar Usuário</button>
+                <button onclick="abrirModal('usuarioCriar', 'filtromodalview')">+ Adicionar Usuário</button>
             </div>
         </div>
     </section>
@@ -81,7 +84,9 @@
                             <td class="usuarioTd"><?= $usuario->nome ?></td>
                             <td class="usuarioTd"><?= $usuario->email ?></td>
                             <td class="usuarioTdAc">
-                                <button id="btnUsuModal" class="usubtnvisualizar" onclick="abrirModalVisualizar('Usumodalc')">
+
+                                <!-- Abre Modal Visualizar -->
+                                <button type="button" id="btnUsuModal" class="usubtnvisualizar" onclick="abrirModal('usuarioVisualizar<?= $usuario->id ?>','filtromodalview')">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
@@ -94,20 +99,9 @@
                                     </svg>
                                 </button>
 
-                                <button id="btnExcluirModal<?php echo $usuario->id; ?>" class="usubtnvisualizar botaoexcluir" onclick="abrirModalVisualizar('Usumodalexcluir')">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        fill="currentColor"
-                                        class="bi bi-trash3-fill"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
-                                    </svg>
-                                </button>
+                                <!-- Abre Modais Editar -->
 
-                                <button id="btnUsuModal" class="usubtnvisualizar" onclick="Uabrirmodal('admpmecontainer')">
+                                <button type="button" id="btnUsuModal" class="usubtnvisualizar" onclick="abrirModal('usuarioEditar<?= $usuario->id ?>','filtromodalview')">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
@@ -122,6 +116,21 @@
                                             d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
                                     </svg>
                                 </button>
+
+                                <!-- Abre Modal Excluir -->
+                                <button type="button" id="btnExcluirModal<?php echo $usuario->id; ?>" class="usubtnvisualizar botaoexcluir" onclick="abrirModal('usuarioExcluir<?= $usuario->id ?>','filtromodalview')">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-trash3-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
+                                    </svg>
+                                </button>
+
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -135,7 +144,7 @@
     <section>
         <div class="ADMU-paginação">
             <button class="ADMU-bptão-paginação">
-                << /button>
+                <</button>
                     <button class="ADMU-bptão-paginação">1</button>
                     <button class="ADMU-bptão-paginação">2</button>
                     <button class="ADMU-bptão-paginação">3</button>
@@ -143,6 +152,7 @@
         </div>
     </section>
 </body>
-<script src="../../../public/js/tabelaUsuarios.js"></script>
+
+<script src="../../../public/js/Modais.js"></script>
 
 </html>

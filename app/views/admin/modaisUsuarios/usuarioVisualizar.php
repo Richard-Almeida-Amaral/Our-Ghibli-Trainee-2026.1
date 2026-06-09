@@ -1,96 +1,57 @@
-<!doctype html>
-<html lang="pt-BR">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../../../public/css/admin/modaisUsuarios/usuarioVisualizar.css" />
-  <!-- Bibblioteca que armazena os olhos fechados-->
-  <link rel="stylesheet" href="../../../../public/css/admin/modaisUsuarios/postDeletar.css" />
-  <!-- Fontes -->
 
-  <!-- Alice -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Alice&display=swap"
-    rel="stylesheet" />
+<!-- Modal Visualizar -->
+<section class="UsuModalCont modoverlay" id="usuarioVisualizar<?=$usuario->id ?>">
+  <div id="Usumodalc">
 
-  <!-- Quicksand -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-    rel="stylesheet" />
+    <form class="modcont" >
 
-  <!-- Nunito -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-    rel="stylesheet" />
+      <div class="modtit">
+        <h2>Visualização do Usuário</h2>
 
-  <title>ModalVisualizarUsuario</title>
+        <button type="button" id="fechamod" class="fechax" onclick="fecharModal('usuarioVisualizar<?=$usuario->id ?>')">&times</button>
+      </div>
 
-</head>
+      <div class="modbody">
 
-<body>
-  <!-- Modal Visualizar -->
-  <section class="UsuModalCont">
-    <div id="Usumodalc" class="modoverlay">
+        <div class="inputcont">
+          <label for="userId">ID</label>
 
-      <form method="POST" action=""class="modcont" id="usuarioVisualizar<?=$usuario->id ?>">
-
-        <div class="modtit">
-          <h2>Visualização do Usuário</h2>
-
-          <button id="fechamod" class="fechax" onclick="ModalVisualizar('Usumodalc')">&times</button>
+          <div class="input-wrapper no-icon">
+            <input type="text" id="userId" disabled>
+          </div>
         </div>
 
-        <div class="modbody">
+        <div class="inputcont">
+          <label for="userName">Nome</label>
 
-          <div class="inputcont">
-            <label for="userId">ID</label>
-
-            <div class="input-wrapper no-icon">
-              <input type="text" id="userId" disabled>
-            </div>
+          <div class="input-wrapper no-icon">
+            <input type="text" id="userName" disabled>
           </div>
+        </div>
 
-          <div class="inputcont">
-            <label for="userName">Nome</label>
+        <div class="inputcont">
+          <label for="userEmail">Email</label>
 
-            <div class="input-wrapper no-icon">
-              <input type="text" id="userName" disabled>
-            </div>
+          <div class="input-wrapper">
+            <i class="fa-regular fa-envelope input-icon"></i>
+
+            <input type="text" id="userEmail" disabled>
           </div>
+        </div>
 
-          <div class="inputcont">
-            <label for="userEmail">Email</label>
+        <div class="inputcont">
+          <label for="userSenha">Senha</label>
 
-            <div class="input-wrapper">
-              <i class="fa-regular fa-envelope input-icon"></i>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-lock input-icon"></i>
 
-              <input type="text" id="userEmail" disabled>
-            </div>
-          </div>
+            <input type="password" id="userSenha" disabled>
 
-          <div class="inputcont">
-            <label for="userSenha">Senha</label>
-
-            <div class="input-wrapper">
-              <i class="fa-solid fa-lock input-icon"></i>
-
-              <input type="password" id="userSenha" disabled>
-
-              <i class="fa-regular fa-eye-slash toggle-password" id="togglePassword"></i>
-            </div>
+            <i class="fa-regular fa-eye-slash toggle-password" id="togglePassword"></i>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <script src="../../../public/js/Modais.js"></script>
-</body>
-
-</html>
+  </div>
+</section>

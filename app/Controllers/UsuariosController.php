@@ -26,16 +26,16 @@ class UsuariosController
 
         App::get('database')->insert('usuarios', $parameters);
 
-        header('Location: /tabelaUsuarios');
+        header('Location: /admin/usuarios');
     }
 
     public function delete()
     {
         $id = $_POST['id'];
-
+        error_log('UsuariosController::delete called, id='.$id);
         App::get('database')->delete('usuarios', $id);
 
-        header('Location: /tabelaUsuarios');
+        header('Location: /admin/tabelaUsuarios');
     }
 
 }

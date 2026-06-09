@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br" class="ADMPME-html">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../../public/css/admin/modaisUsuarios/usuarioEditar.css" />
-    <title>Modal Editar</title>
-</head>
 
-<body class="ADMPME-body">
-    <form method="POST" action="" class="ADMPME-container" id="usuarioEditar<?=$usuario->id ?>">
+
+    <form method="POST" action="" class="ADMPME-container" id="usuarioEditar<?= $usuario->id ?>">
 
         <div class="ADMPME-header" id="ModalEditUsu">
             <h1>Editar Usuário</h1>
@@ -31,11 +23,7 @@
         </div>
 
         <div class="ADMPME-end">
-            <button class="ADMPME-btncancel" onclick="fecharModalVisualizar('admpmecontainer')">Cancelar</button>
-            <button class="ADMPME-btnapply">Salvar</button>
+            <button type="button" class="ADMPME-btncancel" onclick="fecharModal('usuarioEditar<?= $usuario->id ?>','filtromodalview')">Cancelar</button>
+            <button type="submit" class="ADMPME-btnapply">Salvar</button>
         </div>
     </form>
-    <script src="../../../public/js/Modais.js"></script>
-</body>
-
-</html>
