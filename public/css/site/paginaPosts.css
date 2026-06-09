@@ -91,7 +91,7 @@ body {
   display: grid;
   justify-content: center;
   justify-items: center;
-  align-items: center;
+  align-items: stretch;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   padding: 0 100px;
@@ -111,6 +111,11 @@ body {
   align-items: start;
   justify-items: center;
   cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card img {
@@ -132,7 +137,14 @@ body {
   grid-row: 3;
   max-width: 300px;
   margin: 0;
+  /* define a altura máxima para o parágrafo */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 .paginação {
   display: flex;
   justify-content: center;
