@@ -31,8 +31,8 @@ class UsuariosController
 
     public function delete()
     {
+        die(var_dump($_POST));
         $id = $_POST['id'];
-        error_log('UsuariosController::delete called, id=' . $id);
         App::get('database')->delete('usuarios', $id);
 
         header('Location: /admin/usuarios');
