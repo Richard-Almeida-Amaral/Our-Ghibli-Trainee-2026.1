@@ -34,6 +34,8 @@ $router->get('admin/posts', 'PostsController@index');
 //Tabela de Usuarios
 $router->get('admin/usuarios', 'UsuariosController@index');
 
+$router->post('users/criar', 'ControllerUsuario@criar');
+$router->post('users/delete', 'ControllerAdmUsuarios@delete');
 
 
 
