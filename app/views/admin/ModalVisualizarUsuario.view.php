@@ -45,7 +45,7 @@
         <div class="modcont" id="modbody<?=$usuario-> id?>">
           
           <div class="modtit">
-            <h2>Visualização do Usuário</h2>
+            <h1>Visualização do Usuário</h1>
             
             <button id="fechamod" class="fechax" onclick="fecharModalVisualizar('Usumodalc')">&times</button>
           </div>
@@ -114,7 +114,7 @@
         <div class="modcont">
           
           <div class="modtit titExcluir">
-            <h2>Excluir o Usuário</h2>
+            <h1>Excluir o Usuário</h1>
           </div>
 
           <div class="modbody bodyExcluir">

@@ -14,16 +14,19 @@ class ControllerAdmUsuarios
         return view('admin/ADM-usuarios', compact('usuarios'));
     }
 
-    // public function store()
-    // {
-    //     $parameters = [
-    //         'nome'=> $_POSTS['nome'],
-    //         'email' => $_POSTS['email'],
-    //         'senha' => $_POSTS['senha'],
-    //     ];
+    public function edit()
+    {
+        $parameters = [
+            'nome' => $_POST['nome'],
+            'email' => $_POST['email'],
+            'senha' => $_POST['senha'],
+        ];
 
-    //     App::get('database')->insert('usuarios', $parameters);
+        $id = $_POST['id'];
 
-    //     header('Location: /ADM-usuarios');
-    // }
+        App::get('database')->update('usuarios', $id, $parameters);
+
+        header('Location: /ADM-usuarios');
+    }
+
 }

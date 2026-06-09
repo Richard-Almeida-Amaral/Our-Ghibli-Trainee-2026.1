@@ -14,7 +14,7 @@
   font-weight: <weight>;
   font-style: normal;
 } */
-body{
+body {
   background-color: #ffffff;
   display: flex;
   justify-content: center;
@@ -22,14 +22,12 @@ body{
   height: 100vh;
 }
 
-
-.usubtnvisualizar{
+.usubtnvisualizar {
   border: none;
   background-color: transparent;
 }
 
-
-.modoverlay{
+.modoverlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -42,53 +40,51 @@ body{
   z-index: 1000;
 }
 
-.modcont{
-  background-color: #E8D8C3;
+.modcont {
+  background-color: #e8d8c3;
   width: 100%;
   max-width: 500px;
   border-radius: 28px;
   overflow: hidden;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0,.3);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.modtit{
-  background-color: #20315A;
+.modtit {
+  background-color: #20315a;
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.modtit h2{
+.modtit h1 {
   color: #ffffff;
-  font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
-
-.fechax{
+.fechax {
   background: none;
   border: none;
-  color: #9C0000;
+  color: #9c0000;
   font-size: 4rem;
   cursor: pointer;
   line-height: 1;
   transition: transform 0.2s;
 }
 
-.fechax:hover{
+.fechax:hover {
   transform: scale(1.2);
 }
 
-.modbody{
+.modbody {
   padding: 24px;
 }
 
-.inputcont{
+.inputcont {
   margin-bottom: 15px;
 }
 
-.inputcont label{
+.inputcont label {
   display: block;
   margin-bottom: 8px;
   color: #000000;
@@ -96,13 +92,13 @@ body{
   font-size: 16px;
 }
 
-.input-wrapper{
+.input-wrapper {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.input-wrapper .InfoCont{
+.input-wrapper .InfoCont {
   width: 100%;
   height: 38px;
   padding: 10px 14px;
@@ -114,14 +110,14 @@ body{
   outline: none;
 }
 /* Informação sem icones */
-.Info{
+.Info {
   font-size: 15px;
   font-family: "Alice", serif;
   font-weight: 450;
   font-style: normal;
 }
 /* Informação com icones */
-.InfoCI{
+.InfoCI {
   margin-left: 30px;
   font-size: 15px;
   font-family: "Alice", serif;
@@ -129,18 +125,18 @@ body{
   font-style: normal;
 }
 
-.input-wrapper:not(.no-icon) InfoCont{
+.input-wrapper:not(.no-icon) InfoCont {
   padding-left: 45px;
 }
 
-.input-icon{
+.input-icon {
   position: absolute;
   left: 15px;
   font-size: 20px;
   color: #333333;
 }
 
-.toggle-password{
+.toggle-password {
   position: absolute;
   right: 15px;
   font-size: 18px;
@@ -148,50 +144,49 @@ body{
   cursor: pointer;
 }
 
-.toggle-password:hover{
+.toggle-password:hover {
   color: #000000;
 }
 
-.InfoCont::placeholder{
+.InfoCont::placeholder {
   color: #919191;
 }
 
-.botaoexcluir{
+.botaoexcluir {
   background-color: transparent;
 }
 
-.botaoexcluir:hover{
+.botaoexcluir:hover {
   background-color: transparent;
 }
 
-.titExcluir{
+.titExcluir {
   justify-content: center;
 }
 
-.bodyExcluir{
+.bodyExcluir {
   text-align: center;
   padding: 30px 20px;
 }
 
-.icon-excluir{
+.icon-excluir {
   font-size: 2rem;
   color: #000000;
   margin-bottom: 20px;
 }
 
-.textoExcluir{
+.textoExcluir {
   font-size: 20px;
   color: #000000;
   margin-bottom: 30px;
   font-weight: 500;
 }
 
-.btsExcluir{
+.btsExcluir {
   display: flex;
   justify-content: center;
   gap: 35px;
 }
-
 
 .iconlix {
   width: 44px;
@@ -199,7 +194,7 @@ body{
   margin-bottom: 14px;
 }
 
-.btnAcoesUsu{
+.btnAcoesUsu {
   padding: 12px 30px;
   font-size: 16px;
   color: #ffffff;
@@ -210,21 +205,20 @@ body{
   transition: opacity 0.2s;
 }
 
-.btnAcoesUsu:hover{
+.btnAcoesUsu:hover {
   opacity: 0.9;
 }
 
-.btnUsuCancelar{
-  background-color: #20315A;
+.btnUsuCancelar {
+  background-color: #20315a;
 }
 
-.btnUsuExcluir{
-  background-color: #E51F1F;
+.btnUsuExcluir {
+  background-color: #e51f1f;
 }
 
-
-@media (max-width: 700px){
-  .modoverlay{
+@media (max-width: 700px) {
+  .modoverlay {
     padding: 2rem;
   }
 }

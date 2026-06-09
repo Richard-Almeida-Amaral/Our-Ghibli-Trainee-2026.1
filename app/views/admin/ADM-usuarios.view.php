@@ -35,10 +35,8 @@
             
             <div id="ModaisImportados">
                 <?php require('add.view.php');?>
-                
-                        <?php require('edit.view.php');?>
-                        <?php require('ModalVisualizarUsuario.view.php');?>
-                    
+                <?php require('edit.view.php');?>
+                <?php require('ModalVisualizarUsuario.view.php');?>
             </div>
 
         <section class="Topo">

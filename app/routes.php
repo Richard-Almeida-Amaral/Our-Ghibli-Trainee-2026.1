@@ -40,6 +40,8 @@ $router->get('dashboard', 'ControllerDashboard@Dashboard');
 $router->get('users', 'ControllerAdmUsuarios@AdmUsuarios');
 $router->get('publi', 'ControllerAdmPublicacoes@AdmPublicacoes');
 
+$router->post('users/edit', 'ControllerAdmUsuarios@edit');
+
 
 
 
