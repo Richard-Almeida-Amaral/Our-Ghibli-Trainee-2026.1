@@ -10,7 +10,7 @@ class UsuariosController
 
     public function index()
     {
-        $usuarios = App:: get('database')->selectAll('usuarios'); 
+        $usuarios = App::get('database')->selectAll('usuarios');
 
         return view('admin/tabelaUsuarios', compact('usuarios'));
     }
@@ -32,11 +32,9 @@ class UsuariosController
     public function delete()
     {
         $id = $_POST['id'];
-        error_log('UsuariosController::delete called, id='.$id);
+        error_log('UsuariosController::delete called, id=' . $id);
         App::get('database')->delete('usuarios', $id);
 
-        header('Location: /admin/tabelaUsuarios');
+        header('Location: /admin/usuarios');
     }
-
 }
- 
