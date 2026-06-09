@@ -1,6 +1,6 @@
-<section class="UsuModalCont modoverlay" id="usuarioCriar" style="display:none;">
+<section class="UsuModalCont ADMPMA-container modoverlay" id="usuarioCriar">
     <div id="Usumodalc">
-        <form method="POST" action="/admin/usuarios/criar" class="ADMPMA-container" id="usuarioCriar">
+        <form method="POST" action="/admin/usuarios/criar" class="FormCriarUsuario" id="usuarioCriar">
             <div class="ADMPMA-header">
                 <h1>Criar Usuário</h1>
             </div>
