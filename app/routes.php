@@ -4,6 +4,10 @@ namespace App\Controllers;
 use App\Controllers\ExampleController;
 use App\Core\Router;
 
+
+$router = new Router;
+
+
 // Site
 
 //Landing Page

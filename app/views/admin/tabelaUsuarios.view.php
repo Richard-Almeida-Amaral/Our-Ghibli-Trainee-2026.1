@@ -33,9 +33,10 @@
     </head>
         <body class="ADMU-body">
         <div id="ModaisImportados">
-            <?php require('add.view.php');?>
-            <?php require('edit.view.php');?>
-            <?php require('ModalVisualizarUsuario.view.php');?>
+            <?php require('./app/views/admin/modaisUsuarios/usuarioVisualizar.php') ?>
+            <?php require('./app/views/admin/modaisUsuarios/usuarioEditar.php') ?>
+            <?php require('./app/views/admin/modaisUsuarios/usuarioCriar.php') ?>
+            <?php require('./app/views/admin/modaisUsuarios/usuarioExcluir.php') ?>
             
         </div>
 
