@@ -27,6 +27,9 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
+
+    
+
     public function delete($table, $id)
     {
         $sql = sprintf(
