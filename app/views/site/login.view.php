@@ -57,8 +57,10 @@
                 </div>
 
                 <div class="modal-downlogin">
-                    <div id="bottom">					
+                    <div id="bottom">	
+                        <a href="/admin">				
                         <input type="button" value="Login" id="botaologin">
+                        </a>
                     </div>
                 </div>
 

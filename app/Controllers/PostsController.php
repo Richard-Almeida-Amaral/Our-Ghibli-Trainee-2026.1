@@ -10,6 +10,7 @@ class PostsController
 
     public function index()
     {
-        return view('admin/tabelaPublicacoes');
+        $publicacoes =  App ::get('database')->selectJoinADMP('posts','usuarios');
+        return view('admin/tabelaPublicacoes',compact('publicacoes'));
     }
 }

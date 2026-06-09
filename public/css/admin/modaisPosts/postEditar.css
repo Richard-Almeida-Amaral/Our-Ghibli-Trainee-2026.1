@@ -38,7 +38,7 @@ padding: 0;
     height:40vw;
     display: none;
     flex-direction: column;
-
+    display: none;
     position:absolute;
     justify-content: center;
     align-content: center;

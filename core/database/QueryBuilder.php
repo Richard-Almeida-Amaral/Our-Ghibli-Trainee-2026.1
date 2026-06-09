@@ -42,4 +42,18 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
+    public function selectJoinADMP($table1,$table2)
+    {
+        $sql = "select p.id,p.titulo,u.nome as autor,DATE_FORMAT(p.data, '%d/%m/%Y') as dataformatada from {$table1} as p join {$table2} as u on p.usuarios_id = u.id";
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
 }
