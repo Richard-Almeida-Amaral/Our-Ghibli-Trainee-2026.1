@@ -25,6 +25,7 @@ $router->get('login', 'LoginController@index');
 $router->get('sidebar', 'SidebarController@index');
 
 
+
 // Admin
 
 //Dashboard
@@ -38,6 +39,9 @@ $router->get('admin/usuarios', 'UsuariosController@index');
 
 $router->post('admin/usuarios/criar', 'UsuariosController@criar');
 $router->post('admin/usuarios/excluir', 'UsuariosController@delete');
+
+
+
 
 
 

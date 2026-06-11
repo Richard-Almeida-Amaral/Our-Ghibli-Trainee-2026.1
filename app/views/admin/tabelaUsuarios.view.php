@@ -7,6 +7,10 @@
     <title>Administração Usuários</title>
     <link rel="stylesheet" href="../../../public/css/admin/tabelaUsuarios.css" />
 
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <!-- Alice -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -141,7 +145,9 @@
         </div>
     </section>
 
-    <section>
+    <?php require(__DIR__ . '/../site/paginacao.php') ?>
+
+    <!-- <section>
         <div class="ADMU-paginação">
             <button class="ADMU-bptão-paginação">
                 <</button>
@@ -150,7 +156,7 @@
                     <button class="ADMU-bptão-paginação">3</button>
                     <button class="ADMU-bptão-paginação">></button>
         </div>
-    </section>
+    </section> -->
 </body>
 
 <script src="../../../public/js/Modais.js"></script>
