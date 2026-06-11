@@ -21,14 +21,15 @@ class PaginacaoController
 
         $itensPorPagina = 6;
 
-        $inicio = $itensPorPagina + $paginaAtual - $itensPorPagina;
+        $inicio = $itensPorPagina * ($paginaAtual - 1);
 
         $countUsuarios = App::get('database')->countAll('usuarios');
 
         if ($inicio >= $countUsuarios && $countUsuarios > 0) {
             return redirect('admin/usuarios');
         }
-
+        var_dump($countUsuarios, $inicio, $itensPorPagina);
+        die();
         $usuarios = App::get('database')->selectAll('usuarios', $inicio, $itensPorPagina);
         $totalPaginas = ceil($countUsuarios / $itensPorPagina);
 

@@ -10,10 +10,32 @@ class UsuariosController
 
     public function index()
     {
-        $usuarios = App::get('database')->selectAll('usuarios');
 
-        return view('admin/tabelaUsuarios', compact('usuarios'));
+        $paginaAtual = 1;
+
+        if (isset($_GET['paginacaoNumero']) && !empty($_GET['paginacaoNumero'])) {
+            $paginaAtual = intval($_GET['paginacaoNumero']);
+
+            if ($paginaAtual <= 0) {
+                return redirect('admin/usuarios');
+            }
+        }
+
+        $itensPorPagina = 6;
+
+        $inicio = $itensPorPagina * ($paginaAtual - 1);
+
+        $countUsuarios = App::get('database')->countAll('usuarios');
+
+        if ($inicio >= $countUsuarios && $countUsuarios > 0) {
+            return redirect('admin/usuarios');
+        }
+        $usuarios = App::get('database')->selectAll('usuarios', $inicio, $itensPorPagina);
+        $totalPaginas = ceil($countUsuarios / $itensPorPagina);
+
+        return view('admin/tabelaUsuarios', compact('usuarios', 'paginaAtual', 'totalPaginas'));
     }
+
 
     public function criar()
     {

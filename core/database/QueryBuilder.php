@@ -89,7 +89,7 @@ class QueryBuilder
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute();
 
-            return intval($stmt->fetchColumn(PDO::FETCH_NUM)[0]);
+            return intval($stmt->fetch(PDO::FETCH_NUM)[0]);
         } catch (Exception $e) {
             die($e->getMessage());
         }
