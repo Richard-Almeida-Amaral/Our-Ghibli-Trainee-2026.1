@@ -53,7 +53,6 @@ class UsuariosController
 
     public function delete()
     {
-        die(var_dump($_POST));
         $id = $_POST['id'];
         App::get('database')->delete('usuarios', $id);
 
