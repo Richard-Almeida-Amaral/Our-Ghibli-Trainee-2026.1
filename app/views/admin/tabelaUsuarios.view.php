@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="pt-br">
-
+<div class="Usuariosidebar">
+    <?php require('sidebar.view.php');?>
+</div>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

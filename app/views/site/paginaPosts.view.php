@@ -50,7 +50,7 @@
       <section class="conteudo">
         <!-- container com os cards de cada publicação, onde tem a imagem, o título e a descrição de cada publicação -->
         <div class="container">
-        <a href="/post">
+        <a href="/post" class="ancoraPost">
           <div class="card" href="#">
             <img src="../../../public/assets/Totoro.webp" alt="" />
             <h1>Meu Amigo Totoro</h1>

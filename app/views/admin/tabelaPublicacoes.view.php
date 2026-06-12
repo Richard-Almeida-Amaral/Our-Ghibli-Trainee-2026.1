@@ -13,8 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
     <title>Tabela de Posts</title>
 </head>
-
-<body class="ADMP-body">
+<div class="PublicacaoSidebar">
+    <?php require('sidebar.view.php');?>
+</div>
+    <body class="ADMP-body">
     <div class="ADMP-up">
         <h1 class="ADMP-tittle">Lista de Publicação</h1> <!-- Título da Pagina -->
     </div>
@@ -69,7 +71,7 @@
                             </button>
                         </td>
                     </tr>
-                    <!-- importando os modais  -->
+                    <!--importando os modais-->
                 <?php endforeach ?>
             </tbody>
         </table>

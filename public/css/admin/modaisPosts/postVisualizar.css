@@ -1,203 +1,100 @@
-:root {
-
-    /* cores */
-    --azul-claro-ourghibli: #5A78A6;
-    --azul-escuro-ourghibli: #20315A;
-    --bege-ourghibli: #E8D8C3;
-    --branco-ourghibli:#F2F1E6;
-    --preto-ourghibli: #121212;
-    --verde-claro-ourghibli: #7A9478;
-    --verde-escuro-ourghibli: #4F6F52;
-
-    /* fontes */
-    /* nunito */
-    --fonte-nunito: "Nunito", sans-serif;
-    /* alice */
-    --fonte-alice: "Alice", serif;
-
-    /* quicksand */
-    --fonte-quicksand: "Quicksand", serif;
-
+*{
+    padding: 0;
+    margin: 0;
 }
 
-body{
-
-display: flex;
-flex-direction: row;
-gap: 20px;
-overflow: hidden;
-margin: 0;
-padding: 0;
-
-}
-
-
-#containermodalview{
-
-    width:50vw;
-    height:40vw;
-    display: none;
-    flex-direction: column;
-
-    position:absolute;
-    justify-content: center;
-    align-content: center;
-    
-    
-}
-
-#frametitulomodalview{
-    
-    background-color: #20315A;
-    width: 100%;
-    height: 3vw;
-    border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
-
-    
+.PvisualizarContainer{
     display: flex;
-    
+    flex-direction: column;
+    width: 35vw;
+    height: 60vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgb(218, 218, 218);
+    border-radius: 1rem;
 }
 
-#titulomodalview{
-
-    width:100%;
-    color:#F2F1E6;
-    font-family: var(--fonte-quicksand);
-    font-size: 1.3vw;
-    font-weight: 500;
-
-    text-align:center;
-    align-self: center;
-    justify-self: center;
-
-    padding-left: 10%;
+.PVisualizarHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(186, 186, 186);
+    width: 100%;
+    height: 10%;
+    border-top-left-radius:1rem;
+    border-top-right-radius:1rem;
 }
 
-.xmodalviewpost{
-    
-    display:flex;
-
-    height:100%;
-    width:100%;
-    
-    fill: #8B1A1A;
-
-
-    padding-right: -60%;
-
-    cursor: pointer;
-
-}
-
-#containerxmodalviewpost{
-    display:flex;
+.PVisualizarBody{
     height: 100%;
-    width:10%;
-    background-color: #00000000;
-    border: none;
-    outline: none;
+    width: 100%;
 }
 
-#conteudomodalview{
-    
-    background-color: #E8D8C3;
-    height: 100%;
-    gap: 4%;
-    
-    border-bottom-left-radius: 2vw;
-    border-bottom-right-radius: 2vw;
+.PVisualizartittle {
+    text-align: center;
+}
 
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-
+.PvisualizarBody{
     display: flex;
     flex-direction: row;
-
-}
-
-#imagempostmodalview{
-
-    width: 50%;
+    width: 100%;
     height: 100%;
-    border-radius: 1vw;
-
-    background-image: url(../../assets/Totoro.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    border:1px solid #b5a494 ;
-
+    align-items: end;
 }
 
-#tituloedescricaomodalview{
+.PVisualizarLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(152, 147, 147);
+    height: 100%;
+    width: 100%;
+}
+.PVisualizarLeft div{
+    width: fit-content;
+}
+
+.PVisualizarIMG{
+    width: 90%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.PVisualizarRight{
     display: flex;
     flex-direction: column;
-
-    width: 50%;
-    height: 100%;
-    gap: 2%;
-
-}
-
-#frametitulopostmodalview{
-
+    justify-content: end;
     width: 100%;
-    height:35%;
-    
-    background-color: #ebdcd0;
-    border:1px solid #b5a494 ;
-
-    border-radius: 1vw;
-
-    overflow-y: scroll;
-    scrollbar-width: none;
+    height:98%;
+    gap: 1rem;
+    padding-inline: 1rem;
 }
 
-#framedescricaomodalview{
+.PVisualizarareas{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
 
+.PVisualizarareas:has(> .PVisualizarTextArea) {
+  height: 100%;
+}
+
+.PVisualizarinput{
     width: 100%;
-    height:63%;
-
-    background-color: #ebdcd0;
-    border:1px solid #b5a494 ;
-    
-    border-radius: 1vw;
-
-    overflow-y: scroll;
-    scrollbar-width: none;
+    border-radius: 1rem;
+    border: 0;
+    padding: 0.4rem;
 }
 
-#titulopostmodalview{
-    
+.PVisualizarTextArea{
+    width: 100%;
     height: 90%;
-    width: 90%;
-    padding: 5%;
-
-    color:#5f564e;
-    font-family: var(--fonte-nunito);
-    font-weight: 700;
-    font-size:0.8vw;
+    resize: none;
+    outline: none;
+    border-radius: 0.5rem;
 }
 
-#descricaomodalview{
-    
-    height: 90%;
-    width: 90%;
-    padding: 5%;
-    
-    color:#5f564e;
-    font-family: var(--fonte-nunito);
-    font-weight: 500;
-    font-size: 0.8vw;
-}
-
-#botoesmodalview{
-
-    height: 8%;
-    width: 100%;
-
-}

@@ -49,7 +49,7 @@
           <ul>
             <!-- Itens de navegação da sidebar -->
             <li class="itemSidebar active" >
-              <a class="linksidebar" href="#" id="iconeDashboard">
+              <a class="linksidebar" href="/admin" id="iconeDashboard">
                 <i class="icone-sidebar" >
                   <img src="../../../public/assets/casa.png" alt="" srcset="" />
               </i>
@@ -58,7 +58,7 @@
             </li>
             <!-- Itens de navegação da sidebar -->
             <li class="itemSidebar" id="iconePostagens">
-              <a href="#">
+              <a href="../admin/posts">
                 <i class="icone-sidebar">
                   <img
                     src="../../../public/assets/postagem-no-instagram.png" alt="" srcset=""/>
@@ -67,7 +67,7 @@
             </li>
             <!-- Itens de navegação da sidebar -->
             <li class="itemSidebar" id="iconeUsuarios">
-              <a href="#">
+              <a href="../admin/usuarios">
                 <i class="icone-sidebar">
                   <img src="../../../public/assets/grupo-de-usuarios.png" alt="" srcset=""/></i>
                 <i>
@@ -82,15 +82,16 @@
 
 
       <!-- Parte do Logout da Sidebar -->
-
-      <div class="logoutSidebar">
-        <button type="button" id="buttonLogout">
-          <i class="icone-sidebar">
-            <img id="iconeLogout" src="../../../public/assets/seta.png" alt="" srcset="" />
-          </i>
-          <span class="itemDescricao">Sair</span>
-        </button>
-      </div>
+      <a href="/">
+        <div class="logoutSidebar">
+          <button type="button" id="buttonLogout">
+            <i class="icone-sidebar">
+              <img id="iconeLogout" src="../../../public/assets/seta.png" alt="" srcset="" />
+            </i>
+            <span class="itemDescricao">Sair</span>
+          </button>
+        </div>
+      </a>
     </aside>
   </body>
   <script src="../../../public/js/sidebar.js"></script>

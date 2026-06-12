@@ -24,6 +24,7 @@ $router->get('login', 'LoginController@index');
 
 $router->get('sidebar', 'SidebarController@index');
 
+$router->get('aux', 'ControllerAUX@index');
 
 
 // Admin

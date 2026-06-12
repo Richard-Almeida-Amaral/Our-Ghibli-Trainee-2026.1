@@ -1,35 +1,3 @@
-:root {
-
-    /* cores */
-    --azul-claro-ourghibli: #5A78A6;
-    --azul-escuro-ourghibli: #20315A;
-    --bege-ourghibli: #E8D8C3;
-    --branco-ourghibli:#F2F1E6;
-    --preto-ourghibli: #121212;
-    --verde-claro-ourghibli: #7A9478;
-    --verde-escuro-ourghibli: #4F6F52;
-
-    /* fontes */
-    /* nunito */
-    --fonte-nunito: "Nunito", sans-serif;
-    /* alice */
-    --fonte-alice: "Alice", serif;
-
-    /* quicksand */
-    --fonte-quicksand: "Quicksand", serif;
-
-}
-
-body{
-
-display: flex;
-flex-direction: row;
-gap: 20px;
-overflow: hidden;
-margin: 0;
-padding: 0;
-
-}
 
 
 #containermodalview{
@@ -38,7 +6,7 @@ padding: 0;
     height:40vw;
     display: none;
     flex-direction: column;
-    display: none;
+    display: flex;
     position:absolute;
     justify-content: center;
     align-content: center;
@@ -471,7 +439,6 @@ padding: 0;
 
 }
 
-background-color: #00000050;
 }
 
 #botoesmodaledit{

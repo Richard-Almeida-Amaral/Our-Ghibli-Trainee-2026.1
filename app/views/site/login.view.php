@@ -58,7 +58,7 @@
 
                 <div class="modal-downlogin">
                     <div id="bottom">	
-                        <a href="/admin">				
+                        <a href="/admin" class="ancoralogin">				
                         <input type="button" value="Login" id="botaologin">
                         </a>
                     </div>

@@ -224,6 +224,10 @@
     transition: ease-in-out 100ms;
 }
 
+.ancoralogin{
+    text-decoration: none;
+}
+
 @media (max-width: 414px){
     #logologin{
         height: 10rem;
