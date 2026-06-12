@@ -50,6 +50,7 @@
       <section class="conteudo">
         <!-- container com os cards de cada publicação, onde tem a imagem, o título e a descrição de cada publicação -->
         <div class="container">
+        <a href="/post">
           <div class="card" href="#">
             <img src="../../../public/assets/Totoro.webp" alt="" />
             <h1>Meu Amigo Totoro</h1>
@@ -63,6 +64,7 @@
               layouts e maquetes visuais.
             </p>
           </div>
+        </a>
           <div class="card">
             <img src="../../../public/assets/Totoro.webp" alt="" />
             <h1>Lorem ipsum</h1>

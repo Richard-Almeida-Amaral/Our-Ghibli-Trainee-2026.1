@@ -61,7 +61,7 @@
                         </div>
                         
                         <div class="ImgPosts">
-                            <img src="../../../public/assets/Imagem (3).png" alt="">
+                            <img class="" src="../../../public/assets/Imagem (3).png" alt="">
                         </div>
 
                     </div>
