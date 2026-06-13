@@ -58,4 +58,20 @@ class UsuariosController
 
         header('Location: /admin/usuarios');
     }
+
+
+    public function edit()
+    {
+    $parameters = [
+            'nome' => $_POST['nome'],
+            'email' => $_POST['email'],
+            'senha' => $_POST['senha'],  
+        ];
+
+        $id =$_POST['id'];
+
+        App::get('database')->update('usuarios', $id, $parameters);
+        
+        header('Location: /admin/usuarios');
+    }
 }
