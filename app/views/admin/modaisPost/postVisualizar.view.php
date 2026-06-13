@@ -18,27 +18,27 @@
     <div class="PVisualizarRight">
       <div class="PVisualizarareas">
         <label for="">Id</label>
-        <input type="number" name="" id="" placeholder="codigo" class="PVisualizarinput">
+        <input type="number" name="" id="" placeholder="codigo" class="PVisualizarinput" disabled>
       </div>
 
       <div class="PVisualizarareas">
         <label for="">Título</label>
-        <input type="text" name="" id="" placeholder="Título" class="PVisualizarinput">
+        <input type="text" name="" id="" placeholder="Título" class="PVisualizarinput" disabled>
       </div>
       
       <div class="PVisualizarareas">
         <label for="">Autor</label>
-        <input type="text" name="" id="" placeholder="Autor" class="PVisualizarinput">
+        <input type="text" name="" id="" placeholder="Autor" class="PVisualizarinput" disabled>
       </div>
       
       <div class="PVisualizarareas">
         <label for="">Data</label>
-        <input type="text" name="" id="" placeholder="Data" class="PVisualizarinput">
+        <input type="text" name="" id="" placeholder="Data" class="PVisualizarinput" disabled>
       </div>
       
       <div class="PVisualizarareas">
         <label for="">Descricao</label>
-        <textarea name="" id="" class="PVisualizarTextArea" class="PVisualizarinput">
+        <textarea name="" id="" class="PVisualizarTextArea" class="PVisualizarinput" disabled>
           Descricao
         </textarea>
       </div>

@@ -72,6 +72,7 @@
                         </td>
                     </tr>
                     <!--importando os modais-->
+                    <?php require('./app/views/admin/modaisPost/postCriar.view.php') ?>
                 <?php endforeach ?>
             </tbody>
         </table>
