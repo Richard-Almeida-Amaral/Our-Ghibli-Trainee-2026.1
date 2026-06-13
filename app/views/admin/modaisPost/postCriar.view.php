@@ -4,7 +4,7 @@
 <!-- MODAL CRIAÇÃO  -->
 <div id="PCriarfiltro">
   <div class="modalContainer" id="ModalCriar">
-    <form action="/criarpost" method="POST">
+    <form action="" method="">
       <div class="modalHeader">
         <h2>Criação de Publicação</h2>
       </div>
@@ -34,7 +34,7 @@
 
       <!-- Botões inferiores Criação -->
       <div class="modalAcoes">
-        <button class="btnCancelar" onclick="fecharModal('ModalCriar')">
+        <button class="btnCancelar" onclick="fecharModal('usuarioCriar')">
           Cancelar
         </button>
         <button class="btnCriar">

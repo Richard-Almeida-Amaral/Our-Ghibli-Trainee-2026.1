@@ -8,6 +8,7 @@
 
   <div class="PVisualizarHeader">
     <h1 class="PVisualizartittle">Visualizar Publicação</h1>
+    <button type="button" id="PVisualizarfechar" class="fechax" onclick="fecharModal('PVisualizarContainer')">&times</button>
   </div>
 
   <div class="PVisualizarBody">
