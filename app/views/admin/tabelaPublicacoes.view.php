@@ -17,9 +17,12 @@
     <title>Tabela de Posts</title>
 </head>
 <div class="PublicacaoSidebar">
-    <?php require('sidebar.view.php');?>
+    <?php require('sidebar.view.php'); ?>
 </div>
-    <body class="ADMP-body">
+
+<div id="filtrofds"></div>
+
+<body class="ADMP-body">
     <div class="ADMP-up">
         <h1 class="ADMP-tittle">Lista de Publicação</h1> <!-- Título da Pagina -->
     </div>
@@ -74,10 +77,11 @@
                             </button>
                         </td>
                     </tr>
-                    <!--importando os modais-->
-                    <?php require('./app/views/admin/modaisPost/postCriar.view.php') ?>
+                    <!--importando os modais por user-->
                     <?php require('./app/views/admin/modaisPost/postVisualizar.view.php') ?>
                 <?php endforeach ?>
+                <!-- importando modal de criar -->
+                <?php require('./app/views/admin/modaisPost/postCriar.view.php') ?>
             </tbody>
         </table>
         <tfoot class="ADMP-tablefooter"> <!-- rodape da tabela -->
@@ -85,7 +89,7 @@
         </tfoot>
         <div class="ADMP-pag">
             <button class="ADMP-btnpag">
-                    <</button>
+                << /button>
                     <button class="ADMP-btnpag">1</button>
                     <button class="ADMP-btnpag">2</button>
                     <button class="ADMP-btnpag">3</button>
@@ -94,6 +98,6 @@
     </div>
 
 </body>
-<script type="text/javascript" src="../../../public/js/tabelaPublicacoes.js"></script>
+<script type="text/javascript" src="../../../public/js/Modais.js"></script>
 
 </html>

@@ -2,7 +2,7 @@
   <link rel="stylesheet" href="../../../../public/css/admin/modaisPosts/postCriar.css">
 </head>
 <!-- MODAL CRIAÇÃO  -->
-<div id="PCriarfiltro">
+
   <div class="modalContainer" id="ModalCriar">
     <form action="" method="">
       <div class="modalHeader">
@@ -44,4 +44,3 @@
       <script src="../../../public/js/Modais.js"></script>
     </form>
   </div>
-</div>
