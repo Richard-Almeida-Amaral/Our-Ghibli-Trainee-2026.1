@@ -65,11 +65,12 @@ class UsuariosController
     $parameters = [
             'nome' => $_POST['nome'],
             'email' => $_POST['email'],
-            'senha' => $_POST['senha'],  
+            'senha' => $_POST['senha'],
+            'imagem' => '1'
         ];
 
-        $id =$_POST['id'];
-
+        $id = $_POST['id'];
+        
         App::get('database')->update('usuarios', $id, $parameters);
         
         header('Location: /admin/usuarios');

@@ -96,12 +96,13 @@ class QueryBuilder
     }
 
 
-    public function edit($table, $id, $parameters)
+    public function update($table, $id, $parameters)
     {
-        $sql = sprintf('UPDATE %s SET %s WHERE id= %s',
+        $sql = sprintf(
+        'UPDATE %s SET %s WHERE id= %s',
         $table,
         implode(', ', array_map(function($param){
-            return $param . ' = :' .$param;
+            return $param . ' = :' . $param;
         }, array_keys($parameters))),
 
         $id
@@ -109,6 +110,7 @@ class QueryBuilder
 
         try {
             $stmt = $this->pdo->prepare($sql);
+            
             $stmt->execute($parameters);
 
             return $stmt->fetchAll(PDO::FETCH_CLASS);

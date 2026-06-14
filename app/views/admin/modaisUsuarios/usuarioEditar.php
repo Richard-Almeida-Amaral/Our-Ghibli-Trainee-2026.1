@@ -3,19 +3,22 @@
         <div class="ADMPME-header" id="ModalEditUsu">
             <h1>Editar Usuário</h1>
         </div>
-
         <div class="ADMPME-mid">
+            
+            <div class="ADMPME-fields">
+                <input type="hidden" name="id" id="IdEditarU<?=$usuario->id ?>" class="ADMPME-input">
+            </div>
             <div class="ADMPME-fields">
                 <label for="">Nome</label>  
-                <input type="text" name="" id="NomeEditarU<?=$usuario->nome?>" placeholder="Digite o seu nome" class="ADMPME-input">
+                <input type="text" name="nome" id="NomeEditarU<?=$usuario->nome?>" placeholder="<?=$usuario->nome?>" class="ADMPME-input">
             </div>
             <div class="ADMPME-fields">
                 <label for="">Email</label>
-                <input type="email" name="" id="EmailEditarU<?=$usuario->email?>" placeholder="Digite o seu email" class="ADMPME-input">
+                <input type="email" name="email" id="EmailEditarU<?=$usuario->email?>" placeholder="<?=$usuario->email?>" class="ADMPME-input">
             </div>
             <div class="ADMPME-fields">
                 <label for="">Senha</label>
-                <input type="password" name="" id="SenhaEditarU<?=$usuario->senha?>" placeholder="Digite a sua senha" class="ADMPME-input">
+                <input type="password" name="senha" id="SenhaEditarU<?=$usuario->senha?>" placeholder="<?=$usuario->senha?>" class="ADMPME-input">
             </div>
         </div>
 
