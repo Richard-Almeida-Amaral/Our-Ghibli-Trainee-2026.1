@@ -1,4 +1,4 @@
-    <form method="POST" action="admin/usuarios/edit" class="ADMPME-container" id="usuarioEditar<?= $usuario->id ?>">
+    <form method="POST" action="/admin/usuarios/edit" class="ADMPME-container" id="usuarioEditar<?= $usuario->id ?>">
 
         <div class="ADMPME-header" id="ModalEditUsu">
             <h1>Editar Usuário</h1>
