@@ -72,9 +72,9 @@
                         </td>
                     </tr>
                     <!--importando os modais-->
-                    <?php require('./app/views/admin/modaisPost/postCriar.view.php') ?>
                     <?php require('./app/views/admin/modaisPost/postVisualizar.view.php') ?>
-                <?php endforeach ?>
+                    <?php endforeach ?>
+                    <?php require('./app/views/admin/modaisPost/postCriar.view.php') ?>
             </tbody>
         </table>
         <tfoot class="ADMP-tablefooter"> <!-- rodape da tabela -->
