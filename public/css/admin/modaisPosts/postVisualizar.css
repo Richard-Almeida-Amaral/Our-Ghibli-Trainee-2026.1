@@ -16,6 +16,11 @@
     border-radius: 1rem;
 }
 
+.PVisualizarForm{
+    width: 100%;
+    height: 100%;
+}
+
 .PVisualizarHeader{
     display: flex;
     align-items: center;

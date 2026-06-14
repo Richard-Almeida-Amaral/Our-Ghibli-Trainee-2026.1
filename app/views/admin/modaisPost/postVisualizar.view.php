@@ -5,7 +5,7 @@
 
 <!-- modal visualizar post -->
 <div class="PvisualizarContainer" id="Pvisualizar">
-  <form action="" method="POST">
+  <form action="" method="POST" class="PVisualizarForm">
 
     <div class="PVisualizarHeader">
       <h1 class="PVisualizartittle">Visualizar Publicação</h1>
