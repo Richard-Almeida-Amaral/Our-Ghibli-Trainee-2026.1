@@ -73,10 +73,11 @@
                         </td>
                     </tr>
                     <!--importando os modais por user-->
+                    <?php require('./app/views/admin/modaisPost/postVisualizar.view.php') ?>
+                    <?php require('./app/views/admin/modaisPost/postExcluir.view.php') ?>
                     <?php endforeach ?>
                     <!-- importando modal de criar -->
                     <?php require('./app/views/admin/modaisPost/postCriar.view.php') ?>
-                    <?php require('./app/views/admin/modaisPost/postVisualizar.view.php') ?>
             </tbody>
         </table>
         <tfoot class="ADMP-tablefooter"> <!-- rodape da tabela -->
