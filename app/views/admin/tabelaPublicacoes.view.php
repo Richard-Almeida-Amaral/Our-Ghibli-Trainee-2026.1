@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="ADMP-html">
 
-
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=], initial-scale=1.0">
@@ -20,7 +17,6 @@
     <?php require('sidebar.view.php'); ?>
 </div>
 
-<div id="filtrofds"></div>
 
 <body class="ADMP-body">
     <div class="ADMP-up">
@@ -56,9 +52,8 @@
                         <td class="ADMP-cell"><?= $publicacao->autor ?></td>
                         <td class="ADMP-cell"><?= $publicacao->dataformatada ?></td>
 
-
                         <td class="ADMP-cell"> <!-- Icones da Tabela -->
-                            <button class="ADMP-btnIcons" onclick="abrirModal('containermodalview')">
+                            <button class="ADMP-btnIcons" onclick="abrirModal('Pvisualizar')">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ADMP-icons" viewBox="0 0 16 16">
                                     <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
                                     <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
@@ -78,18 +73,17 @@
                         </td>
                     </tr>
                     <!--importando os modais por user-->
+                    <?php endforeach ?>
+                    <!-- importando modal de criar -->
+                    <?php require('./app/views/admin/modaisPost/postCriar.view.php') ?>
                     <?php require('./app/views/admin/modaisPost/postVisualizar.view.php') ?>
-                <?php endforeach ?>
-                <!-- importando modal de criar -->
-                <?php require('./app/views/admin/modaisPost/postCriar.view.php') ?>
             </tbody>
         </table>
         <tfoot class="ADMP-tablefooter"> <!-- rodape da tabela -->
             <div class="ADMP-auxtablefooter"></div>
         </tfoot>
         <div class="ADMP-pag">
-            <button class="ADMP-btnpag">
-                << /button>
+                    <button class="ADMP-btnpag"><</button>
                     <button class="ADMP-btnpag">1</button>
                     <button class="ADMP-btnpag">2</button>
                     <button class="ADMP-btnpag">3</button>
