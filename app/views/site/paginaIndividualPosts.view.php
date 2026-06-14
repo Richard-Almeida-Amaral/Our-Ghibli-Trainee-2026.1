@@ -29,8 +29,10 @@
     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
     rel="stylesheet"
     />
-    
-    <main>
+    <div id="navbar">
+    <?php require('navbar.view.php');?>
+    </div>
+    <main class="PIP-Main">
         <section class="PIP-Topo">
             <img src="../../../public/assets/TopoPip.png" alt="">
         </section>
@@ -79,5 +81,8 @@
             </div>
         </section>
     </main>
+    <div id="footer">
+    <?php require('footer.view.php');?>
+    </div>
 </body>
 </html>

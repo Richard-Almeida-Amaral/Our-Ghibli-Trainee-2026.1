@@ -42,9 +42,7 @@ body{
 }
 
 #navbar{
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+    background-color: #E8D8C3;
 }
 
 .main{
