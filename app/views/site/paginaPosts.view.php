@@ -41,7 +41,10 @@
       <section>
         <div class="topoPaginaDePosts">
           <h1>Publicações</h1>
-          <input type="text" id="pesquisa" placeholder="Pesquisar" />
+          <form action="">
+            <input type="text" id="pesquisa" placeholder="Pesquisar" />
+          </form>
+          
           <!-- input de pesquisa -->
         </div>
       </section>

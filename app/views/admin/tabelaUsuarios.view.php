@@ -61,9 +61,11 @@
         </div>
 
         <div class="acoestopo">
-            <div class="pesqusuario">
+            <form action="" class="pesqusuario">[
                 <input type="text" id="pesquisa" placeholder="Pesquisar" />
-            </div>
+            </form>
+                
+            
 
             <div class="adcusuario">
                 <button onclick="abrirModal('usuarioCriar', 'filtromodalview')">+ Adicionar Usuário</button>
