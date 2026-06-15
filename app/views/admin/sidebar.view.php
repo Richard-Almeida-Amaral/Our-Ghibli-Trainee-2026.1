@@ -30,6 +30,14 @@
       rel="stylesheet"
     />
   </head>
+  <?php
+            //requisição da rota de maneira limpa para comparar
+    $currentPath = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
+            // variaveis para o active recebendo caminho/rota
+    $activeDashboard = $currentPath === 'admin';
+    $activePosts = $currentPath === 'admin/posts';
+    $activeUsuarios = $currentPath === 'admin/usuarios';
+  ?>
   <body>
     <!-- Corpo da Sidebar -->
     <aside class="sidebar" id="sidebar">
@@ -46,7 +54,7 @@
         <nav class="navegacaoSidebar">
           <ul>
             <!-- Itens de navegação da sidebar -->
-            <li class="itemSidebar active" >
+            <li class="itemSidebar <?= $activeDashboard ? 'active' : '' ?>" > <!-- Verificação active -->
               <a class="linksidebar" href="/admin" id="iconeDashboard">
                 <i class="icone-sidebar" >
                   <img src="../../../public/assets/casa.png" alt="" srcset="" />
@@ -55,8 +63,8 @@
               </a>
             </li>
             <!-- Itens de navegação da sidebar -->
-            <li class="itemSidebar" id="iconePostagens">
-              <a href="../admin/posts">
+            <li class="itemSidebar <?= $activePosts ? 'active' : '' ?>" id="iconePostagens"><!-- Verificação active -->
+              <a href="/admin/posts">
                 <i class="icone-sidebar">
                   <img
                     src="../../../public/assets/postagem-no-instagram.png" alt="" srcset=""/>
@@ -64,8 +72,8 @@
                 <span class="descricao">Postagens</span>
             </li>
             <!-- Itens de navegação da sidebar -->
-            <li class="itemSidebar" id="iconeUsuarios">
-              <a href="../admin/usuarios">
+            <li class="itemSidebar <?= $activeUsuarios ? 'active' : '' ?>" id="iconeUsuarios"><!-- Verificação active -->
+              <a href="/admin/usuarios">
                 <i class="icone-sidebar">
                   <img src="../../../public/assets/grupo-de-usuarios.png" alt="" srcset=""/></i>
                 <i>

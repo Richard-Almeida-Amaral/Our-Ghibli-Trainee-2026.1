@@ -33,7 +33,7 @@ class ComposerStaticInit90bbf95869b4e88bf0dc5022e708a458
         'App\\Controllers\\NavbarController' => __DIR__ . '/../..' . '/app/Controllers/NavbarController.php',
         'App\\Controllers\\PaginaIndividualPostsController' => __DIR__ . '/../..' . '/app/Controllers/PaginaIndividualPostsController.php',
         'App\\Controllers\\PaginaPostsController' => __DIR__ . '/../..' . '/app/Controllers/PaginaPostsController.php',
-        'App\\Controllers\\PostsController' => __DIR__ . '/../..' . '/app/Controllers/PostsController.php',
+        'App\\Controllers\\PostController' => __DIR__ . '/../..' . '/app/Controllers/PostController.php',
         'App\\Controllers\\SidebarController' => __DIR__ . '/../..' . '/app/Controllers/SidebarController.php',
         'App\\Controllers\\UsuariosController' => __DIR__ . '/../..' . '/app/Controllers/UsuariosController.php',
         'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',

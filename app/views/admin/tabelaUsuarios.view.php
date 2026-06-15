@@ -61,7 +61,7 @@
         </div>
 
         <div class="acoestopo">
-            <form action="" class="pesqusuario">[
+            <form action="/" method="GET" class="pesqusuario">
                 <input type="text" id="pesquisa" placeholder="Pesquisar" />
             </form>
                 

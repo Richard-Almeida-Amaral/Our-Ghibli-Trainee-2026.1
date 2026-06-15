@@ -5,14 +5,21 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
-class UsuariosController
+class PostController
 {
+
+    public function index()
+    {
+        $publicacoes =  App::get('database')->selectJoinADMP('posts', 'usuarios');
+        return view('admin/tabelaPublicacoes', compact('publicacoes'));
+    }
+
     public function criar()
     {
 
-        $temporario = $_FILES['imagem']['tpm_name'];
-        $nomeimagem = sha1(uniqid($_FILES['imagem']['name'],true)) . "." .pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
-        $caminhoimagem = "public/assets/imagemPosts/" . $nomeimagem;
+        $temporario = $_FILES['imagem']['tmp_name'];
+        $nomeimagem = sha1(uniqid($_FILES['imagem']['name'], true)) . "." . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
+        $caminhoimagem = "public\assets" . $nomeimagem;
 
         move_uploaded_file($temporario, $caminhoimagem);
 
@@ -21,7 +28,7 @@ class UsuariosController
             'descricao' => $_POST['descricao'],
             'imagem' => $caminhoimagem,
             'data' => $_POST['data'],
-            'usuarios_id'=>$_POST['usuarios_id']
+            'usuarios_id' => 1        // $_POST['usuarios_id'] usar apos login
         ];
 
         App::get('database')->insert('posts', $parameters);

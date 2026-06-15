@@ -33,7 +33,8 @@ $router->get('aux', 'ControllerAUX@index');
 $router->get('admin', 'DashboardController@index');
 
 //Tabela de Publicacoes
-$router->get('admin/posts', 'PostsController@index');
+$router->get('admin/posts', 'PostController@index');
+$router->post('admin/posts/criar', 'PostController@criar');
 
 //Tabela de Usuarios
 $router->get('admin/usuarios', 'UsuariosController@index');

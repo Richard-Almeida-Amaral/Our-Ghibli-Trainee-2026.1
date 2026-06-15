@@ -4,13 +4,13 @@
 <!-- MODAL CRIAÇÃO  -->
 <div id="PCriarfiltro">
   <div class="modalContainer" id="ModalCriar">
-    <form action="" method="">
+    <form action="/admin/posts/criar" method="POST" enctype="multipart/form-data">
       <div class="modalHeader">
         <h2>Criação de Publicação</h2>
       </div>
       <div class="modalBody">
         <label class="arquivo">
-          <input type="file" accept="image/*" />
+          <input type="file" name="imagem" accept="image/*" id="imagem" required />
           <div class="arquivo-content">
             <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12" />
@@ -24,11 +24,12 @@
 
           </div>
           <label class="labelInput">
-            <textarea placeholder="Escreva seu Título..." class="inputCampo"></textarea>
+            <textarea name="titulo" placeholder="Escreva seu Título..." class="inputCampo" required></textarea>
           </label>
           <label class="labelDescricao">
-            <textarea placeholder="Escreva sua Descrição..." class="inputCampoDescricao"></textarea>
+            <textarea name="descricao" placeholder="Escreva sua Descrição..." class="inputCampoDescricao" required></textarea>
           </label>
+          <input type="hidden" name="data" value="<?= date('Y-m-d') ?>" />
         </div>
       </div>
 

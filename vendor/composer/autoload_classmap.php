@@ -14,7 +14,7 @@ return array(
     'App\\Controllers\\NavbarController' => $baseDir . '/app/Controllers/NavbarController.php',
     'App\\Controllers\\PaginaIndividualPostsController' => $baseDir . '/app/Controllers/PaginaIndividualPostsController.php',
     'App\\Controllers\\PaginaPostsController' => $baseDir . '/app/Controllers/PaginaPostsController.php',
-    'App\\Controllers\\PostsController' => $baseDir . '/app/Controllers/PostsController.php',
+    'App\\Controllers\\PostController' => $baseDir . '/app/Controllers/PostController.php',
     'App\\Controllers\\SidebarController' => $baseDir . '/app/Controllers/SidebarController.php',
     'App\\Controllers\\UsuariosController' => $baseDir . '/app/Controllers/UsuariosController.php',
     'App\\Core\\App' => $baseDir . '/core/App.php',
