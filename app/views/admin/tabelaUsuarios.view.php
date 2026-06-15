@@ -61,8 +61,8 @@
         </div>
 
         <div class="acoestopo">
-            <form action="/" method="GET" class="pesqusuario">
-                <input type="text" id="pesquisa" placeholder="Pesquisar" />
+            <form action="/admin/usuarios" method="GET" class="pesqusuario">
+                <input type="text" id="pesquisa" placeholder="Pesquisar" value="<?= $textoBusca ?? '' ?>" />
             </form>
                 
             

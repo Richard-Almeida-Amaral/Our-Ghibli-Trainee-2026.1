@@ -25,7 +25,12 @@ class UsuariosController
 
         $inicio = $itensPorPagina * ($paginaAtual - 1);
 
-        $countUsuarios = App::get('database')->countAll('usuarios');
+        $textoBusca = isset($_GET['busca']) ? $_GET['busca'] : '';
+        $colunasBusca = $textoBusca !== '' ? ['nome']['email'] : null;
+
+
+
+        $countUsuarios = App::get('database')->countAll('usuarios', $textoBusca, $colunasBusca);
 
         if ($inicio >= $countUsuarios && $countUsuarios > 0) {
             return redirect('admin/usuarios');
@@ -33,7 +38,7 @@ class UsuariosController
         $usuarios = App::get('database')->selectAll('usuarios', $inicio, $itensPorPagina);
         $totalPaginas = ceil($countUsuarios / $itensPorPagina);
 
-        return view('admin/tabelaUsuarios', compact('usuarios', 'paginaAtual', 'totalPaginas'));
+        return view('admin/tabelaUsuarios', compact('usuarios', 'paginaAtual', 'totalPaginas', 'textoBusca'));
     }
 
 

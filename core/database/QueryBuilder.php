@@ -81,15 +81,44 @@ class QueryBuilder
         }
     }
 
-    public function countAll($table)
+    public function countAll($table, $textoBusca, $colunaBusca)
     {
-        $sql = "select COUNT(*) from {$table}";
+        $sql = "SELECT COUNT(*) FROM {$table}";
+        $parameters = [];
+
+
+        if ($textoBusca && $colunaBusca) {
+            $sql .= " where $colunaBusca[0] like :textoBusca OR $colunaBusca[1] like :textoBusca";
+        }
 
         try {
             $stmt = $this->pdo->prepare($sql);
-            $stmt->execute();
+            $stmt->execute($parameters);
 
             return intval($stmt->fetch(PDO::FETCH_NUM)[0]);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+
+    public function selectUsuarios($limit, $offset, $textoBusca, $colunaBusca)
+    {
+        $limit = (int) $limit;
+        $offset = (int) $offset;
+        $parameters = [];
+        $whereSql = '';
+
+
+        if ($textoBusca && $colunaBusca) {
+            $whereSql = " where $colunaBusca[0] like :textoBusca OR $colunaBusca[1] like :textoBusca";
+        }
+
+        $sql .= $whereSql;
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute($parameters);
+            return $stmt->fetchColumn();
         } catch (Exception $e) {
             die($e->getMessage());
         }
@@ -98,13 +127,14 @@ class QueryBuilder
 
     public function edit($table, $id, $parameters)
     {
-        $sql = sprintf('UPDATE %s SET %s WHERE id= %s',
-        $table,
-        implode(', ', array_map(function($param){
-            return $param . ' = :' .$param;
-        }, array_keys($parameters))),
+        $sql = sprintf(
+            'UPDATE %s SET %s WHERE id= %s',
+            $table,
+            implode(', ', array_map(function ($param) {
+                return $param . ' = :' . $param;
+            }, array_keys($parameters))),
 
-        $id
+            $id
         );
 
         try {
@@ -112,12 +142,8 @@ class QueryBuilder
             $stmt->execute($parameters);
 
             return $stmt->fetchAll(PDO::FETCH_CLASS);
-
         } catch (Exception $e) {
             die($e->getMessage());
         }
     }
-
-    
-
 }
