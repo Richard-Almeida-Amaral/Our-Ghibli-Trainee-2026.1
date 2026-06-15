@@ -99,13 +99,13 @@ class QueryBuilder
     public function update($table, $id, $parameters)
     {
         $sql = sprintf(
-        'UPDATE %s SET %s WHERE id= %s',
+        'UPDATE %s SET %s WHERE id = :id',
         $table,
         implode(', ', array_map(function($param){
             return $param . ' = :' . $param;
         }, array_keys($parameters))),
 
-        $id
+        $parameters['id'] = $id
         );
 
         try {
