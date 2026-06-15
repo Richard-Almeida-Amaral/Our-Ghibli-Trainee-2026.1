@@ -20,28 +20,28 @@
       <div class="PVisualizarRight">
         <div class="PVisualizarareas">
           <label for="">Id</label>
-          <input type="number" name="id" id="" placeholder="<?= $post->id ?>" class="PVisualizarinput" disabled value="<?=$usuario->id ?>">
+          <input type="number" name="id" id="" placeholder="<?= $publicacao->id ?>" class="PVisualizarinput" disabled value="<?= $publicacao->id ?>">
         </div>
 
         <div class="PVisualizarareas">
           <label for="">Título</label>
-          <input type="text" name="titulo" id="" placeholder="<?= $post->titulo ?>" class="PVisualizarinput" disabled value="<?=$usuario->titulo?>">
+          <input type="text" name="titulo" id="" placeholder="<?= $publicacao->titulo ?>" class="PVisualizarinput" disabled value="<?= $publicacao->titulo ?>">
         </div>
 
         <div class="PVisualizarareas">
           <label for="">Autor</label>
-          <input type="text" name="usuarios_id" id="" placeholder="<?=$usuario->usuarios_id ?>Autor" class="PVisualizarinput" disabled value="<?=$usuario->usuarios_id ?>">
+          <input type="text" name="usuarios_id" id="" placeholder="<?= $publicacao->autor ?>" class="PVisualizarinput" disabled value="<?= $publicacao->autor ?>">
         </div>
 
         <div class="PVisualizarareas">
           <label for="">Data</label>
-          <input type="text" name="data" id="" placeholder="<?=$usuario->data ?>" class="PVisualizarinput" disabled value="<?=$usuario->data ?>">
+          <input type="text" name="data" id="" placeholder="<?= $publicacao->dataformatada ?>" class="PVisualizarinput" disabled value="<?= $publicacao->dataformatada ?>">
         </div>
 
         <div class="PVisualizarareas">
           <label for="">Descricao</label>
-          <textarea name="" id="" class="PVisualizarTextArea" class="PVisualizarinput" disabled> 
-          <?= $post->descricao ?>
+          <textarea name="descricao" id="" class="PVisualizarTextArea" class="PVisualizarinput" disabled> 
+          <?=$publicacao->descricao ?>
         </textarea>
         </div>
 
