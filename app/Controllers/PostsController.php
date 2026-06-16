@@ -36,6 +36,14 @@ class PostController
         header('Location: /admin/posts');
     }
 
+    public function delete()
+    {
+        $id = $_POST['id'];
+        App::get('database')->delete('posts', $id);
+
+        header('Location: /admin/posts');
+    }
+
     public function edit()
     {
 
@@ -54,15 +62,6 @@ class PostController
         ];
 
         App::get('database')->update('posts', $id, $parameters);
-        header('Location: /admin/posts');
-    }
-
-
-    public function delete()
-    {
-        $id = $_POST['id'];
-        App::get('database')->delete('posts', $id);
-
         header('Location: /admin/posts');
     }
 }

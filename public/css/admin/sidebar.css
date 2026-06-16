@@ -112,6 +112,10 @@ ul {
   list-style: none;
 }
 
+ol, ul {
+  padding-left: 0; 
+}
+
 .logoutSidebar button {
   display: flex;
   justify-content: center;

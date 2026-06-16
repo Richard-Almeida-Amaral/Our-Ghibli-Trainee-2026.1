@@ -53,13 +53,17 @@ body {
   background-color: #20315a;
   padding: 20px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   align-items: center;
+  align-items: center;
+  gap: 36px;
 }
 
 .modtit h1 {
   color: #ffffff;
   font-weight: 500;
+  font-size: 2rem;
 }
 
 .fechax {
@@ -67,11 +71,13 @@ body {
   border: none;
   color: #9c0000;
   font-size: 3rem;
-  /* mudar a gambiarra do x */
-  margin-left: 60px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   cursor: pointer;
   line-height: 1;
   transition: transform 0.2s;
+  padding-bottom: 10px;
 }
 
 .fechax:hover {
@@ -103,7 +109,7 @@ body {
 .input-wrapper .InfoCont {
   width: 100%;
   height: 38px;
-  padding: 10px 14px;
+  padding: 3px 0px 0px 10px;
   border: 0.5px solid #000000;
   border-radius: 10px;
   background-color: #ebdcd0;
@@ -113,7 +119,7 @@ body {
 }
 /* Informação sem icones */
 .Info {
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Alice", serif;
   font-weight: 450;
   font-style: normal;
@@ -121,10 +127,11 @@ body {
 /* Informação com icones */
 .InfoCI {
   margin-left: 30px;
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Alice", serif;
   font-weight: 450;
   font-style: normal;
+  padding-inline: 5px;
 }
 
 .input-wrapper:not(.no-icon) InfoCont {

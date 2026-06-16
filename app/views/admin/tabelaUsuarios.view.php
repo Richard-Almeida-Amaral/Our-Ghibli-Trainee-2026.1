@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="pt-br">
-<div class="Usuariosidebar">
-    <?php require('sidebar.view.php');?>
-</div>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,7 +41,9 @@
 </head>
 
 <body class="ADMU-body">
-
+    <div class="Usuariosidebar">
+    <?php require('sidebar.view.php');?>
+    </div>
     <?php require('./app/views/admin/modaisUsuarios/usuarioCriar.php') ?>
 
     <?php foreach ($usuarios as $usuario): ?>

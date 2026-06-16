@@ -8,7 +8,7 @@
       <div class="modcont">
 
         <div class="modtit titExcluir">
-          <h2>Excluir o Usuário</h2>
+          <h1>Excluir o Usuário</h1>
         </div>
 
         <div class="modbody bodyExcluir">
