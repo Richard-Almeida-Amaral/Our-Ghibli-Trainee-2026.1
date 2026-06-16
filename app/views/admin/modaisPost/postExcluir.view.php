@@ -18,10 +18,10 @@
 
     <!-- Botões inferiores Exclusão -->
     <div class="modalAcoesExcluir">
-      <button class="btnNao" onclick="fecharModal('ModalExcluir')">
+      <button class="btnNao" type="button" onclick="fecharModal('ModalExcluir<?= $publicacao->id ?>')">
         Não
       </button>
-      <button class="btnSim">
+      <button class="btnSim" type="submit">
         Sim
       </button>
     </div>

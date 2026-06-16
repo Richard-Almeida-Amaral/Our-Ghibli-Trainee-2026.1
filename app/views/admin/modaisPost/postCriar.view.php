@@ -10,7 +10,7 @@
       </div>
       <div class="modalBody">
         <label class="arquivo">
-          <input type="file" name="imagem" accept="image/*" id="imagem" required />
+          <input type="file" name="imagem" accept="image/*" id="imagem" />
           <div class="arquivo-content">
             <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12" />
@@ -24,10 +24,10 @@
 
           </div>
           <label class="labelInput">
-            <textarea name="titulo" placeholder="Escreva seu Título..." class="inputCampo" required></textarea>
+            <textarea name="titulo" placeholder="Escreva seu Título..." class="inputCampo" ></textarea>
           </label>
           <label class="labelDescricao">
-            <textarea name="descricao" placeholder="Escreva sua Descrição..." class="inputCampoDescricao" required></textarea>
+            <textarea name="descricao" placeholder="Escreva sua Descrição..." class="inputCampoDescricao" ></textarea>
           </label>
           <input type="hidden" name="data" value="<?= date('Y-m-d') ?>" />
         </div>
@@ -35,10 +35,10 @@
 
       <!-- Botões inferiores Criação -->
       <div class="modalAcoes">
-        <button class="btnCancelar" onclick="fecharModal('usuarioCriar')">
+        <button class="btnCancelar"type="button" onclick="fecharModal('ModalCriar')">
           Cancelar
         </button>
-        <button class="btnCriar">
+        <button class="btnCriar" type="submit">
           Criar
         </button>
       </div>

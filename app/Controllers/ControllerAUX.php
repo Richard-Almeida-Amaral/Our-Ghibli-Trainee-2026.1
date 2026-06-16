@@ -10,7 +10,7 @@ class ControllerAUX
 
     public function index()
     {
-        return view('admin/modaisPost/postEditar');
+        return view('admin/modaisPost/postVisualizar');
     }
 
 }
