@@ -146,4 +146,22 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
+    public function verificalogin($email, $senha){
+        $sql = sprintf('SELECT * FROM usuarios WHERE email = :email AND  senha = :senha');
+
+         try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute([
+                'email' => $email,
+                'senha' => $senha
+            ]);
+
+            $userlogin = $stmt->fetch(PDO::FETCH_OBJ);
+
+            return $userlogin;
+
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }   
+     }
 }

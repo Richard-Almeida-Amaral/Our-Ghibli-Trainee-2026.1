@@ -17,7 +17,7 @@
             <h1 id="tittlelogin">Our Ghibli</h1>
         </div>
         <div class="downlogin">
-            <form action="" class="modal-login">
+            <form action="" method="POST" class="modal-login">
 
                 <div class="modal-uplogin">
                     <a href="/ ">
@@ -58,9 +58,7 @@
 
                 <div class="modal-downlogin">
                     <div id="bottom">	
-                        <a href="/admin" class="ancoralogin">				
-                        <input type="button" value="Login" id="botaologin">
-                        </a>
+                        <button type="submit"id="botaologin">Login</button>
                     </div>
                 </div>
 

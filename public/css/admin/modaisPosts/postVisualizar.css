@@ -4,7 +4,7 @@
 }
 
 .PvisualizarContainer{
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 35vw;
     height: 60vh;
@@ -14,6 +14,11 @@
     transform: translate(-50%, -50%);
     background-color:rgb(218, 218, 218);
     border-radius: 1rem;
+}
+
+.PVisualizarForm{
+    width: 100%;
+    height: 100%;
 }
 
 .PVisualizarHeader{
@@ -27,9 +32,27 @@
     border-top-right-radius:1rem;
 }
 
+.fechax {
+  background: none;
+  border: none;
+  color: #9c0000;
+  font-size: 3rem;
+  /* mudar a gambiarra do x */
+  margin-left: 60px;
+  cursor: pointer;
+  line-height: 1;
+  transition: transform 0.2s;
+}
+
+.fechax:hover {
+  transform: scale(1.2);
+}
+
 .PVisualizarBody{
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .PVisualizartittle {

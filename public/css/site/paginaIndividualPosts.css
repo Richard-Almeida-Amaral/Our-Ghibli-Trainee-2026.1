@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.PIP-Main{
+    position:relative;  
+
+}
+
 body{
     font-family: Arial, sans-serif;
     margin: 0;
@@ -185,6 +190,10 @@ body{
     min-height: 300px;
     width: 100%;
     font-size: 25px;
+}
+
+#navbar{
+    background-color: #E8D8C3;
 }
 
 

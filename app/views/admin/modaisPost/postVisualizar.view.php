@@ -4,47 +4,49 @@
 </head>
 
 <!-- modal visualizar post -->
-<form action="" method="POST" class="PvisualizarContainer">
+<div class="PvisualizarContainer" id="Pvisualizar">
+  <form action="" method="POST" class="PVisualizarForm">
 
-  <div class="PVisualizarHeader">
-    <h1 class="PVisualizartittle">Visualizar Publicação</h1>
-    <button type="button" id="PVisualizarfechar" class="fechax" onclick="fecharModal('PVisualizarContainer')">&times</button>
-  </div>
+    <div class="PVisualizarHeader">
+      <h1 class="PVisualizartittle">Visualizar Publicação</h1>
+      <button type="button" class="fechax" onclick="fecharModal('Pvisualizar')">&times</button>
+    </div>  
 
-  <div class="PVisualizarBody">
-    <div class="PVisualizarLeft">
+    <div class="PVisualizarBody">
+      <div class="PVisualizarLeft">
         <img src="../../../../public/assets/Totoro.webp" alt="" class="PVisualizarIMG">
-    </div>
-
-    <div class="PVisualizarRight">
-      <div class="PVisualizarareas">
-        <label for="">Id</label>
-        <input type="number" name="" id="" placeholder="codigo" class="PVisualizarinput" disabled>
       </div>
 
-      <div class="PVisualizarareas">
-        <label for="">Título</label>
-        <input type="text" name="" id="" placeholder="Título" class="PVisualizarinput" disabled>
-      </div>
-      
-      <div class="PVisualizarareas">
-        <label for="">Autor</label>
-        <input type="text" name="" id="" placeholder="Autor" class="PVisualizarinput" disabled>
-      </div>
-      
-      <div class="PVisualizarareas">
-        <label for="">Data</label>
-        <input type="text" name="" id="" placeholder="Data" class="PVisualizarinput" disabled>
-      </div>
-      
-      <div class="PVisualizarareas">
-        <label for="">Descricao</label>
-        <textarea name="" id="" class="PVisualizarTextArea" class="PVisualizarinput" disabled>
+      <div class="PVisualizarRight">
+        <div class="PVisualizarareas">
+          <label for="">Id</label>
+          <input type="number" name="" id="" placeholder="codigo" class="PVisualizarinput" disabled>
+        </div>
+
+        <div class="PVisualizarareas">
+          <label for="">Título</label>
+          <input type="text" name="" id="" placeholder="Título" class="PVisualizarinput" disabled>
+        </div>
+
+        <div class="PVisualizarareas">
+          <label for="">Autor</label>
+          <input type="text" name="" id="" placeholder="Autor" class="PVisualizarinput" disabled>
+        </div>
+
+        <div class="PVisualizarareas">
+          <label for="">Data</label>
+          <input type="text" name="" id="" placeholder="Data" class="PVisualizarinput" disabled>
+        </div>
+
+        <div class="PVisualizarareas">
+          <label for="">Descricao</label>
+          <textarea name="" id="" class="PVisualizarTextArea" class="PVisualizarinput" disabled>
           Descricao
         </textarea>
+        </div>
+
       </div>
-    
     </div>
-  </div>
-  <script src="../../../public/js/Modais.js"></script>
-</form>
+    <script src="../../../public/js/Modais.js"></script>
+  </form>
+</div>

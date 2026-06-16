@@ -1,10 +1,10 @@
 <head>
-  <link rel="stylesheet" href="../../../../public/css/admin/modaisPosts/postExcluir.css" />
+  <link rel="stylesheet" href="../../../../public/css/admin/modaisPosts/postExcluir.css"/>
 </head>
 
-  <!-- Modal de Exclusão -->
-
-  <form action="" method="POST" class="modalContainer" id="ModalExcluir">
+<!-- Modal de Exclusão -->
+<div class="modalContainer" id="ModalExcluir">
+  <form action="" method="">
     <div class="ModalContainerExcuir">
       <div class="modalHeaderExcluir">
         <h2>Exclusão de Publicação</h2>
@@ -17,7 +17,7 @@
 
     <!-- Botões inferiores Exclusão -->
     <div class="modalAcoesExcluir">
-      <button class="btnNao" onclick="fecharModalCriar('ModalExcluir')">
+      <button class="btnNao" onclick="fecharModal('ModalExcluir')">
         Não
       </button>
       <button class="btnSim">
@@ -25,5 +25,5 @@
       </button>
     </div>
   </form>
-<script src="../../../public/js/Modais.js"></script>
-
+  <script src="../../../public/js/Modais.js"></script>
+</div>

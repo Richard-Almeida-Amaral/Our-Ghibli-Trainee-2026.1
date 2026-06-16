@@ -1,6 +1,7 @@
 
 function abrirModal(idModal, idFiltroModal) {
     const modal = document.getElementById(idModal);
+    console.log('Modal encontrado:', modal);
     const filtromodal = document.getElementById(idFiltroModal);
     modal.style.display = "flex";
     filtromodal.style.display = "flex";
