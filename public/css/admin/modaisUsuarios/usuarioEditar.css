@@ -25,16 +25,15 @@
     display: none;
     position: absolute;
     left: 35%;
-    top: 30%;
+    top: 15%;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     flex-direction: column;
     background-color: #E8D8C3;
     height: 30rem;
     width: 28rem;
     border: 1px solid black;
     border-radius: 28px;
-    gap: 2rem;
 }
 .ADMPME-input{
     width: 350px;
@@ -53,7 +52,7 @@
 .ADMPME-mid{
     display: flex;
     flex-direction: column;
-    gap: 2rem;    
+    margin-bottom: 2rem;
     align-items: start;
     justify-content: start;
 }
@@ -114,4 +113,5 @@
     justify-content: space-between;
     padding-inline: 5rem;
     width: 100%;
+    margin-bottom: 1rem;
 }

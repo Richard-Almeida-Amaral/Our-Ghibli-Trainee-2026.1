@@ -52,7 +52,7 @@
 
         <!-- Navegação da Sidebar -->
         <nav class="navegacaoSidebar">
-          <ul>
+          <ul class="UlSidebar">
             <!-- Itens de navegação da sidebar -->
             <li class="itemSidebar <?= $activeDashboard ? 'active' : '' ?>" > <!-- Verificação active -->
               <a class="linksidebar" href="/admin" id="iconeDashboard">
@@ -70,6 +70,7 @@
                     src="../../../public/assets/postagem-no-instagram.png" alt="" srcset=""/>
                   </i>
                 <span class="descricao">Postagens</span>
+              </a>
             </li>
             <!-- Itens de navegação da sidebar -->
             <li class="itemSidebar <?= $activeUsuarios ? 'active' : '' ?>" id="iconeUsuarios"><!-- Verificação active -->

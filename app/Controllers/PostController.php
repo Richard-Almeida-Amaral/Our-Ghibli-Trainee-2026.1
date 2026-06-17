@@ -43,4 +43,23 @@ class PostController
 
         header('Location: /admin/posts');
     }
+
+    public function edit()
+    {
+
+    $id = $_POST['id'];
+    $post = App::get('database')->selectOne('posts', $id);
+    $caminhoimagem = $post->imagem;
+
+    $parameters = [
+            'titulo' => $_POST['titulo'],
+            'descricao' => $_POST['descricao'],
+            'imagem' => $caminhoimagem,
+            'data' => $_POST['data'],
+            'usuarios_id' => 1        // $_POST['usuarios_id'] usar apos login
+        ];
+
+        App::get('database')->update('posts', $id, $parameters);
+        header('Location: /admin/posts');
+    }
 }

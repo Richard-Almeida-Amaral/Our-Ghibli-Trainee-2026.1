@@ -108,7 +108,12 @@ button#buttonLogout {
   height: 4vh;
 }
 
-ul {
+
+.UlSidebar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -311,19 +316,15 @@ ul {
     width: 60px;
   }
   
+
+
   .closed-sidebar .itemSidebar {
     width: 50%;
     margin-left: 0px;
     margin-bottom: 25px;
     align-items: center;
   }
-  .closed-sidebar #iconePostagens{
-    margin-left: 12px;
-  }
 
-  .closed-sidebar #iconeUsuarios{
-    margin-left: 12px;
-  }
 
   .closed-sidebar .itemSidebar a {
     padding-bottom: 8px;
