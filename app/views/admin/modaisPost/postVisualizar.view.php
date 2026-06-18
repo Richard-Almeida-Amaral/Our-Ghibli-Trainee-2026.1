@@ -14,7 +14,23 @@
 
     <div class="PVisualizarBody">
       <div class="PVisualizarLeft">
-        <img src="../../../../public/assets/Totoro.webp" alt="" class="PVisualizarIMG">
+        <div class="PVisualizarCard">
+          <a href="/post" class="PVisualizarAncora">
+              <img src="../../../public/assets/Totoro.webp" alt="" class="PVisualizarIMG"/>
+              <div class="PVisualizarplacetxt">
+                <h1 class="PVisualizartxt">Meu Amigo Totoro</h1>
+                <p class="PVisualizartxt">
+                  Lorem ipsum é um texto de preenchimento comumente usado nas
+                  indústrias gráficas, de impressão e editoriais para pré-visualizar
+                  layouts e maquetes visuais.Lorem ipsum é um texto de preenchimento comumente usado nas
+                  indústrias gráficas, de impressão e editoriais para pré-visualizar
+                  layouts e maquetes visuais.Lorem ipsum é um texto de preenchimento comumente usado nas
+                  indústrias gráficas, de impressão e editoriais para pré-visualizar
+                  layouts e maquetes visuais.
+                </p>
+              </div>
+          </a>
+        </div>
       </div>
 
       <div class="PVisualizarRight">
