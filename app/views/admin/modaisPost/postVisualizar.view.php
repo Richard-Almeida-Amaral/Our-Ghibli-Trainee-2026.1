@@ -16,18 +16,12 @@
       <div class="PVisualizarLeft">
         <div class="PVisualizarCard">
           <a href="/post" class="PVisualizarAncora">
-              <img src="../../../public/assets/Totoro.webp" alt="" class="PVisualizarIMG"/>
+              <img src="/<?= $publicacao->caminhoimagem ?>" alt="" class="PVisualizarIMG"/>
               <div class="PVisualizarplacetxt">
-                <h1 class="PVisualizartxt">Meu Amigo Totoro</h1>
+                <h1 class="PVisualizartxt"><?= $publicacao->titulo ?></h1>
                 <p class="PVisualizartxt">
-                  Lorem ipsum é um texto de preenchimento comumente usado nas
-                  indústrias gráficas, de impressão e editoriais para pré-visualizar
-                  layouts e maquetes visuais.Lorem ipsum é um texto de preenchimento comumente usado nas
-                  indústrias gráficas, de impressão e editoriais para pré-visualizar
-                  layouts e maquetes visuais.Lorem ipsum é um texto de preenchimento comumente usado nas
-                  indústrias gráficas, de impressão e editoriais para pré-visualizar
-                  layouts e maquetes visuais.
-                </p>
+                  <?= $publicacao->descricao ?>
+              </p>
               </div>
           </a>
         </div>
@@ -36,22 +30,22 @@
       <div class="PVisualizarRight">
         <div class="PVisualizarareas">
           <label class="PVisualizarlabel">Id</label>
-          <input type="number" name="" id="" placeholder="codigo" class="PVisualizarinput" disabled>
+          <input type="number" name="id" id="" placeholder="<?= $publicacao->id ?>" class="PVisualizarinput" value="<?= $publicacao->id ?>" disabled>
         </div>
 
         <div class="PVisualizarareas">
           <label class="PVisualizarlabel">Título</label>
-          <input type="text" name="" id="" placeholder="Título" class="PVisualizarinput" disabled>
+          <input type="text" name="titulo" id="" placeholder="<?= $publicacao->titulo ?>" class="PVisualizarinput" value="<?= $publicacao->titulo ?>" disabled>
         </div>
 
         <div class="PVisualizarareas">
           <label class="PVisualizarlabel">Autor</label>
-          <input type="text" name="" id="" placeholder="Autor" class="PVisualizarinput" disabled>
+          <input type="text" name="autor" id="" placeholder="<?= $publicacao->autor ?>" class="PVisualizarinput" value="<?= $publicacao->autor ?>" disabled>
         </div>
 
         <div class="PVisualizarareas">
           <label class="PVisualizarlabel">Data</label>
-          <input type="text" name="" id="" placeholder="Data" class="PVisualizarinput" disabled>
+          <input type="text" name="data" id="" placeholder="<?= $publicacao->dataformatada ?>" class="PVisualizarinput" value="<?= $publicacao->dataformatada ?>" disabled>
         </div>
 
       </div>
