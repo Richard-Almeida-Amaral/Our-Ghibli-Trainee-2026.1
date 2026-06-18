@@ -5,7 +5,7 @@
 
 <!-- modal Editar post -->
 <div class="PEditarContainer" id="PEditar">
-  <form action="" method="POST">
+  <form action="" method="POST" class="PEditarForm">
 
     <div class="PEditarHeader">
       <h1 class="PEditartittle">Editar Publicação</h1>
@@ -14,40 +14,54 @@
 
     <div class="PEditarBody">
       <div class="PEditarLeft">
-        <div id="imagempostmodaledit">
-          <label for="uploadimagemmodaledit" id="botaouploadmodaledit">
-          <svg xmlns="http://www.w3.org/2000/svg" id="iconeuploadmodaledit" viewBox="0 0 16 16">
-           <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
-            <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
-          </svg>
-      </label>
-      <input type='file' accept="image/*" id="uploadimagemmodaledit" hidden>
-    </div>
+        <div class="PEditarCard">
+          <a href="/post" class="PEditarAncora">
+              <img src="../../../public/assets/Totoro.webp" alt="" class="PEditarIMG"/>
+              <div class="PEditarplacetxt">
+                <h1 class="PEditartxt">Meu Amigo Totoro</h1>
+                <p class="PEditartxt">
+                  Lorem ipsum é um texto de preenchimento comumente usado nas
+                  indústrias gráficas, de impressão e editoriais para pré-Editar
+                  layouts e maquetes visuais.Lorem ipsum é um texto de preenchimento comumente usado nas
+                  indústrias gráficas, de impressão e editoriais para pré-Editar
+                  layouts e maquetes visuais.Lorem ipsum é um texto de preenchimento comumente usado nas
+                  indústrias gráficas, de impressão e editoriais para pré-Editar
+                  layouts e maquetes visuais.
+                </p>
+              </div>
+          </a>
+        </div>
       </div>
 
       <div class="PEditarRight">
+        <div class="PEditarareas">
+          <label class="PEditarlabel">Id</label>
+          <input type="number" name="" id="" placeholder="codigo" class="PEditarinput">
+        </div>
 
         <div class="PEditarareas">
-          <label for="">Título</label>
+          <label class="PEditarlabel">Título</label>
           <input type="text" name="" id="" placeholder="Título" class="PEditarinput">
         </div>
 
         <div class="PEditarareas">
-          <label for="">Autor</label>
+          <label class="PEditarlabel">Autor</label>
           <input type="text" name="" id="" placeholder="Autor" class="PEditarinput">
         </div>
 
         <div class="PEditarareas">
-          <label for="">Data</label>
+          <label class="PEditarlabel">Data</label>
           <input type="text" name="" id="" placeholder="Data" class="PEditarinput">
         </div>
 
-        <div class="PEditarareas">
-          <label for="">Descricao</label>
-          <textarea name="" id="" class="PEditarTextArea" class="PEditarinput">
-          Descricao
-        </textarea>
-        </div>
+        <div class="modalAcoes">
+        <button class="btnCancelar"type="button" onclick="fecharModal('ModalCriar')">
+          Cancelar
+        </button>
+        <button class="btnCriar" type="submit">
+          Criar
+        </button>
+      </div>
 
       </div>
     </div>

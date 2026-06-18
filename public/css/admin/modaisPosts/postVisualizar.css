@@ -81,12 +81,11 @@
     border-radius: 0.5rem;
 }
 
-.PVisualizarA{
+a{
     text-decoration: none;
 }
 
-.PVisualizarA:visited {
-  color: inherit;
+a:visited {
   text-decoration: none;
   font-style: none;
 }

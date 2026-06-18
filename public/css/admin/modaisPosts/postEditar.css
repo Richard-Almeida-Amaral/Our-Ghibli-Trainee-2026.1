@@ -7,20 +7,24 @@
     display: none;
     flex-direction: column;
     width: 35vw;
-    height: 60vh;
+    height: 50vh;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color:rgb(218, 218, 218);
     border-radius: 1rem;
+}
+
+.PEditarForm{
+    width: 100%;
+    height: 100%;
 }
 
 .PEditarHeader{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(186, 186, 186);
+    background-color:#20315a;
     width: 100%;
     height: 10%;
     border-top-left-radius:1rem;
@@ -44,68 +48,115 @@
 }
 
 .PEditarBody{
+    display: flex;
     height: 100%;
     width: 100%;
-    display: flex;
     flex-direction: row;
 }
 
 .PEditartittle {
     text-align: center;
-}
-
-.PEditarBody{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-    align-items: end;
+    color: white;
+    text-decoration: none;
 }
 
 .PEditarLeft{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(152, 147, 147);
+    background-color: #e9d2b3;
     height: 100%;
     width: 100%;
+    border-bottom-left-radius:1rem;
 }
-.PEditarLeft div{
-    width: fit-content;
+
+.PEditarAncora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border: 0.1px solid #cbbaa2;
+    border-radius: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  font-style: none;
+}
+
+.PEditarCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+}
+
+.PEditarCard h1{
+    font-size: large;
 }
 
 .PEditarIMG{
-    width: 90%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 1rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.PEditarplacetxt{
+    background-color: #fafafa;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.PEditartxt{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-style: none;
+    font-size: 0.8rem;
 }
 
 .PEditarRight{
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     width: 100%;
-    height:98%;
-    gap: 1rem;
-    padding-inline: 1rem;
+    height:100%;
+    padding-left: 1rem;
+    gap: 3rem;
+    flex-direction: column;
+    align-items: start;
+    background-color: #e9dac7;
+    border-bottom-right-radius:1rem;
 }
 
 .PEditarareas{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    width: 90%;
 }
 
 .PEditarareas:has(> .PEditarTextArea) {
   height: 100%;
 }
 
+.PEditarlabel{
+    margin-left: 0.3rem;
+}
+
+
 .PEditarinput{
     width: 100%;
     border-radius: 0.5rem;
     border: 0;
-    padding: 0.4rem;
+    padding: 0.6rem;
+    background-color: #fafafa;
 }
 
 .PEditarTextArea{
@@ -114,5 +165,43 @@
     resize: none;
     outline: none;
     border-radius: 0.5rem;
+}
+
+.modalAcoes {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 16px;
+  padding: 0 32px 32px 32px;
+  background-color: #E8D8C3;  
+}
+
+.modalAcoes button {
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  transition: transform 0.1s, opacity 0.2s;
+}
+
+.btnCriar {
+  background-color: #20315a;
+  color: #ffffff;
+}
+
+.btnCancelar {
+  background-color: #e63946;
+  color: #ffffff;
+}
+
+.modalAcoes button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.modalAcoes button:active {
+  transform: translateY(0);
 }
 
