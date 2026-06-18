@@ -65,6 +65,18 @@
     width: fit-content;
 }
 
+.mensagem-erro{
+    display: flex;
+    justify-content: center;
+    padding: 3px 0px;
+}
+
+.mensagem-erro p{
+    font-size: 14px;
+    color: red;
+}
+
+
 .modal-login{
     display: flex;  
     align-items: center;

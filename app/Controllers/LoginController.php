@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Controllers;
 
 use App\Core\App;
@@ -25,7 +24,9 @@ class LoginController
             $_SESSION['id'] = $user->id;
             header('Location:/admin');
         }else{
-            echo('Teste');
+            session_start();
+            $_SESSION['mensagem-erro'] = "Usuário e/ou senha incorretos";
+            header('Location:/login');
         }
 
     }
