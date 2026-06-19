@@ -31,7 +31,6 @@
     gap: 8rem;
 }
 
-
 .uplogin{
     display: flex;
     justify-content: start;
@@ -41,7 +40,6 @@
     width: 100vw;
     height: 2rem;
 }
-
 
 #tittlelogin{
     display: flex;
@@ -68,14 +66,13 @@
 .mensagem-erro{
     display: flex;
     justify-content: center;
-    padding: 3px 0px;
+    height: 0;
 }
 
 .mensagem-erro p{
     font-size: 14px;
     color: red;
 }
-
 
 .modal-login{
     display: flex;  
@@ -90,8 +87,6 @@
     gap: 2rem;
     padding: 1rem;
 }
-
-
 
 .modal-uplogin{
     display: flex;
