@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
+
 .PIP-Main{
     position:relative;  
 
+
 }
+
 
 body{
     font-family: Arial, sans-serif;
@@ -16,11 +19,13 @@ body{
     color: #000000;
 }
 
+
 .nunito{
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
+
 
 .alice-regular {
     font-family: "Alice", serif;
@@ -28,19 +33,23 @@ body{
     font-style: normal;
 }
 
+
 .PIP-Topo{
     width: 100%;
-    height: fit-content; 
-    object-fit: cover; 
+    height: fit-content;
+    object-fit: cover;
     display: block;
-} 
-.PIP-Topo img { 
-    width: 100%; 
-    height: fit-content; 
-    object-fit: cover; 
-    display: block; 
+}
+.PIP-Topo img {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+    display: block;
+
 
 }  
+
+
 
 
 .PIP-Meio{
@@ -49,6 +58,7 @@ body{
     padding: 30px 50px;
     /* border: 1px solid black;  */
 }
+
 
 .ContPosts{
     background-color: #F2F1E6;
@@ -59,6 +69,7 @@ body{
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
     /* border: 6px solid #d47b06; */
 }
+
 
 .TopoPosts{
     display: flex;
@@ -75,6 +86,7 @@ body{
     /* border: 6px solid #543e20; */
 }
 
+
 .Usuarioposts{
     display: flex;
     flex-direction: row;
@@ -89,6 +101,7 @@ body{
     gap: 10px;
 }
 
+
 .NomeUsuarioPosts{
     font-family: "Alice", serif;
     font-weight: 400;
@@ -98,6 +111,7 @@ body{
     text-align: center;
     font-size: 30px;
 }
+
 
 .DataPosts{
     font-family: "Alice", serif;
@@ -114,6 +128,7 @@ body{
     padding-right: 20px;
 }
 
+
 .Infoposts{
     font-family: "Alice", serif;
     font-weight: 400;
@@ -125,6 +140,7 @@ body{
     /* border: 6px solid #272054; */
 }
 
+
 .TitEImgPosts{
     width: 50%;
     font-family: "Alice", serif;
@@ -134,7 +150,9 @@ body{
     align-items: center;
     text-align: center;
     margin-inline: 2rem;
+    margin-bottom: 2rem;
 }
+
 
 .TituloPosts{
     font-family: "Alice", serif;
@@ -152,9 +170,10 @@ body{
     font-style: normal;
 }
 
+
 .ImgPosts{
     width: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     display: block;
     margin-bottom: 1rem;
     overflow: hidden;
@@ -167,6 +186,7 @@ body{
     object-fit: fill;
 }
 
+
 .TextoPostsCont{
     display: flex;
     font-family: "Nunito", sans-serif;
@@ -178,6 +198,7 @@ body{
     text-align: center;
     padding: 30px;
 }
+
 
 .TextoPosts{
     display: flex;
@@ -192,9 +213,12 @@ body{
     font-size: 25px;
 }
 
+
 #navbar{
     background-color: #E8D8C3;
 }
+
+
 
 
 @media (max-width: 700px){
@@ -202,13 +226,16 @@ body{
         flex-direction: column;
     }
 
+
     .TopoPosts{
         width: 100%;
     }
 
+
     .Usuarioposts{
         padding: 0px;
     }
+
 
     .Usuarioposts img{
         width: 25%;
@@ -216,6 +243,8 @@ body{
     .Usuarioposts p{
         font-size: 12px;
     }
+
+
 
 
     .DataPosts{
@@ -229,37 +258,45 @@ body{
         margin-inline: 0;
     }
 
+
     .TituloPosts{
         font-size: 20px;
     }
 
+
     .ImgPosts{
         padding: 0.5rem 2rem;
     }
+
 
     .ImgPosts img{
         width:100% ;
         border-radius: 1rem;
     }
 
+
     .TextoPostsCont{
         width: 100%;
         padding: 15px;
     }
+
 
     .TextoPosts{
         font-size: 15px;
     }
 }
 
+
 @media (min-width: 701px) and (max-width: 1000px){
     .Infoposts{
         flex-direction: column;
     }
 
+
     .TopoPosts{
         width: 100%;
     }
+
 
     .Usuarioposts{
         padding: 0px;
@@ -272,6 +309,8 @@ body{
     }
 
 
+
+
     .DataPosts{
         font-size: 20px;
         width: 50%;
@@ -281,18 +320,22 @@ body{
         margin-inline: 0;
     }
 
+
     .ImgPosts{
         padding: 0.5rem 2rem;
     }
+
 
     .ImgPosts img{
         width:100% ;
         border-radius: 1rem;
     }
 
+
     .TextoPostsCont{
         width: 100%;
     }
+
 
     .TextoPosts{
         font-size: 20px;
