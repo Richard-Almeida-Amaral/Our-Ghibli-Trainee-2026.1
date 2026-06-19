@@ -23,7 +23,7 @@
 
 
 
-body{
+.LandingPageBody{
 
 
     /* fonte da página */
@@ -37,17 +37,18 @@ body{
     margin: 0;
     padding: 0;
 
+    height: 100vh;
+    overflow-y: auto;
     overflow-x: hidden;
-
 }
 
 #navbar{
-    background-color: #E8D8C3;
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+    z-index: 99;
 }
 
-.main{
-    background-image: linear-gradient(to bottom, #E8D8C3, #5A78A6); 
-}
 #hero{
     
     /* display */

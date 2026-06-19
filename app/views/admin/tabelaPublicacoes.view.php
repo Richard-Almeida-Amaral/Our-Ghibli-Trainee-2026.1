@@ -85,15 +85,15 @@
         <tfoot class="ADMP-tablefooter"> <!-- rodape da tabela -->
             <div class="ADMP-auxtablefooter"></div>
         </tfoot>
-        <div class="ADMP-pag">
+        <!-- <div class="ADMP-pag">
                     <button class="ADMP-btnpag"><</button>
                     <button class="ADMP-btnpag">1</button>
                     <button class="ADMP-btnpag">2</button>
                     <button class="ADMP-btnpag">3</button>
                     <button class="ADMP-btnpag">></button>
-        </div>
+        </div> -->
+        <?php require(__DIR__ . '/../site/paginacao.php') ?>
     </div>
-
 </body>
 <script type="text/javascript" src="../../../public/js/Modais.js"></script>
 
