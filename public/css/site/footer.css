@@ -260,10 +260,15 @@ footer{
         flex-direction: column;
         padding-top: 3vw;
         .Contatoscont {order: 3;};
-        .Logo {order: 1;};
-        .redessociaiseloc { order: 3;}
+        .Logo {
+            order: 1;
+        };
+        .redessociaiseloc {
+            margin-top: 1rem;
+            order: 3;
+        }
         .Logo{
-            margin-top: 0rem;
+            margin-top: 2rem;
         }
         .emailcont {
             justify-content: space-between;
@@ -307,10 +312,15 @@ footer{
         flex-direction: column;
         padding-top: 3vw;
         .Contatoscont {order: 3;};
-        .Logo {order: 1;};
-        .redessociaiseloc { order: 3;}
+        .Logo {
+            order: 1;
+        }
+        .redessociaiseloc {
+            margin-top: 1rem;
+            order: 3;
+        }
         .Logo{
-            margin-top: 0rem;
+            margin-top: 2rem;
         }
         .ContatsContainer{
         padding-left: 0.5rem;
