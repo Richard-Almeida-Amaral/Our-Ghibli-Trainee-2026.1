@@ -23,7 +23,6 @@
 
     <footer>
         <div class="contvertical">
-            <div class="Contatoscont">
 
                 <div class="Contatos">
 
@@ -50,7 +49,7 @@
 
 
                 </div>
-            </div>
+            
 
             <div class="Logo">
 
@@ -59,10 +58,11 @@
             </div>
 
             <div class="redessociaiseloc">
-                <div class="apenasredes">
-                    <div class="rstitulo">
+                <div class="rstitulo">
                         <h1>Redes Sociais</h1>
                     </div>
+                <div class="apenasredes">
+                    
 
                     <div class="iconsredes">
 
@@ -78,18 +78,20 @@
                         <a href="https://www.facebook.com/WorldofGhibliUS" class="footer-ancora">
                             <img src="../../../public/assets/Facebook.png" alt="Descrição da imagem">
                         </a>
-
-
                     </div>
+                    <div class="LocContainer"> 
+                        <div class="loc">
+                            <div class="iconkat">
+                                <img src="../../../public/assets/Localicon.png" alt="Descrição da foto">
+                            </div>
+                            <div class="texto">
+                                <p>Rua José Lourenço Kelmer - Martelos, Juiz de Fora - MG, 36036-330</p>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="loc">
-                    <div class="iconkat">
-                        <img src="../../../public/assets/Localicon.png" alt="Descrição da foto">
-                    </div>
-                    <div class="texto">
-                        <p>Rua José Lourenço Kelmer - Martelos, Juiz de Fora - MG, 36036-330</p>
-                    </div>
-                </div>
+                
 
             </div>
         </div>
