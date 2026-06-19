@@ -4,12 +4,11 @@
 </head>
 
 <!-- modal Editar post -->
-<div class="PEditarContainer" id="PEditar">
+<div class="PEditarContainer" id="PEditar<?=$publicacao->id?>">
   <form action="" method="POST" class="PEditarForm">
 
     <div class="PEditarHeader">
       <h1 class="PEditartittle">Editar Publicação</h1>
-      <button type="button" class="fechax" onclick="fecharModal('PEditar')">&times</button>
     </div>  
 
     <div class="PEditarBody">
@@ -55,13 +54,13 @@
         </div>
 
         <div class="modalAcoes">
-        <button class="btnCancelar"type="button" onclick="fecharModal('ModalCriar')">
-          Cancelar
-        </button>
-        <button class="btnCriar" type="submit">
-          Criar
-        </button>
-      </div>
+          <button class="btnCancelar" type="button" onclick="fecharModal('PEditar<?=$publicacao->id?>')">
+              Cancelar
+          </button>
+          <button class="btnCriar" type="submit">
+              Criar
+          </button>
+        </div>
 
       </div>
     </div>
