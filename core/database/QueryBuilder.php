@@ -67,9 +67,13 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
-    public function selectJoinADMP($table1, $table2)
+    public function selectJoinADMP($table1, $table2, $inicio = null, $itensPorPagina = null)
     {
-        $sql = "select p.id,p.titulo,u.nome as autor,DATE_FORMAT(p.data, '%d/%m/%Y') as dataformatada from {$table1} as p join {$table2} as u on p.usuarios_id = u.id";
+        $sql = "select  p.descricao,p.id,p.titulo,u.nome as autor,DATE_FORMAT(p.data, '%d/%m/%Y') as dataformatada from {$table1} as p join {$table2} as u on p.usuarios_id = u.id";
+
+        if ($inicio >= 0 && $itensPorPagina > 0) {
+            $sql .= " LIMIT {$inicio}, {$itensPorPagina}";
+        }
 
         try {
             $stmt = $this->pdo->prepare($sql);

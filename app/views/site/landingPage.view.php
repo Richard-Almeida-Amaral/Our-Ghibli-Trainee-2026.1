@@ -25,14 +25,13 @@
 
 </head>
 
-<body>
-    <div id="navbar">
-        <?php require('navbar.view.php'); ?>
-    </div>
-    <main>
-
+<body class="LandingPageBody">
+    <main  class="LandingPageMain">
+        <div class="" id="navbar">
+            <?php require('navbar.view.php'); ?>
+        </div>
         <section id="hero"> <!-- Hero card -->
-
+            
             <section id="frametextofilme"> <!-- texto filme + logo -->
 
                 <h2>“O mundo é mágico quando visto com olhos sinceros.”</h2>

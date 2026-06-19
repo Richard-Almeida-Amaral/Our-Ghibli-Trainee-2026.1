@@ -4,12 +4,12 @@
 </head>
 
 <!-- modal visualizar post -->
-<div class="PvisualizarContainer" id="Pvisualizar">
+<div class="PvisualizarContainer" id="Pvisualizar<?=$publicacao->id?>">
   <form action="" method="POST" class="PVisualizarForm">
 
     <div class="PVisualizarHeader">
       <h1 class="PVisualizartittle">Visualizar Publicação</h1>
-      <button type="button" class="fechax" onclick="fecharModal('Pvisualizar')">&times</button>
+      <button type="button" class="fechax" onclick="fecharModal('Pvisualizar<?=$publicacao->id?>')">&times</button>
     </div>  
 
     <div class="PVisualizarBody">
