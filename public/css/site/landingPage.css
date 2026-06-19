@@ -23,6 +23,7 @@
 
 
 
+
 .LandingPageBody{
 
 
@@ -40,6 +41,12 @@
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.LandingPageBody::-webkit-scrollbar {
+  display: none;
 }
 
 #navbar{
@@ -47,6 +54,8 @@
     top: 0;
     overflow-y: auto;
     z-index: 99;
+    scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 
 #hero{
