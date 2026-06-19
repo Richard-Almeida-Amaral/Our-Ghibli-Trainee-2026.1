@@ -10,6 +10,7 @@ body{
     font-style: normal;
 }
 
+
 .nunito-uniquifier {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
@@ -17,21 +18,25 @@ body{
     font-style: normal;
 }
 
+
 .contvertical{
     /*border: 1px solid orange;*/
     display: flex;
     justify-content: space-between;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding: 0 2rem;
     align-items: center;
 }
-.Contatoscont{
+
+
+.Contatos{
     display: flex;
-    flex-direction: row;
-    /*border: 1px solid orange;*/
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
+    margin-top: 2rem;
+    gap: 43px;
 }
+
 
 .titulocont{
     font-family: "Alice", serif;
@@ -39,7 +44,10 @@ body{
     font-style: normal;
 }
 
+
 .ContatsContainer{
+    display: flex;
+    flex-direction: column;
     border-radius: 1rem;
     background-color: #F2F1E6;
     padding-left: 2rem;
@@ -51,6 +59,7 @@ body{
     font-weight: 400;
     font-size: large;
     font-style: normal;
+    gap: 1.5rem;
 }
 .emailcont{
     display: flex;
@@ -63,12 +72,14 @@ body{
     font-family: "Nunito", sans-serif;
 }
 
+
 .Tipodeinfofooteremail{
     display: flex;
     align-items: start;
     text-align: start;
-    
+   
 }
+
 
 .Telefonecont{
     display: flex;
@@ -104,27 +115,66 @@ body{
     /*   border: 1px solid yellow;*/
 }
 
+
 .rstitulo{
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: right;
+    padding-right: 4rem;
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
 }
 
+
 /*.redessociaiseloc{
     border: 1px solid rgb(255, 0, 0);
 }*/
 
+
 .iconsredes{
     /*border: 1px solid yellowgreen;*/
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
+   
 }
+
+
+.redessociaiseloc{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+
+.footer-ancora{
+    display: inline-block;
+    margin: 0;          
+    padding: 0;        
+    text-decoration: none;
+}
+
+
+.linkedin img {
+  display: block;
+}
+
+
+.apenasredes{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+.LocContainer{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+}
+
+
 .loc{
     border-radius: 1rem;
     background-color: #F2F1E6;
@@ -133,6 +183,7 @@ body{
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    padding: 1rem;
 }
 .texto{
     width: 10rem;
@@ -146,12 +197,10 @@ body{
     align-items: center;
     text-align: center;
     height: fit-content;
-    /* margin-right: 1rem; */
-    padding-left: 4rem;
-    padding-right: 4rem;
-    margin-top: 2rem;
+    padding: 1rem 2rem;
     border-bottom: 0.1rem solid #000000;
 }
+
 
 .titulosobre{
     font-family: "Alice", serif;
@@ -159,12 +208,15 @@ body{
     font-style: normal;
 }
 
+
 .time, .etica, .objetivo, .perspectiva{
     font-family: "Nunito", sans-serif;
     font-style: normal;
     /* margin-left: 10rem; */
 
+
 }
+
 
 .copyrigth{
     justify-content: space-between;
@@ -172,10 +224,8 @@ body{
     text-align: center;
     display: flex;
     flex-direction: row;
-    padding-left: 4rem;
-    padding-right: 4rem;
     border-top: 0.5rem #000000;
-    
+    padding: 1rem 2rem;
 }
 .cprcont{
     display: flex;
@@ -191,7 +241,6 @@ body{
     justify-content: center;
     height: fit-content;
     width: fit-content;
-    margin-top: 1rem;
 }
 footer{
     background-color: #6B85AF;
@@ -200,6 +249,9 @@ footer{
     display: flex;
     flex-direction: column;
 }
+
+
+
 
 
 
@@ -220,6 +272,7 @@ footer{
             justify-content: space-between;
         }
 
+
         .Contatoscont{
             justify-content: center;
             align-items: center;
@@ -228,7 +281,7 @@ footer{
             justify-content: center;
             align-items: center;
         }
-    
+   
         .Tipodeinfofooter{
             display: none;
         }
@@ -245,6 +298,8 @@ footer{
         padding-right: 0rem;
     }
 }
+
+
 
 
 @media (min-width: 701px) and (max-width: 1000px) {
@@ -275,6 +330,7 @@ footer{
             gap: 5vw;
         }
 
+
         .Contatoscont{
             justify-content: center;
             align-items: center;
@@ -283,7 +339,7 @@ footer{
             justify-content: center;
             align-items: center;
         }
-    
+   
         .Tipodeinfofooter{
             display: none;
         }
