@@ -20,15 +20,12 @@ class LoginController
         $user = App :: get('database') -> verificalogin($loginemail,$loginsenha);
 
         if ($user != false) {
-            session_start();
             $_SESSION['id'] = $user->id;
             header('Location:/admin');
         }else{
-            session_start();
             $_SESSION['mensagem-erro'] = "Usuário e/ou senha incorretos";
             header('Location:/login');
         }
-
     }
 
 }
