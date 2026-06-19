@@ -28,7 +28,7 @@ class PostController
             'descricao' => $_POST['descricao'],
             'imagem' => $caminhoimagem,
             'data' => $_POST['data'],
-            'usuarios_id' => $_POST['usuarios_id'] //usar apos login
+            'usuarios_id' => $_SESSION['id'] //usar apos login
         ];
 
         App::get('database')->insert('posts', $parameters);
