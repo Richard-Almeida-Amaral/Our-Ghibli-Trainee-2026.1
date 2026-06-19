@@ -150,6 +150,15 @@
 
 .ADMP-icons{
     transition: ease-in-out 200ms ;
+    background-color: none;
+}
+
+.ADMP-icons:nth-child(even) {
+  background-color: rgb(221,220,218);
+}
+
+.ADMP-icons:nth-child(odd) {
+  background-color: rgb(233, 233, 233);
 }
 
 .ADMP-icons:hover{
@@ -162,6 +171,7 @@
     align-items: center;
     justify-content: center;
     border: none;
+    background-color: none;
 }
 
 .ADMP-auxtablefooter{
