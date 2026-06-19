@@ -77,16 +77,17 @@
                     <?php require('./app/views/admin/modaisPost/postVisualizar.view.php') ?>
                     <?php require('./app/views/admin/modaisPost/postExcluir.view.php') ?>
                     <?php require('./app/views/admin/modaisPost/postEditar.view.php') ?>
-                    <?php endforeach ?>
-                    <!-- importando modal de criar -->
-                    <?php require('./app/views/admin/modaisPost/postCriar.view.php') ?>
+                <?php endforeach ?>
+                <!-- importando modal de criar -->
+                <?php require('./app/views/admin/modaisPost/postCriar.view.php') ?>
             </tbody>
         </table>
         <tfoot class="ADMP-tablefooter"> <!-- rodape da tabela -->
             <div class="ADMP-auxtablefooter"></div>
         </tfoot>
         <div class="ADMP-pag">
-                    <button class="ADMP-btnpag"><</button>
+            <button class="ADMP-btnpag">
+                << /button>
                     <button class="ADMP-btnpag">1</button>
                     <button class="ADMP-btnpag">2</button>
                     <button class="ADMP-btnpag">3</button>

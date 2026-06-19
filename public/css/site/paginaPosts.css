@@ -86,7 +86,7 @@ body {
   background-size: contain;
 }
 
-.container {
+.Postcontainer {
   margin-top: 150px;
   display: grid;
   justify-content: center;
@@ -98,53 +98,43 @@ body {
   row-gap: 20px;
 }
 
-.ancoraPost{
+.ancoraPost {
   text-decoration: none;
 }
 
 .card {
-  display: grid;
-  grid-template-rows: 1fr 50px 100px;
-  width: 80%;
-  height: 70vh;
-  margin-bottom: 50px;
-  text-align: center;
-  overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 450px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-bege1-100);
-  align-items: start;
-  justify-items: center;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .card img {
-  height: 100%;
-  width: 100%;
-  display: block;
+  width: 400px;
+  height: 450px;
   object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
 }
+
 .card h1 {
-  grid-row: 2;
-  height: 50px;
-  display: flex;
-  align-items: end;
-  justify-content: center;
-  font-size: 28px;
-  margin: 0;
+  margin-top: 15px;
+  padding: 0 15px;
+
+  text-align: center;
+  font-size: 2rem;
 }
+
 .card p {
-  grid-row: 3;
-  max-width: 300px;
-  margin: 0;
-  /* define a altura máxima para o parágrafo */
+  padding: 10px 20px 20px;
+  text-align: center;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -191,7 +181,7 @@ body {
     margin-right: 65%;
   }
 
-  .container {
+  .Postcontainer {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 40px;
   }
@@ -223,7 +213,7 @@ body {
     padding-left: 20px;
   }
 
-  .container {
+  .Postcontainer {
     grid-template-columns: 1fr;
     padding: 0 20px;
   }

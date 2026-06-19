@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="pt-br">
 <div class="Usuariosidebar">
-    <?php require('sidebar.view.php');?>
+    <?php require('sidebar.view.php'); ?>
 </div>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,8 +11,8 @@
     <link rel="stylesheet" href="../../../public/css/admin/tabelaUsuarios.css" />
 
     <!-- Link Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- Alice -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,15 +65,15 @@
             <form action="/admin/usuarios" method="GET" class="pesqusuario">
                 <input type="text" id="pesquisa" placeholder="Pesquisar" value="<?= $textoBusca ?? '' ?>" />
             </form>
-                
-            
+
+
 
             <div class="adcusuario">
                 <button onclick="abrirModal('usuarioCriar', 'filtromodalview')">+ Adicionar Usuário</button>
             </div>
         </div>
     </section>
-    
+
     <section class="tabelacont">
         <div class="tabela">
             <table class="tablecont">
