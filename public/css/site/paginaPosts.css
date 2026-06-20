@@ -58,6 +58,11 @@ body {
     2px 0px 0 #e8d8c3;
 }
 
+#navbar{
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
 #pesquisa {
   display: flex;
   width: 60%;

@@ -17,6 +17,7 @@
 .nav-ancoragem{
     text-decoration: none;
     color: inherit;
+    background-color: transparent;
 }
 
 
@@ -85,13 +86,13 @@
     background-color: #E8D8C3;
     padding-block: 0.1rem;
     padding-inline: 0.8rem;
+    transition: 0.2s ease-in-out;
 }
 
 .nav-link:hover{
-    background-color:#ada295;
+    background-color:#c8bcad;
     border-radius: 3rem;
-    padding-block: 0.1rem;
-    padding-inline: 0.8rem;
+    font-size: 1.2rem;
 }
 
 .nav-login{

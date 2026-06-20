@@ -14,10 +14,10 @@
 
     <div class="nav-mid">
         <a href="/ " class="nav-ancoragem">
-            <input type="button" value="HOME" class="nav-link">
+            <span class="nav-link">HOME</span>
         </a>
         <a href="/posts" class="nav-ancoragem">
-            <input type="button" value="PUBLICAÇÕES" class="nav-link">
+            <span class="nav-link">PUBLICAÇÕES</span>
         </a>
     </div>
 
