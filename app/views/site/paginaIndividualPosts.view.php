@@ -61,11 +61,11 @@
 
                 <div class="Infoposts">
                     <div class="TitEImgPosts">
-                       
+                        
                         <div class="TituloPosts">
                             <h2 class="PostsTitle"> A Viagem de Chihiro</h2>
                         </div>
-                       
+                        
                         <div class="ImgPosts">
                             <img class="" src="../../../public/assets/Imagem (3).png" alt="">
                         </div>
