@@ -15,8 +15,11 @@
     <div class="PVisualizarBody">
       <div class="PVisualizarLeft">
         <div class="PVisualizarCard">
+          <?php
+            $imagem = '/' . $publicacao->imagem;
+            ?>
           <a href="/post" class="PVisualizarAncora">
-              <img src="/<?= $publicacao->imagem ?>" alt="" class="PVisualizarIMG"/>
+              <img src="<?= $imagem ?>" alt="<?= $publicacao->titulo ?>" class="PVisualizarIMG"/>
               <div class="PVisualizarplacetxt">
                 <h1 class="PVisualizartxt"><?= $publicacao->titulo ?></h1>
                 <p class="PVisualizartxt">
