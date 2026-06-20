@@ -54,6 +54,8 @@ class QueryBuilder
 
     public function delete($table, $id)
     {
+
+
         $sql = sprintf(
             "DELETE FROM %s WHERE id = :id",
             $table,
@@ -67,23 +69,7 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
-    public function selectJoinADMP($table1, $table2, $inicio = null, $itensPorPagina = null)
-    {
-        $sql = "select  p.descricao,p.id,p.titulo,u.nome as autor,DATE_FORMAT(p.data, '%d/%m/%Y') as dataformatada from {$table1} as p join {$table2} as u on p.usuarios_id = u.id";
 
-        if ($inicio >= 0 && $itensPorPagina > 0) {
-            $sql .= " LIMIT {$inicio}, {$itensPorPagina}";
-        }
-
-        try {
-            $stmt = $this->pdo->prepare($sql);
-            $stmt->execute();
-
-            return $stmt->fetchAll(PDO::FETCH_CLASS);
-        } catch (Exception $e) {
-            die($e->getMessage());
-        }
-    }
 
     public function countAll($table, $textoBusca, $colunaBusca)
     {
@@ -93,6 +79,7 @@ class QueryBuilder
 
         if ($textoBusca && $colunaBusca) {
             $sql .= " where $colunaBusca[0] like :textoBusca OR $colunaBusca[1] like :textoBusca";
+            $parameters['textoBusca'] = '%' . $textoBusca . '%';
         }
 
         try {
@@ -105,28 +92,57 @@ class QueryBuilder
         }
     }
 
-    public function selectUsuarios($limit, $offset, $textoBusca, $colunaBusca)
+    public function selectJoinADMP($table1, $table2, $inicio = null, $itensPorPagina = null, $textoBusca = null, $colunaBusca = null)
     {
-        $limit = (int) $limit;
-        $offset = (int) $offset;
         $parameters = [];
         $whereSql = '';
 
-
         if ($textoBusca && $colunaBusca) {
             $whereSql = " where $colunaBusca[0] like :textoBusca OR $colunaBusca[1] like :textoBusca";
+            $parameters['textoBusca'] = '%' . $textoBusca . '%';
         }
 
-        $sql .= $whereSql;
+        $sql = "select p.id, p.titulo, p.descricao, p.imagem, u.nome as autor, DATE_FORMAT(p.data, '%d/%m/%Y') as dataformatada from {$table1} as p join {$table2} as u on p.usuarios_id = u.id {$whereSql}";
+
+        if ($inicio >= 0 && $itensPorPagina > 0) {
+            $sql .= " LIMIT {$inicio}, {$itensPorPagina}";
+        }
 
         try {
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute($parameters);
-            return $stmt->fetchColumn();
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
         } catch (Exception $e) {
             die($e->getMessage());
         }
     }
+
+    public function selectUsuarios($tabela, $limit, $offset, $textoBusca = null, $colunaBusca = null) { 
+    $limit = (int) $limit; 
+    $offset = (int) $offset; 
+    
+    $parameters = []; 
+    $whereSql = ''; 
+    
+    if ($textoBusca && $colunaBusca) { 
+        $whereSql = " where $colunaBusca[0] like :textoBusca OR $colunaBusca[1] like :textoBusca"; 
+        $parameters['textoBusca'] = '%' . $textoBusca . '%'; 
+    } 
+    
+    $sql = "SELECT * FROM {$tabela}" . $whereSql; 
+    
+    if ($limit > 0 && $offset >= 0) { 
+        $sql .= " LIMIT {$offset}, {$limit}"; 
+    } 
+    
+    try { 
+        $stmt = $this->pdo->prepare($sql); 
+        $stmt->execute($parameters); 
+        return $stmt->fetchAll(PDO::FETCH_CLASS);
+    } catch (Exception $e) { 
+        die($e->getMessage()); 
+    } 
+}
 
 
     public function edit($table, $id, $parameters)
@@ -150,10 +166,11 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
-    public function verificalogin($email, $senha){
+    public function verificalogin($email, $senha)
+    {
         $sql = sprintf('SELECT * FROM usuarios WHERE email = :email AND  senha = :senha');
 
-         try {
+        try {
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute([
                 'email' => $email,
@@ -163,9 +180,8 @@ class QueryBuilder
             $userlogin = $stmt->fetch(PDO::FETCH_OBJ);
 
             return $userlogin;
-
         } catch (Exception $e) {
             die($e->getMessage());
-        }   
-     }
+        }
+    }
 }

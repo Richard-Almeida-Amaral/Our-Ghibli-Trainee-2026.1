@@ -10,6 +10,10 @@ class PostController
 
     public function index()
     {
+
+        $textoBusca = isset($_GET['busca']) ? $_GET['busca'] : '';
+        $colunaBusca = $textoBusca !== '' ? ['titulo','descricao'] : null;
+
         $publicacoes =  App::get('database')->selectJoinADMP('posts', 'usuarios');
 
         $paginaAtual = 1;
@@ -26,17 +30,14 @@ class PostController
 
         $inicio = $itensPorPagina * ($paginaAtual - 1);
 
-        $textoBusca = isset($_GET['busca']) ? $_GET['busca'] : '';
-        $colunasBusca = $textoBusca !== '' ? ['nome']['email'] : null;
 
 
-
-        $countPost = App::get('database')->countAll('posts', $textoBusca, $colunasBusca);
+        $countPost = App::get('database')->countAll('posts', $textoBusca, $colunaBusca);
 
         if ($inicio >= $countPost && $countPost > 0) {
             return redirect('admin/posts');
         }
-        $publicacoes = App::get('database')->selectJoinADMP('posts','usuarios', $inicio, $itensPorPagina);
+        $publicacoes = App::get('database')->selectJoinADMP('posts','usuarios', $inicio, $itensPorPagina, $textoBusca, $colunaBusca);
         $totalPaginas = ceil($countPost / $itensPorPagina);
 
         return view('admin/tabelaPublicacoes', compact('publicacoes', 'paginaAtual', 'totalPaginas', 'textoBusca'));

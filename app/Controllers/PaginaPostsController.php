@@ -10,6 +10,9 @@ class PaginaPostsController
 
     public function index()
     {
+        $textoBusca = isset($_GET['busca']) ? $_GET['busca'] : '';
+        $colunaBusca = $textoBusca !== '' ? ['titulo', 'descricao'] : null;
+
         $paginaAtual = 1;
 
         if (isset($_GET['paginacaoNumero']) && !empty($_GET['paginacaoNumero'])) {
@@ -21,23 +24,18 @@ class PaginaPostsController
         }
 
         $itensPorPagina = 6;
-
         $inicio = $itensPorPagina * ($paginaAtual - 1);
 
-        $textoBusca = isset($_GET['busca']) ? $_GET['busca'] : '';
-        $colunasBusca = $textoBusca !== '' ? ['nome']['email'] : null;
+        $countPosts = App::get('database')->countAll('posts', $textoBusca, $colunaBusca);
 
-
-
-        $countposts = App::get('database')->countAll('posts', $textoBusca, $colunasBusca);
-
-        if ($inicio >= $countposts && $countposts > 0) {
+        if ($inicio >= $countPosts && $countPosts > 0) {
             return redirect('site/paginaPosts');
         }
-        $posts = App::get('database')->selectAll('posts', $inicio, $itensPorPagina);
-        $totalPaginas = ceil($countposts / $itensPorPagina);
 
-        return view('site/paginaPosts', compact('posts', 'paginaAtual', 'totalPaginas', 'textoBusca'));
+        $posts = App::get('database')->selectJoinADMP('posts','usuarios',$inicio,$itensPorPagina,$textoBusca,$colunaBusca);
+
+        $totalPaginas = ceil($countPosts / $itensPorPagina);
+
+        return view('site/paginaPosts',compact('posts','paginaAtual','totalPaginas','textoBusca'));
     }
-
 }

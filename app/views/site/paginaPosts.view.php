@@ -45,8 +45,8 @@
     <section>
       <div class="topoPaginaDePosts">
         <h1>Publicações</h1>
-        <form action="">
-          <input type="text" id="pesquisa" placeholder="Pesquisar" />
+        <form action="/posts" method="GET">
+          <input type="text" id="pesquisa" name="busca" placeholder="Pesquisar" />
         </form>
 
         <!-- input de pesquisa -->
@@ -86,6 +86,7 @@
   <div id="footer">
     <?php require('footer.view.php'); ?>
   </div>
+  <script src="../../../public/js/paginaPosts.js"></script>
 </body>
 
 </html>

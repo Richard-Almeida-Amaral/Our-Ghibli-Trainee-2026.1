@@ -10,6 +10,9 @@ class UsuariosController
 
     public function index()
     {
+        $textoBusca = isset($_GET['busca']) ? $_GET['busca'] : '';
+
+        $colunaBusca = $textoBusca !== '' ? ['nome', 'email'] : null;
 
         $paginaAtual = 1;
 
@@ -22,23 +25,20 @@ class UsuariosController
         }
 
         $itensPorPagina = 6;
-
         $inicio = $itensPorPagina * ($paginaAtual - 1);
 
-        $textoBusca = isset($_GET['busca']) ? $_GET['busca'] : '';
-        $colunasBusca = $textoBusca !== '' ? ['nome']['email'] : null;
-
-
-
-        $countUsuarios = App::get('database')->countAll('usuarios', $textoBusca, $colunasBusca);
+        $countUsuarios = App::get('database')->countAll('usuarios', $textoBusca, $colunaBusca);
 
         if ($inicio >= $countUsuarios && $countUsuarios > 0) {
             return redirect('admin/usuarios');
         }
-        $usuarios = App::get('database')->selectAll('usuarios', $inicio, $itensPorPagina);
+
+        $usuarios = App::get('database')->selectUsuarios('usuarios', $inicio, $itensPorPagina, $textoBusca, $colunaBusca);
+
         $totalPaginas = ceil($countUsuarios / $itensPorPagina);
 
-        return view('admin/tabelaUsuarios', compact('usuarios', 'paginaAtual', 'totalPaginas', 'textoBusca'));
+        return view('admin/tabelaUsuarios',compact('usuarios', 'paginaAtual', 'totalPaginas', 'textoBusca')
+        );
     }
 
 
@@ -67,16 +67,16 @@ class UsuariosController
 
     public function edit()
     {
-    $parameters = [
+        $parameters = [
             'nome' => $_POST['nome'],
             'email' => $_POST['email'],
-            'senha' => $_POST['senha'],  
+            'senha' => $_POST['senha'],
         ];
 
-        $id =$_POST['id'];
+        $id = $_POST['id'];
 
         App::get('database')->update('usuarios', $id, $parameters);
-        
+
         header('Location: /admin/usuarios');
     }
 }
