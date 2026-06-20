@@ -79,7 +79,7 @@
     align-items: center;
     justify-content: start;
     flex-direction: column;
-    background-color:rgb(186, 177, 166,0.5);
+    background-color:rgb(186, 177, 166,0.75);
     backdrop-filter: blur(2px);
     border-radius: 50px;
     width: fit-content;
@@ -112,12 +112,38 @@
 
 .login-fill{
     display: flex;
-    align-items: center;
-    justify-content: start;
+    align-items: start;
     flex-direction: column;
     gap: 0.5rem;
     margin: 1rem;
 }
+
+.logintxt{
+    color: black;
+}
+
+.loginCadastro{
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+}
+
+.loginLink{
+    display: flex;
+    flex-direction: row;
+    color: rgb(49, 65, 207);
+    cursor: pointer;
+    font-weight: 1000;
+    text-decoration: underline;
+    transition: transform 200ms ease-in-out;
+    font-size: 1rem;
+}
+
+.loginLink:hover{
+    box-shadow: 0 0 40px rgba(120, 158, 209, 0.699); 
+    transform: scale(1.1);
+}
+
 
 .subtittlelogin{
     display: flex;
