@@ -16,11 +16,22 @@ NavbarClosedicon.addEventListener("click", function (){
     NavbarClosed.style.display = "flex";
 });
 
-window.addEventListener("scroll", function() {
-  var auxnavbar = document.querySelector(".nav-container");
-  if (window.scrollY > 50) { 
-    auxnavbar.classList.add("construct");
-  } else {
-    auxnavbar.classList.remove("construct");
+// window.addEventListener("scroll", function() {
+//   const auxnavbar = document.getElementById('NavClosed');
+//   if (window.scrollY > 50) { 
+//     auxnavbar.classList.add("construct");
+//   } else {
+//     auxnavbar.classList.remove("construct");
+//   }
+// });
+
+document.addEventListener('scroll', ()=>{
+  const nav = document.querySelector('.nav-container')
+  if(window.scrollY > 0){
+    nav.classList.add('construct');
+  }else{
+    nav.classList.remove('construct');
   }
-});
+})
+
+console.log(window.scrollY);

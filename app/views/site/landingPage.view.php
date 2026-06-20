@@ -114,41 +114,8 @@
                             </svg>
                         </div>
                         </div>
-
                     </div>
-
-
-
-
                 </div>
-                <!-- <div id="postsrecentes"> 
-
-                        <div id="imagemetextopost">  
-                            <div id="imagempost">   
-                                
-                                <img class="imagemcarrossel" id="imagemcarrossel1" src="../../../public/assets/dragao.jpg">
-                                <img class="imagemcarrossel" id="imagemcarrossel2" src="../../../public/assets/viagemdechihiro1920certo.png">
-                                <img class="imagemcarrossel" id="imagemcarrossel3" src="../../../public/assets/princesamonoke.jpg">
-                                <img class="imagemcarrossel" id="imagemcarrossel4" src="../../../public/assets/porcorosso.jpg">
-                                <img class="imagemcarrossel" id="imagemcarrossel5" src="../../../public/assets/casteloanimado.jpg">
-                                <div id="usuariopost">   Container informações do post 
-                                    <div id="fotousuariopost"> </div>   Foto usuário 
-                                    <div id="nomeusuariopost">@usuario </div>    Nome usuário   
-                                </div>
-                                <div id="tituloecurtidaspost">    Container título e favoritos
-                                        <div id="textoemdestaque">Em destaque: </div>      Título -
-                                        <div id="iconespost"> 
-                                    
-                                    </div>    
-                                </div>
-                            </div>
-
-                            <div id="textodescricaopost"> A beleza em "a Viagem de Chihiro"!
-                            </div>  Texto post
-                        </div> -->
-
-
-
 
             </div>
             </div>

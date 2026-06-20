@@ -50,12 +50,8 @@
 }
 
 #navbar{
-    position: fixed;
-    top: 0;
-    overflow-y: auto;
-    z-index: 99;
     scrollbar-width: none; 
-  -ms-overflow-style: none; 
+    -ms-overflow-style: none; 
 }
 
 #hero{

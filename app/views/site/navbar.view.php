@@ -13,16 +13,16 @@
     </div>
 
     <div class="nav-mid">
-        <a href="/ ">
+        <a href="/ " class="nav-ancoragem">
             <input type="button" value="HOME" class="nav-link">
         </a>
-        <a href="/posts">
+        <a href="/posts" class="nav-ancoragem">
             <input type="button" value="PUBLICAÇÕES" class="nav-link">
         </a>
     </div>
 
-    <div class="nav-right">
-        <a href="/login">
+    <div class="nav-right" >
+        <a href="/login" class="nav-ancoragem">
             <input type="button" value="LOGIN" class="nav-login">
         </a>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="list" id="list" viewBox="0 0 16 16">
