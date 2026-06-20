@@ -58,7 +58,7 @@
 
     <section class="Topo">
         <div class="Titulo">
-            <p>Listas de Usuários</p>
+            <h1>Listas de Usuários</h1>
         </div>
 
         <div class="acoestopo">
@@ -68,9 +68,9 @@
 
 
 
-            <div class="adcusuario">
-                <button onclick="abrirModal('usuarioCriar', 'filtromodalview')">+ Adicionar Usuário</button>
-            </div>
+            
+            <input type="button" value="+ Adicionar Usuário" class="adcusuario" onclick="abrirModal('usuarioCriar', 'filtromodalview')"> <!-- botao com onclick JS-->
+            
         </div>
     </section>
 

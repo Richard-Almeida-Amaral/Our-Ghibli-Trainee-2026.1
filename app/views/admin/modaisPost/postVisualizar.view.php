@@ -16,7 +16,7 @@
       <div class="PVisualizarLeft">
         <div class="PVisualizarCard">
           <a href="/post" class="PVisualizarAncora">
-              <img src="/<?= $publicacao->caminhoimagem ?>" alt="" class="PVisualizarIMG"/>
+              <img src="/<?= $publicacao->imagem ?>" alt="" class="PVisualizarIMG"/>
               <div class="PVisualizarplacetxt">
                 <h1 class="PVisualizartxt"><?= $publicacao->titulo ?></h1>
                 <p class="PVisualizartxt">
