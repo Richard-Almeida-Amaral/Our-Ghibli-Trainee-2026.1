@@ -78,8 +78,10 @@ class PostController
     {
 
     $id = $_POST['id'];
-    $post = App::get('database')->selectOne('posts', $id);
-    $caminhoimagem = $post->imagem;
+
+    $publicacao = App::get('database')->selectOne('posts', $id);
+    
+    $caminhoimagem = $publicacao->imagem;
 
     $parameters = [
             'titulo' => $_POST['titulo'],

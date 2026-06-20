@@ -144,6 +144,10 @@ class QueryBuilder
     } 
 }
 
+    public function selectOne($table, $id)
+    {
+        
+    }
 
     public function edit($table, $id, $parameters)
     {
