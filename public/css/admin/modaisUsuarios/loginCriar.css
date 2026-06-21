@@ -14,8 +14,8 @@
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: aliceblue;
-    width: 30vw;
-    height: 60vh;
+    width: 25vw;
+    height: 40vh;
     border-radius: 2rem;
     padding: 1rem;
 }
@@ -25,18 +25,52 @@
 }
 
 .cadastroBody{
+    display: flex;
     width: 100%;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .cadastroFields{
+    display: flex;
     width: 100%;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.cadastroLabel{
+    font-weight: 600;
 }
 
 .cadastroInput{
-    width: 90%;
-    border-radius: 0.5rem;
+    width: 100%;
+    border-radius: 0.7rem;
+    padding: 0.5rem;
 }
 
 .cadastroBtn{
+    display: flex;
+    gap: 1.5rem;
+}
 
+.cadastroCriar{
+  background-color: #20315a;
+  color: #ffffff;
+  font-size: 1.3rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.cadastroCancelar{
+  background-color: #e63946;
+  color: #ffffff;
+  font-size: 1.3rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  scale: 1.1;
 }

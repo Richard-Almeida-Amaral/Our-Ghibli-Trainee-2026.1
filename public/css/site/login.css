@@ -211,8 +211,7 @@
     background-color:rgba(14, 108, 231, 0.623);
     color: rgb(255, 255, 255);
     transition: ease-in-out 200ms;
-    box-shadow: 0 0 40px rgba(120, 158, 209, 0.699); 
-    
+    box-shadow: 0 0 40px rgba(120, 158, 209, 0.699);  
 }
 
 .boxlogin{
