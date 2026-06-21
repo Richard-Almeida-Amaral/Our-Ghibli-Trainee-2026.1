@@ -171,6 +171,12 @@
 .input-login:focus{
     outline: none;
 }
+.input-login::placeholder{
+    display: flex;
+    font-family: inter;
+    color: rgb(89, 89, 89);
+    font-size: larger;
+}
 
 .login-tittle-area{
     display: flex;
@@ -179,12 +185,6 @@
     gap: 0;
 }
 
-.input-login::placeholder{
-    display: flex;
-    font-family: inter;
-    color: rgb(89, 89, 89);
-    font-size: larger;
-}
 
 .modal-downlogin{    
     display: flex;

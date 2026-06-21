@@ -41,8 +41,11 @@ $router->post('admin/posts/criar', 'PostController@criar');
 //Tabela de Usuarios
 $router->get('admin/usuarios', 'UsuariosController@index');
 
+$router->post('admin/usuarios/cadastro', 'UsuariosController@cadastro');
+
 $router->post('admin/usuarios/criar', 'UsuariosController@criar');
 $router->post('admin/usuarios/excluir', 'UsuariosController@delete');
 $router->post('admin/usuarios/edit', 'UsuariosController@edit');
 $router->post('admin/posts/excluir', 'PostController@delete');
+
 

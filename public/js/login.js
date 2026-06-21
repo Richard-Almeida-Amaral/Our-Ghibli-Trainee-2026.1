@@ -4,7 +4,14 @@ imagescell=['../../../public/assets/telas-mobile/telacell-1.jpg','../../../publi
 // alert(images)
 var DeskImgCount = imagesdesk.length;
 var CellImgCount = imagescell.length;
+
+const cadastrofiltro = document.getElementById('idcadastrofiltro');
+const cadastromodal = document.getElementById('ModalCadastro');
 // alert(DeskImgCount)
+cadastrofiltro.addEventListener("click", function (){
+    cadastromodal.style.display = "none";
+    cadastrofiltro.style.display = "none";
+});
 
 window.onload = function(){
     if ( window.matchMedia("(max-width: 414px)").matches){
@@ -46,3 +53,4 @@ function fecharModal(idModal, idFiltroModal) {
     modal.style.display = "none";
     filtromodal.style.display = "none";
 }
+

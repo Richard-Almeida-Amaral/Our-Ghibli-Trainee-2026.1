@@ -56,6 +56,20 @@ class UsuariosController
         header('Location: /admin/usuarios');
     }
 
+    public function cadastro()
+    {
+        $parameters = [
+            'nome' => $_POST['nome'],
+            'email' => $_POST['email'],
+            'senha' => $_POST['senha'],
+            'imagem' => '1'
+        ];
+
+        App::get('database')->insert('usuarios', $parameters);
+
+        header('Location: /admin');
+    }
+
     public function delete()
     {
         $id = $_POST['id'];
