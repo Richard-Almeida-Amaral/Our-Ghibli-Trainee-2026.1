@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION['id'])) {
+    header('Location:/login');
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en" id="html">
 
@@ -25,12 +31,6 @@
 
 </head>
 
-<?php
-if (!isset($_SESSION['id'])) {
-    header('Location:/login');
-    exit;
-}
-?>
 
 
 <body class="body-dashboard">
