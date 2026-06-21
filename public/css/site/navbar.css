@@ -190,10 +190,11 @@
     .nav-container{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: start;
         flex-direction: row-reverse;
         padding-right: 7.9rem;
         padding-left: 1.5rem;
+        gap: 2.1rem;
         background-color: #E8D8C3;
     }
 

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=], initial-scale=1.0">
     <link rel="stylesheet" href="../../../public/css/admin/tabelaPublicacoes.css"> <!--impostando o estilo CSS-->
+    <link rel="stylesheet" href="../../../public/css/site/paginacao.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Importando fontes -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
         rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -19,7 +20,7 @@
     <?php require('sidebar.view.php'); ?>
 </div>
 
-
+<div class="ADMP-filtro" id="filtroModal"></div>
 <body class="ADMP-body">
     <div id="filtromodalview"></div>
     <div class="ADMP-up">
@@ -30,9 +31,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" id="ADMP-searchIcon"> <!-- Ícone Lupa -->
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
             </svg>
-            <form action="/admin/posts" method="GET">
-                <input type="search" name="busca" id="" placeholder="Pesquisar..." class="ADMP-searchfield" value="<?= $textoBusca ?? ''?>">
-                <button type="submit">pesquisar</button>
+            <form action="/admin/posts" method="GET" class="ADMP-form">
+                <input type="search" name="busca" id="pesquisa" placeholder="Pesquisar..." class="ADMP-searchfield" value="<?= $textoBusca ?? '' ?>">
             </form>
         </div>
 
@@ -66,7 +66,7 @@
                                     <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
                                 </svg>
                             </button>
-                            <button class="ADMP-btnIcons" onclick="abrirModal('ModalExcluir<?= $publicacao->id ?>', 'filtromodalview')">
+                            <button class="ADMP-btnIcons" onclick="abrirModal('ModalExcluir<?= $publicacao->id ?>')">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ADMP-icons" viewBox="0 0 16 16">
                                     <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
                                 </svg>
@@ -80,12 +80,16 @@
                         </td>
                     </tr>
                     <!--importando os modais por user-->
-                    <?php require('./app/views/admin/modaisPost/postVisualizar.view.php') ?>
-                    <?php require('./app/views/admin/modaisPost/postExcluir.view.php') ?>
-                    <?php require('./app/views/admin/modaisPost/postEditar.view.php') ?>
+                    <div class="ADMP-modais">
+                        <?php require('./app/views/admin/modaisPost/postVisualizar.view.php') ?>
+                        <?php require('./app/views/admin/modaisPost/postExcluir.view.php') ?>
+                        <?php require('./app/views/admin/modaisPost/postEditar.view.php') ?>
+                    </div>
                 <?php endforeach ?>
                 <!-- importando modal de criar -->
-                <?php require('./app/views/admin/modaisPost/postCriar.view.php') ?>
+                 <div class="ADMP-modais">
+                    <?php require('./app/views/admin/modaisPost/postCriar.view.php') ?>
+                </div>
             </tbody>
         </table>
         <tfoot class="ADMP-tablefooter"> <!-- rodape da tabela -->
@@ -104,5 +108,5 @@
     </div>
 </body>
 <script type="text/javascript" src="../../../public/js/Modais.js"></script>
-
+<script type="text/javascript" src="../../../public/js/paginaPosts.js"></script>
 </html>

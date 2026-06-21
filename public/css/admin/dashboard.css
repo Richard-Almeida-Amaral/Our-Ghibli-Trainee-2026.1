@@ -203,6 +203,13 @@ a {
     
 }
 
+.icone-logout-dashboard{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
 .dashboard-botao-de-logout{
 
     display: flex;

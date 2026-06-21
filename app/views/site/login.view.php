@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
 </head>
 <body class="alllogin" id="login-random">
-    <?php require('./app/views/admin/modaisUsuarios/LoginCriar.php') ?>
+    <?php require('app/views/admin/modaisUsuarios/LoginCriar.view.php') ?>
     <div class="extralogin">
         <div class="login-tittle-area">
             <div class="uplogin"></div>
@@ -66,7 +66,7 @@
                             <div class="loginCadastro">
                                 <span class="logintxt">Não Possui Cadastro?</span>
 
-                                <div onclick="abrirModal('ModalLogin','FiltroModal')" class="loginLink">Registre-se</div>
+                                <div onclick="abrirModal('ModalCadastro','idcadastrofiltro')" class="loginLink">Registre-se</div>
                             </div>
                         </div>
                     </div>

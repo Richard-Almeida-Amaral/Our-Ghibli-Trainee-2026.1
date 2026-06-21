@@ -28,9 +28,9 @@ $router->get('sidebar', 'SidebarController@index');
 
 $router->get('aux', 'ControllerAUX@index');
 
-
+$router->post('logout', 'LoginController@logout');
 // Admin
-
+$router->post('admin/usuarios/cadastro', 'UsuariosController@cadastro');
 //Dashboard
 $router->get('admin', 'DashboardController@index');
 
