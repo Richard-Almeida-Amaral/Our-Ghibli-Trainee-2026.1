@@ -23,6 +23,7 @@ $router->get('post', 'PaginaIndividualPostsController@index');
 $router->get('login', 'LoginController@index');
 
 $router->post('login', 'LoginController@execlogin');
+$router->post('logout', 'LoginController@logout');
 
 $router->get('sidebar', 'SidebarController@index');
 
