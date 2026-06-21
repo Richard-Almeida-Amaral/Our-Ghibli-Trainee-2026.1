@@ -19,6 +19,26 @@
     left: 0%;
 }
 
+.ADMP-filtro{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 98;
+    background-color: rgba(23, 25, 34, 0.706);
+    backdrop-filter: blur(0.4rem);
+}
+
+.ADMP-pagination{
+    z-index: auto;
+}
+
+.ADMP-modais{
+    z-index: 99;
+}
 
 /* .ADMP-up{} */
 
