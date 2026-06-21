@@ -4,124 +4,39 @@
     box-sizing: border-box;
 }
 
-.ADMPMA-html{
+.cadastroContainer{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-.ADMPMA-body{
-    display: flex;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    
-}
-
-.FormCriarUsuario{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-direction: column;
-    background-color: #E8D8C3;
-    height: 30rem;
-    width: 28rem;
-    border: 1px solid black;
-    border-radius: 28px;
-    gap: 1rem;
-}
-
-.ADMPMA-container{
-    display: none;
     position: absolute;
-    left: 35%;
-    top: 30%;
+    flex-direction: column;
     align-items: center;
-    justify-content: start;
-    flex-direction: column;
-    background-color: #E8D8C3;
-    height: 30rem;
-    width: 28rem;
-    gap: 2rem;
-}
-.ADMPMA-input{
-    width: 350px;
-    padding: 10px 14px;
-    border: 0.5px solid #000000;
-    border-radius: 10px;
-    background-color: #ebdcd0;
-    font-size: 14px;
-    color: #333333;
-    outline: none;
-    font-weight: 500;
-    font-size: 16px;
+    justify-content: space-between;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 2rem;
+    padding: 1rem;
 }
 
-.ADMPMA-mid{
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;    
-    align-items: center;
-    justify-content: center;
+.cadastroHeader{
+
 }
 
-.ADMPMA-fields{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    gap: 8px;
+.cadastroBody{
+    width: 100%;
 }
 
-.ADMPMA-btncancel{
-    display: flex;
-    background-color: #20315A;
-    color: white;
-    font-size: 1.4rem;
-    border-radius: 1rem;
-    padding-inline:1rem;
-    padding-block:0.4rem;
-}
-.ADMPMA-btncancel:hover{
-    scale: 1.05;
+.cadastroFields{
+    width: 100%;
 }
 
-.ADMPMA-btnapply{
-    display: flex;
-    background-color: #5A78A6;
-    color: white;
-    font-size: 1.4rem;
-    border-radius: 1rem;
-    padding-inline:1rem;
-    padding-block:0.4rem;
-}
-.ADMPMA-btnapply:hover{
-    scale: 1.05;
+.cadastroInput{
+    width: 90%;
+    border-radius: 0.5rem;
 }
 
+.cadastroBtn{
 
-.ADMPMA-actions{
-    display: flex;
-    gap: 5rem;
-}
-
-.ADMPMA-header{
-    background-color: #20315A;
-    color: white;
-    width:100%;
-    display: flex;
-    justify-content: center;
-    border-top-left-radius: 28px;
-    border-top-right-radius: 28px;
-    padding-block: 1rem;
-}
-
-.ADMPMA-end{
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
 }

@@ -7,11 +7,9 @@ use Exception;
 
 class ControllerAUX
 {
-
     public function index()
     {
-        return view('admin/modaisPost/postEditar');
+        return view('admin/modaisUsuarios/LoginCriar');
     }
-
 }
 ?>
