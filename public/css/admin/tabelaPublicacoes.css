@@ -19,6 +19,7 @@
     left: 0%;
 }
 
+
 /* .ADMP-up{} */
 
 .ADMP-tittle{
@@ -51,6 +52,10 @@
     padding-inline: 1rem;
     background-color: white;
 
+}
+
+.ADMP-form{
+    width: 100%;
 }
 
 /* #ADMP-searchIcon{} */

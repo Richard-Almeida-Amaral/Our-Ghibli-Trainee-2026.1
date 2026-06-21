@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=], initial-scale=1.0">
     <link rel="stylesheet" href="../../../public/css/admin/tabelaPublicacoes.css"> <!--impostando o estilo CSS-->
+    <link rel="stylesheet" href="../../../public/css/site/paginacao.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Importando fontes -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
         rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -30,9 +31,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" id="ADMP-searchIcon"> <!-- Ícone Lupa -->
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
             </svg>
-            <form action="/admin/posts" method="GET">
-                <input type="search" name="busca" id="" placeholder="Pesquisar..." class="ADMP-searchfield" value="<?= $textoBusca ?? ''?>">
-                <button type="submit">pesquisar</button>
+            <form action="/admin/posts" method="GET" class="ADMP-form">
+                <input type="search" name="busca" id="pesquisa" placeholder="Pesquisar..." class="ADMP-searchfield" value="<?= $textoBusca ?? '' ?>">
             </form>
         </div>
 
@@ -98,11 +98,10 @@
                     <button class="ADMP-btnpag">3</button>
                     <button class="ADMP-btnpag">></button>
         </div> -->
-        <div class="ADMP-pagination">
-            <?php require(__DIR__ . '/../site/paginacao.php') ?>
-        </div>
+        <?php require(__DIR__ . '/../site/paginacao.php') ?>
+
     </div>
 </body>
 <script type="text/javascript" src="../../../public/js/Modais.js"></script>
-
+<script type="text/javascript" src="../../../public/js/paginaPosts.js"></script>
 </html>
