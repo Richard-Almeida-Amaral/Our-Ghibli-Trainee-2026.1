@@ -34,18 +34,18 @@
 
         <div class="PEditarareas">
           <label for="">Autor</label>
-          <input type="text" name="usuarios_id" id="" placeholder="<?=$posts->usuarios_id ?>" class="PEditarinput" value="<?=$posts->usuarios_id ?>">
+          <input type="text" name="usuarios_id" id="" placeholder="<?=$publicacao->usuarios_id ?>" class="PEditarinput" value="<?=$publicacao->usuarios_id ?>">
         </div>
 
         <div class="PEditarareas">
           <label for="">Data</label>
-          <input type="text" name="data" id="" placeholder="<?=$posts->data ?>" class="PEditarinput" value="<?=$posts->data ?>">
+          <input type="text" name="data" id="" placeholder="<?=$publicacao->data ?>" class="PEditarinput" value="<?=$publicacao->data ?>">
         </div>
 
         <div class="PEditarareas">
           <label for="">Descricao</label>
           <textarea name="descricao" id="" class="PEditarTextArea" class="PEditarinput">
-          <?= $posts->descricao ?>
+          <?= $publicacao->descricao ?>
         </textarea>
         </div>
 
