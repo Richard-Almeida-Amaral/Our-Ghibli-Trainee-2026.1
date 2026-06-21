@@ -81,17 +81,17 @@ class PostController
 
     $publicacao = App::get('database')->selectOne('posts', $id);
     
-    $caminhoimagem = $publicacao->imagem;
+    $caminhoimagem = $publicacao['imagem'] ?? '';
 
     if(isset($_FILES['imagem']) && $_FILES['imagem']['error'] === UPLOAD_ERR_OK){
         
         $temporario = $_FILES['imagem']['tmp_name'];
         $nomeimagem = sha1(uniqid($_FILES['imagem']['name'], true)) . "." . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
-        $caminhoimagem = "public/assets/ " . $nomeimagem;
+        $caminhoimagem = "public/assets/" . $nomeimagem;
 
         move_uploaded_file($temporario, $caminhoimagem);
 
-        if($publicacao && !empty($publicacao->imagem) && file_exists($publicacao)){
+        if($publicacao && !empty($publicacao->imagem) && file_exists($publicacao->imagem)){
             unlink($publicacao->imagem);
         }
     }
