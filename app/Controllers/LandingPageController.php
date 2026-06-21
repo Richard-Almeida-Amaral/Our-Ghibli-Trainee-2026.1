@@ -7,10 +7,17 @@ use Exception;
 
 class LandingPageController
 {
-
     public function index()
     {
-        return view('site/landingPage');
-    }
+        $posts = App::get('database')->selectJoinADMP(
+            'posts',
+            'usuarios',
+            0,
+            6
+        );
 
+
+
+        return view('site/landingPage', compact('posts'));
+    }
 }
