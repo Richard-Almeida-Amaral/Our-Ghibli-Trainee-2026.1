@@ -37,6 +37,7 @@ $router->get('admin', 'DashboardController@index');
 //Tabela de Publicacoes
 $router->get('admin/posts', 'PostController@index');
 $router->post('admin/posts/criar', 'PostController@criar');
+$router->post('admin/posts/edit', 'PostController@edit');
 
 //Tabela de Usuarios
 $router->get('admin/usuarios', 'UsuariosController@index');
