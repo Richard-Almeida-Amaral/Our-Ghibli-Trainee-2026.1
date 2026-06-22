@@ -22,7 +22,7 @@
     </div>
 
     <div class="ADMPME-end">
-        <button type="button" class="ADMPME-btncancel" onclick="fecharModal('usuarioEditar<?= $usuario->id ?>','filtromodalview')">Cancelar</button>
+        <button type="button" class="ADMPME-btncancel" onclick="fecharModal()">Cancelar</button>
         <button type="submit" class="ADMPME-btnapply">Salvar</button>
     </div>
 </form>

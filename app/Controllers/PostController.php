@@ -81,8 +81,22 @@ class PostController
 
     $publicacao = App::get('database')->selectOne('posts', $id);
     
-    $caminhoimagem = $publicacao->imagem;
+    $caminhoimagem = $publicacao['imagem'] ?? '';
 
+    if(isset($_FILES['imagem']) && $_FILES['imagem']['error'] === UPLOAD_ERR_OK){
+        
+        $temporario = $_FILES['imagem']['tmp_name'];
+        $nomeimagem = sha1(uniqid($_FILES['imagem']['name'], true)) . "." . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
+        $caminhoimagem = "public/assets/" . $nomeimagem;
+
+        move_uploaded_file($temporario, $caminhoimagem);
+
+        if($publicacao && !empty($publicacao->imagem) && file_exists($publicacao->imagem)){
+            unlink($publicacao->imagem);
+        }
+    }
+    
+    $id = $_POST['id'];
     $parameters = [
             'titulo' => $_POST['titulo'],
             'descricao' => $_POST['descricao'],
@@ -91,7 +105,7 @@ class PostController
             'usuarios_id' =>$_POST['usuarios_id']  //usar apos login
         ];
 
-        App::get('database')->update('posts', $id, $parameters);
+        App::get('database')->edit('posts', $id, $parameters);
         header('Location: /admin/posts');
     }
 }

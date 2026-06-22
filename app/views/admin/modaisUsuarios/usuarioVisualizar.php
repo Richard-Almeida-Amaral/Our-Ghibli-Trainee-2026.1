@@ -13,7 +13,7 @@
           <div class="modtit">
             <h1>Visualização do Usuário</h1>
             
-            <button type="button" id="fechamod" class="fechax" onclick="fecharModal('usuarioVisualizar<?=$usuario->id ?>')">&times</button>
+            <button type="button" id="fechamod" class="fechax" onclick="fecharModal()">&times</button>
           
           </div>
 

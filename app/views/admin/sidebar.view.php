@@ -89,16 +89,16 @@
 
 
       <!-- Parte do Logout da Sidebar -->
-      <a href="/">
-        <div class="logoutSidebar">
-          <button type="button" id="buttonLogout">
-            <i class="icone-sidebar">
-              <img id="iconeLogout" src="../../../public/assets/seta.png" alt="" srcset="" />
-            </i>
-            <span class="itemDescricao">Sair</span>
-          </button>
-        </div>
-      </a>
+       <form action="/logoutinicial" method="POST">
+          <div class="logoutSidebar">
+            <button type="submit" id="buttonLogout">
+              <i class="icone-sidebar">
+                <img id="iconeLogout" src="../../../public/assets/seta.png" alt="" srcset="" />
+              </i>
+              <span class="itemDescricao">Sair</span>
+            </button>
+          </div>
+        </form>
     </aside>
   </body>
   <script src="../../../public/js/sidebar.js"></script>

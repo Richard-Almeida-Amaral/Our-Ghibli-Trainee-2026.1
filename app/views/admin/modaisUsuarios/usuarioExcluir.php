@@ -17,7 +17,7 @@
           <p class="textoExcluir"> Deseja excluir este usuário</p>
 
           <div class="btsExcluir">
-            <button type="button" class="btnAcoesUsu btnUsuCancelar" onclick="fecharModal('usuarioExcluir<?= $usuario->id ?>','filtromodalview')">Cancelar</button>
+            <button type="button" class="btnAcoesUsu btnUsuCancelar" onclick="fecharModal()">Cancelar</button>
             <button type="submit" class="btnAcoesUsu btnUsuExcluir">Excluir</button>
           </div>
         </div>

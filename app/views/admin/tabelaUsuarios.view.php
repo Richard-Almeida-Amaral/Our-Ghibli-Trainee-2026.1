@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION['id'])) {
+    header('Location:/login');
+    exit;
+}
+?>
 <!doctype html>
 <html lang="pt-br">
 <div class="Usuariosidebar">
@@ -42,6 +48,8 @@
 
 
 </head>
+
+<div class="ADMP-filtro" id="filtroModal"></div>
 
 <body class="ADMU-body">
 
@@ -96,7 +104,7 @@
                             <td class="usuarioTdAc">
 
                                 <!-- Abre Modal Visualizar -->
-                                <button type="button" id="btnUsuModal" class="usubtnvisualizar" onclick="abrirModal('usuarioVisualizar<?= $usuario->id ?>','filtromodalview')">
+                                <button type="button" id="btnUsuModal" class="usubtnvisualizar" onclick="abrirModal('usuarioVisualizar<?= $usuario->id ?>')">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
@@ -111,7 +119,7 @@
 
                                 <!-- Abre Modais Editar -->
 
-                                <button type="button" id="btnUsuModal" class="usubtnvisualizar" onclick="abrirModal('usuarioEditar<?= $usuario->id ?>','filtromodalview')">
+                                <button type="button" id="btnUsuModal" class="usubtnvisualizar" onclick="abrirModal('usuarioEditar<?= $usuario->id ?>')">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
@@ -128,7 +136,7 @@
                                 </button>
 
                                 <!-- Abre Modal Excluir -->
-                                <button type="button" id="btnExcluirModal<?php echo $usuario->id; ?>" class="usubtnvisualizar botaoexcluir" onclick="abrirModal('usuarioExcluir<?= $usuario->id ?>','filtromodalview')">
+                                <button type="button" id="btnExcluirModal<?php echo $usuario->id; ?>" class="usubtnvisualizar botaoexcluir" onclick="abrirModal('usuarioExcluir<?= $usuario->id ?>')">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
