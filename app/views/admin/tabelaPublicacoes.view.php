@@ -12,7 +12,6 @@ if (!isset($_SESSION['id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=], initial-scale=1.0">
     <link rel="stylesheet" href="../../../public/css/admin/tabelaPublicacoes.css"> <!--impostando o estilo CSS-->
-    <link rel="stylesheet" href="../../../public/css/site/paginacao.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Importando fontes -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
         rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
