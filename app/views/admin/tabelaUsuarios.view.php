@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION['id'])) {
+    header('Location:/login');
+    exit;
+}
+?>
 <!doctype html>
 <html lang="pt-br">
 <div class="Usuariosidebar">

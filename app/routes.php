@@ -34,6 +34,8 @@ $router->post('admin/usuarios/cadastro', 'UsuariosController@cadastro');
 //Dashboard
 $router->get('admin', 'DashboardController@index');
 
+$router->post('logoutinicial', 'SidebarController@logout');
+
 //Tabela de Publicacoes
 $router->get('admin/posts', 'PostController@index');
 $router->post('admin/posts/criar', 'PostController@criar');
