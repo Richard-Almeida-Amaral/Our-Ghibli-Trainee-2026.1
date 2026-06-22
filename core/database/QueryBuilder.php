@@ -95,42 +95,38 @@ class QueryBuilder
     public function countPosts($textoBusca = null)
     {
         $sql = "SELECT COUNT(*) FROM posts p JOIN usuarios u ON p.usuarios_id = u.id";
-        $parameters = [];
+        $params = [];
 
         if ($textoBusca) {
             $sql .= " WHERE p.titulo LIKE :textoBusca OR p.descricao LIKE :textoBusca OR u.nome LIKE :textoBusca";
-            $parameters['textoBusca'] = '%' . $textoBusca . '%';
+            $params['textoBusca'] = "%$textoBusca%";
         }
 
-        try {
-            $stmt = $this->pdo->prepare($sql);
-            $stmt->execute($parameters);
-            return (int) $stmt->fetchColumn();
-        } catch (Exception $e) {
-            die($e->getMessage());
-        }
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute($params);
+
+        return (int) $stmt->fetchColumn();
     }
 
-    public function selectJoinADMP($table1, $table2, $inicio = null, $itensPorPagina = null, $textoBusca = null)
+    public function selectJoinADMP($table1, $table2, $inicio = 0, $itensPorPagina = 6, $textoBusca = null)
     {
+        $inicio = (int) $inicio;
+        $itensPorPagina = (int) $itensPorPagina;
+
         $parameters = [];
         $whereSql = '';
 
         if ($textoBusca) {
             $whereSql = " WHERE p.titulo LIKE :textoBusca OR p.descricao LIKE :textoBusca OR u.nome LIKE :textoBusca";
-            $parameters['textoBusca'] = '%' . $textoBusca . '%';
+            $parameters['textoBusca'] = "%$textoBusca%";
         }
 
-        $sql = "SELECT p.id, p.titulo, p.descricao, p.imagem, u.nome AS autor, DATE_FORMAT(p.data, '%d/%m/%Y') AS dataformatada FROM {$table1} p JOIN {$table2} u ON p.usuarios_id = u.id {$whereSql} ORDER BY p.data DESC";
-
-        if ($inicio >= 0 && $itensPorPagina > 0) {
-            $sql .= " LIMIT {$inicio}, {$itensPorPagina}";
-        }
+        $sql = "SELECT p.id, p.titulo, p.descricao, p.imagem, u.nome AS autor, DATE_FORMAT(p.data, '%d/%m/%Y') AS dataformatada FROM {$table1} p JOIN {$table2} u ON p.usuarios_id = u.id {$whereSql} ORDER BY p.data DESC, p.id DESC LIMIT $inicio, $itensPorPagina";
 
         try {
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute($parameters);
-            return $stmt->fetchAll(PDO::FETCH_CLASS);
+            return $stmt->fetchAll(PDO::FETCH_OBJ);
         } catch (Exception $e) {
             die($e->getMessage());
         }
@@ -176,7 +172,6 @@ class QueryBuilder
         } catch (Exception $e) {
             die($e->getMessage());
         }
-
     }
 
     public function edit($table, $id, $parameters)
@@ -199,7 +194,6 @@ class QueryBuilder
         } catch (Exception $e) {
             die($e->getMessage());
         }
-        
     }
     public function verificalogin($email, $senha)
     {

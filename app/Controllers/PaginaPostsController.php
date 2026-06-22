@@ -26,16 +26,18 @@ class PaginaPostsController
         $itensPorPagina = 6;
         $inicio = $itensPorPagina * ($paginaAtual - 1);
 
-        $countPosts = App::get('database')->countAll('posts', $textoBusca, $colunaBusca);
+
+
+        $countPosts = App::get('database')->countPosts($textoBusca);
 
         if ($inicio >= $countPosts && $countPosts > 0) {
             return redirect('site/paginaPosts');
         }
 
-        $posts = App::get('database')->selectJoinADMP('posts','usuarios',$inicio,$itensPorPagina,$textoBusca,$colunaBusca);
+        $posts = App::get('database')->selectJoinADMP('posts', 'usuarios', $inicio, $itensPorPagina, $textoBusca);
 
         $totalPaginas = ceil($countPosts / $itensPorPagina);
 
-        return view('site/paginaPosts',compact('posts','paginaAtual','totalPaginas','textoBusca'));
+        return view('site/paginaPosts', compact('posts', 'paginaAtual', 'totalPaginas', 'textoBusca'));
     }
 }
