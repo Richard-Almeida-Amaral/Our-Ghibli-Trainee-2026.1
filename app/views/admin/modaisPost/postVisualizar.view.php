@@ -18,7 +18,7 @@
           <?php
             $imagem = '/' . $publicacao->imagem;
             ?>
-          <a href="/post" class="PVisualizarAncora">
+          <a href="/post?id=<?= $post->id ?>" class="PVisualizarAncora">
               <img src="<?= $imagem ?>" alt="<?= $publicacao->titulo ?>" class="PVisualizarIMG"/>
               <div class="PVisualizarplacetxt">
                 <h1 class="PVisualizartxt"><?= $publicacao->titulo ?></h1>
