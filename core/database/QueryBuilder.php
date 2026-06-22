@@ -92,17 +92,36 @@ class QueryBuilder
         }
     }
 
-    public function selectJoinADMP($table1, $table2, $inicio = null, $itensPorPagina = null, $textoBusca = null, $colunaBusca = null)
+    public function countPosts($textoBusca = null)
+    {
+        $sql = "SELECT COUNT(*) FROM posts p JOIN usuarios u ON p.usuarios_id = u.id";
+        $parameters = [];
+
+        if ($textoBusca) {
+            $sql .= " WHERE p.titulo LIKE :textoBusca OR p.descricao LIKE :textoBusca OR u.nome LIKE :textoBusca";
+            $parameters['textoBusca'] = '%' . $textoBusca . '%';
+        }
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute($parameters);
+            return (int) $stmt->fetchColumn();
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+
+    public function selectJoinADMP($table1, $table2, $inicio = null, $itensPorPagina = null, $textoBusca = null)
     {
         $parameters = [];
         $whereSql = '';
 
-        if ($textoBusca && $colunaBusca) {
-            $whereSql = " where $colunaBusca[0] like :textoBusca OR $colunaBusca[1] like :textoBusca";
+        if ($textoBusca) {
+            $whereSql = " WHERE p.titulo LIKE :textoBusca OR p.descricao LIKE :textoBusca OR u.nome LIKE :textoBusca";
             $parameters['textoBusca'] = '%' . $textoBusca . '%';
         }
 
-        $sql = "select p.id, p.titulo, p.descricao, p.imagem, u.nome as autor, DATE_FORMAT(p.data, '%d/%m/%Y') as dataformatada from {$table1} as p join {$table2} as u on p.usuarios_id = u.id {$whereSql}";
+        $sql = "SELECT p.id, p.titulo, p.descricao, p.imagem, u.nome AS autor, DATE_FORMAT(p.data, '%d/%m/%Y') AS dataformatada FROM {$table1} p JOIN {$table2} u ON p.usuarios_id = u.id {$whereSql} ORDER BY p.data DESC";
 
         if ($inicio >= 0 && $itensPorPagina > 0) {
             $sql .= " LIMIT {$inicio}, {$itensPorPagina}";
@@ -117,32 +136,33 @@ class QueryBuilder
         }
     }
 
-    public function selectUsuarios($tabela, $limit, $offset, $textoBusca = null, $colunaBusca = null) { 
-    $limit = (int) $limit; 
-    $offset = (int) $offset; 
-    
-    $parameters = []; 
-    $whereSql = ''; 
-    
-    if ($textoBusca && $colunaBusca) { 
-        $whereSql = " where $colunaBusca[0] like :textoBusca OR $colunaBusca[1] like :textoBusca"; 
-        $parameters['textoBusca'] = '%' . $textoBusca . '%'; 
-    } 
-    
-    $sql = "SELECT * FROM {$tabela}" . $whereSql; 
-    
-    if ($limit > 0 && $offset >= 0) { 
-        $sql .= " LIMIT {$offset}, {$limit}"; 
-    } 
-    
-    try { 
-        $stmt = $this->pdo->prepare($sql); 
-        $stmt->execute($parameters); 
-        return $stmt->fetchAll(PDO::FETCH_CLASS);
-    } catch (Exception $e) { 
-        die($e->getMessage()); 
-    } 
-}
+    public function selectUsuarios($tabela, $limit, $offset, $textoBusca = null, $colunaBusca = null)
+    {
+        $limit = (int) $limit;
+        $offset = (int) $offset;
+
+        $parameters = [];
+        $whereSql = '';
+
+        if ($textoBusca && $colunaBusca) {
+            $whereSql = " where $colunaBusca[0] like :textoBusca OR $colunaBusca[1] like :textoBusca";
+            $parameters['textoBusca'] = '%' . $textoBusca . '%';
+        }
+
+        $sql = "SELECT * FROM {$tabela}" . $whereSql;
+
+        if ($limit > 0 && $offset >= 0) {
+            $sql .= " LIMIT {$offset}, {$limit}";
+        }
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute($parameters);
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
 
     public function selectOne($table, $id)
     {
@@ -219,6 +239,21 @@ class QueryBuilder
             $userlogin = $stmt->fetch(PDO::FETCH_OBJ);
 
             return $userlogin;
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+    public function selectUltimosPosts($limite = 6)
+    {
+        $sql = "
+        SELECT p.id, p.titulo, p.descricao, p.imagem,u.nome AS autor, DATE_FORMAT(p.data, '%d/%m/%Y') AS dataformatada FROM posts p JOIN usuarios u ON p.usuarios_id = u.id ORDER BY p.data DESC LIMIT :limite";
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->bindValue(':limite', (int)$limite, PDO::PARAM_INT);
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
         } catch (Exception $e) {
             die($e->getMessage());
         }

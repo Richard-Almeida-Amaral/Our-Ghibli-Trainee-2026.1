@@ -26,12 +26,12 @@
 </head>
 
 <body class="LandingPageBody">
-    <main  class="LandingPageMain">
+    <main class="LandingPageMain">
         <div class="" id="navbar">
             <?php require('navbar.view.php'); ?>
         </div>
         <section id="hero"> <!-- Hero card -->
-            
+
             <section id="frametextofilme"> <!-- texto filme + logo -->
 
                 <h2>“O mundo é mágico quando visto com olhos sinceros.”</h2>
@@ -66,53 +66,43 @@
                     <div class="slider" id="slider">
 
                         <div class="sliderConteudo" id="sliderConteudo">
-                            <div class="sliderItem">
-                                <div class="usercontainer">
-                                    <img src="../../../public/assets/graveofthefireflies.png"> 
-                                    <p class="username">@usuario</p>
+
+                            <?php foreach ($posts as $post): ?>
+
+                                <div class="sliderItem">
+                                    <div class="usercontainer">
+                                        <p class="username">@<?= $post->autor ?></p>
+                                    </div>
+
+                                    <img
+                                        class="imagempostcarrossel"
+                                        src="/<?= $post->imagem ?>"
+                                        alt="<?= $post->titulo ?>">
+
+                                    <div class="gradientepostcarrossel">
+                                        <div class="descricaopostcarrossel">
+                                            <?= $post->descricao ?>
+                                        </div>
+                                    </div>
+
+
                                 </div>
-                                <img class ="imagempostcarrossel" src="../../../public/assets/porcorosso.jpg">
-                                <div class="gradientepostcarrossel"></div>
-                                <div class="descricaopostcarrossel">
-                                    <p> A magia cotidiana dos filmes do Studio Ghibli e como suas histórias continuam encantando diferentes gerações ao redor do mundo </p>
-                                </div>
-                            </div>
-                            <div class="sliderItem">
-                                <div class="usercontainer">
-                                    <img src="../../../public/assets/graveofthefireflies.png"> 
-                                    <p class="username">@usuario</p>
-                                </div>
-                                <img class ="imagempostcarrossel" src="../../../public/assets/porcorosso.jpg">
-                                <div class="gradientepostcarrossel"></div>
-                                <div class="descricaopostcarrossel">
-                                    <p> A magia cotidiana dos filmes do Studio Ghibli e como suas histórias continuam encantando diferentes gerações ao redor do mundo </p>
-                                </div>
-                            </div>
-                            <div class="sliderItem">
-                                <div class="usercontainer">
-                                    <img src="../../../public/assets/graveofthefireflies.png"> 
-                                    <p class="username">@usuario</p>
-                                </div>
-                                <img class ="imagempostcarrossel" src="../../../public/assets/porcorosso.jpg">
-                                <div class="gradientepostcarrossel"></div>
-                                <div class="descricaopostcarrossel">
-                                    <p> A magia cotidiana dos filmes do Studio Ghibli e como suas histórias continuam encantando diferentes gerações ao redor do mundo </p>
-                                </div>
-                            </div>
-                            
+
+                            <?php endforeach; ?>
+
                         </div>
                         <div class="slideremdestaque"></div>
 
                         <div class="sliderRight">
                             <div class="fundosliderright">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="navArrow arrowLeft" id="arrowLeft" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
-                            </svg>
-                            <div class="radioAuto" id="radioAuto"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="navArrow arrowRight" id="arrowRight" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                        </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="navArrow arrowLeft" id="arrowLeft" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                                </svg>
+                                <div class="radioAuto" id="radioAuto"></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="navArrow arrowRight" id="arrowRight" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </div>

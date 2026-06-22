@@ -3,7 +3,7 @@
 </head>
 
 <!-- Modal de Exclusão -->
-<div class="modalContainer" id="ModalExcluir<?= $publicacao->id ?>">
+<div class="modalContainerExc" id="ModalExcluir<?= $publicacao->id ?>">
   <form action="/admin/posts/excluir" method="POST">
     <input type="hidden" name="id" value="<?= $publicacao->id ?>">
     <div class="ModalContainerExcuir">

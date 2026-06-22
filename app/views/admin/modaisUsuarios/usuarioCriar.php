@@ -21,7 +21,7 @@
             </div>
 
             <div class="ADMPMA-end">
-                <button type="button" class="ADMPMA-btncancel" onclick="fecharModal('usuarioCriar')">Cancelar</button>
+                <button type="button" class="ADMPMA-btncancel" onclick="fecharModal()">Cancelar</button>
                 <button class="ADMPMA-btnapply">Criar</button>
             </div>
         </form>
