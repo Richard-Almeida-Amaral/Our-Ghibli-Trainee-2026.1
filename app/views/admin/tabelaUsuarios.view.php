@@ -72,7 +72,6 @@ if (!isset($_SESSION['id'])) {
         <div class="acoestopo">
             <form action="/admin/usuarios" method="GET" class="pesqusuario">
                 <input type="text" name="busca" id="pesquisa" placeholder="Pesquisar" value="<?= $textoBusca ?? '' ?>" />
-                <button type="submit">Pesquisar</button>
             </form>
 
 
@@ -174,5 +173,7 @@ if (!isset($_SESSION['id'])) {
 </body>
 
 <script src="../../../public/js/Modais.js"></script>
+<script src="../../../public/js/paginaPosts.js"></script>
+
 
 </html>
