@@ -228,6 +228,46 @@
 }
 
 @media (max-width: 414px){
+    @media (max-width: 414px){
+    .ADMP-mid{
+        flex-direction: column;
+        height: 6rem;
+        gap: 0.5rem;
+        margin-left: 10rem; 
+        width: auto;
+    }
+    .ADMP-table{
+        margin-left: 50rem;
+        height: 20rem;
+        width: 60rem;
+    }
+    .ADMP-body{
+        gap: 1rem;
+        padding:0;
+        justify-content: start;
+        align-items: end;
+        margin-left:0;
+    }
+    .ADMP-auxtablefooter{
+        overflow-x: auto;
+        margin-left: 50rem;
+        height: 4rem;
+        width: 60rem;
+    }
+
+    .ADMP-tablebody{
+        overflow-x: auto;
+    }
     
+    .ADMP-pagination{
+        margin-left: 50rem;
+    }
+
+
+    .ADMP-butom{
+        padding-inline: 1rem;
+        padding-block: 0.4rem;
+    }
+}
 
 }

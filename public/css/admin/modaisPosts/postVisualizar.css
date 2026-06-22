@@ -170,3 +170,29 @@ a:visited {
     border-radius: 0.5rem;
 }
 
+
+@media (max-width: 414px){
+    .PVisualizarBody{
+        width: 25rem;
+        margin-left: 10rem;
+    }
+    .PVisualizarHeader{
+        width: 20rem;
+        margin-left: 10rem;
+    }
+
+    .PVisualizarRight{
+        width: 40rem;
+    }
+
+    .PVisualizarCard{
+        width: 6rem;
+    }
+    .PVisualizarplacetxt{
+        width: 10rem;
+    }
+    .PVisualizarAncora{
+        width: 4rem;
+        height: fit-content;
+    }
+}

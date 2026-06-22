@@ -223,3 +223,14 @@ a:visited {
     transform: translateY(0);
 }
 
+@media (max-width: 414px){
+    .PEditarBody{
+        width: 30rem;
+        margin-left: 10rem;
+    }
+    .PEditarHeader{
+        width: 30rem;
+        margin-left: 10rem;
+    }
+
+}

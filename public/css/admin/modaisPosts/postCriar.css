@@ -305,8 +305,8 @@
   .modalBody {
     flex-direction: column; 
     align-items: center;
+    overflow-y: scroll;
   }
-
   .arquivo {
     width: 100%; 
     height: 250px;
