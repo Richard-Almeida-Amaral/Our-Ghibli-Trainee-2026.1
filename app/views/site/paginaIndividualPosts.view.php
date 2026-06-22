@@ -40,23 +40,29 @@
             <img src="../../../public/assets/TopoPip.png" alt="">
         </section>
         <section class="PIP-Meio">
-            <?php foreach ($publicacoes as $publicacao): ?>
 
-            <?php $imagem = '/' . $publicacao->imagem; ?>
+            
             <div class="ContPosts">
                 <div class="TopoPosts">
                     <div class="Usuarioposts">
-                        <!-- <img src="../../../public/assets/Foto (1).png" alt=""> -->
                         <div class="NomeUsuarioPosts">
-                            <p>@<?= $publicacao->autor ?></p>
+                            <?php if(isset($publicacoes->autor)): ?>
+                            
+                            <p>@<?= $publicacoes->autor ?></p>
+                            
+                            <?php else: ?>
+                            
+                            <p>@<?= $publicacoes->usuarios_id ?></p>
+                            
+                            <?php endif; ?>
                         </div>
                     </div>
                     <div class="DataPosts">
                         <div class="DatatitPosts">
                             <p>Data: </p>
-                        </div>
+                        </div> 
                         <div class="Diatextoposts">
-                            <p><?= $publicacao->dataformatada ?></p>
+                            <p><?=$publicacoes->data ?></p>
                         </div>
                     </div>
                 </div>
@@ -66,24 +72,23 @@
                     <div class="TitEImgPosts">
                         
                         <div class="TituloPosts">
-                            <h2 class="PostsTitle"> <?= $publicacao->titulo ?></h2>
+                            <h2 class="PostsTitle"> <?=$publicacoes->titulo ?></h2>
                         </div>
-                        
+                        <?php $imagem = '/' . $publicacoes->imagem; ?>
                         <div class="ImgPosts">
-                            <img src="<?= $imagem ?>" alt="<?= $publicacao->titulo ?>">
+                            <img src="<?= $imagem ?>" alt="<?=$publicacoes->titulo ?>">
                         </div>
 
 
                     </div>
                     <div class="TextoPostsCont">
                         <div class="TextoPosts">
-                            <p> <?= $publicacao->descricao ?>
+                            <p> <?= $publicacoes->descricao ?>
                         </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <?php endforeach; ?>
         </section>
     </main>
     <div id="footer">

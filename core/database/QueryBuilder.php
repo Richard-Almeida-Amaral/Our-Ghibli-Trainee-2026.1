@@ -152,11 +152,35 @@ class QueryBuilder
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute(['id' => $id]);
 
-            return $stmt->fetchAll(PDO::FETCH_CLASS);
+            return $stmt->fetch(PDO::FETCH_OBJ);
         } catch (Exception $e) {
             die($e->getMessage());
         }
 
+    }
+
+    public function selectPostById($id)
+    {
+        $sql = "
+            SELECT p.id, p.titulo, p.descricao, p.imagem, DATE_FORMAT(p.data, '%d/%m/%Y') as data, p.usuarios_id,
+            u.nome AS autor
+            FROM posts p
+            INNER JOIN usuarios u
+                ON p.usuarios_id = u.id
+            WHERE p.id = :id
+            LIMIT 1
+        ";
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute([
+                'id' => $id
+            ]);
+
+            return $stmt->fetch(PDO::FETCH_OBJ);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
     }
 
     public function edit($table, $id, $parameters)
