@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.modoverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+
+.PEditarContainer{
+    display: none;
+    flex-direction: column;
+    width: 35vw;
+    height: 50vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+}
+
+.PEditarForm{
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.PEditarHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#20315a;
+    width: 100%;
+    height: 10%;
+    padding: 32px;
+    border-top-left-radius:1rem;
+    border-top-right-radius:1rem;
+}
+
+.fechax {
+    background: none;
+    border: none;
+    color: #9c0000;
+    font-size: 3rem;
+    /* mudar a gambiarra do x */
+    margin-left: 60px;
+    cursor: pointer;
+    line-height: 1;
+    transition: transform 0.2s;
+}
+
+.fechax:hover {
+    transform: scale(1.2);
+}
+
+.PEditarBody{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.PEditartittle {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.PEditarLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9d2b3;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius:1rem;
+}
+
+.PEditarAncora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border: 0.1px solid #cbbaa2;
+    border-radius: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    font-style: none;
+}
+
+.PEditarCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    flex-direction: column; 
+}
+
+.PEditarCard h1{
+    font-size: large;
+}
+
+.PEditarIMG{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.PEditarplacetxt{
+    width: 100%;
+    background-color: #fafafa;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.PEditartxt{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-style: none;
+    font-size: 0.8rem;
+}
+
+.PEditarRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height:100%;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: start;
+    background-color: #e9dac7;
+    border-bottom-right-radius:1rem;
+}
+
+.PEditarareas{
+    width: 90%;
+}
+
+.PEditarareas:has(> .PEditarTextArea) {
+    height: 100%;
+}
+
+.PEditarlabel{
+    margin-left: 0.3rem;
+}
+
+
+.PEditarinput{
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 0;
+    padding: 0.6rem;
+    background-color: #fafafa;
+    color: #000000;
+}
+
+.PEditarTextArea{
+    width: 100%;
+    height: 90%;
+    resize: none;
+    outline: none;
+    border-radius: 0.5rem;
+}
+
+.modalAcoes {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 16px;
+    padding: 0 32px 32px 32px;
+    background-color: #E8D8C3;  
+    border-bottom-right-radius:1rem;
+}
+
+.modalAcoes button {
+    padding: 10px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    transition: transform 0.1s, opacity 0.2s;
+}
+
+.btnCriar {
+    background-color: #20315a;
+    color: #ffffff;
+}
+
+.btnCancelar {
+    background-color: #e63946;
+    color: #ffffff;
+}
+
+.modalAcoes button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.modalAcoes button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 414px){
+    .PEditarBody{
+        width: 30rem;
+        margin-left: 10rem;
+    }
+    .PEditarHeader{
+        width: 30rem;
+        margin-left: 10rem;
+    }
+
+}

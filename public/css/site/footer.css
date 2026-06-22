@@ -1,0 +1,353 @@
+body{
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+.alice-regular {
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.nunito-uniquifier {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.contvertical{
+    /*border: 1px solid orange;*/
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+
+.Contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 32px;
+    gap: 43px;
+}
+
+
+.titulocont{
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.ContatsContainer{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: #F2F1E6;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+    gap: 24px;
+}
+.emailcont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    column-gap: 32px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    font-family: "Nunito", sans-serif;
+}
+
+
+.Tipodeinfofooteremail{
+    display: flex;
+    align-items: start;
+    text-align: start;
+}
+
+
+.Telefonecont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    column-gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    /* border: 1px solid orange;*/
+}
+.email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Nunito", sans-serif;
+    /*border: 1px solid green;*/
+}
+.telefone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Nunito", sans-serif;
+    /*border: 1px solid green;*/
+}
+.Logo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+}
+
+
+.rstitulo{
+    align-items: center;
+    text-align: right;
+    padding-right: 64px;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.iconsredes{
+    /*border: 1px solid yellowgreen;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.redessociaiseloc{
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+}
+
+
+.footer-ancora{
+    display: inline-block;
+    margin: 0;          
+    padding: 0;        
+    text-decoration: none;
+}
+
+
+.linkedin img {
+    display: block;
+}
+
+
+.apenasredes{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+
+.LocContainer{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+}
+
+
+.loc{
+    border-radius: 1rem;
+    background-color: #F2F1E6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+}
+.texto{
+    width: 10rem;
+    margin-left: 16px;
+}
+.sobrenos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    padding: 16px 32px;
+    border-bottom: 0.1rem solid #000000;
+}
+
+
+.titulosobre{
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.time, .etica, .objetivo, .perspectiva{
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    /* margin-left: 10rem; */
+
+
+}
+
+
+.copyrigth{
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    border-top: 0.5rem #000000;
+    padding: 16px 32px;
+}
+.cprcont{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.iconc{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+}
+footer{
+    background-color: #6B85AF;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+@media (max-width: 700px) {
+    .contvertical {
+        flex-direction: column;
+        padding-top: 3vw;
+        .Contatoscont {order: 3;};
+        .Logo {
+            order: 1;
+        };
+        .redessociaiseloc {
+            margin-top: 1rem;
+            order: 3;
+        }
+        .Logo{
+            margin-top: 2rem;
+        }
+        .emailcont {
+            justify-content: space-between;
+        }
+        .Telefonecont{
+            justify-content: space-between;
+        }
+
+
+        .Contatoscont{
+            justify-content: center;
+            align-items: center;
+        }
+        .Contatos{
+            justify-content: center;
+            align-items: center;
+        }
+   
+        .Tipodeinfofooter{
+            display: none;
+        }
+        .Tipodeinfofooteremail{
+            display: none;
+        }
+    }
+    .sobrenos{
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    }
+    .copyrigth{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+
+
+
+
+@media (min-width: 701px) and (max-width: 1000px) {
+    .contvertical {
+        flex-direction: column;
+        padding-top: 3vw;
+        .Contatoscont {order: 3;};
+        .Logo {
+            order: 1;
+        }
+        .redessociaiseloc {
+            margin-top: 1rem;
+            order: 3;
+        }
+        .Logo{
+            margin-top: 2rem;
+        }
+        .ContatsContainer{
+        padding-left: 0.5rem;
+        padding-right: 0,5rem;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        }
+        .emailcont {
+            justify-content: center;
+            gap: 6vw;
+        }
+        .emailcont .p{
+            justify-content: start;
+        }
+        .Telefonecont{
+            justify-content: center;
+            gap: 5vw;
+        }
+
+
+        .Contatoscont{
+            justify-content: center;
+            align-items: center;
+        }
+        .Contatos{
+            justify-content: center;
+            align-items: center;
+        }
+   
+        .Tipodeinfofooter{
+            display: none;
+        }
+        .Tipodeinfofooteremail{
+            display: none;
+        }
+    }
+}

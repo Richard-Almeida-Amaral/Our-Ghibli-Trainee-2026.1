@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.ADMPME-html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ADMPME-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.ADMPME-container{
+    display: none;
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #E8D8C3;
+    height: 30rem;
+    width: 28rem;
+    border: 1px solid black;
+    border-radius: 28px;
+}
+.ADMPME-input{
+    width: 350px;
+    padding: 10px 14px;
+    border: 0.5px solid #000000;
+    border-radius: 10px;
+    background-color: #ebdcd0;
+    font-size: 14px;
+    color: #333333;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.ADMPME-mid{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    align-items: start;
+    justify-content: start;
+}
+
+.ADMPME-fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 8px;
+}
+
+.ADMPME-btncancel{
+    display: flex;
+    background-color: #20315A;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    padding-inline:1rem;
+    padding-block:0.4rem;
+}
+.ADMPME-btncancel:hover{
+    scale: 1.05;
+}
+
+.ADMPME-btnapply{
+    display: flex;
+    background-color: #5A78A6;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    padding-inline:1rem;
+    padding-block:0.4rem;
+}
+.ADMPME-btnapply:hover{
+    scale: 1.05;
+}
+
+
+.ADMPME-actions{
+    display: flex;
+    gap: 5rem;
+}
+
+.ADMPME-header{
+    background-color: #20315A;
+    color: white;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    padding-block: 1rem;
+}
+
+.ADMPME-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}

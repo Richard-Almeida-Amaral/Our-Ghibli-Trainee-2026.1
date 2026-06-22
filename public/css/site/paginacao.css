@@ -1,0 +1,37 @@
+.pagination {
+    justify-content: center;
+    margin: 100px 0;
+    gap: 10px;
+}
+
+.pagination .page-link {
+    border: none;
+    border-radius: 50px !important;
+
+    background-color: white;
+    color: var(--color-azul1-100);
+
+    padding: 10px 20px;
+
+    font-family: "Nunito", sans-serif;
+    font-size: large;
+    font-weight: bold;
+
+    box-shadow: none;
+}
+
+.pagination .page-link:hover {
+    background-color: var(--color-azul1-100);
+    color: var(--color-bege1-100);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--color-azul1-100);
+    border-color: var(--color-azul1-100);
+    color: var(--color-bege1-100);
+}
+
+.pagination .page-item.disabled .page-link {
+    background-color: white;
+    color: #999;
+}

@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cadastrofiltro{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(23, 25, 34, 0.706);
+    backdrop-filter: blur(0.4rem);
+    z-index: 50;
+}
+
+.cadastroContainer {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgba(186, 177, 166, 0.847);
+    backdrop-filter: blur(2px);
+    width: 25vw;
+    height: 40vh;
+    border-radius: 2rem;
+    padding: 1rem;
+    z-index: 100;
+}
+
+.cadastroContainer * {
+    background-color: transparent;
+}
+
+
+.cadastroHeader h1{
+    font-weight: 350;
+}
+
+.cadastroBody {
+    display: flex;
+    width: 100%;
+    gap: 1.3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastroFields {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.cadastroLabel {
+    font-weight: 600;
+}
+
+
+.cadastroInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px;
+    width: 100%;
+    height: 2.5rem;
+    text-align:center;
+    background-color: white;
+}
+
+.cadastroInput:focus{
+    outline: none;
+}
+
+
+.cadastroInput::placeholder{
+    display: flex;
+    font-family: inter;
+    color: rgb(89, 89, 89);
+    font-size: larger;
+}
+
+.cadastroBtn {
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+.cadastroCriar {
+    display: flex;
+    flex-direction: column;
+    background-color: #20315a;
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    scale: 1.1;
+    border: none;
+}
+.cadastroCriar:hover {
+    background-color:rgba(7, 107, 238, 0.623);
+    color: rgb(255, 255, 255);
+    transition: ease-in-out 200ms;
+}
+
+.cadastroCancelar {
+    background-color: #e63946;
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    scale: 1.1;
+    border: none;
+}
+.cadastroCancelar:hover {
+    background-color:rgb(110, 0, 9);
+    color: rgb(255, 255, 255);
+    transition: ease-in-out 200ms;
+}
+
+@media (max-width: 700px){
+
+    .cadastroContainer{
+    width: 90vw;
+    height: 90vh;
+    
+    }
+
+    .cadastroHeader h1 {
+    font-weight: 350;
+    margin-top: 50px;
+}
+
+.cadastroBtn {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 1.5rem;
+}
+    
+}
+

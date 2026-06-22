@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <link rel="stylesheet" href="../../../public/css/site/footer.css">
+
+
+    <!-- Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+    <!-- Alice -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+
+    <footer>
+        <div class="contvertical">
+
+
+                <div class="Contatos">
+
+
+                    <div class="titulocont">
+                        <h1>Informações para Contato</h1>
+                    </div>
+                    <div class="ContatsContainer">
+                        <div class="email">
+
+
+                            <div class="emailcont">
+                                <img class="iconemail" src="../../../public/assets/Emailicon.png" alt="Descrição da imagem">
+                                <p class="Tipodeinfofooteremail"> Email: </p>
+                                <p>ourghibli@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="telefone">
+                            <div class="Telefonecont">
+                                <img class="icontelefone" src="../../../public/assets/Telefoneicon.png" alt="Descrição da imagem">
+                                <p class="Tipodeinfofooter"> Telefone: </p>
+                                <p>+55 (32) 91523-7291</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+           
+
+
+            <div class="Logo">
+
+
+                <img class="icontelogo" src="../../../public/assets/LogoSemFundoApenasTotoro.png" alt="Descrição da imagem">
+
+
+            </div>
+
+
+            <div class="redessociaiseloc">
+                <div class="rstitulo">
+                        <h1>Redes Sociais</h1>
+                    </div>
+                <div class="apenasredes">
+                   
+
+
+                    <div class="iconsredes">
+
+
+                        <div class="linkedin">
+                            <img src="../../../public/assets/Linkedin.png" alt="Descrição da imagem">
+                        </div>
+
+
+                        <a href="https://www.instagram.com/studioghibliofficiall/" class="footer-ancora">
+                            <img src="../../../public/assets/Instagram.png" alt="Descrição da imagem">
+                        </a>
+
+
+
+
+                        <a href="https://www.facebook.com/WorldofGhibliUS" class="footer-ancora">
+                            <img src="../../../public/assets/Facebook.png" alt="Descrição da imagem">
+                        </a>
+                    </div>
+                    <div class="LocContainer">
+                        <div class="loc">
+                            <div class="iconkat">
+                                <img src="../../../public/assets/Localicon.png" alt="Descrição da foto">
+                            </div>
+                            <div class="texto">
+                                <p>Rua José Lourenço Kelmer - Martelos, Juiz de Fora - MG, 36036-330</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+               
+
+
+            </div>
+        </div>
+
+
+        <div class="sobrenos">
+            <div class="titulosobre">
+                <h3>Sobre Nós: </h3>
+            </div>
+            <div class="time">
+                <p>Nosso Time</p>
+            </div>
+            <div class="etica">
+                <p>Nossa Ética</p>
+            </div>
+            <div class="objetivo">
+                <p>Nosso Objetivo</p>
+            </div>
+            <div class="perspectiva">
+                <p>Nossa Perspectiva</p>
+            </div>
+        </div>
+        <div class="copyrigth">
+            <div class="cprcont">
+                <img class="iconc" src="../../../public/assets/c-circle 1.png" alt="Descrição">
+                <p>2026 Our Ghibli. All Rights Reserved</p>
+            </div>
+            <p>Termos & Condições</p>
+            <p>Termos de Privacidade</p>
+        </div>
+
+
+    </footer>
+
+
+</body>
+
+
+</html>

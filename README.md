@@ -17,18 +17,21 @@
 ## Equipe
 
 #### Desenvolvedores:
-* [Danrley](coloque o link do github)
-* [Heitor Bittencourt](coloque o link do github)
-* [Maria Clara](coloque o link do github)
-* [Pedro Andrade](coloque o link do github)
+
+* [Trainee 1](coloque o link do github)
+* [Trainee 2](coloque o link do github)
+* [Trainee 3](coloque o link do github)
+* [Trainee 4](coloque o link do github)
+
 
 #### Scrum Master:
-* [Richard Amaral](https://github.com/Richard-Almeida-Amaral).
+
+* [Nome do Scrum](coloque o link do github).
 
 #### Links Úteis:
 * [Trello do Projeto](https://trello.com/b/VkA6p3TR/261-our-ghibli)
 
----
+* [Trello]()
 
 ## Descrição do Projeto
 
