@@ -7,18 +7,18 @@
 
     <div class="cadastroBody">
         <div class="cadastroFields">
-            <label for="" class="cadastroLabel">Nome</label>
-            <input type="text" name="nome" id="" placeholder="Digite o seu nome" class="cadastroInput">
+            <label for="nome" class="cadastroLabel">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" class="cadastroInput" required>
         </div>
 
         <div class="cadastroFields">
-            <label for="" class="cadastroLabel">Email</label>
-            <input type="email" name="email" id="" placeholder="Digite o seu email" class="cadastroInput">
+            <label for="email" class="cadastroLabel">Email</label>
+            <input type="email" name="email" id="email" placeholder="Digite o seu email" class="cadastroInput" required>
         </div>
 
         <div class="cadastroFields">
-            <label for="" class="cadastroLabel">Senha</label>
-            <input type="password" name="senha" id="" placeholder="Digite a sua senha" class="cadastroInput">
+            <label for="senha" class="cadastroLabel">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite a sua senha" class="cadastroInput" required>
         </div>
     </div>
 

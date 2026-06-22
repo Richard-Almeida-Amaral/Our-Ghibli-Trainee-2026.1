@@ -67,16 +67,27 @@ class UsuariosController
 
         public function cadastro()
     {
+        $nome = isset($_POST['nome']) ? trim($_POST['nome']) : '';
+        $email = isset($_POST['email']) ? trim($_POST['email']) : '';
+        $senha = isset($_POST['senha']) ? trim($_POST['senha']) : '';
+
+        if ($nome === '' || $email === '' || $senha === '') {
+            $_SESSION['mensagem-erro'] = 'Preencha todos os campos para criar o usuário.';
+            header('Location: /login');
+            exit;
+        }
+
         $parameters = [
-            'nome' => $_POST['nome'],
-            'email' => $_POST['email'],
-            'senha' => $_POST['senha'],
+            'nome' => $nome,
+            'email' => $email,
+            'senha' => $senha,
             'imagem' => '1'
         ];
 
         App::get('database')->insert('usuarios', $parameters);
 
         header('Location: /admin');
+        exit;
     }
 
 
