@@ -69,7 +69,8 @@
 
                             <?php foreach ($posts as $post): ?>
 
-                                <div class="sliderItem">
+                                <a href="/post?id=<?= $post->id ?>" class="sliderItem">
+
                                     <div class="usercontainer">
                                         <p class="username">@<?= $post->autor ?></p>
                                     </div>
@@ -85,8 +86,7 @@
                                         </div>
                                     </div>
 
-
-                                </div>
+                                </a>
 
                             <?php endforeach; ?>
 

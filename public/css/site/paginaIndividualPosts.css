@@ -166,8 +166,9 @@ body{
 }
 .TituloPosts h2{
     font-family: "Alice", serif;
-    font-weight: 150;
+    font-weight: 1000;
     font-style: normal;
+    font-size: 2em;
 }
 
 
@@ -179,6 +180,7 @@ body{
     overflow: hidden;
 }
 .ImgPosts img{
+    height: 90vh;
     border-radius: 15px;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4 );
     background-size: cover;
