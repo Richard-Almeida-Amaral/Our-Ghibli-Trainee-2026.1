@@ -49,6 +49,8 @@ if (!isset($_SESSION['id'])) {
 
 </head>
 
+<div class="ADMP-filtro" id="filtroModal"></div>
+
 <body class="ADMU-body">
 
     <?php require('./app/views/admin/modaisUsuarios/usuarioCriar.php') ?>
@@ -102,7 +104,7 @@ if (!isset($_SESSION['id'])) {
                             <td class="usuarioTdAc">
 
                                 <!-- Abre Modal Visualizar -->
-                                <button type="button" id="btnUsuModal" class="usubtnvisualizar" onclick="abrirModal('usuarioVisualizar<?= $usuario->id ?>','filtromodalview')">
+                                <button type="button" id="btnUsuModal" class="usubtnvisualizar" onclick="abrirModal('usuarioVisualizar<?= $usuario->id ?>')">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
@@ -117,7 +119,7 @@ if (!isset($_SESSION['id'])) {
 
                                 <!-- Abre Modais Editar -->
 
-                                <button type="button" id="btnUsuModal" class="usubtnvisualizar" onclick="abrirModal('usuarioEditar<?= $usuario->id ?>','filtromodalview')">
+                                <button type="button" id="btnUsuModal" class="usubtnvisualizar" onclick="abrirModal('usuarioEditar<?= $usuario->id ?>')">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
@@ -134,7 +136,7 @@ if (!isset($_SESSION['id'])) {
                                 </button>
 
                                 <!-- Abre Modal Excluir -->
-                                <button type="button" id="btnExcluirModal<?php echo $usuario->id; ?>" class="usubtnvisualizar botaoexcluir" onclick="abrirModal('usuarioExcluir<?= $usuario->id ?>','filtromodalview')">
+                                <button type="button" id="btnExcluirModal<?php echo $usuario->id; ?>" class="usubtnvisualizar botaoexcluir" onclick="abrirModal('usuarioExcluir<?= $usuario->id ?>')">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
